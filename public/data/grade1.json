@@ -1,362 +1,2234 @@
 [
-  {"id": 1, "char": "天", "pinyin": "tiān", "korean": "하늘", "type": "recognize", "level": "1-1"},
-  {"id": 2, "char": "一", "pinyin": "yī", "korean": "하나", "type": "recognize", "level": "1-1"},
-  {"id": 3, "char": "口", "pinyin": "kǒu", "korean": "입", "type": "recognize", "level": "1-1"},
-  {"id": 4, "char": "日", "pinyin": "rì", "korean": "날", "type": "recognize", "level": "1-1"},
-  {"id": 5, "char": "地", "pinyin": "dì", "korean": "땅", "type": "recognize", "level": "1-1"},
-  {"id": 6, "char": "二", "pinyin": "èr", "korean": "둘", "type": "recognize", "level": "1-1"},
-  {"id": 7, "char": "耳", "pinyin": "ěr", "korean": "귀", "type": "recognize", "level": "1-1"},
-  {"id": 8, "char": "月", "pinyin": "yuè", "korean": "달", "type": "recognize", "level": "1-1"},
-  {"id": 9, "char": "人", "pinyin": "rén", "korean": "사람", "type": "recognize", "level": "1-1"},
-  {"id": 10, "char": "三", "pinyin": "sān", "korean": "셋", "type": "recognize", "level": "1-1"},
-  {"id": 11, "char": "目", "pinyin": "mù", "korean": "눈", "type": "recognize", "level": "1-1"},
-  {"id": 12, "char": "山", "pinyin": "shān", "korean": "산", "type": "recognize", "level": "1-1"},
-  {"id": 13, "char": "六", "pinyin": "liù", "korean": "여섯", "type": "recognize", "level": "1-1"},
-  {"id": 14, "char": "你", "pinyin": "nǐ", "korean": "너", "type": "recognize", "level": "1-1"},
-  {"id": 15, "char": "四", "pinyin": "sì", "korean": "넷", "type": "recognize", "level": "1-1"},
-  {"id": 16, "char": "手", "pinyin": "shǒu", "korean": "손", "type": "recognize", "level": "1-1"},
-  {"id": 17, "char": "川", "pinyin": "chuān", "korean": "강", "type": "recognize", "level": "1-1"},
-  {"id": 18, "char": "七", "pinyin": "qī", "korean": "일곱", "type": "recognize", "level": "1-1"},
-  {"id": 19, "char": "我", "pinyin": "wǒ", "korean": "나", "type": "recognize", "level": "1-1"},
-  {"id": 20, "char": "五", "pinyin": "wǔ", "korean": "다섯", "type": "recognize", "level": "1-1"},
-  {"id": 21, "char": "足", "pinyin": "zú", "korean": "발", "type": "recognize", "level": "1-1"},
-  {"id": 22, "char": "水", "pinyin": "shuǐ", "korean": "물", "type": "recognize", "level": "1-1"},
-  {"id": 23, "char": "八", "pinyin": "bā", "korean": "여덟", "type": "recognize", "level": "1-1"},
-  {"id": 24, "char": "他", "pinyin": "tā", "korean": "그", "type": "recognize", "level": "1-1"},
-  {"id": 25, "char": "上", "pinyin": "shàng", "korean": "위", "type": "recognize", "level": "1-1"},
-  {"id": 26, "char": "站", "pinyin": "zhàn", "korean": "서다", "type": "recognize", "level": "1-1"},
-  {"id": 27, "char": "火", "pinyin": "huǒ", "korean": "불", "type": "recognize", "level": "1-1"},
-  {"id": 28, "char": "九", "pinyin": "jiǔ", "korean": "아홉", "type": "recognize", "level": "1-1"},
-  {"id": 29, "char": "爸", "pinyin": "bà", "korean": "아빠", "type": "recognize", "level": "1-1"},
-  {"id": 30, "char": "妈", "pinyin": "mā", "korean": "엄마", "type": "recognize", "level": "1-1"},
-  {"id": 31, "char": "哥", "pinyin": "gē", "korean": "형", "type": "recognize", "level": "1-1"},
-  {"id": 32, "char": "弟", "pinyin": "dì", "korean": "동생", "type": "recognize", "level": "1-1"},
-  {"id": 33, "char": "打", "pinyin": "dǎ", "korean": "치다", "type": "recognize", "level": "1-1"},
-  {"id": 34, "char": "棋", "pinyin": "qí", "korean": "바둑", "type": "recognize", "level": "1-1"},
-  {"id": 35, "char": "字", "pinyin": "zì", "korean": "글자", "type": "recognize", "level": "1-1"},
-  {"id": 36, "char": "词", "pinyin": "cí", "korean": "단어", "type": "recognize", "level": "1-1"},
-  {"id": 37, "char": "本", "pinyin": "běn", "korean": "책", "type": "recognize", "level": "1-1"},
-  {"id": 38, "char": "画", "pinyin": "huà", "korean": "그림", "type": "recognize", "level": "1-1"},
-  {"id": 39, "char": "积", "pinyin": "jī", "korean": "쌓다", "type": "recognize", "level": "1-1"},
-  {"id": 40, "char": "句", "pinyin": "jù", "korean": "문장", "type": "recognize", "level": "1-1"},
-  {"id": 41, "char": "午", "pinyin": "wǔ", "korean": "낮", "type": "recognize", "level": "1-1"},
-  {"id": 42, "char": "学", "pinyin": "xué", "korean": "배우다", "type": "recognize", "level": "1-1"},
-  {"id": 43, "char": "花", "pinyin": "huā", "korean": "꽃", "type": "recognize", "level": "1-1"},
-  {"id": 44, "char": "木", "pinyin": "mù", "korean": "나무", "type": "recognize", "level": "1-1"},
-  {"id": 45, "char": "子", "pinyin": "zi", "korean": "아이", "type": "recognize", "level": "1-1"},
-  {"id": 46, "char": "星", "pinyin": "xīng", "korean": "별", "type": "recognize", "level": "1-1"},
-  {"id": 47, "char": "校", "pinyin": "xiào", "korean": "학교", "type": "recognize", "level": "1-1"},
-  {"id": 48, "char": "班", "pinyin": "bān", "korean": "반", "type": "recognize", "level": "1-1"},
-  {"id": 49, "char": "下", "pinyin": "xià", "korean": "아래", "type": "recognize", "level": "1-1"},
-  {"id": 50, "char": "坐", "pinyin": "zuò", "korean": "앉다", "type": "recognize", "level": "1-1"},
-  {"id": 51, "char": "田", "pinyin": "tián", "korean": "밭", "type": "recognize", "level": "1-1"},
-  {"id": 52, "char": "十", "pinyin": "shí", "korean": "열", "type": "recognize", "level": "1-1"},
-  {"id": 53, "char": "禾", "pinyin": "hé", "korean": "벼", "type": "recognize", "level": "1-1"},
-  {"id": 54, "char": "级", "pinyin": "jí", "korean": "급", "type": "recognize", "level": "1-1"},
-  {"id": 55, "char": "大", "pinyin": "dà", "korean": "크다", "type": "recognize", "level": "1-1"},
-  {"id": 56, "char": "姓", "pinyin": "xìng", "korean": "성", "type": "recognize", "level": "1-1"},
-  {"id": 57, "char": "名", "pinyin": "míng", "korean": "이름", "type": "recognize", "level": "1-1"},
-  {"id": 58, "char": "桌", "pinyin": "zhuō", "korean": "책상", "type": "recognize", "level": "1-1"},
-  {"id": 59, "char": "鱼", "pinyin": "yú", "korean": "물고기", "type": "recognize", "level": "1-1"},
-  {"id": 60, "char": "马", "pinyin": "mǎ", "korean": "말", "type": "recognize", "level": "1-1"},
-  {"id": 61, "char": "王", "pinyin": "wáng", "korean": "왕", "type": "recognize", "level": "1-1"},
-  {"id": 62, "char": "纸", "pinyin": "zhǐ", "korean": "종이", "type": "recognize", "level": "1-1"},
-  {"id": 63, "char": "路", "pinyin": "lù", "korean": "길", "type": "recognize", "level": "1-1"},
-  {"id": 64, "char": "读", "pinyin": "dú", "korean": "읽다", "type": "recognize", "level": "1-1"},
-  {"id": 65, "char": "鸭", "pinyin": "yā", "korean": "오리", "type": "recognize", "level": "1-1"},
-  {"id": 66, "char": "乌", "pinyin": "wū", "korean": "까마귀", "type": "recognize", "level": "1-1"},
-  {"id": 67, "char": "土", "pinyin": "tǔ", "korean": "흙", "type": "recognize", "level": "1-1"},
-  {"id": 68, "char": "书", "pinyin": "shū", "korean": "책", "type": "recognize", "level": "1-1"},
-  {"id": 69, "char": "鸦", "pinyin": "yā", "korean": "까마귀", "type": "recognize", "level": "1-1"},
-  {"id": 70, "char": "期", "pinyin": "qī", "korean": "기간", "type": "recognize", "level": "1-1"},
-  {"id": 71, "char": "语", "pinyin": "yǔ", "korean": "말", "type": "recognize", "level": "1-1"},
-  {"id": 72, "char": "文", "pinyin": "wén", "korean": "글", "type": "recognize", "level": "1-1"},
-  {"id": 73, "char": "数", "pinyin": "shù", "korean": "수", "type": "recognize", "level": "1-1"},
-  {"id": 74, "char": "写", "pinyin": "xiě", "korean": "쓰다", "type": "recognize", "level": "1-1"},
-  {"id": 75, "char": "会", "pinyin": "huì", "korean": "모임", "type": "recognize", "level": "1-1"},
-  {"id": 76, "char": "白", "pinyin": "bái", "korean": "하얗다", "type": "recognize", "level": "1-1"},
-  {"id": 77, "char": "小", "pinyin": "xiǎo", "korean": "작다", "type": "recognize", "level": "1-1"},
-  {"id": 78, "char": "开", "pinyin": "kāi", "korean": "열다", "type": "recognize", "level": "1-1"},
-  {"id": 79, "char": "菜", "pinyin": "cài", "korean": "채소", "type": "recognize", "level": "1-1"},
-  {"id": 80, "char": "桥", "pinyin": "qiáo", "korean": "다리", "type": "recognize", "level": "1-1"},
-  {"id": 81, "char": "雪", "pinyin": "xuě", "korean": "눈", "type": "recognize", "level": "1-1"},
-  {"id": 82, "char": "西", "pinyin": "xī", "korean": "서쪽", "type": "recognize", "level": "1-1"},
-  {"id": 83, "char": "流", "pinyin": "liú", "korean": "흐르다", "type": "recognize", "level": "1-1"},
-  {"id": 84, "char": "夜", "pinyin": "yè", "korean": "밤", "type": "recognize", "level": "1-1"},
-  {"id": 85, "char": "晚", "pinyin": "wǎn", "korean": "늦다", "type": "recognize", "level": "1-1"},
-  {"id": 86, "char": "瓜", "pinyin": "guā", "korean": "참외", "type": "recognize", "level": "1-1"},
-  {"id": 87, "char": "柳", "pinyin": "liǔ", "korean": "버들", "type": "recognize", "level": "1-1"},
-  {"id": 88, "char": "色", "pinyin": "sè", "korean": "색깔", "type": "recognize", "level": "1-1"},
-  {"id": 89, "char": "昨", "pinyin": "zuó", "korean": "어제", "type": "recognize", "level": "1-1"},
-  {"id": 90, "char": "果", "pinyin": "guǒ", "korean": "열매", "type": "recognize", "level": "1-1"},
-  {"id": 91, "char": "美", "pinyin": "měi", "korean": "아름답다", "type": "recognize", "level": "1-1"},
-  {"id": 92, "char": "今", "pinyin": "jīn", "korean": "오늘", "type": "recognize", "level": "1-1"},
-  {"id": 93, "char": "蓝", "pinyin": "lán", "korean": "파랗다", "type": "recognize", "level": "1-1"},
-  {"id": 94, "char": "冰", "pinyin": "bīng", "korean": "얼음", "type": "recognize", "level": "1-1"},
-  {"id": 95, "char": "草", "pinyin": "cǎo", "korean": "풀", "type": "recognize", "level": "1-1"},
-  {"id": 96, "char": "云", "pinyin": "yún", "korean": "구름", "type": "recognize", "level": "1-1"},
-  {"id": 97, "char": "自", "pinyin": "zì", "korean": "자기", "type": "recognize", "level": "1-1"},
-  {"id": 98, "char": "行", "pinyin": "xíng", "korean": "가다", "type": "recognize", "level": "1-1"},
-  {"id": 99, "char": "原", "pinyin": "yuán", "korean": "원래", "type": "recognize", "level": "1-1"},
-  {"id": 100, "char": "车", "pinyin": "chē", "korean": "차", "type": "recognize", "level": "1-1"},
-  {"id": 101, "char": "明", "pinyin": "míng", "korean": "밝다", "type": "recognize", "level": "1-1"},
-  {"id": 102, "char": "个", "pinyin": "gè", "korean": "개", "type": "recognize", "level": "1-1"},
-  {"id": 103, "char": "这", "pinyin": "zhè", "korean": "이", "type": "recognize", "level": "1-1"},
-  {"id": 104, "char": "去", "pinyin": "qù", "korean": "가다", "type": "recognize", "level": "1-1"},
-  {"id": 105, "char": "年", "pinyin": "nián", "korean": "해", "type": "recognize", "level": "1-1"},
-  {"id": 106, "char": "秋", "pinyin": "qiū", "korean": "가을", "type": "recognize", "level": "1-1"},
-  {"id": 107, "char": "气", "pinyin": "qì", "korean": "공기", "type": "recognize", "level": "1-1"},
-  {"id": 108, "char": "了", "pinyin": "le", "korean": "했다", "type": "recognize", "level": "1-1"},
-  {"id": 109, "char": "树", "pinyin": "shù", "korean": "나무", "type": "recognize", "level": "1-1"},
-  {"id": 110, "char": "叶", "pinyin": "yè", "korean": "잎", "type": "recognize", "level": "1-1"},
-  {"id": 111, "char": "黄", "pinyin": "huáng", "korean": "노랗다", "type": "recognize", "level": "1-1"},
-  {"id": 112, "char": "片", "pinyin": "piàn", "korean": "조각", "type": "recognize", "level": "1-1"},
-  {"id": 113, "char": "从", "pinyin": "cóng", "korean": "부터", "type": "recognize", "level": "1-1"},
-  {"id": 114, "char": "来", "pinyin": "lái", "korean": "오다", "type": "recognize", "level": "1-1"},
-  {"id": 115, "char": "飞", "pinyin": "fēi", "korean": "날다", "type": "recognize", "level": "1-1"},
-  {"id": 116, "char": "江", "pinyin": "jiāng", "korean": "강", "type": "recognize", "level": "1-1"},
-  {"id": 117, "char": "南", "pinyin": "nán", "korean": "남쪽", "type": "recognize", "level": "1-1"},
-  {"id": 118, "char": "可", "pinyin": "kě", "korean": "할 수 있다", "type": "recognize", "level": "1-1"},
-  {"id": 119, "char": "采", "pinyin": "cǎi", "korean": "따다", "type": "recognize", "level": "1-1"},
-  {"id": 120, "char": "莲", "pinyin": "lián", "korean": "연꽃", "type": "recognize", "level": "1-1"},
-  {"id": 121, "char": "戏", "pinyin": "xì", "korean": "놀이", "type": "recognize", "level": "1-1"},
-  {"id": 122, "char": "间", "pinyin": "jiān", "korean": "사이", "type": "recognize", "level": "1-1"},
-  {"id": 123, "char": "东", "pinyin": "dōng", "korean": "동쪽", "type": "recognize", "level": "1-1"},
-  {"id": 124, "char": "北", "pinyin": "běi", "korean": "북쪽", "type": "recognize", "level": "1-1"},
-  {"id": 125, "char": "的", "pinyin": "de", "korean": "의", "type": "recognize", "level": "1-1"},
-  {"id": 126, "char": "家", "pinyin": "jiā", "korean": "집", "type": "recognize", "level": "1-1"},
-  {"id": 127, "char": "鸡", "pinyin": "jī", "korean": "닭", "type": "recognize", "level": "1-1"},
-  {"id": 128, "char": "竹", "pinyin": "zhú", "korean": "대나무", "type": "recognize", "level": "1-1"},
-  {"id": 129, "char": "牙", "pinyin": "yá", "korean": "이빨", "type": "recognize", "level": "1-1"},
-  {"id": 130, "char": "用", "pinyin": "yòng", "korean": "사용하다", "type": "recognize", "level": "1-1"},
-  {"id": 131, "char": "几", "pinyin": "jǐ", "korean": "몇", "type": "recognize", "level": "1-1"},
-  {"id": 132, "char": "步", "pinyin": "bù", "korean": "걸음", "type": "recognize", "level": "1-1"},
-  {"id": 133, "char": "没", "pinyin": "méi", "korean": "없다", "type": "recognize", "level": "1-1"},
-  {"id": 134, "char": "参", "pinyin": "cān", "korean": "참가하다", "type": "recognize", "level": "1-1"},
-  {"id": 135, "char": "加", "pinyin": "jiā", "korean": "더하다", "type": "recognize", "level": "1-1"},
-  {"id": 136, "char": "鸟", "pinyin": "niǎo", "korean": "새", "type": "recognize", "level": "1-1"},
-  {"id": 137, "char": "说", "pinyin": "shuō", "korean": "말하다", "type": "recognize", "level": "1-1"},
-  {"id": 138, "char": "是", "pinyin": "shì", "korean": "이다", "type": "recognize", "level": "1-1"},
-  {"id": 139, "char": "春", "pinyin": "chūn", "korean": "봄", "type": "recognize", "level": "1-1"},
-  {"id": 140, "char": "青", "pinyin": "qīng", "korean": "파랗다", "type": "recognize", "level": "1-1"},
-  {"id": 141, "char": "蛙", "pinyin": "wā", "korean": "개구리", "type": "recognize", "level": "1-1"},
-  {"id": 142, "char": "夏", "pinyin": "xià", "korean": "여름", "type": "recognize", "level": "1-1"},
-  {"id": 143, "char": "着", "pinyin": "zhe", "korean": "하고 있다", "type": "recognize", "level": "1-1"},
-  {"id": 144, "char": "皮", "pinyin": "pí", "korean": "가죽", "type": "recognize", "level": "1-1"},
-  {"id": 145, "char": "地", "pinyin": "de", "korean": "땅", "type": "recognize", "level": "1-1"},
-  {"id": 146, "char": "就", "pinyin": "jiù", "korean": "바로", "type": "recognize", "level": "1-1"},
-  {"id": 147, "char": "冬", "pinyin": "dōng", "korean": "겨울", "type": "recognize", "level": "1-1"},
-  {"id": 148, "char": "男", "pinyin": "nán", "korean": "남자", "type": "recognize", "level": "1-1"},
-  {"id": 149, "char": "女", "pinyin": "nǚ", "korean": "여자", "type": "recognize", "level": "1-1"},
-  {"id": 150, "char": "关", "pinyin": "guān", "korean": "관계", "type": "recognize", "level": "1-1"},
-  {"id": 151, "char": "正", "pinyin": "zhèng", "korean": "바르다", "type": "recognize", "level": "1-1"},
-  {"id": 152, "char": "反", "pinyin": "fǎn", "korean": "반대", "type": "recognize", "level": "1-1"},
-  {"id": 153, "char": "先", "pinyin": "xiān", "korean": "먼저", "type": "recognize", "level": "1-1"},
-  {"id": 154, "char": "后", "pinyin": "hòu", "korean": "뒤", "type": "recognize", "level": "1-1"},
-  {"id": 155, "char": "内", "pinyin": "nèi", "korean": "안", "type": "recognize", "level": "1-1"},
-  {"id": 156, "char": "外", "pinyin": "wài", "korean": "밖", "type": "recognize", "level": "1-1"},
-  {"id": 157, "char": "对", "pinyin": "duì", "korean": "맞다", "type": "recognize", "level": "1-1"},
-  {"id": 158, "char": "力", "pinyin": "lì", "korean": "힘", "type": "recognize", "level": "1-1"},
-  {"id": 159, "char": "包", "pinyin": "bāo", "korean": "포장", "type": "recognize", "level": "1-1"},
-  {"id": 160, "char": "升", "pinyin": "shēng", "korean": "올라가다", "type": "recognize", "level": "1-1"},
-  {"id": 161, "char": "歌", "pinyin": "gē", "korean": "노래", "type": "recognize", "level": "1-1"},
-  {"id": 162, "char": "尖", "pinyin": "jiān", "korean": "뾰족하다", "type": "recognize", "level": "1-1"},
-  {"id": 163, "char": "尺", "pinyin": "chǐ", "korean": "자", "type": "recognize", "level": "1-1"},
-  {"id": 164, "char": "国", "pinyin": "guó", "korean": "나라", "type": "recognize", "level": "1-1"},
-  {"id": 165, "char": "雨", "pinyin": "yǔ", "korean": "비", "type": "recognize", "level": "1-1"},
-  {"id": 166, "char": "风", "pinyin": "fēng", "korean": "바람", "type": "recognize", "level": "1-1"},
-  {"id": 167, "char": "尘", "pinyin": "chén", "korean": "먼지", "type": "recognize", "level": "1-1"},
-  {"id": 168, "char": "众", "pinyin": "zhòng", "korean": "무리", "type": "recognize", "level": "1-1"},
-  {"id": 169, "char": "作", "pinyin": "zuò", "korean": "하다", "type": "recognize", "level": "1-1"},
-  {"id": 170, "char": "业", "pinyin": "yè", "korean": "업", "type": "recognize", "level": "1-1"},
-  {"id": 171, "char": "旗", "pinyin": "qí", "korean": "깃발", "type": "recognize", "level": "1-1"},
-  {"id": 172, "char": "中", "pinyin": "zhōng", "korean": "가운데", "type": "recognize", "level": "1-1"},
-  {"id": 173, "char": "老", "pinyin": "lǎo", "korean": "늙다", "type": "recognize", "level": "1-1"},
-  {"id": 174, "char": "师", "pinyin": "shī", "korean": "선생님", "type": "recognize", "level": "1-1"},
-  {"id": 175, "char": "清", "pinyin": "qīng", "korean": "맑다", "type": "recognize", "level": "1-1"},
-  {"id": 176, "char": "虫", "pinyin": "chóng", "korean": "벌레", "type": "recognize", "level": "1-1"},
-  {"id": 177, "char": "绿", "pinyin": "lǜ", "korean": "초록", "type": "recognize", "level": "1-1"},
-  {"id": 178, "char": "双", "pinyin": "shuāng", "korean": "쌍", "type": "recognize", "level": "1-1"},
-  {"id": 179, "char": "林", "pinyin": "lín", "korean": "숲", "type": "recognize", "level": "1-1"},
-  {"id": 180, "char": "森", "pinyin": "sēn", "korean": "숲", "type": "recognize", "level": "1-1"},
-  {"id": 181, "char": "笔", "pinyin": "bǐ", "korean": "펜", "type": "recognize", "level": "1-1"},
-  {"id": 182, "char": "刀", "pinyin": "dāo", "korean": "칼", "type": "recognize", "level": "1-1"},
-  {"id": 183, "char": "宝", "pinyin": "bǎo", "korean": "보물", "type": "recognize", "level": "1-1"},
-  {"id": 184, "char": "们", "pinyin": "men", "korean": "들", "type": "recognize", "level": "1-1"},
-  {"id": 185, "char": "声", "pinyin": "shēng", "korean": "소리", "type": "recognize", "level": "1-1"},
-  {"id": 186, "char": "起", "pinyin": "qǐ", "korean": "일어나다", "type": "recognize", "level": "1-1"},
-  {"id": 187, "char": "工", "pinyin": "gōng", "korean": "일", "type": "recognize", "level": "1-1"},
-  {"id": 188, "char": "厂", "pinyin": "chǎng", "korean": "공장", "type": "recognize", "level": "1-1"},
-  {"id": 189, "char": "医", "pinyin": "yī", "korean": "의사", "type": "recognize", "level": "1-1"},
-  {"id": 190, "char": "桃", "pinyin": "táo", "korean": "복숭아", "type": "recognize", "level": "1-1"},
-  {"id": 191, "char": "不", "pinyin": "bù", "korean": "아니다", "type": "recognize", "level": "1-1"},
-  {"id": 192, "char": "贝", "pinyin": "bèi", "korean": "조개", "type": "recognize", "level": "1-1"},
-  {"id": 193, "char": "多", "pinyin": "duō", "korean": "많다", "type": "recognize", "level": "1-1"},
-  {"id": 194, "char": "院", "pinyin": "yuàn", "korean": "마당", "type": "recognize", "level": "1-1"},
-  {"id": 195, "char": "红", "pinyin": "hóng", "korean": "빨갛다", "type": "recognize", "level": "1-1"},
-  {"id": 196, "char": "条", "pinyin": "tiáo", "korean": "줄", "type": "recognize", "level": "1-1"},
-  {"id": 197, "char": "少", "pinyin": "shǎo", "korean": "적다", "type": "recognize", "level": "1-1"},
-  {"id": 198, "char": "么", "pinyin": "me", "korean": "무엇", "type": "recognize", "level": "1-1"},
-  {"id": 199, "char": "生", "pinyin": "shēng", "korean": "살다", "type": "recognize", "level": "1-1"},
-  {"id": 200, "char": "心", "pinyin": "xīn", "korean": "마음", "type": "recognize", "level": "1-1"},
-  {"id": 201, "char": "课", "pinyin": "kè", "korean": "수업", "type": "recognize", "level": "1-1"},
-  {"id": 202, "char": "向", "pinyin": "xiàng", "korean": "향하다", "type": "recognize", "level": "1-1"},
-  {"id": 203, "char": "门", "pinyin": "mén", "korean": "문", "type": "recognize", "level": "1-1"},
-  {"id": 204, "char": "金", "pinyin": "jīn", "korean": "금", "type": "recognize", "level": "1-1"},
-  {"id": 205, "char": "早", "pinyin": "zǎo", "korean": "이르다", "type": "recognize", "level": "1-1"},
-  {"id": 206, "char": "立", "pinyin": "lì", "korean": "서다", "type": "recognize", "level": "1-1"},
-  {"id": 207, "char": "卫", "pinyin": "wèi", "korean": "지키다", "type": "recognize", "level": "1-1"},
-  {"id": 208, "char": "船", "pinyin": "chuán", "korean": "배", "type": "recognize", "level": "1-1"},
-  {"id": 209, "char": "弯", "pinyin": "wān", "korean": "구부러지다", "type": "recognize", "level": "1-1"},
-  {"id": 210, "char": "儿", "pinyin": "ér", "korean": "아이", "type": "recognize", "level": "1-1"},
-  {"id": 211, "char": "两", "pinyin": "liǎng", "korean": "둘", "type": "recognize", "level": "1-1"},
-  {"id": 212, "char": "头", "pinyin": "tóu", "korean": "머리", "type": "recognize", "level": "1-1"},
-  {"id": 213, "char": "影", "pinyin": "yǐng", "korean": "그림자", "type": "recognize", "level": "1-1"},
-  {"id": 214, "char": "前", "pinyin": "qián", "korean": "앞", "type": "recognize", "level": "1-1"},
-  {"id": 215, "char": "常", "pinyin": "cháng", "korean": "항상", "type": "recognize", "level": "1-1"},
-  {"id": 216, "char": "黑", "pinyin": "hēi", "korean": "검다", "type": "recognize", "level": "1-1"},
-  {"id": 217, "char": "狗", "pinyin": "gǒu", "korean": "개", "type": "recognize", "level": "1-1"},
-  {"id": 218, "char": "件", "pinyin": "jiàn", "korean": "건", "type": "recognize", "level": "1-1"},
-  {"id": 219, "char": "有", "pinyin": "yǒu", "korean": "있다", "type": "recognize", "level": "1-1"},
-  {"id": 220, "char": "和", "pinyin": "hé", "korean": "그리고", "type": "recognize", "level": "1-1"},
-  {"id": 221, "char": "做", "pinyin": "zuò", "korean": "하다", "type": "recognize", "level": "1-1"},
-  {"id": 222, "char": "也", "pinyin": "yě", "korean": "또한", "type": "recognize", "level": "1-1"},
-  {"id": 223, "char": "爷", "pinyin": "yé", "korean": "할아버지", "type": "recognize", "level": "1-1"},
-  {"id": 224, "char": "奶", "pinyin": "nǎi", "korean": "할머니", "type": "recognize", "level": "1-1"},
-  {"id": 225, "char": "叔", "pinyin": "shū", "korean": "삼촌", "type": "recognize", "level": "1-1"},
-  {"id": 226, "char": "比", "pinyin": "bǐ", "korean": "비교하다", "type": "recognize", "level": "1-1"},
-  {"id": 227, "char": "喝", "pinyin": "hē", "korean": "마시다", "type": "recognize", "level": "1-1"},
-  {"id": 228, "char": "点", "pinyin": "diǎn", "korean": "점", "type": "recognize", "level": "1-1"},
-  {"id": 229, "char": "尾", "pinyin": "wěi", "korean": "꼬리", "type": "recognize", "level": "1-1"},
-  {"id": 230, "char": "只", "pinyin": "zhī", "korean": "마리", "type": "recognize", "level": "1-1"},
-  {"id": 231, "char": "数", "pinyin": "shù", "korean": "숫자", "type": "recognize", "level": "1-1"},
-  {"id": 232, "char": "巴", "pinyin": "bā", "korean": "바", "type": "recognize", "level": "1-1"},
-  {"id": 233, "char": "谁", "pinyin": "shuí", "korean": "누구", "type": "recognize", "level": "1-1"},
-  {"id": 234, "char": "长", "pinyin": "cháng", "korean": "길다", "type": "recognize", "level": "1-1"},
-  {"id": 235, "char": "处", "pinyin": "chù", "korean": "곳", "type": "recognize", "level": "1-1"},
-  {"id": 236, "char": "找", "pinyin": "zhǎo", "korean": "찾다", "type": "recognize", "level": "1-1"},
-  {"id": 237, "char": "着", "pinyin": "zháo", "korean": "닿다", "type": "recognize", "level": "1-1"},
-  {"id": 238, "char": "彩", "pinyin": "cǎi", "korean": "색깔", "type": "recognize", "level": "1-1"},
-  {"id": 239, "char": "半", "pinyin": "bàn", "korean": "반", "type": "recognize", "level": "1-1"},
-  {"id": 240, "char": "空", "pinyin": "kōng", "korean": "하늘", "type": "recognize", "level": "1-1"},
-  {"id": 241, "char": "牛", "pinyin": "niú", "korean": "소", "type": "recognize", "level": "1-1"},
-  {"id": 242, "char": "羊", "pinyin": "yáng", "korean": "양", "type": "recognize", "level": "1-1"},
-  {"id": 243, "char": "爪", "pinyin": "zhuǎ", "korean": "발톱", "type": "recognize", "level": "1-1"},
-  {"id": 244, "char": "在", "pinyin": "zài", "korean": "있다", "type": "recognize", "level": "1-1"},
-  {"id": 245, "char": "左", "pinyin": "zuǒ", "korean": "왼쪽", "type": "recognize", "level": "1-1"},
-  {"id": 246, "char": "办", "pinyin": "bàn", "korean": "일하다", "type": "recognize", "level": "1-1"},
-  {"id": 247, "char": "姐", "pinyin": "jiě", "korean": "누나", "type": "recognize", "level": "1-1"},
-  {"id": 248, "char": "短", "pinyin": "duǎn", "korean": "짧다", "type": "recognize", "level": "1-1"},
-  {"id": 249, "char": "许", "pinyin": "xǔ", "korean": "허락하다", "type": "recognize", "level": "1-1"},
-  {"id": 250, "char": "问", "pinyin": "wèn", "korean": "묻다", "type": "recognize", "level": "1-1"},
-  {"id": 251, "char": "旦", "pinyin": "dàn", "korean": "아침", "type": "recognize", "level": "1-1"},
-  {"id": 252, "char": "里", "pinyin": "lǐ", "korean": "안", "type": "recognize", "level": "1-1"},
-  {"id": 253, "char": "右", "pinyin": "yòu", "korean": "오른쪽", "type": "recognize", "level": "1-1"},
-  {"id": 254, "char": "到", "pinyin": "dào", "korean": "도착하다", "type": "recognize", "level": "1-1"},
-  {"id": 255, "char": "妹", "pinyin": "mèi", "korean": "여동생", "type": "recognize", "level": "1-1"},
-  {"id": 256, "char": "把", "pinyin": "bǎ", "korean": "잡다", "type": "recognize", "level": "1-1"},
-  {"id": 257, "char": "石", "pinyin": "shí", "korean": "돌", "type": "recognize", "level": "1-1"},
-  {"id": 258, "char": "回", "pinyin": "huí", "korean": "돌아가다", "type": "recognize", "level": "1-1"},
-  {"id": 259, "char": "拼", "pinyin": "pīn", "korean": "맞추다", "type": "recognize", "level": "1-1"},
-  {"id": 260, "char": "看", "pinyin": "kàn", "korean": "보다", "type": "recognize", "level": "1-1"},
-  {"id": 261, "char": "它", "pinyin": "tā", "korean": "그것", "type": "recognize", "level": "1-1"},
-  {"id": 262, "char": "又", "pinyin": "yòu", "korean": "또", "type": "recognize", "level": "1-1"},
-  {"id": 263, "char": "见", "pinyin": "jiàn", "korean": "보다", "type": "recognize", "level": "1-1"},
-  {"id": 264, "char": "好", "pinyin": "hǎo", "korean": "좋다", "type": "recognize", "level": "1-1"},
-  {"id": 265, "char": "才", "pinyin": "cái", "korean": "재능", "type": "recognize", "level": "1-1"},
-  {"id": 266, "char": "闪", "pinyin": "shǎn", "korean": "번쩍이다", "type": "recognize", "level": "1-1"},
-  {"id": 267, "char": "朋", "pinyin": "péng", "korean": "친구", "type": "recognize", "level": "1-1"},
-  {"id": 268, "char": "能", "pinyin": "néng", "korean": "할 수 있다", "type": "recognize", "level": "1-1"},
-  {"id": 269, "char": "友", "pinyin": "yǒu", "korean": "친구", "type": "recognize", "level": "1-1"},
-  {"id": 270, "char": "伞", "pinyin": "sǎn", "korean": "우산", "type": "recognize", "level": "1-1"},
-  {"id": 271, "char": "出", "pinyin": "chū", "korean": "나가다", "type": "recognize", "level": "1-1"},
-  {"id": 272, "char": "答", "pinyin": "dá", "korean": "답하다", "type": "recognize", "level": "1-1"},
-  {"id": 273, "char": "音", "pinyin": "yīn", "korean": "소리", "type": "recognize", "level": "1-1"},
-  {"id": 274, "char": "兔", "pinyin": "tù", "korean": "토끼", "type": "recognize", "level": "1-1"},
-  {"id": 275, "char": "法", "pinyin": "fǎ", "korean": "법", "type": "recognize", "level": "1-1"},
-  {"id": 276, "char": "方", "pinyin": "fāng", "korean": "방향", "type": "recognize", "level": "1-1"},
-  {"id": 277, "char": "最", "pinyin": "zuì", "korean": "가장", "type": "recognize", "level": "1-1"},
-  {"id": 278, "char": "放", "pinyin": "fàng", "korean": "놓다", "type": "recognize", "level": "1-1"},
-  {"id": 279, "char": "久", "pinyin": "jiǔ", "korean": "오래", "type": "recognize", "level": "1-1"},
-  {"id": 280, "char": "公", "pinyin": "gōng", "korean": "공공", "type": "recognize", "level": "1-1"},
-  {"id": 301, "char": "小", "pinyin": "xiǎo", "korean": "작다", "type": "write", "level": "1-1"},
-  {"id": 302, "char": "鸟", "pinyin": "niǎo", "korean": "새", "type": "write", "level": "1-1"},
-  {"id": 303, "char": "女", "pinyin": "nǚ", "korean": "여자", "type": "write", "level": "1-1"},
-  {"id": 304, "char": "上", "pinyin": "shàng", "korean": "위", "type": "write", "level": "1-1"},
-  {"id": 305, "char": "手", "pinyin": "shǒu", "korean": "손", "type": "write", "level": "1-1"},
-  {"id": 306, "char": "禾", "pinyin": "hé", "korean": "벼", "type": "write", "level": "1-1"},
-  {"id": 307, "char": "七", "pinyin": "qī", "korean": "일곱", "type": "write", "level": "1-1"},
-  {"id": 308, "char": "王", "pinyin": "wáng", "korean": "왕", "type": "write", "level": "1-1"},
-  {"id": 309, "char": "下", "pinyin": "xià", "korean": "아래", "type": "write", "level": "1-1"},
-  {"id": 310, "char": "年", "pinyin": "nián", "korean": "해", "type": "write", "level": "1-1"},
-  {"id": 311, "char": "人", "pinyin": "rén", "korean": "사람", "type": "write", "level": "1-1"},
-  {"id": 312, "char": "西", "pinyin": "xī", "korean": "서쪽", "type": "write", "level": "1-1"},
-  {"id": 313, "char": "用", "pinyin": "yòng", "korean": "사용하다", "type": "write", "level": "1-1"},
-  {"id": 314, "char": "是", "pinyin": "shì", "korean": "이다", "type": "write", "level": "1-1"},
-  {"id": 315, "char": "开", "pinyin": "kāi", "korean": "열다", "type": "write", "level": "1-1"},
-  {"id": 316, "char": "八", "pinyin": "bā", "korean": "여덟", "type": "write", "level": "1-1"},
-  {"id": 317, "char": "十", "pinyin": "shí", "korean": "열", "type": "write", "level": "1-1"},
-  {"id": 318, "char": "云", "pinyin": "yún", "korean": "구름", "type": "write", "level": "1-1"},
-  {"id": 319, "char": "力", "pinyin": "lì", "korean": "힘", "type": "write", "level": "1-1"},
-  {"id": 320, "char": "尺", "pinyin": "chǐ", "korean": "자", "type": "write", "level": "1-1"},
-  {"id": 321, "char": "中", "pinyin": "zhōng", "korean": "가운데", "type": "write", "level": "1-1"},
-  {"id": 322, "char": "几", "pinyin": "jǐ", "korean": "몇", "type": "write", "level": "1-1"},
-  {"id": 323, "char": "天", "pinyin": "tiān", "korean": "하늘", "type": "write", "level": "1-1"},
-  {"id": 324, "char": "关", "pinyin": "guān", "korean": "관계", "type": "write", "level": "1-1"},
-  {"id": 325, "char": "月", "pinyin": "yuè", "korean": "달", "type": "write", "level": "1-1"},
-  {"id": 326, "char": "在", "pinyin": "zài", "korean": "있다", "type": "write", "level": "1-1"},
-  {"id": 327, "char": "和", "pinyin": "hé", "korean": "그리고", "type": "write", "level": "1-1"},
-  {"id": 328, "char": "比", "pinyin": "bǐ", "korean": "비교하다", "type": "write", "level": "1-1"},
-  {"id": 329, "char": "只", "pinyin": "zhī", "korean": "마리", "type": "write", "level": "1-1"},
-  {"id": 330, "char": "来", "pinyin": "lái", "korean": "오다", "type": "write", "level": "1-1"},
-  {"id": 331, "char": "雨", "pinyin": "yǔ", "korean": "비", "type": "write", "level": "1-1"},
-  {"id": 332, "char": "男", "pinyin": "nán", "korean": "남자", "type": "write", "level": "1-1"},
-  {"id": 333, "char": "本", "pinyin": "běn", "korean": "책", "type": "write", "level": "1-1"},
-  {"id": 334, "char": "五", "pinyin": "wǔ", "korean": "다섯", "type": "write", "level": "1-1"},
-  {"id": 335, "char": "儿", "pinyin": "ér", "korean": "아이", "type": "write", "level": "1-1"},
-  {"id": 336, "char": "我", "pinyin": "wǒ", "korean": "나", "type": "write", "level": "1-1"},
-  {"id": 337, "char": "也", "pinyin": "yě", "korean": "또한", "type": "write", "level": "1-1"},
-  {"id": 338, "char": "巴", "pinyin": "bā", "korean": "바", "type": "write", "level": "1-1"},
-  {"id": 339, "char": "个", "pinyin": "gè", "korean": "개", "type": "write", "level": "1-1"},
-  {"id": 340, "char": "半", "pinyin": "bàn", "korean": "반", "type": "write", "level": "1-1"},
-  {"id": 341, "char": "先", "pinyin": "xiān", "korean": "먼저", "type": "write", "level": "1-1"},
-  {"id": 342, "char": "虫", "pinyin": "chóng", "korean": "벌레", "type": "write", "level": "1-1"},
-  {"id": 343, "char": "山", "pinyin": "shān", "korean": "산", "type": "write", "level": "1-1"},
-  {"id": 344, "char": "土", "pinyin": "tǔ", "korean": "흙", "type": "write", "level": "1-1"},
-  {"id": 345, "char": "木", "pinyin": "mù", "korean": "나무", "type": "write", "level": "1-1"},
-  {"id": 346, "char": "刀", "pinyin": "dāo", "korean": "칼", "type": "write", "level": "1-1"},
-  {"id": 347, "char": "不", "pinyin": "bù", "korean": "아니다", "type": "write", "level": "1-1"},
-  {"id": 348, "char": "风", "pinyin": "fēng", "korean": "바람", "type": "write", "level": "1-1"},
-  {"id": 349, "char": "立", "pinyin": "lì", "korean": "서다", "type": "write", "level": "1-1"},
-  {"id": 350, "char": "工", "pinyin": "gōng", "korean": "일", "type": "write", "level": "1-1"},
-  {"id": 351, "char": "厂", "pinyin": "chǎng", "korean": "공장", "type": "write", "level": "1-1"},
-  {"id": 352, "char": "水", "pinyin": "shuǐ", "korean": "물", "type": "write", "level": "1-1"},
-  {"id": 353, "char": "心", "pinyin": "xīn", "korean": "마음", "type": "write", "level": "1-1"},
-  {"id": 354, "char": "少", "pinyin": "shǎo", "korean": "적다", "type": "write", "level": "1-1"},
-  {"id": 355, "char": "正", "pinyin": "zhèng", "korean": "바르다", "type": "write", "level": "1-1"},
-  {"id": 356, "char": "门", "pinyin": "mén", "korean": "문", "type": "write", "level": "1-1"},
-  {"id": 357, "char": "头", "pinyin": "tóu", "korean": "머리", "type": "write", "level": "1-1"},
-  {"id": 358, "char": "里", "pinyin": "lǐ", "korean": "안", "type": "write", "level": "1-1"},
-  {"id": 359, "char": "见", "pinyin": "jiàn", "korean": "보다", "type": "write", "level": "1-1"},
-  {"id": 360, "char": "左", "pinyin": "zuǒ", "korean": "왼쪽", "type": "write", "level": "1-1"},
-  {"id": 361, "char": "右", "pinyin": "yòu", "korean": "오른쪽", "type": "write", "level": "1-1"},
-  {"id": 362, "char": "又", "pinyin": "yòu", "korean": "또", "type": "write", "level": "1-1"},
-  {"id": 363, "char": "才", "pinyin": "cái", "korean": "재능", "type": "write", "level": "1-1"},
-  {"id": 364, "char": "爸", "pinyin": "bà", "korean": "아빠", "type": "write", "level": "1-1"},
-  {"id": 365, "char": "妈", "pinyin": "mā", "korean": "엄마", "type": "write", "level": "1-1"},
-  {"id": 366, "char": "长", "pinyin": "cháng", "korean": "길다", "type": "write", "level": "1-1"},
-  {"id": 367, "char": "公", "pinyin": "gōng", "korean": "공공", "type": "write", "level": "1-1"},
-  {"id": 368, "char": "多", "pinyin": "duō", "korean": "많다", "type": "write", "level": "1-1"},
-  {"id": 369, "char": "石", "pinyin": "shí", "korean": "돌", "type": "write", "level": "1-1"},
-  {"id": 370, "char": "出", "pinyin": "chū", "korean": "나가다", "type": "write", "level": "1-1"},
-  {"id": 371, "char": "你", "pinyin": "nǐ", "korean": "너", "type": "write", "level": "1-1"},
-  {"id": 372, "char": "有", "pinyin": "yǒu", "korean": "있다", "type": "write", "level": "1-1"},
-  {"id": 373, "char": "牛", "pinyin": "niú", "korean": "소", "type": "write", "level": "1-1"},
-  {"id": 374, "char": "羊", "pinyin": "yáng", "korean": "양", "type": "write", "level": "1-1"},
-  {"id": 375, "char": "果", "pinyin": "guǒ", "korean": "열매", "type": "write", "level": "1-1"},
-  {"id": 376, "char": "卫", "pinyin": "wèi", "korean": "지키다", "type": "write", "level": "1-1"},
-  {"id": 377, "char": "白", "pinyin": "bái", "korean": "하얗다", "type": "write", "level": "1-1"},
-  {"id": 378, "char": "了", "pinyin": "le", "korean": "했다", "type": "write", "level": "1-1"},
-  {"id": 379, "char": "可", "pinyin": "kě", "korean": "할 수 있다", "type": "write", "level": "1-1"},
-  {"id": 380, "char": "竹", "pinyin": "zhú", "korean": "대나무", "type": "write", "level": "1-1"}
+  {
+    "id": 1,
+    "char": "一",
+    "pinyin": "yī",
+    "korean": "하나",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 2,
+    "char": "口",
+    "pinyin": "kǒu",
+    "korean": "입",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 3,
+    "char": "日",
+    "pinyin": "rì",
+    "korean": "날",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 4,
+    "char": "地",
+    "pinyin": "dì",
+    "korean": "땅",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 5,
+    "char": "二",
+    "pinyin": "èr",
+    "korean": "둘",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 6,
+    "char": "耳",
+    "pinyin": "ěr",
+    "korean": "귀",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 7,
+    "char": "三",
+    "pinyin": "sān",
+    "korean": "셋",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 8,
+    "char": "目",
+    "pinyin": "mù",
+    "korean": "눈",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 9,
+    "char": "六",
+    "pinyin": "liù",
+    "korean": "여섯",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 10,
+    "char": "四",
+    "pinyin": "sì",
+    "korean": "넷",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 11,
+    "char": "川",
+    "pinyin": "chuān",
+    "korean": "강",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 12,
+    "char": "足",
+    "pinyin": "zú",
+    "korean": "발",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 13,
+    "char": "他",
+    "pinyin": "tā",
+    "korean": "그",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 14,
+    "char": "站",
+    "pinyin": "zhàn",
+    "korean": "서다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 15,
+    "char": "火",
+    "pinyin": "huǒ",
+    "korean": "불",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 16,
+    "char": "九",
+    "pinyin": "jiǔ",
+    "korean": "아홉",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 17,
+    "char": "哥",
+    "pinyin": "gē",
+    "korean": "형",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 18,
+    "char": "弟",
+    "pinyin": "dì",
+    "korean": "동생",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 19,
+    "char": "打",
+    "pinyin": "dǎ",
+    "korean": "치다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 20,
+    "char": "棋",
+    "pinyin": "qí",
+    "korean": "바둑",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 21,
+    "char": "字",
+    "pinyin": "zì",
+    "korean": "글자",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 22,
+    "char": "词",
+    "pinyin": "cí",
+    "korean": "단어",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 23,
+    "char": "画",
+    "pinyin": "huà",
+    "korean": "그림",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 24,
+    "char": "积",
+    "pinyin": "jī",
+    "korean": "쌓다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 25,
+    "char": "句",
+    "pinyin": "jù",
+    "korean": "문장",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 26,
+    "char": "午",
+    "pinyin": "wǔ",
+    "korean": "낮",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 27,
+    "char": "学",
+    "pinyin": "xué",
+    "korean": "배우다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 28,
+    "char": "花",
+    "pinyin": "huā",
+    "korean": "꽃",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 29,
+    "char": "子",
+    "pinyin": "zi",
+    "korean": "아이",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 30,
+    "char": "星",
+    "pinyin": "xīng",
+    "korean": "별",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 31,
+    "char": "校",
+    "pinyin": "xiào",
+    "korean": "학교",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 32,
+    "char": "班",
+    "pinyin": "bān",
+    "korean": "반",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 33,
+    "char": "坐",
+    "pinyin": "zuò",
+    "korean": "앉다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 34,
+    "char": "田",
+    "pinyin": "tián",
+    "korean": "밭",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 35,
+    "char": "级",
+    "pinyin": "jí",
+    "korean": "급",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 36,
+    "char": "大",
+    "pinyin": "dà",
+    "korean": "크다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 37,
+    "char": "姓",
+    "pinyin": "xìng",
+    "korean": "성",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 38,
+    "char": "名",
+    "pinyin": "míng",
+    "korean": "이름",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 39,
+    "char": "桌",
+    "pinyin": "zhuō",
+    "korean": "책상",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 40,
+    "char": "鱼",
+    "pinyin": "yú",
+    "korean": "물고기",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 41,
+    "char": "马",
+    "pinyin": "mǎ",
+    "korean": "말",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 42,
+    "char": "纸",
+    "pinyin": "zhǐ",
+    "korean": "종이",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 43,
+    "char": "路",
+    "pinyin": "lù",
+    "korean": "길",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 44,
+    "char": "读",
+    "pinyin": "dú",
+    "korean": "읽다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 45,
+    "char": "鸭",
+    "pinyin": "yā",
+    "korean": "오리",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 46,
+    "char": "乌",
+    "pinyin": "wū",
+    "korean": "까마귀",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 47,
+    "char": "书",
+    "pinyin": "shū",
+    "korean": "책",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 48,
+    "char": "鸦",
+    "pinyin": "yā",
+    "korean": "까마귀",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 49,
+    "char": "期",
+    "pinyin": "qī",
+    "korean": "기간",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 50,
+    "char": "语",
+    "pinyin": "yǔ",
+    "korean": "말",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 51,
+    "char": "文",
+    "pinyin": "wén",
+    "korean": "글",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 52,
+    "char": "数",
+    "pinyin": "shù",
+    "korean": "수",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 53,
+    "char": "写",
+    "pinyin": "xiě",
+    "korean": "쓰다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 54,
+    "char": "会",
+    "pinyin": "huì",
+    "korean": "모임",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 55,
+    "char": "菜",
+    "pinyin": "cài",
+    "korean": "채소",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 56,
+    "char": "桥",
+    "pinyin": "qiáo",
+    "korean": "다리",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 57,
+    "char": "雪",
+    "pinyin": "xuě",
+    "korean": "눈",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 58,
+    "char": "流",
+    "pinyin": "liú",
+    "korean": "흐르다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 59,
+    "char": "夜",
+    "pinyin": "yè",
+    "korean": "밤",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 60,
+    "char": "晚",
+    "pinyin": "wǎn",
+    "korean": "늦다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 61,
+    "char": "瓜",
+    "pinyin": "guā",
+    "korean": "참외",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 62,
+    "char": "柳",
+    "pinyin": "liǔ",
+    "korean": "버들",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 63,
+    "char": "色",
+    "pinyin": "sè",
+    "korean": "색깔",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 64,
+    "char": "昨",
+    "pinyin": "zuó",
+    "korean": "어제",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 65,
+    "char": "美",
+    "pinyin": "měi",
+    "korean": "아름답다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 66,
+    "char": "今",
+    "pinyin": "jīn",
+    "korean": "오늘",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 67,
+    "char": "蓝",
+    "pinyin": "lán",
+    "korean": "파랗다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 68,
+    "char": "冰",
+    "pinyin": "bīng",
+    "korean": "얼음",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 69,
+    "char": "草",
+    "pinyin": "cǎo",
+    "korean": "풀",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 70,
+    "char": "自",
+    "pinyin": "zì",
+    "korean": "자기",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 71,
+    "char": "行",
+    "pinyin": "xíng",
+    "korean": "가다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 72,
+    "char": "原",
+    "pinyin": "yuán",
+    "korean": "원래",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 73,
+    "char": "车",
+    "pinyin": "chē",
+    "korean": "차",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 74,
+    "char": "明",
+    "pinyin": "míng",
+    "korean": "밝다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 75,
+    "char": "这",
+    "pinyin": "zhè",
+    "korean": "이",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 76,
+    "char": "去",
+    "pinyin": "qù",
+    "korean": "가다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 77,
+    "char": "秋",
+    "pinyin": "qiū",
+    "korean": "가을",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 78,
+    "char": "气",
+    "pinyin": "qì",
+    "korean": "공기",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 79,
+    "char": "树",
+    "pinyin": "shù",
+    "korean": "나무",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 80,
+    "char": "叶",
+    "pinyin": "yè",
+    "korean": "잎",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 81,
+    "char": "黄",
+    "pinyin": "huáng",
+    "korean": "노랗다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 82,
+    "char": "片",
+    "pinyin": "piàn",
+    "korean": "조각",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 83,
+    "char": "从",
+    "pinyin": "cóng",
+    "korean": "부터",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 84,
+    "char": "飞",
+    "pinyin": "fēi",
+    "korean": "날다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 85,
+    "char": "江",
+    "pinyin": "jiāng",
+    "korean": "강",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 86,
+    "char": "南",
+    "pinyin": "nán",
+    "korean": "남쪽",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 87,
+    "char": "采",
+    "pinyin": "cǎi",
+    "korean": "따다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 88,
+    "char": "莲",
+    "pinyin": "lián",
+    "korean": "연꽃",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 89,
+    "char": "戏",
+    "pinyin": "xì",
+    "korean": "놀이",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 90,
+    "char": "间",
+    "pinyin": "jiān",
+    "korean": "사이",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 91,
+    "char": "东",
+    "pinyin": "dōng",
+    "korean": "동쪽",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 92,
+    "char": "北",
+    "pinyin": "běi",
+    "korean": "북쪽",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 93,
+    "char": "的",
+    "pinyin": "de",
+    "korean": "의",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 94,
+    "char": "家",
+    "pinyin": "jiā",
+    "korean": "집",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 95,
+    "char": "鸡",
+    "pinyin": "jī",
+    "korean": "닭",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 96,
+    "char": "牙",
+    "pinyin": "yá",
+    "korean": "이빨",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 97,
+    "char": "步",
+    "pinyin": "bù",
+    "korean": "걸음",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 98,
+    "char": "没",
+    "pinyin": "méi",
+    "korean": "없다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 99,
+    "char": "参",
+    "pinyin": "cān",
+    "korean": "참가하다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 100,
+    "char": "加",
+    "pinyin": "jiā",
+    "korean": "더하다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 101,
+    "char": "说",
+    "pinyin": "shuō",
+    "korean": "말하다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 102,
+    "char": "春",
+    "pinyin": "chūn",
+    "korean": "봄",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 103,
+    "char": "青",
+    "pinyin": "qīng",
+    "korean": "파랗다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 104,
+    "char": "蛙",
+    "pinyin": "wā",
+    "korean": "개구리",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 105,
+    "char": "夏",
+    "pinyin": "xià",
+    "korean": "여름",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 106,
+    "char": "着",
+    "pinyin": "zhe",
+    "korean": "하고 있다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 107,
+    "char": "皮",
+    "pinyin": "pí",
+    "korean": "가죽",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 108,
+    "char": "就",
+    "pinyin": "jiù",
+    "korean": "바로",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 109,
+    "char": "冬",
+    "pinyin": "dōng",
+    "korean": "겨울",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 110,
+    "char": "反",
+    "pinyin": "fǎn",
+    "korean": "반대",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 111,
+    "char": "后",
+    "pinyin": "hòu",
+    "korean": "뒤",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 112,
+    "char": "内",
+    "pinyin": "nèi",
+    "korean": "안",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 113,
+    "char": "外",
+    "pinyin": "wài",
+    "korean": "밖",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 114,
+    "char": "对",
+    "pinyin": "duì",
+    "korean": "맞다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 115,
+    "char": "包",
+    "pinyin": "bāo",
+    "korean": "포장",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 116,
+    "char": "升",
+    "pinyin": "shēng",
+    "korean": "올라가다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 117,
+    "char": "歌",
+    "pinyin": "gē",
+    "korean": "노래",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 118,
+    "char": "尖",
+    "pinyin": "jiān",
+    "korean": "뾰족하다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 119,
+    "char": "国",
+    "pinyin": "guó",
+    "korean": "나라",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 120,
+    "char": "尘",
+    "pinyin": "chén",
+    "korean": "먼지",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 121,
+    "char": "众",
+    "pinyin": "zhòng",
+    "korean": "무리",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 122,
+    "char": "作",
+    "pinyin": "zuò",
+    "korean": "하다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 123,
+    "char": "业",
+    "pinyin": "yè",
+    "korean": "업",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 124,
+    "char": "旗",
+    "pinyin": "qí",
+    "korean": "깃발",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 125,
+    "char": "老",
+    "pinyin": "lǎo",
+    "korean": "늙다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 126,
+    "char": "师",
+    "pinyin": "shī",
+    "korean": "선생님",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 127,
+    "char": "清",
+    "pinyin": "qīng",
+    "korean": "맑다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 128,
+    "char": "绿",
+    "pinyin": "lǜ",
+    "korean": "초록",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 129,
+    "char": "双",
+    "pinyin": "shuāng",
+    "korean": "쌍",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 130,
+    "char": "林",
+    "pinyin": "lín",
+    "korean": "숲",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 131,
+    "char": "森",
+    "pinyin": "sēn",
+    "korean": "숲",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 132,
+    "char": "笔",
+    "pinyin": "bǐ",
+    "korean": "펜",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 133,
+    "char": "宝",
+    "pinyin": "bǎo",
+    "korean": "보물",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 134,
+    "char": "们",
+    "pinyin": "men",
+    "korean": "들",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 135,
+    "char": "声",
+    "pinyin": "shēng",
+    "korean": "소리",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 136,
+    "char": "起",
+    "pinyin": "qǐ",
+    "korean": "일어나다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 137,
+    "char": "医",
+    "pinyin": "yī",
+    "korean": "의사",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 138,
+    "char": "桃",
+    "pinyin": "táo",
+    "korean": "복숭아",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 139,
+    "char": "贝",
+    "pinyin": "bèi",
+    "korean": "조개",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 140,
+    "char": "院",
+    "pinyin": "yuàn",
+    "korean": "마당",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 141,
+    "char": "红",
+    "pinyin": "hóng",
+    "korean": "빨갛다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 142,
+    "char": "条",
+    "pinyin": "tiáo",
+    "korean": "줄",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 143,
+    "char": "么",
+    "pinyin": "me",
+    "korean": "무엇",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 144,
+    "char": "生",
+    "pinyin": "shēng",
+    "korean": "살다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 145,
+    "char": "课",
+    "pinyin": "kè",
+    "korean": "수업",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 146,
+    "char": "向",
+    "pinyin": "xiàng",
+    "korean": "향하다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 147,
+    "char": "金",
+    "pinyin": "jīn",
+    "korean": "금",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 148,
+    "char": "早",
+    "pinyin": "zǎo",
+    "korean": "이르다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 149,
+    "char": "船",
+    "pinyin": "chuán",
+    "korean": "배",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 150,
+    "char": "弯",
+    "pinyin": "wān",
+    "korean": "구부러지다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 151,
+    "char": "两",
+    "pinyin": "liǎng",
+    "korean": "둘",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 152,
+    "char": "影",
+    "pinyin": "yǐng",
+    "korean": "그림자",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 153,
+    "char": "前",
+    "pinyin": "qián",
+    "korean": "앞",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 154,
+    "char": "常",
+    "pinyin": "cháng",
+    "korean": "항상",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 155,
+    "char": "黑",
+    "pinyin": "hēi",
+    "korean": "검다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 156,
+    "char": "狗",
+    "pinyin": "gǒu",
+    "korean": "개",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 157,
+    "char": "件",
+    "pinyin": "jiàn",
+    "korean": "건",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 158,
+    "char": "做",
+    "pinyin": "zuò",
+    "korean": "하다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 159,
+    "char": "爷",
+    "pinyin": "yé",
+    "korean": "할아버지",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 160,
+    "char": "奶",
+    "pinyin": "nǎi",
+    "korean": "할머니",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 161,
+    "char": "叔",
+    "pinyin": "shū",
+    "korean": "삼촌",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 162,
+    "char": "喝",
+    "pinyin": "hē",
+    "korean": "마시다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 163,
+    "char": "点",
+    "pinyin": "diǎn",
+    "korean": "점",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 164,
+    "char": "尾",
+    "pinyin": "wěi",
+    "korean": "꼬리",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 165,
+    "char": "数",
+    "pinyin": "shù",
+    "korean": "숫자",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 166,
+    "char": "谁",
+    "pinyin": "shuí",
+    "korean": "누구",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 167,
+    "char": "处",
+    "pinyin": "chù",
+    "korean": "곳",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 168,
+    "char": "找",
+    "pinyin": "zhǎo",
+    "korean": "찾다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 169,
+    "char": "着",
+    "pinyin": "zháo",
+    "korean": "닿다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 170,
+    "char": "彩",
+    "pinyin": "cǎi",
+    "korean": "색깔",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 171,
+    "char": "空",
+    "pinyin": "kōng",
+    "korean": "하늘",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 172,
+    "char": "爪",
+    "pinyin": "zhuǎ",
+    "korean": "발톱",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 173,
+    "char": "办",
+    "pinyin": "bàn",
+    "korean": "일하다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 174,
+    "char": "姐",
+    "pinyin": "jiě",
+    "korean": "누나",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 175,
+    "char": "短",
+    "pinyin": "duǎn",
+    "korean": "짧다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 176,
+    "char": "许",
+    "pinyin": "xǔ",
+    "korean": "허락하다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 177,
+    "char": "问",
+    "pinyin": "wèn",
+    "korean": "묻다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 178,
+    "char": "旦",
+    "pinyin": "dàn",
+    "korean": "아침",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 179,
+    "char": "到",
+    "pinyin": "dào",
+    "korean": "도착하다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 180,
+    "char": "妹",
+    "pinyin": "mèi",
+    "korean": "여동생",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 181,
+    "char": "把",
+    "pinyin": "bǎ",
+    "korean": "잡다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 182,
+    "char": "回",
+    "pinyin": "huí",
+    "korean": "돌아가다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 183,
+    "char": "拼",
+    "pinyin": "pīn",
+    "korean": "맞추다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 184,
+    "char": "看",
+    "pinyin": "kàn",
+    "korean": "보다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 185,
+    "char": "它",
+    "pinyin": "tā",
+    "korean": "그것",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 186,
+    "char": "好",
+    "pinyin": "hǎo",
+    "korean": "좋다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 187,
+    "char": "闪",
+    "pinyin": "shǎn",
+    "korean": "번쩍이다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 188,
+    "char": "朋",
+    "pinyin": "péng",
+    "korean": "친구",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 189,
+    "char": "能",
+    "pinyin": "néng",
+    "korean": "할 수 있다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 190,
+    "char": "友",
+    "pinyin": "yǒu",
+    "korean": "친구",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 191,
+    "char": "伞",
+    "pinyin": "sǎn",
+    "korean": "우산",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 192,
+    "char": "答",
+    "pinyin": "dá",
+    "korean": "답하다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 193,
+    "char": "音",
+    "pinyin": "yīn",
+    "korean": "소리",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 194,
+    "char": "兔",
+    "pinyin": "tù",
+    "korean": "토끼",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 195,
+    "char": "法",
+    "pinyin": "fǎ",
+    "korean": "법",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 196,
+    "char": "方",
+    "pinyin": "fāng",
+    "korean": "방향",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 197,
+    "char": "最",
+    "pinyin": "zuì",
+    "korean": "가장",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 198,
+    "char": "放",
+    "pinyin": "fàng",
+    "korean": "놓다",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 199,
+    "char": "久",
+    "pinyin": "jiǔ",
+    "korean": "오래",
+    "type": "recognize",
+    "level": "1-1"
+  },
+  {
+    "id": 200,
+    "char": "小",
+    "pinyin": "xiǎo",
+    "korean": "작다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 201,
+    "char": "鸟",
+    "pinyin": "niǎo",
+    "korean": "새",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 202,
+    "char": "女",
+    "pinyin": "nǚ",
+    "korean": "여자",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 203,
+    "char": "上",
+    "pinyin": "shàng",
+    "korean": "위",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 204,
+    "char": "手",
+    "pinyin": "shǒu",
+    "korean": "손",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 205,
+    "char": "禾",
+    "pinyin": "hé",
+    "korean": "벼",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 206,
+    "char": "七",
+    "pinyin": "qī",
+    "korean": "일곱",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 207,
+    "char": "王",
+    "pinyin": "wáng",
+    "korean": "왕",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 208,
+    "char": "下",
+    "pinyin": "xià",
+    "korean": "아래",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 209,
+    "char": "年",
+    "pinyin": "nián",
+    "korean": "해",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 210,
+    "char": "人",
+    "pinyin": "rén",
+    "korean": "사람",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 211,
+    "char": "西",
+    "pinyin": "xī",
+    "korean": "서쪽",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 212,
+    "char": "用",
+    "pinyin": "yòng",
+    "korean": "사용하다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 213,
+    "char": "是",
+    "pinyin": "shì",
+    "korean": "이다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 214,
+    "char": "开",
+    "pinyin": "kāi",
+    "korean": "열다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 215,
+    "char": "八",
+    "pinyin": "bā",
+    "korean": "여덟",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 216,
+    "char": "十",
+    "pinyin": "shí",
+    "korean": "열",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 217,
+    "char": "云",
+    "pinyin": "yún",
+    "korean": "구름",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 218,
+    "char": "力",
+    "pinyin": "lì",
+    "korean": "힘",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 219,
+    "char": "尺",
+    "pinyin": "chǐ",
+    "korean": "자",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 220,
+    "char": "中",
+    "pinyin": "zhōng",
+    "korean": "가운데",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 221,
+    "char": "几",
+    "pinyin": "jǐ",
+    "korean": "몇",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 222,
+    "char": "天",
+    "pinyin": "tiān",
+    "korean": "하늘",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 223,
+    "char": "关",
+    "pinyin": "guān",
+    "korean": "관계",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 224,
+    "char": "月",
+    "pinyin": "yuè",
+    "korean": "달",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 225,
+    "char": "在",
+    "pinyin": "zài",
+    "korean": "있다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 226,
+    "char": "和",
+    "pinyin": "hé",
+    "korean": "그리고",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 227,
+    "char": "比",
+    "pinyin": "bǐ",
+    "korean": "비교하다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 228,
+    "char": "只",
+    "pinyin": "zhī",
+    "korean": "마리",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 229,
+    "char": "来",
+    "pinyin": "lái",
+    "korean": "오다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 230,
+    "char": "雨",
+    "pinyin": "yǔ",
+    "korean": "비",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 231,
+    "char": "男",
+    "pinyin": "nán",
+    "korean": "남자",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 232,
+    "char": "本",
+    "pinyin": "běn",
+    "korean": "책",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 233,
+    "char": "五",
+    "pinyin": "wǔ",
+    "korean": "다섯",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 234,
+    "char": "儿",
+    "pinyin": "ér",
+    "korean": "아이",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 235,
+    "char": "我",
+    "pinyin": "wǒ",
+    "korean": "나",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 236,
+    "char": "也",
+    "pinyin": "yě",
+    "korean": "또한",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 237,
+    "char": "巴",
+    "pinyin": "bā",
+    "korean": "바",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 238,
+    "char": "个",
+    "pinyin": "gè",
+    "korean": "개",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 239,
+    "char": "半",
+    "pinyin": "bàn",
+    "korean": "반",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 240,
+    "char": "先",
+    "pinyin": "xiān",
+    "korean": "먼저",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 241,
+    "char": "虫",
+    "pinyin": "chóng",
+    "korean": "벌레",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 242,
+    "char": "山",
+    "pinyin": "shān",
+    "korean": "산",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 243,
+    "char": "土",
+    "pinyin": "tǔ",
+    "korean": "흙",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 244,
+    "char": "木",
+    "pinyin": "mù",
+    "korean": "나무",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 245,
+    "char": "刀",
+    "pinyin": "dāo",
+    "korean": "칼",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 246,
+    "char": "不",
+    "pinyin": "bù",
+    "korean": "아니다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 247,
+    "char": "风",
+    "pinyin": "fēng",
+    "korean": "바람",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 248,
+    "char": "立",
+    "pinyin": "lì",
+    "korean": "서다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 249,
+    "char": "工",
+    "pinyin": "gōng",
+    "korean": "일",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 250,
+    "char": "厂",
+    "pinyin": "chǎng",
+    "korean": "공장",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 251,
+    "char": "水",
+    "pinyin": "shuǐ",
+    "korean": "물",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 252,
+    "char": "心",
+    "pinyin": "xīn",
+    "korean": "마음",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 253,
+    "char": "少",
+    "pinyin": "shǎo",
+    "korean": "적다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 254,
+    "char": "正",
+    "pinyin": "zhèng",
+    "korean": "바르다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 255,
+    "char": "门",
+    "pinyin": "mén",
+    "korean": "문",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 256,
+    "char": "头",
+    "pinyin": "tóu",
+    "korean": "머리",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 257,
+    "char": "里",
+    "pinyin": "lǐ",
+    "korean": "안",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 258,
+    "char": "见",
+    "pinyin": "jiàn",
+    "korean": "보다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 259,
+    "char": "左",
+    "pinyin": "zuǒ",
+    "korean": "왼쪽",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 260,
+    "char": "右",
+    "pinyin": "yòu",
+    "korean": "오른쪽",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 261,
+    "char": "又",
+    "pinyin": "yòu",
+    "korean": "또",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 262,
+    "char": "才",
+    "pinyin": "cái",
+    "korean": "재능",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 263,
+    "char": "爸",
+    "pinyin": "bà",
+    "korean": "아빠",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 264,
+    "char": "妈",
+    "pinyin": "mā",
+    "korean": "엄마",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 265,
+    "char": "长",
+    "pinyin": "cháng",
+    "korean": "길다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 266,
+    "char": "公",
+    "pinyin": "gōng",
+    "korean": "공공",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 267,
+    "char": "多",
+    "pinyin": "duō",
+    "korean": "많다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 268,
+    "char": "石",
+    "pinyin": "shí",
+    "korean": "돌",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 269,
+    "char": "出",
+    "pinyin": "chū",
+    "korean": "나가다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 270,
+    "char": "你",
+    "pinyin": "nǐ",
+    "korean": "너",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 271,
+    "char": "有",
+    "pinyin": "yǒu",
+    "korean": "있다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 272,
+    "char": "牛",
+    "pinyin": "niú",
+    "korean": "소",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 273,
+    "char": "羊",
+    "pinyin": "yáng",
+    "korean": "양",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 274,
+    "char": "果",
+    "pinyin": "guǒ",
+    "korean": "열매",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 275,
+    "char": "卫",
+    "pinyin": "wèi",
+    "korean": "지키다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 276,
+    "char": "白",
+    "pinyin": "bái",
+    "korean": "하얗다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 277,
+    "char": "了",
+    "pinyin": "le",
+    "korean": "했다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 278,
+    "char": "可",
+    "pinyin": "kě",
+    "korean": "할 수 있다",
+    "type": "write",
+    "level": "1-1"
+  },
+  {
+    "id": 279,
+    "char": "竹",
+    "pinyin": "zhú",
+    "korean": "대나무",
+    "type": "write",
+    "level": "1-1"
+  }
 ]
