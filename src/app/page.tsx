@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Settings } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface StudyRecord {
   wordId: number;
@@ -54,29 +55,49 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 relative">
-      <Button
-        variant="ghost"
-        size="icon"
+    <motion.div 
+      className="min-h-screen flex flex-col items-center justify-center p-6 relative"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.4 }}
+    >
+      <motion.div
         className="absolute top-6 right-6"
-        onClick={() => router.push("/settings")}
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2, duration: 0.3 }}
       >
-        <Settings className="h-5 w-5" />
-      </Button>
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => router.push("/settings")}
+        >
+          <Settings className="h-5 w-5" />
+        </Button>
+      </motion.div>
       
       <div className="max-w-md w-full space-y-6">
-        <div className="text-center mb-8">
+        <motion.div 
+          className="text-center mb-8"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+        >
           <Image 
             src="/icon.png" 
             alt="独一无二" 
-            width={120} 
-            height={120} 
+            width={200} 
+            height={200} 
             className="mx-auto mb-6"
           />
-          <h1 className="text-3xl font-bold">{gradeInfo[selectedGrade]?.name || "1학년 1학기"}</h1>
-        </div>
+        </motion.div>
 
-        <Card className="p-6">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.4 }}
+        >
+          <Card className="p-6">
           <div className="space-y-4">
             {selectedGrade === "grade1-1" && (
               <>
@@ -111,9 +132,15 @@ export default function Home() {
               />
             </div>
           </div>
-        </Card>
+          </Card>
+        </motion.div>
 
-        <div className="space-y-3">
+        <motion.div 
+          className="space-y-3"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.4 }}
+        >
           <Button 
             onClick={() => router.push("/study")} 
             size="lg" 
@@ -121,8 +148,8 @@ export default function Home() {
           >
             학습 시작하기
           </Button>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }

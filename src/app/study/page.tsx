@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import FlashCard from "@/components/FlashCard";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft } from "lucide-react";
+import { motion } from "framer-motion";
 
 // Grade data imports - will add more as they become available
 import grade1_1 from "@/../../public/data/grade1-1.json";
@@ -82,7 +83,6 @@ export default function StudyPage() {
   const [sessionComplete, setSessionComplete] = useState(false);
   const [stats, setStats] = useState({ perfect: 0, hard: 0, again: 0 });
   const [sessionSize, setSessionSize] = useState(5);
-  const [selectedGrade, setSelectedGrade] = useState("grade1-1");
   const [wordsData, setWordsData] = useState<WordData[]>([]);
 
   // Load settings and grade data
@@ -91,7 +91,6 @@ export default function StudyPage() {
     const savedSize = localStorage.getItem("sessionSize");
     const savedGrade = localStorage.getItem("selectedGrade") || "grade1-1";
     
-    setSelectedGrade(savedGrade);
     const data = gradeDataMap[savedGrade] || gradeDataMap["grade1-1"];
     setWordsData(data);
     
@@ -108,6 +107,7 @@ export default function StudyPage() {
     if (wordsData.length > 0) {
       loadTodayWords();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordsData, sessionSize]);
 
   const loadTodayWords = useCallback(() => {
@@ -227,18 +227,40 @@ export default function StudyPage() {
 
   if (currentWords.length === 0) {
     return (
-      <div className="min-h-screen flex items-center justify-center p-4">
+      <motion.div 
+        className="min-h-screen flex items-center justify-center p-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      >
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">단어를 불러오는 중...</h2>
+          <motion.h2 
+            className="text-2xl font-bold mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            단어를 불러오는 중...
+          </motion.h2>
         </div>
-      </div>
+      </motion.div>
     );
   }
 
   if (sessionComplete) {
     return (
-      <div className="min-h-screen flex items-center justify-center p-4">
-        <div className="text-center space-y-4">
+      <motion.div 
+        className="min-h-screen flex items-center justify-center p-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <motion.div 
+          className="text-center space-y-4"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+        >
           <h2 className="text-2xl font-bold">학습 완료!</h2>
           <div className="space-y-2">
             <p>완벽: {stats.perfect}개</p>
@@ -253,14 +275,24 @@ export default function StudyPage() {
               홈으로
             </Button>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     );
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <header className="p-4 border-b">
+    <motion.div 
+      className="min-h-screen flex flex-col"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+    >
+      <motion.header 
+        className="p-4 border-b"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1, duration: 0.3 }}
+      >
         <div className="flex justify-between items-center mb-2">
           <Button
             variant="ghost"
@@ -282,7 +314,7 @@ export default function StudyPage() {
             }}
           />
         </div>
-      </header>
+      </motion.header>
 
       <main className="flex-1 flex items-center justify-center">
         <FlashCard
@@ -290,6 +322,6 @@ export default function StudyPage() {
           onSwipe={handleSwipe}
         />
       </main>
-    </div>
+    </motion.div>
   );
 }
