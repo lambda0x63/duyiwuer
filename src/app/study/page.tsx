@@ -81,7 +81,7 @@ export default function StudyPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [studyRecords, setStudyRecords] = useState<Record<number, StudyRecord>>({});
   const [sessionComplete, setSessionComplete] = useState(false);
-  const [stats, setStats] = useState({ perfect: 0, hard: 0, again: 0 });
+  const [stats, setStats] = useState({ perfect: 0, confused: 0, new: 0 });
   const [sessionSize, setSessionSize] = useState(5);
   const [wordsData, setWordsData] = useState<WordData[]>([]);
 
@@ -161,10 +161,10 @@ export default function StudyPage() {
     setCurrentWords(sessionWords);
     setCurrentIndex(0);
     setSessionComplete(false);
-    setStats({ perfect: 0, hard: 0, again: 0 });
+    setStats({ perfect: 0, confused: 0, new: 0 });
   }, [wordsData, sessionSize]);
 
-  const handleSwipe = (difficulty: "perfect" | "hard" | "again") => {
+  const handleSwipe = (difficulty: "perfect" | "confused" | "new") => {
     const word = currentWords[currentIndex];
     const now = new Date();
     
@@ -175,13 +175,13 @@ export default function StudyPage() {
         quality = 5;
         setStats(prev => ({ ...prev, perfect: prev.perfect + 1 }));
         break;
-      case "hard":
+      case "confused":
         quality = 3;
-        setStats(prev => ({ ...prev, hard: prev.hard + 1 }));
+        setStats(prev => ({ ...prev, confused: prev.confused + 1 }));
         break;
-      case "again":
+      case "new":
         quality = 0;
-        setStats(prev => ({ ...prev, again: prev.again + 1 }));
+        setStats(prev => ({ ...prev, new: prev.new + 1 }));
         break;
     }
 
@@ -264,8 +264,8 @@ export default function StudyPage() {
           <h2 className="text-2xl font-bold">학습 완료!</h2>
           <div className="space-y-2">
             <p>완벽: {stats.perfect}개</p>
-            <p>어려움: {stats.hard}개</p>
-            <p>다시: {stats.again}개</p>
+            <p>헷갈림: {stats.confused}개</p>
+            <p>처음봄: {stats.new}개</p>
           </div>
           <div className="space-y-2">
             <Button onClick={loadTodayWords} className="w-full">

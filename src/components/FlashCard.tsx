@@ -15,7 +15,7 @@ interface WordData {
 
 interface FlashCardProps {
   word: WordData;
-  onSwipe: (difficulty: "perfect" | "hard" | "again") => void;
+  onSwipe: (difficulty: "perfect" | "confused" | "new") => void;
 }
 
 export default function FlashCard({ word, onSwipe }: FlashCardProps) {
@@ -72,7 +72,7 @@ export default function FlashCard({ word, onSwipe }: FlashCardProps) {
           if (distanceX < 0) {
             setSwipeDirection("right");
             setTimeout(() => {
-              onSwipe("hard");
+              onSwipe("confused");
               resetCard();
             }, 300);
           }
@@ -88,7 +88,7 @@ export default function FlashCard({ word, onSwipe }: FlashCardProps) {
           } else {
             setSwipeDirection("down");
             setTimeout(() => {
-              onSwipe("again");
+              onSwipe("new");
               resetCard();
             }, 300);
           }
@@ -163,11 +163,11 @@ export default function FlashCard({ word, onSwipe }: FlashCardProps) {
         </div>
         <div className="flex flex-col items-center">
           <ChevronRight size={24} />
-          <span className="text-xs">애매</span>
+          <span className="text-xs">헷갈림</span>
         </div>
         <div className="flex flex-col items-center">
           <ChevronDown size={24} />
-          <span className="text-xs">몰라</span>
+          <span className="text-xs">처음봄</span>
         </div>
       </div>
       )}
