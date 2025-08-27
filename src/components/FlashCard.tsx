@@ -33,7 +33,6 @@ export default function FlashCard({ word, onSwipe }: FlashCardProps) {
   };
 
   const onTouchStart = (e: React.TouchEvent) => {
-    e.preventDefault();
     setTouchEnd(null);
     setTouchStart({
       x: e.targetTouches[0].clientX,
@@ -42,15 +41,25 @@ export default function FlashCard({ word, onSwipe }: FlashCardProps) {
   };
 
   const onTouchMove = (e: React.TouchEvent) => {
-    e.preventDefault();
-    setTouchEnd({
+    if (!touchStart) return;
+    
+    const currentTouch = {
       x: e.targetTouches[0].clientX,
       y: e.targetTouches[0].clientY,
-    });
+    };
+    
+    const distanceX = touchStart.x - currentTouch.x;
+    const distanceY = touchStart.y - currentTouch.y;
+    
+    // Only prevent default if it's clearly a swipe gesture
+    if (Math.abs(distanceX) > 10 || Math.abs(distanceY) > 10) {
+      e.preventDefault();
+    }
+    
+    setTouchEnd(currentTouch);
   };
 
-  const onTouchEnd = (e: React.TouchEvent) => {
-    e.preventDefault();
+  const onTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
 
     const distanceX = touchStart.x - touchEnd.x;
@@ -110,8 +119,7 @@ export default function FlashCard({ word, onSwipe }: FlashCardProps) {
           ${swipeDirection === "down" ? "translate-y-full opacity-0" : ""}
         `}
         style={{ 
-          perspective: "1000px",
-          touchAction: "none"
+          perspective: "1000px"
         }}
         onClick={handleTap}
         onTouchStart={onTouchStart}
