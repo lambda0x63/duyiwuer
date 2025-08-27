@@ -66,7 +66,7 @@ export default function Home() {
   const handleSwipe = (difficulty: "perfect" | "hard" | "again") => {
     const word = currentWords[currentIndex];
     const now = new Date();
-    let nextReview = new Date();
+    const nextReview = new Date();
 
     switch (difficulty) {
       case "perfect":
