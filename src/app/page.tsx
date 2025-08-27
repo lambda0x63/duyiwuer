@@ -2,16 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Settings } from "lucide-react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 interface StudyRecord {
   wordId: number;
@@ -20,6 +14,14 @@ interface StudyRecord {
   difficulty: number;
 }
 
+// Grade metadata
+const gradeInfo: Record<string, {name: string, total: number}> = {
+  "grade1-1": { name: "1학년 1학기", total: 279 },
+  "grade1-2": { name: "1학년 2학기", total: 0 },
+  "grade2-1": { name: "2학년 1학기", total: 0 },
+  "grade2-2": { name: "2학년 2학기", total: 0 },
+};
+
 export default function Home() {
   const router = useRouter();
   const [studyStats, setStudyStats] = useState({
@@ -27,14 +29,12 @@ export default function Home() {
     dueForReview: 0,
     completionRate: 0,
   });
-  const [sessionSize, setSessionSize] = useState<string>("5");
-  const [showSettings, setShowSettings] = useState(false);
+  const [selectedGrade, setSelectedGrade] = useState("grade1-1");
 
   useEffect(() => {
-    const savedSize = localStorage.getItem("sessionSize");
-    if (savedSize) {
-      setSessionSize(savedSize);
-    }
+    const savedGrade = localStorage.getItem("selectedGrade") || "grade1-1";
+    setSelectedGrade(savedGrade);
+    
     const saved = localStorage.getItem("studyRecords");
     if (saved) {
       const records: Record<number, StudyRecord> = JSON.parse(saved);
@@ -48,71 +48,52 @@ export default function Home() {
       setStudyStats({
         totalStudied,
         dueForReview,
-        completionRate: Math.round((totalStudied / 279) * 100), // 중복 제거 후 총 279자 (199 인식 + 80 쓰기)
+        completionRate: Math.round((totalStudied / (gradeInfo[savedGrade]?.total || 279)) * 100),
       });
     }
   }, []);
 
-  const handleSessionSizeChange = (value: string) => {
-    setSessionSize(value);
-    localStorage.setItem("sessionSize", value);
-  };
-
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6">
+    <div className="min-h-screen flex flex-col items-center justify-center p-6 relative">
+      <Button
+        variant="ghost"
+        size="icon"
+        className="absolute top-6 right-6"
+        onClick={() => router.push("/settings")}
+      >
+        <Settings className="h-5 w-5" />
+      </Button>
+      
       <div className="max-w-md w-full space-y-6">
-        <div className="text-center mb-8 relative">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute right-0 top-0"
-            onClick={() => setShowSettings(!showSettings)}
-          >
-            <Settings className="h-5 w-5" />
-          </Button>
-          <h1 className="text-4xl font-bold mb-2">独一无二</h1>
-          <p className="text-gray-600">1학년 1학기</p>
+        <div className="text-center mb-8">
+          <Image 
+            src="/icon.png" 
+            alt="独一无二" 
+            width={120} 
+            height={120} 
+            className="mx-auto mb-6"
+          />
+          <h1 className="text-3xl font-bold">{gradeInfo[selectedGrade]?.name || "1학년 1학기"}</h1>
         </div>
-
-        {showSettings && (
-          <Card className="p-4">
-            <div className="space-y-4">
-              <div>
-                <label className="text-sm font-medium mb-2 block">
-                  학습 세션 크기
-                </label>
-                <Select value={sessionSize} onValueChange={handleSessionSizeChange}>
-                  <SelectTrigger className="w-full">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="3">3개씩</SelectItem>
-                    <SelectItem value="5">5개씩</SelectItem>
-                    <SelectItem value="10">10개씩</SelectItem>
-                    <SelectItem value="15">15개씩</SelectItem>
-                    <SelectItem value="20">20개씩</SelectItem>
-                    <SelectItem value="30">30개씩</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-          </Card>
-        )}
 
         <Card className="p-6">
           <div className="space-y-4">
-            <div className="flex justify-between">
-              <span className="text-gray-600">识字表 (인식)</span>
-              <span className="text-sm font-semibold">199자</span>
-            </div>
-            <div className="flex justify-between">
-              <span className="text-gray-600">写字表 (쓰기)</span>
-              <span className="text-sm font-semibold">80자</span>
-            </div>
+            {selectedGrade === "grade1-1" && (
+              <>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">识字表 (인식)</span>
+                  <span className="text-sm font-semibold">199자</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">写字表 (쓰기)</span>
+                  <span className="text-sm font-semibold">80자</span>
+                </div>
+              </>
+            )}
             <div className="border-t pt-3 mt-3 space-y-3">
               <div className="flex justify-between">
                 <span className="text-gray-600">학습한 한자</span>
-                <span className="font-semibold">{studyStats.totalStudied} / 279</span>
+                <span className="font-semibold">{studyStats.totalStudied} / {gradeInfo[selectedGrade]?.total || 279}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">복습 대기</span>

@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import FlashCard from "@/components/FlashCard";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { ChevronLeft, Settings } from "lucide-react";
-import wordsDataRaw from "@/../../public/data/grade1.json";
+import { ChevronLeft } from "lucide-react";
+
+// Grade data imports - will add more as they become available
+import grade1_1 from "@/../../public/data/grade1-1.json";
 
 interface WordData {
   id: number;
@@ -21,16 +22,23 @@ interface StudyRecord {
   wordId: number;
   lastStudied: string;
   nextReview: string;
-  easiness: number; // SM-2 easiness factor (2.5 = default)
-  interval: number; // days until next review
-  repetitions: number; // successful repetition count
+  difficulty: number;
+  easiness: number;
+  interval: number;
+  repetitions: number;
 }
 
-const wordsData = wordsDataRaw as WordData[];
+// Grade data map
+const gradeDataMap: Record<string, WordData[]> = {
+  "grade1-1": grade1_1 as WordData[],
+  // "grade1-2": grade1_2 as WordData[],
+  // "grade2-1": grade2_1 as WordData[],
+  // "grade2-2": grade2_2 as WordData[],
+};
 
 // SM-2 Algorithm implementation
 const calculateSM2 = (
-  quality: number, // 0-5 rating (0=again, 3=hard, 5=perfect)
+  quality: number, // 0-5 (0=complete blackout, 3=correct with difficulty, 5=perfect)
   easiness: number,
   interval: number,
   repetitions: number
@@ -39,25 +47,26 @@ const calculateSM2 = (
   let newInterval = interval;
   let newRepetitions = repetitions;
 
-  if (quality < 3) {
-    // Failed - reset
-    newRepetitions = 0;
-    newInterval = 1;
-  } else {
-    // Successful recall
-    newEasiness = Math.max(1.3, easiness + 0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
-    
+  if (quality >= 3) {
+    // Correct response
     if (repetitions === 0) {
       newInterval = 1;
     } else if (repetitions === 1) {
       newInterval = 6;
     } else {
-      newInterval = Math.round(interval * newEasiness);
+      newInterval = Math.round(interval * easiness);
     }
-    
     newRepetitions = repetitions + 1;
+  } else {
+    // Incorrect response
+    newRepetitions = 0;
+    newInterval = 1;
   }
 
+  // Update easiness factor
+  newEasiness = easiness + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
+  if (newEasiness < 1.3) newEasiness = 1.3;
+  
   return {
     easiness: newEasiness,
     interval: newInterval,
@@ -72,12 +81,19 @@ export default function StudyPage() {
   const [studyRecords, setStudyRecords] = useState<Record<number, StudyRecord>>({});
   const [sessionComplete, setSessionComplete] = useState(false);
   const [stats, setStats] = useState({ perfect: 0, hard: 0, again: 0 });
-  const [sessionSize, setSessionSize] = useState(5); // Default 5 cards
-  const [showSettings, setShowSettings] = useState(false);
+  const [sessionSize, setSessionSize] = useState(5);
+  const [selectedGrade, setSelectedGrade] = useState("grade1-1");
+  const [wordsData, setWordsData] = useState<WordData[]>([]);
 
+  // Load settings and grade data
   useEffect(() => {
     const saved = localStorage.getItem("studyRecords");
     const savedSize = localStorage.getItem("sessionSize");
+    const savedGrade = localStorage.getItem("selectedGrade") || "grade1-1";
+    
+    setSelectedGrade(savedGrade);
+    const data = gradeDataMap[savedGrade] || gradeDataMap["grade1-1"];
+    setWordsData(data);
     
     if (saved) {
       setStudyRecords(JSON.parse(saved));
@@ -85,15 +101,18 @@ export default function StudyPage() {
     if (savedSize) {
       setSessionSize(parseInt(savedSize));
     }
-    
-    loadTodayWords();
   }, []);
 
-  const loadTodayWords = () => {
+  // Load today's words when data is ready
+  useEffect(() => {
+    if (wordsData.length > 0) {
+      loadTodayWords();
+    }
+  }, [wordsData, sessionSize]);
+
+  const loadTodayWords = useCallback(() => {
     const saved = localStorage.getItem("studyRecords");
-    const savedSize = localStorage.getItem("sessionSize");
     const records: Record<number, StudyRecord> = saved ? JSON.parse(saved) : {};
-    const size = savedSize ? parseInt(savedSize) : sessionSize;
     
     const now = new Date();
     
@@ -101,13 +120,13 @@ export default function StudyPage() {
     const wordsToReview = wordsData
       .filter((word) => {
         const record = records[word.id];
-        if (!record) return false; // Only previously studied words
+        if (!record) return false;
         return new Date(record.nextReview) <= now;
       })
       .sort((a, b) => {
         const aReview = new Date(records[a.id].nextReview).getTime();
         const bReview = new Date(records[b.id].nextReview).getTime();
-        return aReview - bReview; // Most overdue first
+        return aReview - bReview;
       });
 
     // Get new words (never studied)
@@ -117,19 +136,22 @@ export default function StudyPage() {
     let sessionWords: WordData[] = [];
     
     // Take up to 70% review words
-    const maxReviewWords = Math.ceil(size * 0.7);
+    const maxReviewWords = Math.ceil(sessionSize * 0.7);
     const reviewWords = wordsToReview.slice(0, maxReviewWords);
     sessionWords = [...reviewWords];
     
     // Fill remaining slots with new words
-    const remainingSlots = size - sessionWords.length;
+    const remainingSlots = sessionSize - sessionWords.length;
     if (remainingSlots > 0 && newWords.length > 0) {
       sessionWords = [...sessionWords, ...newWords.slice(0, remainingSlots)];
     }
     
-    // If still not enough words, add more reviews or new words
-    if (sessionWords.length < size) {
-      const additionalReviews = wordsToReview.slice(maxReviewWords, size - sessionWords.length + maxReviewWords);
+    // If still not enough words, add more reviews
+    if (sessionWords.length < sessionSize) {
+      const additionalReviews = wordsToReview.slice(
+        maxReviewWords, 
+        sessionSize - sessionWords.length + maxReviewWords
+      );
       sessionWords = [...sessionWords, ...additionalReviews];
     }
     
@@ -140,7 +162,7 @@ export default function StudyPage() {
     setCurrentIndex(0);
     setSessionComplete(false);
     setStats({ perfect: 0, hard: 0, again: 0 });
-  };
+  }, [wordsData, sessionSize]);
 
   const handleSwipe = (difficulty: "perfect" | "hard" | "again") => {
     const word = currentWords[currentIndex];
@@ -175,13 +197,10 @@ export default function StudyPage() {
     // Calculate next review date
     const nextReview = new Date(now);
     if (quality === 0) {
-      // Again - review in 10 minutes
       nextReview.setMinutes(nextReview.getMinutes() + 10);
     } else if (sm2Result.interval < 1) {
-      // Less than a day - review in hours
       nextReview.setHours(nextReview.getHours() + Math.max(1, sm2Result.interval * 24));
     } else {
-      // Review in days
       nextReview.setDate(nextReview.getDate() + sm2Result.interval);
     }
 
@@ -189,16 +208,13 @@ export default function StudyPage() {
       wordId: word.id,
       lastStudied: now.toISOString(),
       nextReview: nextReview.toISOString(),
+      difficulty: quality,
       easiness: sm2Result.easiness,
       interval: sm2Result.interval,
       repetitions: sm2Result.repetitions
     };
 
-    const newRecords = {
-      ...studyRecords,
-      [word.id]: newRecord,
-    };
-
+    const newRecords = { ...studyRecords, [word.id]: newRecord };
     setStudyRecords(newRecords);
     localStorage.setItem("studyRecords", JSON.stringify(newRecords));
 
@@ -208,42 +224,6 @@ export default function StudyPage() {
       setSessionComplete(true);
     }
   };
-
-  const handleSessionSizeChange = (newSize: number) => {
-    setSessionSize(newSize);
-    localStorage.setItem("sessionSize", newSize.toString());
-    setShowSettings(false);
-    loadTodayWords();
-  };
-
-  if (showSettings) {
-    return (
-      <div className="min-h-screen flex items-center justify-center p-4">
-        <Card className="p-6 max-w-sm w-full">
-          <h2 className="text-xl font-bold mb-4">학습 설정</h2>
-          <p className="text-sm text-gray-600 mb-4">한 번에 학습할 단어 수</p>
-          <div className="grid grid-cols-3 gap-2">
-            {[3, 5, 10, 15, 20, 30].map(size => (
-              <Button
-                key={size}
-                variant={sessionSize === size ? "default" : "outline"}
-                onClick={() => handleSessionSizeChange(size)}
-              >
-                {size}개
-              </Button>
-            ))}
-          </div>
-          <Button
-            variant="ghost"
-            className="w-full mt-4"
-            onClick={() => setShowSettings(false)}
-          >
-            취소
-          </Button>
-        </Card>
-      </div>
-    );
-  }
 
   if (currentWords.length === 0) {
     return (
@@ -258,19 +238,19 @@ export default function StudyPage() {
   if (sessionComplete) {
     return (
       <div className="min-h-screen flex items-center justify-center p-4">
-        <div className="text-center">
-          <h2 className="text-2xl font-bold mb-6">학습 완료!</h2>
-          <div className="mb-6 space-y-2">
-            <p className="text-lg">완벽: {stats.perfect}개</p>
-            <p className="text-lg">애매: {stats.hard}개</p>
-            <p className="text-lg">몰라: {stats.again}개</p>
+        <div className="text-center space-y-4">
+          <h2 className="text-2xl font-bold">학습 완료!</h2>
+          <div className="space-y-2">
+            <p>완벽: {stats.perfect}개</p>
+            <p>어려움: {stats.hard}개</p>
+            <p>다시: {stats.again}개</p>
           </div>
           <div className="space-y-2">
-            <Button onClick={loadTodayWords} size="lg" className="w-full">
-              다시 학습하기
+            <Button onClick={loadTodayWords} className="w-full">
+              더 학습하기
             </Button>
-            <Button onClick={() => router.push("/")} variant="outline" className="w-full">
-              메인으로
+            <Button variant="outline" onClick={() => router.push("/")} className="w-full">
+              홈으로
             </Button>
           </div>
         </div>
@@ -292,13 +272,7 @@ export default function StudyPage() {
           <span className="text-sm text-gray-600">
             {currentIndex + 1} / {currentWords.length}
           </span>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setShowSettings(true)}
-          >
-            <Settings className="h-5 w-5" />
-          </Button>
+          <div className="w-10" />
         </div>
         <div className="mt-2 bg-gray-200 rounded-full h-2">
           <div
