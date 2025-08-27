@@ -1,103 +1,165 @@
-import Image from "next/image";
+"use client";
+
+import { useState, useEffect } from "react";
+import FlashCard from "@/components/FlashCard";
+import { Button } from "@/components/ui/button";
+import wordsDataRaw from "@/../../public/data/grade1.json";
+
+interface WordData {
+  id: number;
+  char: string;
+  pinyin: string;
+  korean: string;
+  type: "recognize" | "write";
+  level: string;
+}
+
+interface StudyRecord {
+  wordId: number;
+  lastStudied: string;
+  nextReview: string;
+  difficulty: number;
+}
+
+const wordsData = wordsDataRaw as WordData[];
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [currentWords, setCurrentWords] = useState<WordData[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [studyRecords, setStudyRecords] = useState<Record<number, StudyRecord>>({});
+  const [sessionComplete, setSessionComplete] = useState(false);
+  const [stats, setStats] = useState({ perfect: 0, hard: 0, again: 0 });
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  useEffect(() => {
+    const saved = localStorage.getItem("studyRecords");
+    if (saved) {
+      setStudyRecords(JSON.parse(saved));
+    }
+    loadTodayWords();
+  }, []);
+
+  const loadTodayWords = () => {
+    const saved = localStorage.getItem("studyRecords");
+    const records: Record<number, StudyRecord> = saved ? JSON.parse(saved) : {};
+    
+    const now = new Date();
+    const wordsToReview = wordsData.filter((word) => {
+      const record = records[word.id];
+      if (!record) return true;
+      return new Date(record.nextReview) <= now;
+    });
+
+    const sessionWords = wordsToReview.slice(0, 15);
+    
+    if (sessionWords.length === 0) {
+      const unstudied = wordsData.filter(word => !records[word.id]);
+      setCurrentWords(unstudied.slice(0, 15));
+    } else {
+      setCurrentWords(sessionWords);
+    }
+    
+    setCurrentIndex(0);
+    setSessionComplete(false);
+    setStats({ perfect: 0, hard: 0, again: 0 });
+  };
+
+  const handleSwipe = (difficulty: "perfect" | "hard" | "again") => {
+    const word = currentWords[currentIndex];
+    const now = new Date();
+    let nextReview = new Date();
+
+    switch (difficulty) {
+      case "perfect":
+        nextReview.setDate(nextReview.getDate() + 7);
+        setStats(prev => ({ ...prev, perfect: prev.perfect + 1 }));
+        break;
+      case "hard":
+        nextReview.setDate(nextReview.getDate() + 1);
+        setStats(prev => ({ ...prev, hard: prev.hard + 1 }));
+        break;
+      case "again":
+        nextReview.setHours(nextReview.getHours() + 1);
+        setStats(prev => ({ ...prev, again: prev.again + 1 }));
+        break;
+    }
+
+    const newRecord: StudyRecord = {
+      wordId: word.id,
+      lastStudied: now.toISOString(),
+      nextReview: nextReview.toISOString(),
+      difficulty: difficulty === "perfect" ? 1 : difficulty === "hard" ? 0.5 : 0,
+    };
+
+    const newRecords = {
+      ...studyRecords,
+      [word.id]: newRecord,
+    };
+
+    setStudyRecords(newRecords);
+    localStorage.setItem("studyRecords", JSON.stringify(newRecords));
+
+    if (currentIndex < currentWords.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    } else {
+      setSessionComplete(true);
+    }
+  };
+
+  if (currentWords.length === 0) {
+    return (
+      <div className="min-h-screen flex items-center justify-center p-4">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold mb-4">단어를 불러오는 중...</h2>
         </div>
+      </div>
+    );
+  }
+
+  if (sessionComplete) {
+    return (
+      <div className="min-h-screen flex items-center justify-center p-4">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold mb-6">학습 완료!</h2>
+          <div className="mb-6 space-y-2">
+            <p className="text-lg">완벽: {stats.perfect}개</p>
+            <p className="text-lg">애매: {stats.hard}개</p>
+            <p className="text-lg">몰라: {stats.again}개</p>
+          </div>
+          <Button onClick={loadTodayWords} size="lg">
+            다시 학습하기
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <header className="p-4 border-b">
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-600">
+            {currentIndex + 1} / {currentWords.length}
+          </span>
+          <span className="text-sm text-gray-600">
+            레벨: {currentWords[currentIndex].level}
+          </span>
+        </div>
+        <div className="mt-2 bg-gray-200 rounded-full h-2">
+          <div
+            className="bg-black h-2 rounded-full transition-all"
+            style={{
+              width: `${((currentIndex + 1) / currentWords.length) * 100}%`,
+            }}
+          />
+        </div>
+      </header>
+
+      <main className="flex-1 flex items-center justify-center">
+        <FlashCard
+          word={currentWords[currentIndex]}
+          onSwipe={handleSwipe}
+        />
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
