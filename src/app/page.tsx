@@ -4,6 +4,14 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Settings } from "lucide-react";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 interface StudyRecord {
   wordId: number;
@@ -19,8 +27,14 @@ export default function Home() {
     dueForReview: 0,
     completionRate: 0,
   });
+  const [sessionSize, setSessionSize] = useState<string>("5");
+  const [showSettings, setShowSettings] = useState(false);
 
   useEffect(() => {
+    const savedSize = localStorage.getItem("sessionSize");
+    if (savedSize) {
+      setSessionSize(savedSize);
+    }
     const saved = localStorage.getItem("studyRecords");
     if (saved) {
       const records: Record<number, StudyRecord> = JSON.parse(saved);
@@ -39,14 +53,51 @@ export default function Home() {
     }
   }, []);
 
+  const handleSessionSizeChange = (value: string) => {
+    setSessionSize(value);
+    localStorage.setItem("sessionSize", value);
+  };
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6">
       <div className="max-w-md w-full space-y-6">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-2">읽어2</h1>
-          <p className="text-gray-600">人教版 一年级上册</p>
-          <p className="text-sm text-gray-500 mt-1">识字表 & 写字表</p>
+        <div className="text-center mb-8 relative">
+          <Button
+            variant="ghost"
+            size="icon"
+            className="absolute right-0 top-0"
+            onClick={() => setShowSettings(!showSettings)}
+          >
+            <Settings className="h-5 w-5" />
+          </Button>
+          <h1 className="text-4xl font-bold mb-2">独一无二</h1>
+          <p className="text-gray-600">1학년 1학기</p>
         </div>
+
+        {showSettings && (
+          <Card className="p-4">
+            <div className="space-y-4">
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  학습 세션 크기
+                </label>
+                <Select value={sessionSize} onValueChange={handleSessionSizeChange}>
+                  <SelectTrigger className="w-full">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="3">3개씩</SelectItem>
+                    <SelectItem value="5">5개씩</SelectItem>
+                    <SelectItem value="10">10개씩</SelectItem>
+                    <SelectItem value="15">15개씩</SelectItem>
+                    <SelectItem value="20">20개씩</SelectItem>
+                    <SelectItem value="30">30개씩</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+          </Card>
+        )}
 
         <Card className="p-6">
           <div className="space-y-4">
@@ -89,12 +140,6 @@ export default function Home() {
           >
             학습 시작하기
           </Button>
-          
-          <Card className="p-4 text-center text-sm text-gray-500">
-            <p className="text-xs mb-1">人教版 语文电子课本</p>
-            <p>앞으로 추가될 예정:</p>
-            <p className="mt-1">一年级下册, 二年级</p>
-          </Card>
         </div>
       </div>
     </div>
