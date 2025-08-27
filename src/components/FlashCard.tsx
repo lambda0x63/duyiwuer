@@ -33,6 +33,7 @@ export default function FlashCard({ word, onSwipe }: FlashCardProps) {
   };
 
   const onTouchStart = (e: React.TouchEvent) => {
+    e.preventDefault();
     setTouchEnd(null);
     setTouchStart({
       x: e.targetTouches[0].clientX,
@@ -41,13 +42,15 @@ export default function FlashCard({ word, onSwipe }: FlashCardProps) {
   };
 
   const onTouchMove = (e: React.TouchEvent) => {
+    e.preventDefault();
     setTouchEnd({
       x: e.targetTouches[0].clientX,
       y: e.targetTouches[0].clientY,
     });
   };
 
-  const onTouchEnd = () => {
+  const onTouchEnd = (e: React.TouchEvent) => {
+    e.preventDefault();
     if (!touchStart || !touchEnd) return;
 
     const distanceX = touchStart.x - touchEnd.x;
@@ -106,7 +109,10 @@ export default function FlashCard({ word, onSwipe }: FlashCardProps) {
           ${swipeDirection === "right" ? "translate-x-full opacity-0" : ""}
           ${swipeDirection === "down" ? "translate-y-full opacity-0" : ""}
         `}
-        style={{ perspective: "1000px" }}
+        style={{ 
+          perspective: "1000px",
+          touchAction: "none"
+        }}
         onClick={handleTap}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}

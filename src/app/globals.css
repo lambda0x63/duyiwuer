@@ -116,7 +116,18 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
+  html, body {
     @apply bg-background text-foreground;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    overscroll-behavior: none;
+    touch-action: pan-x pan-y;
+  }
+  #__next, main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 }
