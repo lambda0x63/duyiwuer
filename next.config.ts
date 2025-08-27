@@ -1,4 +1,3 @@
-import type { NextConfig } from "next";
 import withPWA from "next-pwa";
 
 const pwa = withPWA({
@@ -8,7 +7,7 @@ const pwa = withPWA({
   disable: process.env.NODE_ENV === "development",
 });
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   /* config options here */
 };
 
