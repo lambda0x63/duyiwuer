@@ -1,0 +1,1242 @@
+[
+  {
+    "id": 1,
+    "char": "一",
+    "pinyin": "yī",
+    "korean": "하나",
+    "example": "我有一本书",
+    "example_pinyin": "wǒ yǒu yī běn shū",
+    "example_korean": "나는 책 한 권이 있다",
+    "frequency": 136
+  },
+  {
+    "id": 2,
+    "char": "小",
+    "pinyin": "xiǎo",
+    "korean": "작다",
+    "example": "小猫真可爱",
+    "example_pinyin": "xiǎo māo zhēn kě'ài",
+    "example_korean": "작은 고양이가 정말 귀엽다",
+    "frequency": 101
+  },
+  {
+    "id": 3,
+    "char": "读",
+    "pinyin": "dú",
+    "korean": "읽다",
+    "example": "我在读书",
+    "example_pinyin": "wǒ zài dú shū",
+    "example_korean": "나는 책을 읽고 있다",
+    "frequency": 89
+  },
+  {
+    "id": 4,
+    "char": "的",
+    "pinyin": "de",
+    "korean": "의",
+    "example": "我的书",
+    "example_pinyin": "wǒ de shū",
+    "example_korean": "내 책",
+    "frequency": 84
+  },
+  {
+    "id": 5,
+    "char": "子",
+    "pinyin": "zi",
+    "korean": "아들",
+    "example": "儿子很乖",
+    "example_pinyin": "ér zi hěn guāi",
+    "example_korean": "아들이 매우 착하다",
+    "frequency": 61
+  },
+  {
+    "id": 6,
+    "char": "了",
+    "pinyin": "le",
+    "korean": "~했다",
+    "example": "吃饭了",
+    "example_pinyin": "chī fàn le",
+    "example_korean": "밥을 먹었다",
+    "frequency": 54
+  },
+  {
+    "id": 7,
+    "char": "不",
+    "pinyin": "bù",
+    "korean": "아니다",
+    "example": "我不去",
+    "example_pinyin": "wǒ bù qù",
+    "example_korean": "나는 안 간다",
+    "frequency": 48
+  },
+  {
+    "id": 8,
+    "char": "花",
+    "pinyin": "huā",
+    "korean": "꽃",
+    "example": "红花很美",
+    "example_pinyin": "hóng huā hěn měi",
+    "example_korean": "빨간 꽃이 예쁘다",
+    "frequency": 47
+  },
+  {
+    "id": 9,
+    "char": "说",
+    "pinyin": "shuō",
+    "korean": "말하다",
+    "example": "他说中文",
+    "example_pinyin": "tā shuō zhōngwén",
+    "example_korean": "그는 중국어를 말한다",
+    "frequency": 44
+  },
+  {
+    "id": 10,
+    "char": "我",
+    "pinyin": "wǒ",
+    "korean": "나",
+    "example": "我是学生",
+    "example_pinyin": "wǒ shì xuéshēng",
+    "example_korean": "나는 학생이다",
+    "frequency": 43
+  },
+  {
+    "id": 11,
+    "char": "白",
+    "pinyin": "bái",
+    "korean": "하얗다",
+    "example": "雪是白的",
+    "example_pinyin": "xuě shì bái de",
+    "example_korean": "눈은 하얗다",
+    "frequency": 39
+  },
+  {
+    "id": 12,
+    "char": "来",
+    "pinyin": "lái",
+    "korean": "오다",
+    "example": "妈妈来了",
+    "example_pinyin": "māma lái le",
+    "example_korean": "엄마가 오셨다",
+    "frequency": 39
+  },
+  {
+    "id": 13,
+    "char": "是",
+    "pinyin": "shì",
+    "korean": "이다",
+    "example": "这是书",
+    "example_pinyin": "zhè shì shū",
+    "example_korean": "이것은 책이다",
+    "frequency": 39
+  },
+  {
+    "id": 14,
+    "char": "里",
+    "pinyin": "lǐ",
+    "korean": "안",
+    "example": "在家里",
+    "example_pinyin": "zài jiā lǐ",
+    "example_korean": "집 안에 있다",
+    "frequency": 37
+  },
+  {
+    "id": 15,
+    "char": "着",
+    "pinyin": "zhe",
+    "korean": "~하고 있다",
+    "example": "看着书",
+    "example_pinyin": "kàn zhe shū",
+    "example_korean": "책을 보고 있다",
+    "frequency": 37
+  },
+  {
+    "id": 16,
+    "char": "天",
+    "pinyin": "tiān",
+    "korean": "하늘",
+    "example": "天很蓝",
+    "example_pinyin": "tiān hěn lán",
+    "example_korean": "하늘이 파랗다",
+    "frequency": 35
+  },
+  {
+    "id": 17,
+    "char": "有",
+    "pinyin": "yǒu",
+    "korean": "있다",
+    "example": "有一只猫",
+    "example_pinyin": "yǒu yī zhī māo",
+    "example_korean": "고양이가 한 마리 있다",
+    "frequency": 33
+  },
+  {
+    "id": 18,
+    "char": "老",
+    "pinyin": "lǎo",
+    "korean": "늙다",
+    "example": "老师好",
+    "example_pinyin": "lǎoshī hǎo",
+    "example_korean": "선생님 안녕하세요",
+    "frequency": 33
+  },
+  {
+    "id": 19,
+    "char": "在",
+    "pinyin": "zài",
+    "korean": "~에 있다",
+    "example": "在学校",
+    "example_pinyin": "zài xuéxiào",
+    "example_korean": "학교에 있다",
+    "frequency": 32
+  },
+  {
+    "id": 20,
+    "char": "月",
+    "pinyin": "yuè",
+    "korean": "달",
+    "example": "月亮很亮",
+    "example_pinyin": "yuèliang hěn liàng",
+    "example_korean": "달이 밝다",
+    "frequency": 31
+  },
+  {
+    "id": 21,
+    "char": "十",
+    "pinyin": "shí",
+    "korean": "열",
+    "example": "我有十个苹果",
+    "example_pinyin": "wǒ yǒu shí gè píngguǒ",
+    "example_korean": "나는 사과 열 개가 있다",
+    "frequency": 31
+  },
+  {
+    "id": 22,
+    "char": "地",
+    "pinyin": "dì",
+    "korean": "땅",
+    "example": "地上有花",
+    "example_pinyin": "dì shang yǒu huā",
+    "example_korean": "땅 위에 꽃이 있다",
+    "frequency": 29
+  },
+  {
+    "id": 23,
+    "char": "课",
+    "pinyin": "kè",
+    "korean": "수업",
+    "example": "我去上课",
+    "example_pinyin": "wǒ qù shàng kè",
+    "example_korean": "나는 수업하러 간다",
+    "frequency": 29
+  },
+  {
+    "id": 24,
+    "char": "公",
+    "pinyin": "gōng",
+    "korean": "공공의",
+    "example": "公园很大",
+    "example_pinyin": "gōngyuán hěn dà",
+    "example_korean": "공원이 매우 크다",
+    "frequency": 29
+  },
+  {
+    "id": 25,
+    "char": "大",
+    "pinyin": "dà",
+    "korean": "크다",
+    "example": "这是大房子",
+    "example_pinyin": "zhè shì dà fángzi",
+    "example_korean": "이것은 큰 집이다",
+    "frequency": 28
+  },
+  {
+    "id": 26,
+    "char": "儿",
+    "pinyin": "ér",
+    "korean": "아들",
+    "example": "我的儿子",
+    "example_pinyin": "wǒ de érzi",
+    "example_korean": "내 아들",
+    "frequency": 28
+  },
+  {
+    "id": 27,
+    "char": "文",
+    "pinyin": "wén",
+    "korean": "글",
+    "example": "我写文字",
+    "example_pinyin": "wǒ xiě wénzì",
+    "example_korean": "나는 글자를 쓴다",
+    "frequency": 28
+  },
+  {
+    "id": 28,
+    "char": "叶",
+    "pinyin": "yè",
+    "korean": "잎",
+    "example": "树叶很绿",
+    "example_pinyin": "shùyè hěn lǜ",
+    "example_korean": "나뭇잎이 매우 푸르다",
+    "frequency": 27
+  },
+  {
+    "id": 29,
+    "char": "水",
+    "pinyin": "shuǐ",
+    "korean": "물",
+    "example": "我喝水",
+    "example_pinyin": "wǒ hē shuǐ",
+    "example_korean": "나는 물을 마신다",
+    "frequency": 26
+  },
+  {
+    "id": 30,
+    "char": "你",
+    "pinyin": "nǐ",
+    "korean": "너",
+    "example": "你是学生",
+    "example_pinyin": "nǐ shì xuésheng",
+    "example_korean": "너는 학생이다",
+    "frequency": 25
+  },
+  {
+    "id": 31,
+    "char": "手",
+    "pinyin": "shǒu",
+    "korean": "손",
+    "example": "洗手很重要",
+    "example_pinyin": "xǐ shǒu hěn zhòngyào",
+    "example_korean": "손 씻기가 중요하다",
+    "frequency": 25
+  },
+  {
+    "id": 32,
+    "char": "兔",
+    "pinyin": "tù",
+    "korean": "토끼",
+    "example": "小白兔",
+    "example_pinyin": "xiǎo bái tù",
+    "example_korean": "작은 흰 토끼",
+    "frequency": 25
+  },
+  {
+    "id": 33,
+    "char": "用",
+    "pinyin": "yòng",
+    "korean": "사용하다",
+    "example": "用笔写字",
+    "example_pinyin": "yòng bǐ xiě zì",
+    "example_korean": "펜으로 글씨를 쓴다",
+    "frequency": 24
+  },
+  {
+    "id": 34,
+    "char": "菜",
+    "pinyin": "cài",
+    "korean": "채소",
+    "example": "我吃青菜",
+    "example_pinyin": "wǒ chī qīngcài",
+    "example_korean": "나는 채소를 먹는다",
+    "frequency": 23
+  },
+  {
+    "id": 35,
+    "char": "四",
+    "pinyin": "sì",
+    "korean": "넷",
+    "example": "四个苹果",
+    "example_pinyin": "sì gè píngguǒ",
+    "example_korean": "사과 네 개",
+    "frequency": 22
+  },
+  {
+    "id": 36,
+    "char": "下",
+    "pinyin": "xià",
+    "korean": "아래",
+    "example": "在桌子下",
+    "example_pinyin": "zài zhuōzi xià",
+    "example_korean": "책상 아래에 있다",
+    "frequency": 22
+  },
+  {
+    "id": 37,
+    "char": "巴",
+    "pinyin": "bā",
+    "korean": "바라다",
+    "example": "我很想去",
+    "example_pinyin": "wǒ hěn xiǎng qù",
+    "example_korean": "나는 가고 싶다",
+    "frequency": 22
+  },
+  {
+    "id": 38,
+    "char": "上",
+    "pinyin": "shàng",
+    "korean": "위",
+    "example": "书在桌上",
+    "example_pinyin": "shū zài zhuō shàng",
+    "example_korean": "책이 책상 위에 있다",
+    "frequency": 21
+  },
+  {
+    "id": 39,
+    "char": "去",
+    "pinyin": "qù",
+    "korean": "가다",
+    "example": "我去学校",
+    "example_pinyin": "wǒ qù xuéxiào",
+    "example_korean": "나는 학교에 간다",
+    "frequency": 21
+  },
+  {
+    "id": 40,
+    "char": "家",
+    "pinyin": "jiā",
+    "korean": "집",
+    "example": "我回家了",
+    "example_pinyin": "wǒ huí jiā le",
+    "example_korean": "나는 집에 왔다",
+    "frequency": 21
+  },
+  {
+    "id": 41,
+    "char": "人",
+    "pinyin": "rén",
+    "korean": "사람",
+    "example": "他是好人",
+    "example_pinyin": "tā shì hǎo rén",
+    "example_korean": "그는 좋은 사람이다",
+    "frequency": 20
+  },
+  {
+    "id": 42,
+    "char": "山",
+    "pinyin": "shān",
+    "korean": "산",
+    "example": "大山真高",
+    "example_pinyin": "dà shān zhēn gāo",
+    "example_korean": "큰 산이 정말 높다",
+    "frequency": 20
+  },
+  {
+    "id": 43,
+    "char": "只",
+    "pinyin": "zhǐ",
+    "korean": "~만",
+    "example": "我只要这个",
+    "example_pinyin": "wǒ zhǐ yào zhège",
+    "example_korean": "나는 이것만 원해요",
+    "frequency": 20
+  },
+  {
+    "id": 44,
+    "char": "会",
+    "pinyin": "huì",
+    "korean": "할 수 있다",
+    "example": "我会游泳",
+    "example_pinyin": "wǒ huì yóuyǒng",
+    "example_korean": "나는 수영할 수 있다",
+    "frequency": 20
+  },
+  {
+    "id": 45,
+    "char": "弯",
+    "pinyin": "wān",
+    "korean": "굽다",
+    "example": "路很弯",
+    "example_pinyin": "lù hěn wān",
+    "example_korean": "길이 매우 구부러졌다",
+    "frequency": 20
+  },
+  {
+    "id": 46,
+    "char": "二",
+    "pinyin": "èr",
+    "korean": "둘",
+    "example": "我有二个苹果",
+    "example_pinyin": "wǒ yǒu èr gè píngguǒ",
+    "example_korean": "나는 사과 두 개가 있다",
+    "frequency": 19
+  },
+  {
+    "id": 47,
+    "char": "看",
+    "pinyin": "kàn",
+    "korean": "보다",
+    "example": "我在看书",
+    "example_pinyin": "wǒ zài kàn shū",
+    "example_korean": "나는 책을 보고 있다",
+    "frequency": 19
+  },
+  {
+    "id": 48,
+    "char": "到",
+    "pinyin": "dào",
+    "korean": "도착하다",
+    "example": "我到家了",
+    "example_pinyin": "wǒ dào jiā le",
+    "example_korean": "나는 집에 도착했다",
+    "frequency": 19
+  },
+  {
+    "id": 49,
+    "char": "么",
+    "pinyin": "me",
+    "korean": "무엇",
+    "example": "什么东西",
+    "example_pinyin": "shén me dōngxi",
+    "example_korean": "무슨 물건",
+    "frequency": 19
+  },
+  {
+    "id": 50,
+    "char": "啦",
+    "pinyin": "la",
+    "korean": "~했다",
+    "example": "到家啦",
+    "example_pinyin": "dào jiā la",
+    "example_korean": "집에 도착했다",
+    "frequency": 19
+  },
+  {
+    "id": 51,
+    "char": "尾",
+    "pinyin": "wěi",
+    "korean": "꼬리",
+    "example": "猫的尾巴",
+    "example_pinyin": "māo de wěiba",
+    "example_korean": "고양이의 꼬리",
+    "frequency": 18
+  },
+  {
+    "id": 52,
+    "char": "把",
+    "pinyin": "bǎ",
+    "korean": "~을",
+    "example": "把书拿来",
+    "example_pinyin": "bǎ shū ná lái",
+    "example_korean": "책을 가져와",
+    "frequency": 18
+  },
+  {
+    "id": 53,
+    "char": "三",
+    "pinyin": "sān",
+    "korean": "셋",
+    "example": "三个小猫",
+    "example_pinyin": "sān gè xiǎo māo",
+    "example_korean": "고양이 세 마리",
+    "frequency": 17
+  },
+  {
+    "id": 54,
+    "char": "鸟",
+    "pinyin": "niǎo",
+    "korean": "새",
+    "example": "小鸟在飞",
+    "example_pinyin": "xiǎo niǎo zài fēi",
+    "example_korean": "작은 새가 날고 있다",
+    "frequency": 17
+  },
+  {
+    "id": 55,
+    "char": "见",
+    "pinyin": "jiàn",
+    "korean": "보다",
+    "example": "见到你了",
+    "example_pinyin": "jiàn dào nǐ le",
+    "example_korean": "너를 보았다",
+    "frequency": 17
+  },
+  {
+    "id": 56,
+    "char": "长",
+    "pinyin": "cháng",
+    "korean": "길다",
+    "example": "头发很长",
+    "example_pinyin": "tóufa hěn cháng",
+    "example_korean": "머리가 매우 길다",
+    "frequency": 17
+  },
+  {
+    "id": 57,
+    "char": "羊",
+    "pinyin": "yáng",
+    "korean": "양",
+    "example": "白羊真可爱",
+    "example_pinyin": "bái yáng zhēn kě'ài",
+    "example_korean": "흰 양이 정말 귀엽다",
+    "frequency": 17
+  },
+  {
+    "id": 58,
+    "char": "草",
+    "pinyin": "cǎo",
+    "korean": "풀",
+    "example": "绿草很美",
+    "example_pinyin": "lǜ cǎo hěn měi",
+    "example_korean": "푸른 풀이 매우 예쁘다",
+    "frequency": 17
+  },
+  {
+    "id": 59,
+    "char": "字",
+    "pinyin": "zì",
+    "korean": "글자",
+    "example": "写中文字",
+    "example_pinyin": "xiě zhōngwén zì",
+    "example_korean": "중국어 글자를 쓴다",
+    "frequency": 17
+  },
+  {
+    "id": 60,
+    "char": "们",
+    "pinyin": "men",
+    "korean": "들(복수)",
+    "example": "我们是朋友",
+    "example_pinyin": "wǒmen shì péngyou",
+    "example_korean": "우리는 친구다",
+    "frequency": 17
+  },
+  {
+    "id": 61,
+    "char": "出",
+    "pinyin": "chū",
+    "korean": "나가다",
+    "example": "我要出门了",
+    "example_pinyin": "wǒ yào chū mén le",
+    "example_korean": "나는 나갈 거예요",
+    "frequency": 16
+  },
+  {
+    "id": 62,
+    "char": "他",
+    "pinyin": "tā",
+    "korean": "그",
+    "example": "他是我朋友",
+    "example_pinyin": "tā shì wǒ péngyou",
+    "example_korean": "그는 내 친구예요",
+    "frequency": 16
+  },
+  {
+    "id": 63,
+    "char": "谁",
+    "pinyin": "shéi",
+    "korean": "누구",
+    "example": "这是谁的书",
+    "example_pinyin": "zhè shì shéi de shū",
+    "example_korean": "이건 누구의 책이에요",
+    "frequency": 16
+  },
+  {
+    "id": 64,
+    "char": "画",
+    "pinyin": "huà",
+    "korean": "그림",
+    "example": "我会画画",
+    "example_pinyin": "wǒ huì huà huà",
+    "example_korean": "나는 그림을 그릴 수 있어요",
+    "frequency": 16
+  },
+  {
+    "id": 65,
+    "char": "树",
+    "pinyin": "shù",
+    "korean": "나무",
+    "example": "树很高",
+    "example_pinyin": "shù hěn gāo",
+    "example_korean": "나무가 매우 높아요",
+    "frequency": 16
+  },
+  {
+    "id": 66,
+    "char": "猴",
+    "pinyin": "hóu",
+    "korean": "원숭이",
+    "example": "猴子爱香蕉",
+    "example_pinyin": "hóuzi ài xiāngjiāo",
+    "example_korean": "원숭이는 바나나를 좋아해요",
+    "frequency": 16
+  },
+  {
+    "id": 67,
+    "char": "片",
+    "pinyin": "piàn",
+    "korean": "조각",
+    "example": "一片面包",
+    "example_pinyin": "yī piàn miànbāo",
+    "example_korean": "빵 한 조각",
+    "frequency": 15
+  },
+  {
+    "id": 68,
+    "char": "学",
+    "pinyin": "xué",
+    "korean": "배우다",
+    "example": "我要学中文",
+    "example_pinyin": "wǒ yào xué zhōngwén",
+    "example_korean": "나는 중국어를 배울 거예요",
+    "frequency": 15
+  },
+  {
+    "id": 69,
+    "char": "个",
+    "pinyin": "gè",
+    "korean": "개(수량사)",
+    "example": "三个苹果",
+    "example_pinyin": "sān gè píngguǒ",
+    "example_korean": "사과 세 개",
+    "frequency": 15
+  },
+  {
+    "id": 70,
+    "char": "比",
+    "pinyin": "bǐ",
+    "korean": "비교하다",
+    "example": "我比你高",
+    "example_pinyin": "wǒ bǐ nǐ gāo",
+    "example_korean": "나는 너보다 커요",
+    "frequency": 15
+  },
+  {
+    "id": 71,
+    "char": "拔",
+    "pinyin": "bá",
+    "korean": "뽑다",
+    "example": "拔萝卜",
+    "example_pinyin": "bá luóbo",
+    "example_korean": "당근을 뽑아요",
+    "frequency": 15
+  },
+  {
+    "id": 72,
+    "char": "生",
+    "pinyin": "shēng",
+    "korean": "태어나다",
+    "example": "生日快乐",
+    "example_pinyin": "shēngrì kuàilè",
+    "example_korean": "생일 축하해요",
+    "frequency": 15
+  },
+  {
+    "id": 73,
+    "char": "风",
+    "pinyin": "fēng",
+    "korean": "바람",
+    "example": "风很大",
+    "example_pinyin": "fēng hěn dà",
+    "example_korean": "바람이 매우 커요",
+    "frequency": 15
+  },
+  {
+    "id": 74,
+    "char": "朗",
+    "pinyin": "lǎng",
+    "korean": "밝다",
+    "example": "朗读课文",
+    "example_pinyin": "lǎngdú kèwén",
+    "example_korean": "본문을 낭독해요",
+    "frequency": 15
+  },
+  {
+    "id": 75,
+    "char": "口",
+    "pinyin": "kǒu",
+    "korean": "입",
+    "example": "张开口",
+    "example_pinyin": "zhāng kāi kǒu",
+    "example_korean": "입을 벌려요",
+    "frequency": 14
+  },
+  {
+    "id": 76,
+    "char": "田",
+    "pinyin": "tián",
+    "korean": "논밭",
+    "example": "这是我的田",
+    "example_pinyin": "zhè shì wǒ de tián",
+    "example_korean": "이것은 내 논이에요",
+    "frequency": 14
+  },
+  {
+    "id": 77,
+    "char": "八",
+    "pinyin": "bā",
+    "korean": "여덟",
+    "example": "我有八本书",
+    "example_pinyin": "wǒ yǒu bā běn shū",
+    "example_korean": "나는 책이 여덟 권 있어요",
+    "frequency": 14
+  },
+  {
+    "id": 78,
+    "char": "做",
+    "pinyin": "zuò",
+    "korean": "하다",
+    "example": "做作业",
+    "example_pinyin": "zuò zuòyè",
+    "example_korean": "숙제를 해요",
+    "frequency": 14
+  },
+  {
+    "id": 79,
+    "char": "土",
+    "pinyin": "tǔ",
+    "korean": "흙",
+    "example": "土很软",
+    "example_pinyin": "tǔ hěn ruǎn",
+    "example_korean": "흙이 매우 부드러워요",
+    "frequency": 14
+  },
+  {
+    "id": 80,
+    "char": "和",
+    "pinyin": "hé",
+    "korean": "그리고",
+    "example": "爸爸和妈妈",
+    "example_pinyin": "bàba hé māma",
+    "example_korean": "아빠와 엄마",
+    "frequency": 14
+  },
+  {
+    "id": 81,
+    "char": "拉",
+    "pinyin": "lā",
+    "korean": "당기다",
+    "example": "拉开门",
+    "example_pinyin": "lā kāi mén",
+    "example_korean": "문을 당겨 열다",
+    "frequency": 14
+  },
+  {
+    "id": 82,
+    "char": "话",
+    "pinyin": "huà",
+    "korean": "말",
+    "example": "说话很大声",
+    "example_pinyin": "shuō huà hěn dà shēng",
+    "example_korean": "말을 크게 하다",
+    "frequency": 14
+  },
+  {
+    "id": 83,
+    "char": "起",
+    "pinyin": "qǐ",
+    "korean": "일어나다",
+    "example": "早上起床",
+    "example_pinyin": "zǎoshang qǐ chuáng",
+    "example_korean": "아침에 일어나다",
+    "frequency": 14
+  },
+  {
+    "id": 84,
+    "char": "婆",
+    "pinyin": "pó",
+    "korean": "할머니",
+    "example": "奶婆很好",
+    "example_pinyin": "nǎi pó hěn hǎo",
+    "example_korean": "할머니는 좋으시다",
+    "frequency": 14
+  },
+  {
+    "id": 85,
+    "char": "日",
+    "pinyin": "rì",
+    "korean": "해, 날",
+    "example": "今日很热",
+    "example_pinyin": "jīn rì hěn rè",
+    "example_korean": "오늘은 덥다",
+    "frequency": 13
+  },
+  {
+    "id": 86,
+    "char": "鱼",
+    "pinyin": "yú",
+    "korean": "물고기",
+    "example": "小鱼在游",
+    "example_pinyin": "xiǎo yú zài yóu",
+    "example_korean": "작은 물고기가 헤엄친다",
+    "frequency": 13
+  },
+  {
+    "id": 87,
+    "char": "妈",
+    "pinyin": "mā",
+    "korean": "엄마",
+    "example": "妈妈爱我",
+    "example_pinyin": "mā ma ài wǒ",
+    "example_korean": "엄마가 나를 사랑한다",
+    "frequency": 13
+  },
+  {
+    "id": 88,
+    "char": "又",
+    "pinyin": "yòu",
+    "korean": "또",
+    "example": "又下雨了",
+    "example_pinyin": "yòu xià yǔ le",
+    "example_korean": "또 비가 온다",
+    "frequency": 13
+  },
+  {
+    "id": 89,
+    "char": "些",
+    "pinyin": "xiē",
+    "korean": "조금",
+    "example": "一些水",
+    "example_pinyin": "yī xiē shuǐ",
+    "example_korean": "물 조금",
+    "frequency": 13
+  },
+  {
+    "id": 90,
+    "char": "就",
+    "pinyin": "jiù",
+    "korean": "곧",
+    "example": "我就来",
+    "example_pinyin": "wǒ jiù lái",
+    "example_korean": "나 곧 갈게",
+    "frequency": 13
+  },
+  {
+    "id": 91,
+    "char": "雨",
+    "pinyin": "yǔ",
+    "korean": "비",
+    "example": "下大雨",
+    "example_pinyin": "xià dà yǔ",
+    "example_korean": "큰 비가 온다",
+    "frequency": 13
+  },
+  {
+    "id": 92,
+    "char": "桥",
+    "pinyin": "qiáo",
+    "korean": "다리",
+    "example": "过小桥",
+    "example_pinyin": "guò xiǎo qiáo",
+    "example_korean": "작은 다리를 건너다",
+    "frequency": 13
+  },
+  {
+    "id": 93,
+    "char": "头",
+    "pinyin": "tóu",
+    "korean": "머리",
+    "example": "大头娃娃",
+    "example_pinyin": "dà tóu wá wa",
+    "example_korean": "큰 머리 인형",
+    "frequency": 13
+  },
+  {
+    "id": 94,
+    "char": "开",
+    "pinyin": "kāi",
+    "korean": "열다",
+    "example": "开门进来",
+    "example_pinyin": "kāi mén jìn lái",
+    "example_korean": "문을 열고 들어오다",
+    "frequency": 13
+  },
+  {
+    "id": 95,
+    "char": "云",
+    "pinyin": "yún",
+    "korean": "구름",
+    "example": "白云飘飘",
+    "example_pinyin": "bái yún piāo piāo",
+    "example_korean": "흰 구름이 둥둥 떠있다",
+    "frequency": 13
+  },
+  {
+    "id": 96,
+    "char": "也",
+    "pinyin": "yě",
+    "korean": "또한",
+    "example": "我也去",
+    "example_pinyin": "wǒ yě qù",
+    "example_korean": "나도 간다",
+    "frequency": 13
+  },
+  {
+    "id": 97,
+    "char": "多",
+    "pinyin": "duō",
+    "korean": "많다",
+    "example": "很多人",
+    "example_pinyin": "hěn duō rén",
+    "example_korean": "사람이 많다",
+    "frequency": 13
+  },
+  {
+    "id": 98,
+    "char": "禾",
+    "pinyin": "hé",
+    "korean": "벼",
+    "example": "禾苗长高",
+    "example_pinyin": "hé miáo zhǎng gāo",
+    "example_korean": "벼가 자라난다",
+    "frequency": 12
+  },
+  {
+    "id": 99,
+    "char": "红",
+    "pinyin": "hóng",
+    "korean": "빨강",
+    "example": "红色花朵",
+    "example_pinyin": "hóng sè huā duǒ",
+    "example_korean": "빨간 꽃",
+    "frequency": 12
+  },
+  {
+    "id": 100,
+    "char": "中",
+    "pinyin": "zhōng",
+    "korean": "가운데",
+    "example": "在中间",
+    "example_pinyin": "zài zhōng jiān",
+    "example_korean": "가운데에 있다",
+    "frequency": 12
+  },
+  {
+    "id": 101,
+    "word": "阅读",
+    "pinyin": "yuè dú",
+    "korean": "읽기",
+    "example": "我喜欢阅读",
+    "example_pinyin": "wǒ xǐ huān yuè dú",
+    "example_korean": "나는 읽기를 좋아해요",
+    "frequency": 20
+  },
+  {
+    "id": 102,
+    "word": "识字",
+    "pinyin": "shí zì",
+    "korean": "글자 익히기",
+    "example": "我会识字了",
+    "example_pinyin": "wǒ huì shí zì le",
+    "example_korean": "나는 글자를 알게 되었어요",
+    "frequency": 16
+  },
+  {
+    "id": 106,
+    "word": "语文",
+    "pinyin": "yǔ wén",
+    "korean": "국어",
+    "example": "我爱语文课",
+    "example_pinyin": "wǒ ài yǔ wén kè",
+    "example_korean": "나는 국어 수업을 좋아해요",
+    "frequency": 10
+  },
+  {
+    "id": 112,
+    "word": "数学",
+    "pinyin": "shù xué",
+    "korean": "수학",
+    "example": "我学数学",
+    "example_pinyin": "wǒ xué shù xué",
+    "example_korean": "나는 수학을 배워요",
+    "frequency": 5
+  },
+  {
+    "id": 125,
+    "word": "音乐",
+    "pinyin": "yīn yuè",
+    "korean": "음악",
+    "example": "我喜欢音乐",
+    "example_pinyin": "wǒ xǐhuan yīnyuè",
+    "example_korean": "나는 음악을 좋아해요",
+    "frequency": 3
+  },
+  {
+    "id": 129,
+    "word": "长江",
+    "pinyin": "cháng jiāng",
+    "korean": "양쯔강",
+    "example": "长江很长",
+    "example_pinyin": "cháng jiāng hěn cháng",
+    "example_korean": "양쯔강은 매우 길다",
+    "frequency": 2
+  },
+  {
+    "id": 130,
+    "word": "黄河",
+    "pinyin": "huáng hé",
+    "korean": "황하",
+    "example": "黄河在中国",
+    "example_pinyin": "huáng hé zài zhōngguó",
+    "example_korean": "황하는 중국에 있다",
+    "frequency": 2
+  },
+  {
+    "id": 137,
+    "word": "写字",
+    "pinyin": "xiě zì",
+    "korean": "글씨 쓰기",
+    "example": "我在写字",
+    "example_pinyin": "wǒ zài xiě zì",
+    "example_korean": "나는 글씨를 쓰고 있어요",
+    "frequency": 2
+  },
+  {
+    "id": 154,
+    "word": "端正",
+    "pinyin": "duān zhèng",
+    "korean": "바르게",
+    "example": "坐姿要端正",
+    "example_pinyin": "zuò zī yào duān zhèng",
+    "example_korean": "바른 자세로 앉아요",
+    "frequency": 2
+  },
+  {
+    "id": 164,
+    "word": "周末",
+    "pinyin": "zhōu mò",
+    "korean": "주말",
+    "example": "周末我去公园",
+    "example_pinyin": "zhōu mò wǒ qù gōng yuán",
+    "example_korean": "주말에 나는 공원에 가요",
+    "frequency": 2
+  },
+  {
+    "id": 182,
+    "word": "因为",
+    "pinyin": "yīnwèi",
+    "korean": "왜냐하면",
+    "example": "因为我喜欢你",
+    "example_pinyin": "yīnwèi wǒ xǐhuan nǐ",
+    "example_korean": "왜냐하면 난 너를 좋아해",
+    "frequency": 2
+  },
+  {
+    "id": 183,
+    "word": "你呢",
+    "pinyin": "nǐ ne",
+    "korean": "너는?",
+    "example": "我很好你呢",
+    "example_pinyin": "wǒ hěn hǎo nǐ ne",
+    "example_korean": "나는 좋아, 너는?",
+    "frequency": 2
+  },
+  {
+    "id": 186,
+    "word": "好啊",
+    "pinyin": "hǎo a",
+    "korean": "좋아",
+    "example": "去公园好啊",
+    "example_pinyin": "qù gōngyuán hǎo a",
+    "example_korean": "공원에 가자, 좋아",
+    "frequency": 2
+  },
+  {
+    "id": 196,
+    "word": "小河",
+    "pinyin": "xiǎo hé",
+    "korean": "작은 강",
+    "example": "小河很清澈",
+    "example_pinyin": "xiǎo hé hěn qīngchè",
+    "example_korean": "작은 강이 맑다",
+    "frequency": 2
+  },
+  {
+    "id": 197,
+    "word": "请问",
+    "pinyin": "qǐng wèn",
+    "korean": "실례지만",
+    "example": "请问这是什么",
+    "example_pinyin": "qǐng wèn zhè shì shénme",
+    "example_korean": "실례지만 이게 뭔가요",
+    "frequency": 2
+  },
+  {
+    "id": 198,
+    "word": "老师",
+    "pinyin": "lǎoshī",
+    "korean": "선생님",
+    "example": "老师早上好",
+    "example_pinyin": "lǎoshī zǎoshang hǎo",
+    "example_korean": "선생님 안녕하세요",
+    "frequency": 2
+  },
+  {
+    "id": 203,
+    "word": "个字",
+    "pinyin": "gè zì",
+    "korean": "글자",
+    "example": "写五个字",
+    "example_pinyin": "xiě wǔ gè zì",
+    "example_korean": "다섯 글자를 써요",
+    "frequency": 2
+  },
+  {
+    "id": 204,
+    "word": "斜钩",
+    "pinyin": "xié gōu",
+    "korean": "비스듬한 갈고리",
+    "example": "这是斜钩",
+    "example_pinyin": "zhè shì xié gōu",
+    "example_korean": "이것은 비스듬한 갈고리예요",
+    "frequency": 2
+  },
+  {
+    "id": 205,
+    "word": "卧钩",
+    "pinyin": "wò gōu",
+    "korean": "누운 갈고리",
+    "example": "写一个卧钩",
+    "example_pinyin": "xiě yí gè wò gōu",
+    "example_korean": "누운 갈고리를 써요",
+    "frequency": 2
+  },
+  {
+    "id": 222,
+    "word": "竖钩",
+    "pinyin": "shù gōu",
+    "korean": "세로갈고리",
+    "example": "这是竖钩笔画",
+    "example_pinyin": "zhè shì shù gōu bǐhuà",
+    "example_korean": "이것은 세로갈고리 획이에요",
+    "frequency": 2
+  },
+  {
+    "id": 224,
+    "word": "撇折",
+    "pinyin": "piě zhé",
+    "korean": "삐침접기",
+    "example": "笔画要工整",
+    "example_pinyin": "bǐhuà yào gōngzhěng",
+    "example_korean": "획을 반듯하게 써요",
+    "frequency": 2
+  },
+  {
+    "id": 226,
+    "word": "撇点",
+    "pinyin": "piě diǎn",
+    "korean": "삐침점",
+    "example": "写字要仔细",
+    "example_pinyin": "xiě zì yào zǐxì",
+    "example_korean": "글씨를 꼼꼼히 써요",
+    "frequency": 2
+  },
+  {
+    "id": 228,
+    "word": "弯钩",
+    "pinyin": "wān gōu",
+    "korean": "굽은갈고리",
+    "example": "写字要整齐",
+    "example_pinyin": "xiě zì yào zhěngqí",
+    "example_korean": "글씨를 반듯하게 써요",
+    "frequency": 2
+  },
+  {
+    "id": 229,
+    "word": "工作",
+    "pinyin": "gōng zuò",
+    "korean": "일하다",
+    "example": "爸爸去工作",
+    "example_pinyin": "bàba qù gōngzuò",
+    "example_korean": "아빠가 일하러 가요",
+    "frequency": 2
+  }
+]

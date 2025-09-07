@@ -9,14 +9,20 @@ import { motion } from "framer-motion";
 
 // Grade data imports - will add more as they become available
 import grade1_1 from "@/../../public/data/grade1-1.json";
+import newGrade1_1 from "@/../../public/data/new-grade1-1.json";
 
 interface WordData {
   id: number;
-  char: string;
+  char?: string;
+  word?: string;
   pinyin: string;
   korean: string;
-  type: "recognize" | "write";
-  level: string;
+  type?: "recognize" | "write";
+  level?: string;
+  example?: string;
+  example_pinyin?: string;
+  example_korean?: string;
+  frequency?: number;
 }
 
 interface StudyRecord {
@@ -32,6 +38,7 @@ interface StudyRecord {
 // Grade data map
 const gradeDataMap: Record<string, WordData[]> = {
   "grade1-1": grade1_1 as WordData[],
+  "new-grade1-1": newGrade1_1 as WordData[],
   // "grade1-2": grade1_2 as WordData[],
   // "grade2-1": grade2_1 as WordData[],
   // "grade2-2": grade2_2 as WordData[],
@@ -89,9 +96,24 @@ export default function StudyPage() {
   useEffect(() => {
     const saved = localStorage.getItem("studyRecords");
     const savedSize = localStorage.getItem("sessionSize");
-    const savedGrade = localStorage.getItem("selectedGrade") || "grade1-1";
+    const savedGrade = localStorage.getItem("selectedGrade") || "new-grade1-1";
+    const savedFilter = localStorage.getItem("wordFilter") || "all";
     
-    const data = gradeDataMap[savedGrade] || gradeDataMap["grade1-1"];
+    let data = gradeDataMap[savedGrade] || gradeDataMap["new-grade1-1"];
+    
+    // Apply word filter
+    if (savedFilter === "words-only") {
+      data = data.filter(word => {
+        const text = word.char || word.word || "";
+        return text.length >= 2;
+      });
+    } else if (savedFilter === "chars-only") {
+      data = data.filter(word => {
+        const text = word.char || word.word || "";
+        return text.length === 1;
+      });
+    }
+    
     setWordsData(data);
     
     if (saved) {

@@ -15,7 +15,8 @@ import {
 } from "@/components/ui/select";
 
 const gradeOptions = [
-  { value: "grade1-1", label: "1학년 1학기", available: true },
+  { value: "grade1-1", label: "1학년 1학기 (기본)", available: true },
+  { value: "new-grade1-1", label: "1학년 1학기 (향상)", available: true, description: "한국어 예문과 병음 포함" },
   { value: "grade1-2", label: "1학년 2학기", available: false },
   { value: "grade2-1", label: "2학년 1학기", available: false },
   { value: "grade2-2", label: "2학년 2학기", available: false },
@@ -24,16 +25,21 @@ const gradeOptions = [
 export default function Settings() {
   const router = useRouter();
   const [sessionSize, setSessionSize] = useState<string>("5");
-  const [selectedGrade, setSelectedGrade] = useState<string>("grade1-1");
+  const [selectedGrade, setSelectedGrade] = useState<string>("new-grade1-1");
+  const [wordFilter, setWordFilter] = useState<string>("all");
 
   useEffect(() => {
     const savedSize = localStorage.getItem("sessionSize");
     const savedGrade = localStorage.getItem("selectedGrade");
+    const savedFilter = localStorage.getItem("wordFilter");
     if (savedSize) {
       setSessionSize(savedSize);
     }
     if (savedGrade) {
       setSelectedGrade(savedGrade);
+    }
+    if (savedFilter) {
+      setWordFilter(savedFilter);
     }
   }, []);
 
@@ -49,6 +55,11 @@ export default function Settings() {
     if (confirm("학년을 변경하면 현재 학습 기록이 초기화됩니다. 계속하시겠습니까?")) {
       localStorage.removeItem("studyRecords");
     }
+  };
+
+  const handleFilterChange = (value: string) => {
+    setWordFilter(value);
+    localStorage.setItem("wordFilter", value);
   };
 
   const handleReset = () => {
@@ -106,13 +117,37 @@ export default function Settings() {
                         value={option.value}
                         disabled={!option.available}
                       >
-                        {option.label} {!option.available && "(준비중)"}
+                        <div>
+                          <div>{option.label} {!option.available && "(준비중)"}</div>
+                          {option.description && option.available && (
+                            <div className="text-xs text-gray-500 mt-1">{option.description}</div>
+                          )}
+                        </div>
                       </SelectItem>
                     ))}
                   </SelectContent>
                 </Select>
                 <p className="text-xs text-gray-500 mt-2">
-                  학습할 교재를 선택합니다.
+                  학습할 교재를 선택합니다. "향상" 버전은 중국어 예문, 병음, 한국어 번역을 포함합니다.
+                </p>
+              </div>
+
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  단어 필터
+                </label>
+                <Select value={wordFilter} onValueChange={handleFilterChange}>
+                  <SelectTrigger className="w-full">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">모든 단어 (한자 + 단어)</SelectItem>
+                    <SelectItem value="words-only">2글자 이상 단어만</SelectItem>
+                    <SelectItem value="chars-only">단일 한자만</SelectItem>
+                  </SelectContent>
+                </Select>
+                <p className="text-xs text-gray-500 mt-2">
+                  학습할 단어 종류를 선택합니다.
                 </p>
               </div>
 
