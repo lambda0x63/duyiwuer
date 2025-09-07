@@ -128,7 +128,7 @@ export default function Settings() {
                   </SelectContent>
                 </Select>
                 <p className="text-xs text-gray-500 mt-2">
-                  학습할 교재를 선택합니다. "향상" 버전은 중국어 예문, 병음, 한국어 번역을 포함합니다.
+                  학습할 교재를 선택합니다. &quot;향상&quot; 버전은 중국어 예문, 병음, 한국어 번역을 포함합니다.
                 </p>
               </div>
 
