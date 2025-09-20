@@ -13,6 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import wordsData from "@/../../public/data/1.json";
 
 
 export default function Settings() {
@@ -121,7 +122,7 @@ export default function Settings() {
               <h2 className="text-sm font-medium">버전 정보</h2>
               <p className="text-xs text-gray-500">独一无二 v2.0</p>
               <p className="text-xs text-gray-500">중국어 기초 학습</p>
-              <p className="text-xs text-gray-500">총 150개 단어 수록</p>
+              <p className="text-xs text-gray-500">총 {wordsData.length}개 단어 수록</p>
             </div>
           </Card>
         </motion.div>

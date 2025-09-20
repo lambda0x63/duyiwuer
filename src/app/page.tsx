@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Settings } from "lucide-react";
 import { motion } from "framer-motion";
+import wordsData from "@/../../public/data/1.json";
 
 interface StudyRecord {
   wordId: number;
@@ -15,12 +16,6 @@ interface StudyRecord {
   difficulty: number;
 }
 
-// Word data metadata
-const wordDataInfo = {
-  name: "중국어 기초 단어",
-  total: 150 // Total words in 1.json
-};
-
 export default function Home() {
   const router = useRouter();
   const [studyStats, setStudyStats] = useState({
@@ -28,8 +23,12 @@ export default function Home() {
     dueForReview: 0,
     completionRate: 0,
   });
+  const [totalWords, setTotalWords] = useState(0);
 
   useEffect(() => {
+    // 동적으로 단어 개수 계산
+    setTotalWords(wordsData.length);
+
     const saved = localStorage.getItem("studyRecords");
     if (saved) {
       const records: Record<number, StudyRecord> = JSON.parse(saved);
@@ -43,7 +42,7 @@ export default function Home() {
       setStudyStats({
         totalStudied,
         dueForReview,
-        completionRate: Math.round((totalStudied / wordDataInfo.total) * 100),
+        completionRate: Math.round((totalStudied / wordsData.length) * 100),
       });
     }
   }, []);
@@ -94,13 +93,13 @@ export default function Home() {
           <Card className="p-6">
           <div className="space-y-4">
             <div className="text-center mb-4">
-              <h2 className="text-xl font-bold">{wordDataInfo.name}</h2>
+              <h2 className="text-xl font-bold">중국어 기초 단어</h2>
               <p className="text-sm text-gray-500 mt-1">중국어 기초 단어 학습</p>
             </div>
             <div className="space-y-3">
               <div className="flex justify-between">
                 <span className="text-gray-600">학습한 단어</span>
-                <span className="font-semibold">{studyStats.totalStudied} / {wordDataInfo.total}</span>
+                <span className="font-semibold">{studyStats.totalStudied} / {totalWords}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">복습 대기</span>
