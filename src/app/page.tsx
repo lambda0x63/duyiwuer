@@ -15,12 +15,10 @@ interface StudyRecord {
   difficulty: number;
 }
 
-// Grade metadata
-const gradeInfo: Record<string, {name: string, total: number}> = {
-  "grade1-1": { name: "1학년 1학기", total: 279 },
-  "grade1-2": { name: "1학년 2학기", total: 0 },
-  "grade2-1": { name: "2학년 1학기", total: 0 },
-  "grade2-2": { name: "2학년 2학기", total: 0 },
+// Word data metadata
+const wordDataInfo = {
+  name: "중국어 기초 단어",
+  total: 150 // Total words in 1.json
 };
 
 export default function Home() {
@@ -30,26 +28,22 @@ export default function Home() {
     dueForReview: 0,
     completionRate: 0,
   });
-  const [selectedGrade, setSelectedGrade] = useState("grade1-1");
 
   useEffect(() => {
-    const savedGrade = localStorage.getItem("selectedGrade") || "grade1-1";
-    setSelectedGrade(savedGrade);
-    
     const saved = localStorage.getItem("studyRecords");
     if (saved) {
       const records: Record<number, StudyRecord> = JSON.parse(saved);
       const now = new Date();
-      
+
       const totalStudied = Object.keys(records).length;
       const dueForReview = Object.values(records).filter(
         record => new Date(record.nextReview) <= now
       ).length;
-      
+
       setStudyStats({
         totalStudied,
         dueForReview,
-        completionRate: Math.round((totalStudied / (gradeInfo[savedGrade]?.total || 279)) * 100),
+        completionRate: Math.round((totalStudied / wordDataInfo.total) * 100),
       });
     }
   }, []);
@@ -99,22 +93,14 @@ export default function Home() {
         >
           <Card className="p-6">
           <div className="space-y-4">
-            {selectedGrade === "grade1-1" && (
-              <>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">识字表 (인식)</span>
-                  <span className="text-sm font-semibold">199자</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">写字表 (쓰기)</span>
-                  <span className="text-sm font-semibold">80자</span>
-                </div>
-              </>
-            )}
-            <div className="border-t pt-3 mt-3 space-y-3">
+            <div className="text-center mb-4">
+              <h2 className="text-xl font-bold">{wordDataInfo.name}</h2>
+              <p className="text-sm text-gray-500 mt-1">중국어 기초 단어 학습</p>
+            </div>
+            <div className="space-y-3">
               <div className="flex justify-between">
-                <span className="text-gray-600">학습한 한자</span>
-                <span className="font-semibold">{studyStats.totalStudied} / {gradeInfo[selectedGrade]?.total || 279}</span>
+                <span className="text-gray-600">학습한 단어</span>
+                <span className="font-semibold">{studyStats.totalStudied} / {wordDataInfo.total}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">복습 대기</span>

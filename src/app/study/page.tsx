@@ -8,21 +8,16 @@ import { ChevronLeft } from "lucide-react";
 import { motion } from "framer-motion";
 
 // Grade data imports - will add more as they become available
-import grade1_1 from "@/../../public/data/grade1-1.json";
-import newGrade1_1 from "@/../../public/data/new-grade1-1.json";
+import wordsData from "@/../../public/data/1.json";
 
 interface WordData {
-  id: number;
-  char?: string;
-  word?: string;
+  id?: number;
+  word: string;
+  meaning_ko: string;
   pinyin: string;
-  korean: string;
-  type?: "recognize" | "write";
-  level?: string;
-  example?: string;
-  example_pinyin?: string;
-  example_korean?: string;
-  frequency?: number;
+  example: string;
+  example_pinyin: string;
+  example_korean: string;
 }
 
 interface StudyRecord {
@@ -35,14 +30,11 @@ interface StudyRecord {
   repetitions: number;
 }
 
-// Grade data map
-const gradeDataMap: Record<string, WordData[]> = {
-  "grade1-1": grade1_1 as WordData[],
-  "new-grade1-1": newGrade1_1 as WordData[],
-  // "grade1-2": grade1_2 as WordData[],
-  // "grade2-1": grade2_1 as WordData[],
-  // "grade2-2": grade2_2 as WordData[],
-};
+// Add IDs to words data if not present
+const wordsWithIds: WordData[] = wordsData.map((word, index) => ({
+  ...word,
+  id: index + 1
+}));
 
 // SM-2 Algorithm implementation
 const calculateSM2 = (
@@ -96,26 +88,9 @@ export default function StudyPage() {
   useEffect(() => {
     const saved = localStorage.getItem("studyRecords");
     const savedSize = localStorage.getItem("sessionSize");
-    const savedGrade = localStorage.getItem("selectedGrade") || "new-grade1-1";
-    const savedFilter = localStorage.getItem("wordFilter") || "all";
-    
-    let data = gradeDataMap[savedGrade] || gradeDataMap["new-grade1-1"];
-    
-    // Apply word filter
-    if (savedFilter === "words-only") {
-      data = data.filter(word => {
-        const text = word.char || word.word || "";
-        return text.length >= 2;
-      });
-    } else if (savedFilter === "chars-only") {
-      data = data.filter(word => {
-        const text = word.char || word.word || "";
-        return text.length === 1;
-      });
-    }
-    
-    setWordsData(data);
-    
+
+    setWordsData(wordsWithIds);
+
     if (saved) {
       setStudyRecords(JSON.parse(saved));
     }
@@ -141,18 +116,18 @@ export default function StudyPage() {
     // Get words that need review (sorted by urgency)
     const wordsToReview = wordsData
       .filter((word) => {
-        const record = records[word.id];
+        const record = records[word.id!];
         if (!record) return false;
         return new Date(record.nextReview) <= now;
       })
       .sort((a, b) => {
-        const aReview = new Date(records[a.id].nextReview).getTime();
-        const bReview = new Date(records[b.id].nextReview).getTime();
+        const aReview = new Date(records[a.id!].nextReview).getTime();
+        const bReview = new Date(records[b.id!].nextReview).getTime();
         return aReview - bReview;
       });
 
     // Get new words (never studied)
-    const newWords = wordsData.filter(word => !records[word.id]);
+    const newWords = wordsData.filter(word => !records[word.id!]);
 
     // Mix strategy: prioritize overdue reviews, then add new words
     let sessionWords: WordData[] = [];
@@ -208,7 +183,7 @@ export default function StudyPage() {
     }
 
     // Get existing record or create new one
-    const existingRecord = studyRecords[word.id];
+    const existingRecord = studyRecords[word.id!];
     const currentEasiness = existingRecord?.easiness || 2.5;
     const currentInterval = existingRecord?.interval || 0;
     const currentRepetitions = existingRecord?.repetitions || 0;
@@ -227,7 +202,7 @@ export default function StudyPage() {
     }
 
     const newRecord: StudyRecord = {
-      wordId: word.id,
+      wordId: word.id!,
       lastStudied: now.toISOString(),
       nextReview: nextReview.toISOString(),
       difficulty: quality,
@@ -236,7 +211,7 @@ export default function StudyPage() {
       repetitions: sm2Result.repetitions
     };
 
-    const newRecords = { ...studyRecords, [word.id]: newRecord };
+    const newRecords = { ...studyRecords, [word.id!]: newRecord };
     setStudyRecords(newRecords);
     localStorage.setItem("studyRecords", JSON.stringify(newRecords));
 
@@ -338,7 +313,7 @@ export default function StudyPage() {
         </div>
       </motion.header>
 
-      <main className="flex-1 flex items-center justify-center">
+      <main className="flex-1 flex items-start justify-center pt-8">
         <FlashCard
           word={currentWords[currentIndex]}
           onSwipe={handleSwipe}
