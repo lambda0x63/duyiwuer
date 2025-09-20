@@ -29,6 +29,20 @@ export default function Home() {
     // 동적으로 단어 개수 계산
     setTotalWords(wordsData.length);
 
+    // 데이터 버전 체크 (새 단어 추가 감지)
+    const currentDataHash = `v1_${wordsData.length}`; // 간단한 버전 관리
+    const savedDataHash = localStorage.getItem("dataVersion");
+
+    if (savedDataHash && savedDataHash !== currentDataHash) {
+      // 새 단어가 추가됨
+      const prevCount = parseInt(savedDataHash.split('_')[1]) || 0;
+      const newCount = wordsData.length - prevCount;
+      if (newCount > 0) {
+        console.log(`🎉 ${newCount}개의 새로운 단어가 추가되었습니다!`);
+      }
+    }
+    localStorage.setItem("dataVersion", currentDataHash);
+
     const saved = localStorage.getItem("studyRecords");
     if (saved) {
       const records: Record<number, StudyRecord> = JSON.parse(saved);
@@ -120,18 +134,26 @@ export default function Home() {
           </Card>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="space-y-3"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.4 }}
         >
-          <Button 
-            onClick={() => router.push("/study")} 
-            size="lg" 
+          <Button
+            onClick={() => router.push("/study")}
+            size="lg"
             className="w-full"
           >
             학습 시작하기
+          </Button>
+          <Button
+            onClick={() => router.push("/quiz")}
+            size="lg"
+            variant="outline"
+            className="w-full"
+          >
+            퀴즈 풀기
           </Button>
         </motion.div>
       </div>
