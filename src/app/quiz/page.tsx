@@ -287,12 +287,12 @@ export default function QuizPage() {
 
     return (
       <motion.div
-        className="min-h-screen flex flex-col p-4"
+        className="min-h-screen flex flex-col p-4 overflow-y-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        <div className="flex-1 flex items-center justify-center">
-          <Card className="w-full max-w-md p-8 text-center">
+        <div className="w-full max-w-md mx-auto py-8">
+          <Card className="w-full p-8 text-center">
             <h2 className="text-2xl font-bold mb-4">퀴즈 완료!</h2>
 
             <div className="mb-6">
