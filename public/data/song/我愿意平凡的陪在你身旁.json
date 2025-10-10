@@ -1,0 +1,490 @@
+[
+  {
+    "word": "长得",
+    "meaning_ko": "~하게 생기다",
+    "pinyin": "zhǎng de",
+    "example": "他长得很高。",
+    "example_pinyin": "Tā zhǎng de hěn gāo.",
+    "example_korean": "그는 키가 크게 생겼다."
+  },
+  {
+    "word": "丑",
+    "meaning_ko": "못생기다",
+    "pinyin": "chǒu",
+    "example": "我不丑。",
+    "example_pinyin": "Wǒ bù chǒu.",
+    "example_korean": "나는 못생기지 않았다."
+  },
+  {
+    "word": "活",
+    "meaning_ko": "살다",
+    "pinyin": "huó",
+    "example": "活得开心",
+    "example_pinyin": "Huó de kāixīn",
+    "example_korean": "행복하게 살다"
+  },
+  {
+    "word": "久",
+    "meaning_ko": "오래",
+    "pinyin": "jiǔ",
+    "example": "很久不见了。",
+    "example_pinyin": "Hěn jiǔ bù jiàn le.",
+    "example_korean": "오랜만이야."
+  },
+  {
+    "word": "帅",
+    "meaning_ko": "잘생기다, 멋지다",
+    "pinyin": "shuài",
+    "example": "他很帅。",
+    "example_pinyin": "Tā hěn shuài.",
+    "example_korean": "그는 잘생겼다."
+  },
+  {
+    "word": "老",
+    "meaning_ko": "늙다",
+    "pinyin": "lǎo",
+    "example": "他老了。",
+    "example_pinyin": "Tā lǎo le.",
+    "example_korean": "그는 늙었다."
+  },
+  {
+    "word": "快",
+    "meaning_ko": "빠르다",
+    "pinyin": "kuài",
+    "example": "跑得很快",
+    "example_pinyin": "Pǎo de hěn kuài",
+    "example_korean": "매우 빨리 뛰다"
+  },
+  {
+    "word": "宁愿",
+    "meaning_ko": "차라리",
+    "pinyin": "nìng yuàn",
+    "example": "我宁愿待在家里。",
+    "example_pinyin": "Wǒ nìng yuàn dāi zài jiā lǐ.",
+    "example_korean": "나는 차라리 집에 있겠다."
+  },
+  {
+    "word": "当",
+    "meaning_ko": "되다, ~로서",
+    "pinyin": "dāng",
+    "example": "我想当老师。",
+    "example_pinyin": "Wǒ xiǎng dāng lǎoshī.",
+    "example_korean": "나는 선생님이 되고 싶다."
+  },
+  {
+    "word": "个",
+    "meaning_ko": "개 (개수 세는 단위)",
+    "pinyin": "gè",
+    "example": "一个人",
+    "example_pinyin": "Yī gè rén",
+    "example_korean": "한 사람"
+  },
+  {
+    "word": "丑八怪",
+    "meaning_ko": "못난이, 못생긴 사람",
+    "pinyin": "chǒu bā guài",
+    "example": "别叫我丑八怪。",
+    "example_pinyin": "Bié jiào wǒ chǒu bā guài.",
+    "example_korean": "나를 못난이라고 부르지 마."
+  },
+  {
+    "word": "积极",
+    "meaning_ko": "적극적이다",
+    "pinyin": "jījí",
+    "example": "他做事很积极。",
+    "example_pinyin": "Tā zuòshì hěn jījí.",
+    "example_korean": "그는 일을 매우 적극적으로 한다."
+  },
+  {
+    "word": "可爱",
+    "meaning_ko": "귀엽다",
+    "pinyin": "kě'ài",
+    "example": "这只猫很可爱。",
+    "example_pinyin": "Zhè zhī māo hěn kě'ài.",
+    "example_korean": "이 고양이는 매우 귀엽다."
+  },
+  {
+    "word": "胖",
+    "meaning_ko": "뚱뚱하다",
+    "pinyin": "pàng",
+    "example": "我最近胖了。",
+    "example_pinyin": "Wǒ zuìjìn pàng le.",
+    "example_korean": "나는 최근에 살이 쪘다."
+  },
+  {
+    "word": "日子",
+    "meaning_ko": "날들, 생활",
+    "pinyin": "rìzi",
+    "example": "日子过得很快。",
+    "example_pinyin": "Rìzi guò de hěn kuài.",
+    "example_korean": "날들이 빨리 지나간다."
+  },
+  {
+    "word": "旺",
+    "meaning_ko": "번창하다, 왕성하다",
+    "pinyin": "wàng",
+    "example": "生意很旺。",
+    "example_pinyin": "Shēngyì hěn wàng.",
+    "example_korean": "장사가 번창하다."
+  },
+  {
+    "word": "平凡",
+    "meaning_ko": "평범하다",
+    "pinyin": "píngfán",
+    "example": "平凡的生活",
+    "example_pinyin": "Píngfán de shēnghuó",
+    "example_korean": "평범한 생활"
+  },
+  {
+    "word": "人",
+    "meaning_ko": "사람",
+    "pinyin": "rén",
+    "example": "好人",
+    "example_pinyin": "Hǎorén",
+    "example_korean": "좋은 사람"
+  },
+  {
+    "word": "陪",
+    "meaning_ko": "함께하다, 동반하다",
+    "pinyin": "péi",
+    "example": "陪你吃饭",
+    "example_pinyin": "Péi nǐ chīfàn",
+    "example_korean": "너와 함께 밥 먹다"
+  },
+  {
+    "word": "在",
+    "meaning_ko": "~에 있다",
+    "pinyin": "zài",
+    "example": "我在家。",
+    "example_pinyin": "Wǒ zài jiā.",
+    "example_korean": "나는 집에 있다."
+  },
+  {
+    "word": "身旁",
+    "meaning_ko": "곁, 옆",
+    "pinyin": "shēnpáng",
+    "example": "陪在你身旁",
+    "example_pinyin": "Péi zài nǐ shēnpáng",
+    "example_korean": "네 곁에 있다"
+  },
+  {
+    "word": "大",
+    "meaning_ko": "크다",
+    "pinyin": "dà",
+    "example": "很大的房子",
+    "example_pinyin": "Hěn dà de fángzi",
+    "example_korean": "매우 큰 집"
+  },
+  {
+    "word": "新闻",
+    "meaning_ko": "뉴스",
+    "pinyin": "xīnwén",
+    "example": "看新闻",
+    "example_pinyin": "Kàn xīnwén",
+    "example_korean": "뉴스를 보다"
+  },
+  {
+    "word": "爆炸",
+    "meaning_ko": "폭발하다",
+    "pinyin": "bàozhà",
+    "example": "新闻爆炸了。",
+    "example_pinyin": "Xīnwén bàozhà le.",
+    "example_korean": "뉴스가 폭발했다."
+  },
+  {
+    "word": "了",
+    "meaning_ko": "~했다 (완료 표시)",
+    "pinyin": "le",
+    "example": "吃了饭",
+    "example_pinyin": "Chī le fàn",
+    "example_korean": "밥을 먹었다"
+  },
+  {
+    "word": "谁",
+    "meaning_ko": "누가, 누구",
+    "pinyin": "shéi",
+    "example": "你是谁?",
+    "example_pinyin": "Nǐ shì shéi?",
+    "example_korean": "너는 누구니?"
+  },
+  {
+    "word": "登上",
+    "meaning_ko": "올라가다, 오르다",
+    "pinyin": "dēngshàng",
+    "example": "登上舞台",
+    "example_pinyin": "Dēngshàng wǔtái",
+    "example_korean": "무대에 오르다"
+  },
+  {
+    "word": "大雅之堂",
+    "meaning_ko": "고상한 자리, 훌륭한 장소",
+    "pinyin": "dà yǎ zhī táng",
+    "example": "登上大雅之堂",
+    "example_pinyin": "Dēngshàng dà yǎ zhī táng",
+    "example_korean": "고상한 자리에 오르다"
+  },
+  {
+    "word": "妈妈",
+    "meaning_ko": "엄마",
+    "pinyin": "māma",
+    "example": "我爱妈妈。",
+    "example_pinyin": "Wǒ ài māma.",
+    "example_korean": "나는 엄마를 사랑한다."
+  },
+  {
+    "word": "炒",
+    "meaning_ko": "볶다",
+    "pinyin": "chǎo",
+    "example": "炒菜",
+    "example_pinyin": "Chǎo cài",
+    "example_korean": "요리를 볶다"
+  },
+  {
+    "word": "饭",
+    "meaning_ko": "밥",
+    "pinyin": "fàn",
+    "example": "吃饭",
+    "example_pinyin": "Chīfàn",
+    "example_korean": "밥을 먹다"
+  },
+  {
+    "word": "真",
+    "meaning_ko": "정말, 진짜로",
+    "pinyin": "zhēn",
+    "example": "真好吃!",
+    "example_pinyin": "Zhēn hǎochī!",
+    "example_korean": "정말 맛있어!"
+  },
+  {
+    "word": "香",
+    "meaning_ko": "향기롭다, 맛있다",
+    "pinyin": "xiāng",
+    "example": "这个菜很香。",
+    "example_pinyin": "Zhège cài hěn xiāng.",
+    "example_korean": "이 요리는 향기롭다."
+  },
+  {
+    "word": "吃完",
+    "meaning_ko": "다 먹다",
+    "pinyin": "chī wán",
+    "example": "吃完饭再走。",
+    "example_pinyin": "Chī wán fàn zài zǒu.",
+    "example_korean": "밥 다 먹고 가."
+  },
+  {
+    "word": "站",
+    "meaning_ko": "서다",
+    "pinyin": "zhàn",
+    "example": "站起来",
+    "example_pinyin": "Zhàn qǐlái",
+    "example_korean": "일어서다"
+  },
+  {
+    "word": "山坡",
+    "meaning_ko": "산비탈",
+    "pinyin": "shānpō",
+    "example": "爬上山坡",
+    "example_pinyin": "Pá shàng shānpō",
+    "example_korean": "산비탈을 오르다"
+  },
+  {
+    "word": "上",
+    "meaning_ko": "위",
+    "pinyin": "shàng",
+    "example": "桌子上",
+    "example_pinyin": "Zhuōzi shàng",
+    "example_korean": "책상 위"
+  },
+  {
+    "word": "悠哉悠哉",
+    "meaning_ko": "여유롭게, 느긋하게",
+    "pinyin": "yōu zāi yōu zāi",
+    "example": "悠哉悠哉地散步",
+    "example_pinyin": "Yōu zāi yōu zāi de sànbù",
+    "example_korean": "여유롭게 산책하다"
+  },
+  {
+    "word": "向",
+    "meaning_ko": "~쪽으로",
+    "pinyin": "xiàng",
+    "example": "向前走",
+    "example_pinyin": "Xiàng qián zǒu",
+    "example_korean": "앞으로 가다"
+  },
+  {
+    "word": "望",
+    "meaning_ko": "바라보다",
+    "pinyin": "wàng",
+    "example": "向远处望去",
+    "example_pinyin": "Xiàng yuǎn chù wàng qù",
+    "example_korean": "먼 곳을 바라보다"
+  },
+  {
+    "word": "是",
+    "meaning_ko": "~이다",
+    "pinyin": "shì",
+    "example": "我是学生。",
+    "example_pinyin": "Wǒ shì xuéshēng.",
+    "example_korean": "나는 학생이다."
+  },
+  {
+    "word": "太阳",
+    "meaning_ko": "태양",
+    "pinyin": "tàiyáng",
+    "example": "太阳升起来了。",
+    "example_pinyin": "Tàiyáng shēng qǐlái le.",
+    "example_korean": "태양이 떠올랐다."
+  },
+  {
+    "word": "只管",
+    "meaning_ko": "오직, 오로지",
+    "pinyin": "zhǐguǎn",
+    "example": "只管去做。",
+    "example_pinyin": "Zhǐguǎn qù zuò.",
+    "example_korean": "오직 가서 해."
+  },
+  {
+    "word": "照亮",
+    "meaning_ko": "비추다, 밝히다",
+    "pinyin": "zhàoliàng",
+    "example": "灯光照亮了房间。",
+    "example_pinyin": "Dēngguāng zhàoliàng le fángjiān.",
+    "example_korean": "전등이 방을 밝혔다."
+  },
+  {
+    "word": "不是",
+    "meaning_ko": "~가 아니다",
+    "pinyin": "bú shì",
+    "example": "我不是老师。",
+    "example_pinyin": "Wǒ bú shì lǎoshī.",
+    "example_korean": "나는 선생님이 아니다."
+  },
+  {
+    "word": "没有",
+    "meaning_ko": "없다",
+    "pinyin": "méiyǒu",
+    "example": "我没有钱。",
+    "example_pinyin": "Wǒ méiyǒu qián.",
+    "example_korean": "나는 돈이 없다."
+  },
+  {
+    "word": "梦想",
+    "meaning_ko": "꿈",
+    "pinyin": "mèngxiǎng",
+    "example": "追求梦想",
+    "example_pinyin": "Zhuīqiú mèngxiǎng",
+    "example_korean": "꿈을 추구하다"
+  },
+  {
+    "word": "只是",
+    "meaning_ko": "단지, 다만",
+    "pinyin": "zhǐshì",
+    "example": "只是开玩笑。",
+    "example_pinyin": "Zhǐshì kāiwánxiào.",
+    "example_korean": "단지 농담이야."
+  },
+  {
+    "word": "狂妄",
+    "meaning_ko": "건방지다, 오만하다",
+    "pinyin": "kuángwàng",
+    "example": "别太狂妄。",
+    "example_pinyin": "Bié tài kuángwàng.",
+    "example_korean": "너무 건방지게 굴지 마."
+  },
+  {
+    "word": "那就",
+    "meaning_ko": "그럼",
+    "pinyin": "nà jiù",
+    "example": "那就走吧。",
+    "example_pinyin": "Nà jiù zǒu ba.",
+    "example_korean": "그럼 가자."
+  },
+  {
+    "word": "当下",
+    "meaning_ko": "현재, 지금",
+    "pinyin": "dāngxià",
+    "example": "活在当下",
+    "example_pinyin": "Huó zài dāngxià",
+    "example_korean": "현재를 살다"
+  },
+  {
+    "word": "一点点",
+    "meaning_ko": "조금씩",
+    "pinyin": "yīdiǎndiǎn",
+    "example": "一点点进步",
+    "example_pinyin": "Yīdiǎndiǎn jìnbù",
+    "example_korean": "조금씩 진보하다"
+  },
+  {
+    "word": "变得",
+    "meaning_ko": "~하게 되다, 변하다",
+    "pinyin": "biàn de",
+    "example": "变得更强。",
+    "example_pinyin": "Biàn de gèng qiáng.",
+    "example_korean": "더 강해지다."
+  },
+  {
+    "word": "强大",
+    "meaning_ko": "강하다, 강력하다",
+    "pinyin": "qiángdà",
+    "example": "变得强大",
+    "example_pinyin": "Biàn de qiángdà",
+    "example_korean": "강해지다"
+  },
+  {
+    "word": "住",
+    "meaning_ko": "살다, 거주하다",
+    "pinyin": "zhù",
+    "example": "住在北京",
+    "example_pinyin": "Zhù zài Běijīng",
+    "example_korean": "베이징에 살다"
+  },
+  {
+    "word": "属于",
+    "meaning_ko": "~에 속하다",
+    "pinyin": "shǔyú",
+    "example": "这个属于你。",
+    "example_pinyin": "Zhège shǔyú nǐ.",
+    "example_korean": "이것은 너에게 속한다."
+  },
+  {
+    "word": "避风港",
+    "meaning_ko": "피난처, 안전한 항구",
+    "pinyin": "bìfēnggǎng",
+    "example": "家是避风港。",
+    "example_pinyin": "Jiā shì bìfēnggǎng.",
+    "example_korean": "집은 피난처다."
+  },
+  {
+    "word": "独一无二",
+    "meaning_ko": "유일무이하다",
+    "pinyin": "dú yī wú èr",
+    "example": "你是独一无二的。",
+    "example_pinyin": "Nǐ shì dú yī wú èr de.",
+    "example_korean": "너는 유일무이하다."
+  },
+  {
+    "word": "珍贵",
+    "meaning_ko": "귀중하다",
+    "pinyin": "zhēnguì",
+    "example": "珍贵的礼物",
+    "example_pinyin": "Zhēnguì de lǐwù",
+    "example_korean": "귀중한 선물"
+  },
+  {
+    "word": "且",
+    "meaning_ko": "그리고, 또한",
+    "pinyin": "qiě",
+    "example": "聪明且勤奋",
+    "example_pinyin": "Cōngmíng qiě qínfèn",
+    "example_korean": "똑똑하고 또한 부지런하다"
+  },
+  {
+    "word": "善良",
+    "meaning_ko": "선량하다",
+    "pinyin": "shànliáng",
+    "example": "善良的人",
+    "example_pinyin": "Shànliáng de rén",
+    "example_korean": "선량한 사람"
+  }
+]

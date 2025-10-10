@@ -1,0 +1,458 @@
+[
+  {
+    "word": "真的",
+    "meaning_ko": "진짜의, 정말로",
+    "pinyin": "zhēn de",
+    "example": "这是真的吗?",
+    "example_pinyin": "Zhè shì zhēn de ma?",
+    "example_korean": "이것은 진짜입니까?"
+  },
+  {
+    "word": "假的",
+    "meaning_ko": "가짜의, 거짓의",
+    "pinyin": "jiǎ de",
+    "example": "这个消息是假的。",
+    "example_pinyin": "Zhège xiāoxī shì jiǎ de.",
+    "example_korean": "이 소식은 가짜다."
+  },
+  {
+    "word": "比不了",
+    "meaning_ko": "비교할 수 없다, ~만 못하다",
+    "pinyin": "bǐ bù liǎo",
+    "example": "我比不了他那么优秀。",
+    "example_pinyin": "Wǒ bǐ bù liǎo tā nàme yōuxiù.",
+    "example_korean": "나는 그만큼 우수하지 못하다."
+  },
+  {
+    "word": "那句话",
+    "meaning_ko": "그 말",
+    "pinyin": "nà jù huà",
+    "example": "我永远记得那句话。",
+    "example_pinyin": "Wǒ yǒngyuǎn jìdé nà jù huà.",
+    "example_korean": "나는 그 말을 영원히 기억한다."
+  },
+  {
+    "word": "每天",
+    "meaning_ko": "매일",
+    "pinyin": "měi tiān",
+    "example": "我每天都去跑步。",
+    "example_pinyin": "Wǒ měi tiān dōu qù pǎobù.",
+    "example_korean": "나는 매일 달리기를 한다."
+  },
+  {
+    "word": "对",
+    "meaning_ko": "~에게, ~에 대해",
+    "pinyin": "duì",
+    "example": "我对你说实话。",
+    "example_pinyin": "Wǒ duì nǐ shuō shíhuà.",
+    "example_korean": "나는 너에게 진실을 말한다."
+  },
+  {
+    "word": "想",
+    "meaning_ko": "그리워하다, 생각하다",
+    "pinyin": "xiǎng",
+    "example": "我很想你。",
+    "example_pinyin": "Wǒ hěn xiǎng nǐ.",
+    "example_korean": "나는 너를 매우 그리워한다."
+  },
+  {
+    "word": "爱",
+    "meaning_ko": "사랑하다",
+    "pinyin": "ài",
+    "example": "我爱你。",
+    "example_pinyin": "Wǒ ài nǐ.",
+    "example_korean": "나는 너를 사랑한다."
+  },
+  {
+    "word": "愿",
+    "meaning_ko": "기꺼이 ~하다, 원하다",
+    "pinyin": "yuàn",
+    "example": "我愿为你做任何事。",
+    "example_pinyin": "Wǒ yuàn wèi nǐ zuò rènhé shì.",
+    "example_korean": "나는 기꺼이 너를 위해 무엇이든 하겠다."
+  },
+  {
+    "word": "做",
+    "meaning_ko": "되다, 하다",
+    "pinyin": "zuò",
+    "example": "我想做一个好人。",
+    "example_pinyin": "Wǒ xiǎng zuò yī gè hǎorén.",
+    "example_korean": "나는 좋은 사람이 되고 싶다."
+  },
+  {
+    "word": "爱情",
+    "meaning_ko": "사랑, 애정",
+    "pinyin": "àiqíng",
+    "example": "爱情需要互相理解。",
+    "example_pinyin": "Àiqíng xūyào hùxiāng lǐjiě.",
+    "example_korean": "사랑은 서로 이해가 필요하다."
+  },
+  {
+    "word": "傻瓜",
+    "meaning_ko": "바보",
+    "pinyin": "shǎguā",
+    "example": "你这个小傻瓜。",
+    "example_pinyin": "Nǐ zhège xiǎo shǎguā.",
+    "example_korean": "너 이 작은 바보야."
+  },
+  {
+    "word": "决不",
+    "meaning_ko": "결코 ~하지 않다",
+    "pinyin": "jué bù",
+    "example": "我决不放弃。",
+    "example_pinyin": "Wǒ jué bù fàngqì.",
+    "example_korean": "나는 결코 포기하지 않는다."
+  },
+  {
+    "word": "犹豫",
+    "meaning_ko": "주저하다, 망설이다",
+    "pinyin": "yóuyù",
+    "example": "别犹豫了,快做决定吧。",
+    "example_pinyin": "Bié yóuyù le, kuài zuò juédìng ba.",
+    "example_korean": "망설이지 말고 빨리 결정해."
+  },
+  {
+    "word": "回答",
+    "meaning_ko": "대답, 답변하다",
+    "pinyin": "huídá",
+    "example": "请回答我的问题。",
+    "example_pinyin": "Qǐng huídá wǒ de wèntí.",
+    "example_korean": "내 질문에 답해주세요."
+  },
+  {
+    "word": "玫瑰花",
+    "meaning_ko": "장미꽃",
+    "pinyin": "méiguī huā",
+    "example": "情人节送玫瑰花。",
+    "example_pinyin": "Qíngrénjié sòng méiguī huā.",
+    "example_korean": "발렌타인데이에 장미꽃을 선물한다."
+  },
+  {
+    "word": "茉莉花",
+    "meaning_ko": "재스민꽃",
+    "pinyin": "mòlì huā",
+    "example": "茉莉花茶很香。",
+    "example_pinyin": "Mòlì huā chá hěn xiāng.",
+    "example_korean": "재스민차는 매우 향기롭다."
+  },
+  {
+    "word": "问",
+    "meaning_ko": "묻다, 질문하다",
+    "pinyin": "wèn",
+    "example": "我想问你一个问题。",
+    "example_pinyin": "Wǒ xiǎng wèn nǐ yī gè wèntí.",
+    "example_korean": "나는 너에게 질문 하나 하고 싶다."
+  },
+  {
+    "word": "喜欢",
+    "meaning_ko": "좋아하다",
+    "pinyin": "xǐhuān",
+    "example": "我喜欢听音乐。",
+    "example_pinyin": "Wǒ xǐhuān tīng yīnyuè.",
+    "example_korean": "나는 음악 듣기를 좋아한다."
+  },
+  {
+    "word": "当然",
+    "meaning_ko": "당연히, 물론",
+    "pinyin": "dāngrán",
+    "example": "当然可以!",
+    "example_pinyin": "Dāngrán kěyǐ!",
+    "example_korean": "당연히 가능해!"
+  },
+  {
+    "word": "朵",
+    "meaning_ko": "송이 (꽃 세는 단위)",
+    "pinyin": "duǒ",
+    "example": "一朵玫瑰花",
+    "example_pinyin": "Yī duǒ méiguī huā",
+    "example_korean": "장미꽃 한 송이"
+  },
+  {
+    "word": "心中",
+    "meaning_ko": "마음속",
+    "pinyin": "xīn zhōng",
+    "example": "你永远在我心中。",
+    "example_pinyin": "Nǐ yǒngyuǎn zài wǒ xīn zhōng.",
+    "example_korean": "너는 영원히 내 마음속에 있다."
+  },
+  {
+    "word": "亲",
+    "meaning_ko": "키스하다, 친하다",
+    "pinyin": "qīn",
+    "example": "妈妈亲了我一下。",
+    "example_pinyin": "Māmā qīn le wǒ yīxià.",
+    "example_korean": "엄마가 나에게 뽀뽀했다."
+  },
+  {
+    "word": "打",
+    "meaning_ko": "때리다, 치다",
+    "pinyin": "dǎ",
+    "example": "别打我!",
+    "example_pinyin": "Bié dǎ wǒ!",
+    "example_korean": "나를 때리지 마!"
+  },
+  {
+    "word": "骂",
+    "meaning_ko": "욕하다, 꾸짖다",
+    "pinyin": "mà",
+    "example": "不要骂人。",
+    "example_pinyin": "Búyào mà rén.",
+    "example_korean": "사람을 욕하지 마라."
+  },
+  {
+    "word": "撒娇",
+    "meaning_ko": "애교부리다, 응석부리다",
+    "pinyin": "sā jiāo",
+    "example": "她喜欢对男朋友撒娇。",
+    "example_pinyin": "Tā xǐhuān duì nánpéngyǒu sā jiāo.",
+    "example_korean": "그녀는 남자친구에게 애교 부리는 것을 좋아한다."
+  },
+  {
+    "word": "尽管",
+    "meaning_ko": "마음대로, 비록 ~일지라도",
+    "pinyin": "jǐnguǎn",
+    "example": "有问题尽管问我。",
+    "example_pinyin": "Yǒu wèntí jǐnguǎn wèn wǒ.",
+    "example_korean": "질문이 있으면 마음껏 물어봐."
+  },
+  {
+    "word": "往",
+    "meaning_ko": "~쪽으로, ~에게로",
+    "pinyin": "wǎng",
+    "example": "往前走。",
+    "example_pinyin": "Wǎng qián zǒu.",
+    "example_korean": "앞으로 가."
+  },
+  {
+    "word": "因为",
+    "meaning_ko": "왜냐하면",
+    "pinyin": "yīnwèi",
+    "example": "因为下雨,所以我没去。",
+    "example_pinyin": "Yīnwèi xià yǔ, suǒyǐ wǒ méi qù.",
+    "example_korean": "비가 와서 나는 가지 않았다."
+  },
+  {
+    "word": "牵挂",
+    "meaning_ko": "걱정하다, 염려하다",
+    "pinyin": "qiānguà",
+    "example": "我一直牵挂着你。",
+    "example_pinyin": "Wǒ yīzhí qiānguà zhe nǐ.",
+    "example_korean": "나는 계속 너를 걱정하고 있다."
+  },
+  {
+    "word": "老大",
+    "meaning_ko": "보스, 우두머리 (애칭으로 배우자)",
+    "pinyin": "lǎodà",
+    "example": "你是我的老大。",
+    "example_pinyin": "Nǐ shì wǒ de lǎodà.",
+    "example_korean": "너는 나의 보스야."
+  },
+  {
+    "word": "最",
+    "meaning_ko": "가장",
+    "pinyin": "zuì",
+    "example": "你是最好的。",
+    "example_pinyin": "Nǐ shì zuì hǎo de.",
+    "example_korean": "너는 최고야."
+  },
+  {
+    "word": "听",
+    "meaning_ko": "듣다, 따르다",
+    "pinyin": "tīng",
+    "example": "我听你的。",
+    "example_pinyin": "Wǒ tīng nǐ de.",
+    "example_korean": "나는 네 말을 따를게."
+  },
+  {
+    "word": "要",
+    "meaning_ko": "~해야 한다, 원하다",
+    "pinyin": "yào",
+    "example": "你要好好休息。",
+    "example_pinyin": "Nǐ yào hǎohǎo xiūxí.",
+    "example_korean": "너는 잘 쉬어야 한다."
+  },
+  {
+    "word": "准时",
+    "meaning_ko": "정시에, 시간을 지켜",
+    "pinyin": "zhǔnshí",
+    "example": "请准时到达。",
+    "example_pinyin": "Qǐng zhǔnshí dàodá.",
+    "example_korean": "정시에 도착해 주세요."
+  },
+  {
+    "word": "下班",
+    "meaning_ko": "퇴근하다",
+    "pinyin": "xià bān",
+    "example": "我五点下班。",
+    "example_pinyin": "Wǒ wǔ diǎn xià bān.",
+    "example_korean": "나는 5시에 퇴근한다."
+  },
+  {
+    "word": "回家",
+    "meaning_ko": "집에 돌아가다",
+    "pinyin": "huí jiā",
+    "example": "我想回家了。",
+    "example_pinyin": "Wǒ xiǎng huí jiā le.",
+    "example_korean": "나는 집에 가고 싶다."
+  },
+  {
+    "word": "哎呀",
+    "meaning_ko": "어머나, 아이고",
+    "pinyin": "āiyā",
+    "example": "哎呀,忘记带钥匙了!",
+    "example_pinyin": "Āiyā, wàngjì dài yàoshi le!",
+    "example_korean": "어머나, 열쇠 가져오는 걸 잊었어!"
+  },
+  {
+    "word": "人人",
+    "meaning_ko": "누구나, 모두",
+    "pinyin": "rén rén",
+    "example": "人人都喜欢你。",
+    "example_pinyin": "Rén rén dōu xǐhuān nǐ.",
+    "example_korean": "누구나 너를 좋아한다."
+  },
+  {
+    "word": "把",
+    "meaning_ko": "~를 (목적어 표시)",
+    "pinyin": "bǎ",
+    "example": "大家都把你夸。",
+    "example_pinyin": "Dàjiā dōu bǎ nǐ kuā.",
+    "example_korean": "모두가 너를 칭찬한다."
+  },
+  {
+    "word": "夸",
+    "meaning_ko": "칭찬하다",
+    "pinyin": "kuā",
+    "example": "老师夸我进步了。",
+    "example_pinyin": "Lǎoshī kuā wǒ jìnbù le.",
+    "example_korean": "선생님이 내가 발전했다고 칭찬했다."
+  },
+  {
+    "word": "尽管",
+    "meaning_ko": "비록 ~일지라도",
+    "pinyin": "jǐnguǎn",
+    "example": "尽管很累,我还是坚持了。",
+    "example_pinyin": "Jǐnguǎn hěn lèi, wǒ háishì jiānchí le.",
+    "example_korean": "비록 피곤했지만 나는 여전히 버텼다."
+  },
+  {
+    "word": "给",
+    "meaning_ko": "주다",
+    "pinyin": "gěi",
+    "example": "请给我一杯水。",
+    "example_pinyin": "Qǐng gěi wǒ yī bēi shuǐ.",
+    "example_korean": "물 한 잔 주세요."
+  },
+  {
+    "word": "零钱",
+    "meaning_ko": "용돈, 잔돈",
+    "pinyin": "líng qián",
+    "example": "我没有零钱了。",
+    "example_pinyin": "Wǒ méiyǒu líng qián le.",
+    "example_korean": "나는 잔돈이 없다."
+  },
+  {
+    "word": "不够",
+    "meaning_ko": "부족하다, 충분하지 않다",
+    "pinyin": "bù gòu",
+    "example": "钱不够用。",
+    "example_pinyin": "Qián bù gòu yòng.",
+    "example_korean": "돈이 쓰기에 부족하다."
+  },
+  {
+    "word": "花",
+    "meaning_ko": "쓰다, 소비하다",
+    "pinyin": "huā",
+    "example": "别乱花钱。",
+    "example_pinyin": "Bié luàn huā qián.",
+    "example_korean": "함부로 돈을 쓰지 마."
+  },
+  {
+    "word": "也",
+    "meaning_ko": "~도",
+    "pinyin": "yě",
+    "example": "我也想去。",
+    "example_pinyin": "Wǒ yě xiǎng qù.",
+    "example_korean": "나도 가고 싶다."
+  },
+  {
+    "word": "不差",
+    "meaning_ko": "나쁘지 않다, 괜찮다",
+    "pinyin": "bù chà",
+    "example": "他对我不差。",
+    "example_pinyin": "Tā duì wǒ bù chà.",
+    "example_korean": "그는 나에게 나쁘지 않다."
+  },
+  {
+    "word": "为",
+    "meaning_ko": "~을 위해",
+    "pinyin": "wèi",
+    "example": "我为你做的。",
+    "example_pinyin": "Wǒ wèi nǐ zuò de.",
+    "example_korean": "나는 너를 위해 한 거야."
+  },
+  {
+    "word": "做饭",
+    "meaning_ko": "요리하다, 밥을 짓다",
+    "pinyin": "zuò fàn",
+    "example": "妈妈每天做饭。",
+    "example_pinyin": "Māmā měi tiān zuò fàn.",
+    "example_korean": "엄마는 매일 요리한다."
+  },
+  {
+    "word": "泡茶",
+    "meaning_ko": "차를 우리다",
+    "pinyin": "pào chá",
+    "example": "我给你泡茶。",
+    "example_pinyin": "Wǒ gěi nǐ pào chá.",
+    "example_korean": "내가 너에게 차를 우려줄게."
+  },
+  {
+    "word": "有",
+    "meaning_ko": "있다, 가지다",
+    "pinyin": "yǒu",
+    "example": "有爱才有家。",
+    "example_pinyin": "Yǒu ài cái yǒu jiā.",
+    "example_korean": "사랑이 있어야 집이 있다."
+  },
+  {
+    "word": "家",
+    "meaning_ko": "집, 가정",
+    "pinyin": "jiā",
+    "example": "家是温暖的港湾。",
+    "example_pinyin": "Jiā shì wēnnuǎn de gǎngwān.",
+    "example_korean": "집은 따뜻한 항구이다."
+  },
+  {
+    "word": "我们",
+    "meaning_ko": "우리",
+    "pinyin": "wǒ men",
+    "example": "我们是朋友。",
+    "example_pinyin": "Wǒmen shì péngyǒu.",
+    "example_korean": "우리는 친구이다."
+  },
+  {
+    "word": "约定",
+    "meaning_ko": "약속",
+    "pinyin": "yuē dìng",
+    "example": "我们有个约定。",
+    "example_pinyin": "Wǒmen yǒu gè yuēdìng.",
+    "example_korean": "우리는 약속이 있다."
+  },
+  {
+    "word": "永远",
+    "meaning_ko": "영원히",
+    "pinyin": "yǒng yuǎn",
+    "example": "我永远爱你。",
+    "example_pinyin": "Wǒ yǒngyuǎn ài nǐ.",
+    "example_korean": "나는 영원히 너를 사랑한다."
+  },
+  {
+    "word": "变",
+    "meaning_ko": "변하다",
+    "pinyin": "biàn",
+    "example": "他变了很多。",
+    "example_pinyin": "Tā biàn le hěn duō.",
+    "example_korean": "그는 많이 변했다."
+  }
+]

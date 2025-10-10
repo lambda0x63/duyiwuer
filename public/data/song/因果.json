@@ -1,0 +1,234 @@
+[
+  {
+    "word": "因果",
+    "meaning_ko": "인과응보, 원인과 결과",
+    "pinyin": "yīn guǒ",
+    "example": "做坏事会有因果报应。",
+    "example_pinyin": "Zuò huài shì huì yǒu yīn guǒ bào yìng.",
+    "example_korean": "나쁜 일을 하면 인과응보가 있다."
+  },
+  {
+    "word": "种瓜得瓜",
+    "meaning_ko": "심은 대로 거둔다 (관용구)",
+    "pinyin": "zhòng guā dé guā",
+    "example": "种瓜得瓜，种豆得豆，这是自然规律。",
+    "example_pinyin": "Zhòng guā dé guā, zhòng dòu dé dòu, zhè shì zì rán guī lǜ.",
+    "example_korean": "심은 대로 거둔다, 이것이 자연의 법칙이다."
+  },
+  {
+    "word": "保佑",
+    "meaning_ko": "보우하다, 보살피다",
+    "pinyin": "bǎo yòu",
+    "example": "愿上天保佑你平安。",
+    "example_pinyin": "Yuàn shàng tiān bǎo yòu nǐ píng ān.",
+    "example_korean": "하늘이 당신의 평안을 보살펴주길."
+  },
+  {
+    "word": "金山银山",
+    "meaning_ko": "금은보화, 큰 재산",
+    "pinyin": "jīn shān yín shān",
+    "example": "有健康比有金山银山更重要。",
+    "example_pinyin": "Yǒu jiàn kāng bǐ yǒu jīn shān yín shān gèng zhòng yào.",
+    "example_korean": "건강이 있는 것이 큰 재산보다 더 중요하다."
+  },
+  {
+    "word": "教唆",
+    "meaning_ko": "교사하다, 사주하다",
+    "pinyin": "jiào suō",
+    "example": "他教唆别人去偷东西。",
+    "example_pinyin": "Tā jiào suō bié rén qù tōu dōng xi.",
+    "example_korean": "그는 다른 사람을 사주해서 물건을 훔치게 했다."
+  },
+  {
+    "word": "江湖",
+    "meaning_ko": "강호 (무협/사회의 은유)",
+    "pinyin": "jiāng hú",
+    "example": "江湖险恶，要小心。",
+    "example_pinyin": "Jiāng hú xiǎn è, yào xiǎo xīn.",
+    "example_korean": "강호는 험악하니 조심해야 한다."
+  },
+  {
+    "word": "叮嘱",
+    "meaning_ko": "당부하다, 신신당부하다",
+    "pinyin": "dīng zhǔ",
+    "example": "妈妈叮嘱我要好好学习。",
+    "example_pinyin": "Mā ma dīng zhǔ wǒ yào hǎo hǎo xué xí.",
+    "example_korean": "엄마는 나에게 열심히 공부하라고 당부하셨다."
+  },
+  {
+    "word": "魑魅魍魉",
+    "meaning_ko": "온갖 요괴들 (비유: 악한 사람들)",
+    "pinyin": "chī mèi wǎng liǎng",
+    "example": "魑魅魍魉终将被正义击败。",
+    "example_pinyin": "Chī mèi wǎng liǎng zhōng jiāng bèi zhèng yì jī bài.",
+    "example_korean": "온갖 악한 무리들은 결국 정의에 의해 패배할 것이다."
+  },
+  {
+    "word": "秋收",
+    "meaning_ko": "가을 수확",
+    "pinyin": "qiū shōu",
+    "example": "秋收季节农民很忙。",
+    "example_pinyin": "Qiū shōu jì jié nóng mín hěn máng.",
+    "example_korean": "가을 수확철에 농부들은 매우 바쁘다."
+  },
+  {
+    "word": "算账",
+    "meaning_ko": "계산하다, 청산하다 (비유: 복수)",
+    "pinyin": "suàn zhàng",
+    "example": "总有一天我要跟他算账。",
+    "example_pinyin": "Zǒng yǒu yī tiān wǒ yào gēn tā suàn zhàng.",
+    "example_korean": "언젠가 그와 계산할 날이 올 것이다."
+  },
+  {
+    "word": "铲除",
+    "meaning_ko": "제거하다, 박멸하다",
+    "pinyin": "chǎn chú",
+    "example": "政府决心铲除腐败。",
+    "example_pinyin": "Zhèng fǔ jué xīn chǎn chú fǔ bài.",
+    "example_korean": "정부는 부패를 철저히 제거하기로 결심했다."
+  },
+  {
+    "word": "啮齿类",
+    "meaning_ko": "설치류 (쥐 종류)",
+    "pinyin": "niè chǐ lèi",
+    "example": "老鼠是常见的啮齿类动物。",
+    "example_pinyin": "Lǎo shǔ shì cháng jiàn de niè chǐ lèi dòng wù.",
+    "example_korean": "쥐는 흔한 설치류 동물이다."
+  },
+  {
+    "word": "附魔",
+    "meaning_ko": "마법을 부여하다 (게임 용어)",
+    "pinyin": "fù mó",
+    "example": "这把剑被附魔了。",
+    "example_pinyin": "Zhè bǎ jiàn bèi fù mó le.",
+    "example_korean": "이 검은 마법이 부여되었다."
+  },
+  {
+    "word": "屠刀",
+    "meaning_ko": "도살용 칼 (비유: 무기, 폭력)",
+    "pinyin": "tú dāo",
+    "example": "放下屠刀，立地成佛。",
+    "example_pinyin": "Fàng xià tú dāo, lì dì chéng fó.",
+    "example_korean": "칼을 내려놓으면 즉시 부처가 된다 (악행을 멈추면 구원받는다)."
+  },
+  {
+    "word": "潜伏",
+    "meaning_ko": "잠복하다, 숨다",
+    "pinyin": "qián fú",
+    "example": "敌人在暗处潜伏。",
+    "example_pinyin": "Dí rén zài àn chù qián fú.",
+    "example_korean": "적이 어둠 속에 잠복하고 있다."
+  },
+  {
+    "word": "饿鬼",
+    "meaning_ko": "아귀 (불교: 굶주린 귀신)",
+    "pinyin": "è guǐ",
+    "example": "他像饿鬼一样狼吞虎咽。",
+    "example_pinyin": "Tā xiàng è guǐ yī yàng láng tūn hǔ yàn.",
+    "example_korean": "그는 아귀처럼 허겁지겁 먹는다."
+  },
+  {
+    "word": "恶念",
+    "meaning_ko": "악한 생각",
+    "pinyin": "è niàn",
+    "example": "要克服心中的恶念。",
+    "example_pinyin": "Yào kè fú xīn zhōng de è niàn.",
+    "example_korean": "마음속의 악한 생각을 극복해야 한다."
+  },
+  {
+    "word": "还债",
+    "meaning_ko": "빚을 갚다",
+    "pinyin": "huán zhài",
+    "example": "做了坏事早晚要还债。",
+    "example_pinyin": "Zuò le huài shì zǎo wǎn yào huán zhài.",
+    "example_korean": "나쁜 짓을 하면 조만간 대가를 치러야 한다."
+  },
+  {
+    "word": "兵来将挡",
+    "meaning_ko": "병사가 오면 장수로 막는다 (관용구: 맞서 싸운다)",
+    "pinyin": "bīng lái jiāng dǎng",
+    "example": "兵来将挡，水来土掩。",
+    "example_pinyin": "Bīng lái jiāng dǎng, shuǐ lái tǔ yǎn.",
+    "example_korean": "병사가 오면 장수로 막고, 물이 오면 흙으로 막는다 (대처하면 된다)."
+  },
+  {
+    "word": "虚空藏",
+    "meaning_ko": "허공장 (불교: 허공장보살)",
+    "pinyin": "xū kōng cáng",
+    "example": "虚空藏菩萨代表智慧和慈悲。",
+    "example_pinyin": "Xū kōng cáng pú sà dài biǎo zhì huì hé cí bēi.",
+    "example_korean": "허공장보살은 지혜와 자비를 상징한다."
+  },
+  {
+    "word": "平衡",
+    "meaning_ko": "균형, 평형",
+    "pinyin": "píng héng",
+    "example": "保持工作和生活的平衡很重要。",
+    "example_pinyin": "Bǎo chí gōng zuò hé shēng huó de píng héng hěn zhòng yào.",
+    "example_korean": "일과 생활의 균형을 유지하는 것이 중요하다."
+  },
+  {
+    "word": "阴阳",
+    "meaning_ko": "음양",
+    "pinyin": "yīn yáng",
+    "example": "中医讲究阴阳平衡。",
+    "example_pinyin": "Zhōng yī jiǎng jiù yīn yáng píng héng.",
+    "example_korean": "한의학은 음양의 균형을 중시한다."
+  },
+  {
+    "word": "业障",
+    "meaning_ko": "업장 (불교: 죄업의 장애)",
+    "pinyin": "yè zhàng",
+    "example": "他要消除前世的业障。",
+    "example_pinyin": "Tā yào xiāo chú qián shì de yè zhàng.",
+    "example_korean": "그는 전생의 업장을 소멸시켜야 한다."
+  },
+  {
+    "word": "条条框框",
+    "meaning_ko": "규칙과 제약들",
+    "pinyin": "tiáo tiáo kuàng kuàng",
+    "example": "不要被条条框框限制了思想。",
+    "example_pinyin": "Bú yào bèi tiáo tiáo kuàng kuàng xiàn zhì le sī xiǎng.",
+    "example_korean": "규칙과 틀에 사고가 제한되지 않도록 해라."
+  },
+  {
+    "word": "翻身仗",
+    "meaning_ko": "역전의 싸움",
+    "pinyin": "fān shēn zhàng",
+    "example": "他想打个翻身仗，证明自己。",
+    "example_pinyin": "Tā xiǎng dǎ ge fān shēn zhàng, zhèng míng zì jǐ.",
+    "example_korean": "그는 역전의 한 판을 해서 자신을 증명하고 싶어 한다."
+  },
+  {
+    "word": "卖惨",
+    "meaning_ko": "불쌍한 척하다",
+    "pinyin": "mài cǎn",
+    "example": "别在这儿卖惨了。",
+    "example_pinyin": "Bié zài zhèr mài cǎn le.",
+    "example_korean": "여기서 불쌍한 척하지 마."
+  },
+  {
+    "word": "祸根",
+    "meaning_ko": "화근",
+    "pinyin": "huò gēn",
+    "example": "贪心是一切祸根。",
+    "example_pinyin": "Tān xīn shì yī qiè huò gēn.",
+    "example_korean": "탐욕이 모든 화의 근원이다."
+  },
+  {
+    "word": "闹着玩",
+    "meaning_ko": "장난치다, 가지고 놀다",
+    "pinyin": "nào zhe wán",
+    "example": "别拿爱情闹着玩。",
+    "example_pinyin": "Bié ná ài qíng nào zhe wán.",
+    "example_korean": "사랑을 가지고 장난치지 마."
+  },
+  {
+    "word": "完蛋",
+    "meaning_ko": "끝장나다, 망하다",
+    "pinyin": "wán dàn",
+    "example": "这次考试没准备，完蛋了。",
+    "example_pinyin": "Zhè cì kǎo shì méi zhǔn bèi, wán dàn le.",
+    "example_korean": "이번 시험 준비 안 했어, 망했다."
+  }
+]

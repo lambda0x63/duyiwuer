@@ -1,0 +1,402 @@
+[
+  {
+    "word": "怎么",
+    "meaning_ko": "어떻게",
+    "pinyin": "zěnme",
+    "example": "怎么办?",
+    "example_pinyin": "Zěnme bàn?",
+    "example_korean": "어떻게 하지?"
+  },
+  {
+    "word": "能",
+    "meaning_ko": "~할 수 있다",
+    "pinyin": "néng",
+    "example": "我能帮你。",
+    "example_pinyin": "Wǒ néng bāng nǐ.",
+    "example_korean": "내가 너를 도울 수 있어."
+  },
+  {
+    "word": "哭",
+    "meaning_ko": "울다",
+    "pinyin": "kū",
+    "example": "别哭了。",
+    "example_pinyin": "Bié kū le.",
+    "example_korean": "울지 마."
+  },
+  {
+    "word": "呢",
+    "meaning_ko": "~네, ~냐 (어기조사)",
+    "pinyin": "ne",
+    "example": "你呢?",
+    "example_pinyin": "Nǐ ne?",
+    "example_korean": "너는?"
+  },
+  {
+    "word": "会",
+    "meaning_ko": "~할 것이다, ~하게 될 것이다",
+    "pinyin": "huì",
+    "example": "明天会下雨。",
+    "example_pinyin": "Míngtiān huì xià yǔ.",
+    "example_korean": "내일 비가 올 것이다."
+  },
+  {
+    "word": "好",
+    "meaning_ko": "좋다, 괜찮다",
+    "pinyin": "hǎo",
+    "example": "一切都好。",
+    "example_pinyin": "Yīqiè dōu hǎo.",
+    "example_korean": "모든 게 좋다."
+  },
+  {
+    "word": "哒",
+    "meaning_ko": "~다 (어기조사, 귀여운 말투)",
+    "pinyin": "dā",
+    "example": "好哒!",
+    "example_pinyin": "Hǎo dā!",
+    "example_korean": "좋아!"
+  },
+  {
+    "word": "去",
+    "meaning_ko": "가다, 지나가다",
+    "pinyin": "qù",
+    "example": "让它去吧。",
+    "example_pinyin": "Ràng tā qù ba.",
+    "example_korean": "그냥 지나가게 둬."
+  },
+  {
+    "word": "吧",
+    "meaning_ko": "~해, ~하자 (제안, 권유)",
+    "pinyin": "ba",
+    "example": "走吧!",
+    "example_pinyin": "Zǒu ba!",
+    "example_korean": "가자!"
+  },
+  {
+    "word": "就",
+    "meaning_ko": "바로, 곧",
+    "pinyin": "jiù",
+    "example": "我就来。",
+    "example_pinyin": "Wǒ jiù lái.",
+    "example_korean": "내가 바로 갈게."
+  },
+  {
+    "word": "得",
+    "meaning_ko": "~해야 한다",
+    "pinyin": "děi",
+    "example": "你得努力。",
+    "example_pinyin": "Nǐ děi nǔlì.",
+    "example_korean": "너는 노력해야 한다."
+  },
+  {
+    "word": "想",
+    "meaning_ko": "생각하다",
+    "pinyin": "xiǎng",
+    "example": "我想你了。",
+    "example_pinyin": "Wǒ xiǎng nǐ le.",
+    "example_korean": "나는 네가 그립다."
+  },
+  {
+    "word": "既然",
+    "meaning_ko": "이미 ~인 이상",
+    "pinyin": "jìrán",
+    "example": "既然来了,就坐一会儿吧。",
+    "example_pinyin": "Jìrán lái le, jiù zuò yīhuǐ'er ba.",
+    "example_korean": "이미 온 이상, 잠시 앉아 있어."
+  },
+  {
+    "word": "没办法",
+    "meaning_ko": "어쩔 수 없다",
+    "pinyin": "méi bànfǎ",
+    "example": "真是没办法。",
+    "example_pinyin": "Zhēn shì méi bànfǎ.",
+    "example_korean": "정말 어쩔 수 없다."
+  },
+  {
+    "word": "还",
+    "meaning_ko": "아직도, 여전히",
+    "pinyin": "hái",
+    "example": "还在等吗?",
+    "example_pinyin": "Hái zài děng ma?",
+    "example_korean": "아직도 기다리고 있니?"
+  },
+  {
+    "word": "恨",
+    "meaning_ko": "미워하다, 원망하다",
+    "pinyin": "hèn",
+    "example": "我不恨你。",
+    "example_pinyin": "Wǒ bù hèn nǐ.",
+    "example_korean": "나는 너를 원망하지 않아."
+  },
+  {
+    "word": "他",
+    "meaning_ko": "그, 그것",
+    "pinyin": "tā",
+    "example": "他是谁?",
+    "example_pinyin": "Tā shì shuí?",
+    "example_korean": "그는 누구니?"
+  },
+  {
+    "word": "干嘛",
+    "meaning_ko": "왜, 뭐하러",
+    "pinyin": "gànmá",
+    "example": "你干嘛呢?",
+    "example_pinyin": "Nǐ gànmá ne?",
+    "example_korean": "너 뭐하니?"
+  },
+  {
+    "word": "管",
+    "meaning_ko": "신경 쓰다, 관리하다",
+    "pinyin": "guǎn",
+    "example": "别管我。",
+    "example_pinyin": "Bié guǎn wǒ.",
+    "example_korean": "나한테 신경 쓰지 마."
+  },
+  {
+    "word": "它",
+    "meaning_ko": "그것",
+    "pinyin": "tā",
+    "example": "让它过去吧。",
+    "example_pinyin": "Ràng tā guòqù ba.",
+    "example_korean": "그냥 지나가게 두자."
+  },
+  {
+    "word": "记得",
+    "meaning_ko": "기억하다",
+    "pinyin": "jìdé",
+    "example": "我记得你。",
+    "example_pinyin": "Wǒ jìdé nǐ.",
+    "example_korean": "나는 너를 기억한다."
+  },
+  {
+    "word": "阳光",
+    "meaning_ko": "햇빛, 양광",
+    "pinyin": "yángguāng",
+    "example": "今天阳光很好。",
+    "example_pinyin": "Jīntiān yángguāng hěn hǎo.",
+    "example_korean": "오늘 햇빛이 좋다."
+  },
+  {
+    "word": "彩虹",
+    "meaning_ko": "무지개",
+    "pinyin": "cǎihóng",
+    "example": "雨后出现了彩虹。",
+    "example_pinyin": "Yǔ hòu chūxiàn le cǎihóng.",
+    "example_korean": "비 온 후에 무지개가 나타났다."
+  },
+  {
+    "word": "小白马",
+    "meaning_ko": "작은 백마",
+    "pinyin": "xiǎo bái mǎ",
+    "example": "童话里的小白马",
+    "example_pinyin": "Tónghuà lǐ de xiǎo bái mǎ",
+    "example_korean": "동화 속의 작은 백마"
+  },
+  {
+    "word": "最强",
+    "meaning_ko": "가장 강하다",
+    "pinyin": "zuì qiáng",
+    "example": "你是最强的。",
+    "example_pinyin": "Nǐ shì zuì qiáng de.",
+    "example_korean": "너는 가장 강하다."
+  },
+  {
+    "word": "最棒",
+    "meaning_ko": "가장 훌륭하다, 최고다",
+    "pinyin": "zuì bàng",
+    "example": "你做得最棒!",
+    "example_pinyin": "Nǐ zuò de zuì bàng!",
+    "example_korean": "네가 최고로 잘했어!"
+  },
+  {
+    "word": "最亮",
+    "meaning_ko": "가장 밝다",
+    "pinyin": "zuì liàng",
+    "example": "最亮的星星",
+    "example_pinyin": "Zuì liàng de xīngxīng",
+    "example_korean": "가장 밝은 별"
+  },
+  {
+    "word": "发光",
+    "meaning_ko": "빛나다",
+    "pinyin": "fā guāng",
+    "example": "星星在发光。",
+    "example_pinyin": "Xīngxīng zài fā guāng.",
+    "example_korean": "별이 빛나고 있다."
+  },
+  {
+    "word": "拦不住",
+    "meaning_ko": "막을 수 없다",
+    "pinyin": "lán bù zhù",
+    "example": "拦不住你前进。",
+    "example_pinyin": "Lán bù zhù nǐ qiánjìn.",
+    "example_korean": "네가 전진하는 것을 막을 수 없다."
+  },
+  {
+    "word": "发芽",
+    "meaning_ko": "싹트다",
+    "pinyin": "fā yá",
+    "example": "种子发芽了。",
+    "example_pinyin": "Zhǒngzǐ fā yá le.",
+    "example_korean": "씨앗이 싹텄다."
+  },
+  {
+    "word": "最好",
+    "meaning_ko": "가장 좋다",
+    "pinyin": "zuì hǎo",
+    "example": "这是最好的选择。",
+    "example_pinyin": "Zhè shì zuì hǎo de xuǎnzé.",
+    "example_korean": "이것은 가장 좋은 선택이다."
+  },
+  {
+    "word": "最俏",
+    "meaning_ko": "가장 예쁘다, 가장 귀엽다",
+    "pinyin": "zuì qiào",
+    "example": "你是最俏的姑娘。",
+    "example_pinyin": "Nǐ shì zuì qiào de gūniáng.",
+    "example_korean": "너는 가장 예쁜 아가씨다."
+  },
+  {
+    "word": "最妙",
+    "meaning_ko": "가장 멋지다, 가장 훌륭하다",
+    "pinyin": "zuì miào",
+    "example": "这主意最妙!",
+    "example_pinyin": "Zhè zhǔyì zuì miào!",
+    "example_korean": "이 아이디어가 가장 멋지다!"
+  },
+  {
+    "word": "骄傲",
+    "meaning_ko": "자랑스럽다, 자부심 있다",
+    "pinyin": "jiāo'ào",
+    "example": "我为你骄傲。",
+    "example_pinyin": "Wǒ wèi nǐ jiāo'ào.",
+    "example_korean": "나는 너를 자랑스럽게 생각한다."
+  },
+  {
+    "word": "尽情",
+    "meaning_ko": "마음껏",
+    "pinyin": "jìnqíng",
+    "example": "尽情享受吧!",
+    "example_pinyin": "Jìnqíng xiǎngshòu ba!",
+    "example_korean": "마음껏 즐겨!"
+  },
+  {
+    "word": "盛开",
+    "meaning_ko": "활짝 피다",
+    "pinyin": "shèngkāi",
+    "example": "花朵盛开了。",
+    "example_pinyin": "Huāduǒ shèngkāi le.",
+    "example_korean": "꽃이 활짝 피었다."
+  },
+  {
+    "word": "需要",
+    "meaning_ko": "필요하다",
+    "pinyin": "xūyào",
+    "example": "我需要你的帮助。",
+    "example_pinyin": "Wǒ xūyào nǐ de bāngzhù.",
+    "example_korean": "나는 네 도움이 필요하다."
+  },
+  {
+    "word": "哄",
+    "meaning_ko": "달래다, 기분 좋게 하다",
+    "pinyin": "hǒng",
+    "example": "哄孩子睡觉",
+    "example_pinyin": "Hǒng háizi shuìjiào",
+    "example_korean": "아이를 달래서 재우다"
+  },
+  {
+    "word": "生活",
+    "meaning_ko": "생활, 삶",
+    "pinyin": "shēnghuó",
+    "example": "生活很美好。",
+    "example_pinyin": "Shēnghuó hěn měihǎo.",
+    "example_korean": "생활은 아름답다."
+  },
+  {
+    "word": "笑话",
+    "meaning_ko": "농담, 우스갯소리",
+    "pinyin": "xiàohuà",
+    "example": "别开玩笑。",
+    "example_pinyin": "Bié kāi wánxiào.",
+    "example_korean": "농담하지 마."
+  },
+  {
+    "word": "听",
+    "meaning_ko": "듣다",
+    "pinyin": "tīng",
+    "example": "听我说",
+    "example_pinyin": "Tīng wǒ shuō",
+    "example_korean": "내 말을 들어봐"
+  },
+  {
+    "word": "在意",
+    "meaning_ko": "신경 쓰다, 개의하다",
+    "pinyin": "zàiyì",
+    "example": "别太在意。",
+    "example_pinyin": "Bié tài zàiyì.",
+    "example_korean": "너무 신경 쓰지 마."
+  },
+  {
+    "word": "梗",
+    "meaning_ko": "개그 포인트, 유머",
+    "pinyin": "gěng",
+    "example": "这个梗很好笑。",
+    "example_pinyin": "Zhège gěng hěn hǎoxiào.",
+    "example_korean": "이 개그는 매우 웃기다."
+  },
+  {
+    "word": "垮",
+    "meaning_ko": "무너지다, 망가지다",
+    "pinyin": "kuǎ",
+    "example": "别让自己垮掉。",
+    "example_pinyin": "Bié ràng zìjǐ kuǎ diào.",
+    "example_korean": "스스로를 무너뜨리지 마."
+  },
+  {
+    "word": "不乐",
+    "meaning_ko": "즐겁지 않다",
+    "pinyin": "bù lè",
+    "example": "闷闷不乐",
+    "example_pinyin": "Mènmèn bù lè",
+    "example_korean": "우울하고 즐겁지 않다"
+  },
+  {
+    "word": "傻",
+    "meaning_ko": "바보 같다",
+    "pinyin": "shǎ",
+    "example": "别傻了。",
+    "example_pinyin": "Bié shǎ le.",
+    "example_korean": "바보 같은 짓 그만해."
+  },
+  {
+    "word": "来",
+    "meaning_ko": "오다",
+    "pinyin": "lái",
+    "example": "来吧!",
+    "example_pinyin": "Lái ba!",
+    "example_korean": "와!"
+  },
+  {
+    "word": "天地",
+    "meaning_ko": "천지, 세상",
+    "pinyin": "tiāndì",
+    "example": "天地之间",
+    "example_pinyin": "Tiāndì zhī jiān",
+    "example_korean": "천지 사이"
+  },
+  {
+    "word": "随",
+    "meaning_ko": "따르다, 마음대로",
+    "pinyin": "suí",
+    "example": "随你的意思",
+    "example_pinyin": "Suí nǐ de yìsi",
+    "example_korean": "네 뜻대로"
+  },
+  {
+    "word": "耍",
+    "meaning_ko": "놀다, 즐기다",
+    "pinyin": "shuǎ",
+    "example": "出去耍一耍",
+    "example_pinyin": "Chūqù shuǎ yī shuǎ",
+    "example_korean": "나가서 놀다"
+  }
+]

@@ -34,9 +34,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 min-h-screen`}
       >
-        <div className="max-w-[430px] mx-auto min-h-screen bg-white shadow-xl">
+        <div className="max-w-[430px] mx-auto min-h-screen bg-white shadow-xl flex flex-col">
           {children}
         </div>
       </body>
