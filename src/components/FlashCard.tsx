@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useMemo, useRef, useCallback, type MouseEvent } from "react";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Volume2 } from "lucide-react";
 import type { WordData } from "@/types/word";
 
@@ -139,8 +138,7 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
     setIsPlayingTts(false);
   }, []);
 
-  const getTtsUrl = (text: string) =>
-    `https://dict.youdao.com/dictvoice?type=2&audio=${encodeURIComponent(text)}`;
+  const getTtsUrl = (text: string) => `/api/tts?text=${encodeURIComponent(text)}`;
 
   const playNextAudio = useCallback(() => {
     const nextUrl = audioQueueRef.current.shift();
@@ -150,6 +148,7 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
     }
 
     const audio = new Audio(nextUrl);
+    audio.crossOrigin = "anonymous";
     audioRef.current = audio;
 
     const handleFinished = () => {
@@ -275,21 +274,6 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
                       {word.meaning_ko}
                     </p>
                   </div>
-                  <div className="flex items-center justify-center gap-3 pt-1">
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className={`text-gray-500 hover:text-gray-900 ${isPlayingTts ? "animate-pulse" : ""}`}
-                      onClick={playPronunciation}
-                      aria-label="발음 듣기"
-                    >
-                      <Volume2 className="h-6 w-6" />
-                    </Button>
-                    <span className="text-sm text-gray-500">
-                      {isPlayingTts ? "재생 중..." : "발음 듣기"}
-                    </span>
-                  </div>
-                </div>
 
                 <div className="flex-1 overflow-y-auto">
                   <div className="rounded-2xl bg-gray-100/90 p-5 space-y-4">
@@ -323,15 +307,16 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
                           </p>
                         </>
                       )}
-                    </div>
-                    <div className="h-px bg-gray-300/70" />
-                    <div className="space-y-3">
-                      <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-gray-500">
-                        해석
-                      </h3>
-                      <p className="text-lg sm:text-xl leading-relaxed text-gray-800 whitespace-pre-wrap">
-                        {word.example_korean}
-                      </p>
+                      </div>
+                      <div className="h-px bg-gray-300/70" />
+                      <div className="space-y-3">
+                        <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-gray-500">
+                          해석
+                        </h3>
+                        <p className="text-lg sm:text-xl leading-relaxed text-gray-800 whitespace-pre-wrap">
+                          {word.example_korean}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -339,6 +324,16 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
             </Card>
           </div>
         </div>
+      </div>
+      <div className="mt-5 mb-10 flex justify-center">
+        <button
+          type="button"
+          className={`inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-6 py-3 text-gray-700 shadow-md hover:text-gray-900 hover:border-gray-500 transition-all ${isPlayingTts ? "ring-2 ring-blue-400" : ""}`}
+          onClick={playPronunciation}
+          aria-label="발음 듣기"
+        >
+          <Volume2 className="h-6 w-6" />
+        </button>
       </div>
     </div>
   );
