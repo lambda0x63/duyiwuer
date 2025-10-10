@@ -3,13 +3,14 @@ import StudySession from "@/components/StudySession";
 import { getSongSet } from "@/lib/songData";
 
 interface SongStudyPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export default async function SongStudyPage({ params }: SongStudyPageProps) {
-  const songSet = await getSongSet(params.slug);
+  const { slug } = await params;
+  const songSet = await getSongSet(slug);
 
   if (!songSet) {
     notFound();
