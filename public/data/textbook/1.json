@@ -1268,5 +1268,229 @@
     "example": "她看到老鼠就尖叫起来。",
     "example_pinyin": "Tā kàn dào lǎo shǔ jiù jiān jiào qǐ lai.",
     "example_korean": "그녀는 쥐를 보자 비명을 질렀다."
+  },
+    {
+    "word": "小鱼",
+    "meaning_ko": "작은 물고기",
+    "pinyin": "xiǎo yú",
+    "example": "池塘里有很多小鱼。",
+    "example_pinyin": "Chí táng lǐ yǒu hěn duō xiǎo yú.",
+    "example_korean": "연못에 작은 물고기가 많다."
+  },
+  {
+    "word": "秋风",
+    "meaning_ko": "가을바람",
+    "pinyin": "qiū fēng",
+    "example": "秋风吹落了树叶。",
+    "example_pinyin": "Qiū fēng chuī luò le shù yè.",
+    "example_korean": "가을바람이 나뭇잎을 떨어뜨렸다."
+  },
+  {
+    "word": "一会儿",
+    "meaning_ko": "잠시, 잠깐",
+    "pinyin": "yī huìr",
+    "example": "我一会儿就回来。",
+    "example_pinyin": "Wǒ yī huìr jiù huí lai.",
+    "example_korean": "나는 잠시 후에 돌아올게요."
+  },
+  {
+    "word": "群星",
+    "meaning_ko": "별무리, 많은 별들",
+    "pinyin": "qún xīng",
+    "example": "夜空中群星闪烁。",
+    "example_pinyin": "Yè kōng zhōng qún xīng shǎn shuò.",
+    "example_korean": "밤하늘에 별무리가 반짝인다."
+  },
+  {
+    "word": "房间",
+    "meaning_ko": "방",
+    "pinyin": "fáng jiān",
+    "example": "这个房间很干净。",
+    "example_pinyin": "Zhè ge fáng jiān hěn gān jìng.",
+    "example_korean": "이 방은 매우 깨끗하다."
+  },
+  {
+    "word": "树根",
+    "meaning_ko": "나무뿌리, 근본",
+    "pinyin": "shù gēn",
+    "example": "树根深深地扎在土里。",
+    "example_pinyin": "Shù gēn shēn shēn de zhā zài tǔ lǐ.",
+    "example_korean": "나무뿌리가 땅속 깊이 박혀 있다."
+  },
+  {
+    "word": "旅店",
+    "meaning_ko": "모텔, 여관",
+    "pinyin": "lǚ diàn",
+    "example": "我们在旅店住了一晚。",
+    "example_pinyin": "Wǒ men zài lǚ diàn zhù le yī wǎn.",
+    "example_korean": "우리는 모텔에서 하룻밤 묵었다."
+  },
+  {
+    "word": "哦了",
+    "meaning_ko": "알았어, 오케이",
+    "pinyin": "ò le",
+    "example": "哦了,我知道了。",
+    "example_pinyin": "Ò le, wǒ zhī dào le.",
+    "example_korean": "알았어, 이해했어."
+  },
+    {
+    "word": "韵律",
+    "meaning_ko": "운율, 리듬",
+    "pinyin": "yùn lǜ",
+    "example": "这首诗的韵律很美。",
+    "example_pinyin": "Zhè shǒu shī de yùn lǜ hěn měi.",
+    "example_korean": "이 시의 운율이 매우 아름답다."
+  },
+  {
+    "word": "荒谬",
+    "meaning_ko": "황당하다, 터무니없다",
+    "pinyin": "huāng miù",
+    "example": "这个想法太荒谬了。",
+    "example_pinyin": "Zhè ge xiǎng fǎ tài huāng miù le.",
+    "example_korean": "이 생각은 너무 황당하다."
+  },
+  {
+    "word": "别闹",
+    "meaning_ko": "장난치지 마, 하지 마",
+    "pinyin": "bié nào",
+    "example": "别闹了,我在工作呢。",
+    "example_pinyin": "Bié nào le, wǒ zài gōng zuò ne.",
+    "example_korean": "장난치지 마, 나 일하고 있어."
+  },
+  {
+    "word": "拿铁",
+    "meaning_ko": "라떼 (커피)",
+    "pinyin": "ná tiě",
+    "example": "我要一杯拿铁咖啡。",
+    "example_pinyin": "Wǒ yào yī bēi ná tiě kā fēi.",
+    "example_korean": "나는 라떼 한 잔 주세요."
+  },
+  {
+    "word": "猴年马月",
+    "meaning_ko": "어느 세월에",
+    "pinyin": "hóu nián mǎ yuè",
+    "example": "这么多工作,要做到猴年马月啊!",
+    "example_pinyin": "Zhè me duō gōng zuò, yào zuò dào hóu nián mǎ yuè a!",
+    "example_korean": "이렇게 일이 많은데, 어느 세월에 다 하냐!"
+  },
+  {
+    "word": "手表",
+    "meaning_ko": "손목시계",
+    "pinyin": "shǒu biǎo",
+    "example": "他戴着一块金色的手表。",
+    "example_pinyin": "Tā dài zhe yī kuài jīn sè de shǒu biǎo.",
+    "example_korean": "그는 금색 손목시계를 차고 있다."
+  },
+  {
+    "word": "摩天大厦",
+    "meaning_ko": "마천루, 초고층 빌딩",
+    "pinyin": "mó tiān dà shà",
+    "example": "上海有很多摩天大厦。",
+    "example_pinyin": "Shàng hǎi yǒu hěn duō mó tiān dà shà.",
+    "example_korean": "상하이에는 마천루가 많다."
+  },
+  {
+    "word": "衬衫",
+    "meaning_ko": "셔츠, 와이셔츠",
+    "pinyin": "chèn shān",
+    "example": "他穿着白色的衬衫。",
+    "example_pinyin": "Tā chuān zhe bái sè de chèn shān.",
+    "example_korean": "그는 흰색 셔츠를 입고 있다."
+  },
+  {
+    "word": "裙子",
+    "meaning_ko": "치마",
+    "pinyin": "qún zi",
+    "example": "她今天穿了一条漂亮的裙子。",
+    "example_pinyin": "Tā jīn tiān chuān le yī tiáo piào liang de qún zi.",
+    "example_korean": "그녀는 오늘 예쁜 치마를 입었다."
+  },
+  {
+    "word": "习了马哈儿",
+    "meaning_ko": "덤벙대다",
+    "pinyin": "xí le mǎ hā er",
+    "example": "他做事总是习了马哈儿的。",
+    "example_pinyin": "Tā zuò shì zǒng shì xí le mǎ hā er de.",
+    "example_korean": "그는 일을 할 때 항상 덤벙댄다."
+  },
+  {
+    "word": "词语",
+    "meaning_ko": "단어, 어휘",
+    "pinyin": "cí yǔ",
+    "example": "请解释这个词语的意思。",
+    "example_pinyin": "Qǐng jiě shì zhè ge cí yǔ de yì si.",
+    "example_korean": "이 단어의 뜻을 설명해 주세요."
+  },
+  {
+    "word": "朋友",
+    "meaning_ko": "친구",
+    "pinyin": "péng you",
+    "example": "他是我最好的朋友。",
+    "example_pinyin": "Tā shì wǒ zuì hǎo de péng you.",
+    "example_korean": "그는 나의 가장 좋은 친구다."
+  },
+  {
+    "word": "萝卜",
+    "meaning_ko": "무",
+    "pinyin": "luó bo",
+    "example": "我喜欢吃萝卜炖肉。",
+    "example_pinyin": "Wǒ xǐ huan chī luó bo dùn ròu.",
+    "example_korean": "나는 무 조림을 좋아한다."
+  },
+  {
+    "word": "橡皮",
+    "meaning_ko": "지우개",
+    "pinyin": "xiàng pí",
+    "example": "我的橡皮不见了。",
+    "example_pinyin": "Wǒ de xiàng pí bù jiàn le.",
+    "example_korean": "내 지우개가 없어졌다."
+  },
+  {
+    "word": "尺子",
+    "meaning_ko": "자",
+    "pinyin": "chǐ zi",
+    "example": "用尺子量一下长度。",
+    "example_pinyin": "Yòng chǐ zi liáng yī xià cháng dù.",
+    "example_korean": "자로 길이를 재 보세요."
+  },
+  {
+    "word": "宝贝儿",
+    "meaning_ko": "보물, 귀염둥이",
+    "pinyin": "bǎo bèir",
+    "example": "宝贝儿,快过来。",
+    "example_pinyin": "Bǎo bèir, kuài guò lai.",
+    "example_korean": "보물아, 빨리 이리 와."
+  },
+  {
+    "word": "起床",
+    "meaning_ko": "일어나다, 기상하다",
+    "pinyin": "qǐ chuáng",
+    "example": "我每天七点起床。",
+    "example_pinyin": "Wǒ měi tiān qī diǎn qǐ chuáng.",
+    "example_korean": "나는 매일 7시에 일어난다."
+  },
+  {
+    "word": "陪伴",
+    "meaning_ko": "동행하다, 함께하다",
+    "pinyin": "péi bàn",
+    "example": "谢谢你一直陪伴我。",
+    "example_pinyin": "Xiè xie nǐ yī zhí péi bàn wǒ.",
+    "example_korean": "줄곧 함께해 줘서 고마워."
+  },
+  {
+    "word": "摆放",
+    "meaning_ko": "진열하다, 배치하다",
+    "pinyin": "bǎi fàng",
+    "example": "请把书整齐地摆放好。",
+    "example_pinyin": "Qǐng bǎ shū zhěng qí de bǎi fàng hǎo.",
+    "example_korean": "책을 가지런히 배치해 주세요."
+  },
+  {
+    "word": "偷鸡摸狗",
+    "meaning_ko": "몰래 나쁜 짓을 하다, 바람피우다",
+    "pinyin": "tōu jī mō gǒu",
+    "example": "不要做偷鸡摸狗的事。",
+    "example_pinyin": "Bù yào zuò tōu jī mō gǒu de shì.",
+    "example_korean": "몰래 나쁜 짓을 하지 마라."
   }
 ]
