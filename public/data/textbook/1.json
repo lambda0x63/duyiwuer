@@ -39,14 +39,14 @@
     "example_pinyin": "Qǐng zhuā jǐn fú tī de fú shǒu.",
     "example_korean": "에스컬레이터 손잡이를 꼭 잡으세요."
   },
-    {
+  {
     "word": "下棋",
     "meaning_ko": "바둑을 두다",
     "pinyin": "xià qí",
     "example": "我爷爷每天都喜欢和朋友下棋。",
     "example_pinyin": "Wǒ yéye měitiān dōu xǐhuān hé péngyǒu xià qí.",
     "example_korean": "저희 할아버지는 매일 친구들과 바둑 두는 것을 좋아하십니다."
-    },
+  },
   {
     "word": "句子",
     "meaning_ko": "문장",
@@ -79,7 +79,6 @@
     "example_pinyin": "Wǒ xǐhuan zài wǎnshang dú shū.",
     "example_korean": "나는 저녁에 책 읽는 것을 좋아한다."
   },
-
   {
     "word": "虚弱",
     "meaning_ko": "허약하다, 기운이 없다",
@@ -160,9 +159,6 @@
     "example_pinyin": "Xià yǔ le, bié wàng le dài yǔsǎn.",
     "example_korean": "비가 오니 우산 가져가는 것을 잊지 마세요."
   },
-
-
-
   {
     "word": "望远镜",
     "meaning_ko": "망원경",
@@ -243,9 +239,6 @@
     "example_pinyin": "Dàrén men zài liáotiān.",
     "example_korean": "어른들이 이야기하고 있다."
   },
-
-
-
   {
     "word": "孩子",
     "meaning_ko": "아이, 어린이",
@@ -326,9 +319,6 @@
     "example_pinyin": "Měi tiān yào shuā yá chǐ.",
     "example_korean": "매일 이를 닦아야 한다."
   },
-
-
-
   {
     "word": "几步",
     "meaning_ko": "몇 걸음",
@@ -409,9 +399,6 @@
     "example_pinyin": "Gōngjiāo chēzhàn jiù zài qiánmiàn.",
     "example_korean": "버스 정류장이 바로 앞에 있다."
   },
-
-
-
   {
     "word": "车厢",
     "meaning_ko": "차량 칸, 객차",
@@ -492,9 +479,6 @@
     "example_pinyin": "Wǒmen yìqǐ duī xuěrén.",
     "example_korean": "우리 함께 눈사람을 만들자."
   },
-
-
-
   {
     "word": "丢手绢",
     "meaning_ko": "손수건을 던지다(어린이 놀이 ‘손수건 돌리기’)",
@@ -575,9 +559,6 @@
     "example_pinyin": "Qǐng bǎ yīfu de zhèng fǎn fēn qīngchǔ.",
     "example_korean": "옷의 앞뒤를 잘 구분해 주세요."
   },
-
-
-
   {
     "word": "反正",
     "meaning_ko": "어차피, 아무튼",
@@ -658,9 +639,6 @@
     "example_pinyin": "Qǐng zhǎodào duìyìng de dá'àn.",
     "example_korean": "대응되는 답을 찾으세요."
   },
-
-
-
   {
     "word": "歌曲",
     "meaning_ko": "노래, 곡",
@@ -684,14 +662,6 @@
     "example": "雨水把地面打湿了。",
     "example_pinyin": "Yǔshuǐ bǎ dìmiàn dǎ shī le.",
     "example_korean": "빗물이 땅을 적셨다."
-  },
-  {
-    "word": "雨伞",
-    "meaning_ko": "우산",
-    "pinyin": "yǔ sǎn",
-    "example": "出门别忘了带雨伞。",
-    "example_pinyin": "Chūmén bié wàng le dài yǔsǎn.",
-    "example_korean": "외출할 때 우산을 가져가는 것을 잊지 마세요."
   },
   {
     "word": "刮风",
@@ -789,7 +759,7 @@
     "example_pinyin": "Zhù nǐmen de shēngyì hóng hóng huǒ huǒ.",
     "example_korean": "여러분의 사업이 번창하길 바랍니다."
   },
-    {
+  {
     "word": "多么",
     "meaning_ko": "얼마나, 정말, 매우",
     "pinyin": "duō me",
@@ -909,7 +879,7 @@
     "example_pinyin": "Zhè wèi kā fēi shī zuò de kā fēi hěn hǎo hē.",
     "example_korean": "이 바리스타가 만든 커피는 아주 맛있다."
   },
-    {
+  {
     "word": "工厂",
     "meaning_ko": "공장",
     "pinyin": "gōng chǎng",
@@ -948,14 +918,6 @@
     "example": "孩子们每天去学校上课。",
     "example_pinyin": "Hái zi men měi tiān qù xué xiào shàng kè.",
     "example_korean": "아이들은 매일 학교에 가서 수업을 듣는다."
-  },
-  {
-    "word": "医院",
-    "meaning_ko": "병원",
-    "pinyin": "yī yuàn",
-    "example": "他生病了,去医院看病。",
-    "example_pinyin": "Tā shēng bìng le, qù yī yuàn kàn bìng.",
-    "example_korean": "그는 아파서 병원에 진료를 받으러 갔다."
   },
   {
     "word": "医生",
@@ -1030,14 +992,6 @@
     "example_korean": "우리는 선생님께 인사를 드린다."
   },
   {
-    "word": "敬礼",
-    "meaning_ko": "경례(하다)",
-    "pinyin": "jìng lǐ",
-    "example": "士兵们向国旗敬礼。",
-    "example_pinyin": "Shì bīng men xiàng guó qí jìng lǐ.",
-    "example_korean": "군인들이 국기에 경례한다."
-  },
-  {
     "word": "总是",
     "meaning_ko": "항상, 언제나",
     "pinyin": "zǒng shì",
@@ -1045,7 +999,7 @@
     "example_pinyin": "Tā zǒng shì hěn nǔ lì.",
     "example_korean": "그는 항상 매우 노력한다."
   },
-    {
+  {
     "word": "双手",
     "meaning_ko": "두 손, 양손",
     "pinyin": "shuāng shǒu",
@@ -1269,7 +1223,7 @@
     "example_pinyin": "Tā kàn dào lǎo shǔ jiù jiān jiào qǐ lai.",
     "example_korean": "그녀는 쥐를 보자 비명을 질렀다."
   },
-    {
+  {
     "word": "小鱼",
     "meaning_ko": "작은 물고기",
     "pinyin": "xiǎo yú",
@@ -1333,7 +1287,7 @@
     "example_pinyin": "Ò le, wǒ zhī dào le.",
     "example_korean": "알았어, 이해했어."
   },
-    {
+  {
     "word": "韵律",
     "meaning_ko": "운율, 리듬",
     "pinyin": "yùn lǜ",
@@ -1422,28 +1376,12 @@
     "example_korean": "이 단어의 뜻을 설명해 주세요."
   },
   {
-    "word": "朋友",
-    "meaning_ko": "친구",
-    "pinyin": "péng you",
-    "example": "他是我最好的朋友。",
-    "example_pinyin": "Tā shì wǒ zuì hǎo de péng you.",
-    "example_korean": "그는 나의 가장 좋은 친구다."
-  },
-  {
     "word": "萝卜",
     "meaning_ko": "무",
     "pinyin": "luó bo",
     "example": "我喜欢吃萝卜炖肉。",
     "example_pinyin": "Wǒ xǐ huan chī luó bo dùn ròu.",
     "example_korean": "나는 무 조림을 좋아한다."
-  },
-  {
-    "word": "橡皮",
-    "meaning_ko": "지우개",
-    "pinyin": "xiàng pí",
-    "example": "我的橡皮不见了。",
-    "example_pinyin": "Wǒ de xiàng pí bù jiàn le.",
-    "example_korean": "내 지우개가 없어졌다."
   },
   {
     "word": "尺子",
