@@ -788,5 +788,485 @@
     "example": "祝你们的生意红红火火。",
     "example_pinyin": "Zhù nǐmen de shēngyì hóng hóng huǒ huǒ.",
     "example_korean": "여러분의 사업이 번창하길 바랍니다."
+  },
+    {
+    "word": "多么",
+    "meaning_ko": "얼마나, 정말, 매우",
+    "pinyin": "duō me",
+    "example": "多么美丽的花啊!",
+    "example_pinyin": "Duō me měi lì de huā a!",
+    "example_korean": "정말 아름다운 꽃이구나!"
+  },
+  {
+    "word": "升起",
+    "meaning_ko": "떠오르다, 올라가다",
+    "pinyin": "shēng qǐ",
+    "example": "太阳从东方升起。",
+    "example_pinyin": "Tài yáng cóng dōng fāng shēng qǐ.",
+    "example_korean": "태양이 동쪽에서 떠오른다."
+  },
+  {
+    "word": "敬礼",
+    "meaning_ko": "경례(하다)",
+    "pinyin": "jìng lǐ",
+    "example": "士兵们向国旗敬礼。",
+    "example_pinyin": "Shì bīng men xiàng guó qí jìng lǐ.",
+    "example_korean": "군인들이 국기에 경례한다."
+  },
+  {
+    "word": "医院",
+    "meaning_ko": "병원",
+    "pinyin": "yī yuàn",
+    "example": "他生病了,去医院看病。",
+    "example_pinyin": "Tā shēng bìng le, qù yī yuàn kàn bìng.",
+    "example_korean": "그는 아파서 병원에 진료를 받으러 갔다."
+  },
+  {
+    "word": "国旗",
+    "meaning_ko": "국기",
+    "pinyin": "guó qí",
+    "example": "每个国家都有自己的国旗。",
+    "example_pinyin": "Měi gè guó jiā dōu yǒu zì jǐ de guó qí.",
+    "example_korean": "모든 나라는 자신의 국기가 있다."
+  },
+  {
+    "word": "鲜艳",
+    "meaning_ko": "선명하다, 화려하다",
+    "pinyin": "xiān yàn",
+    "example": "她穿着鲜艳的红色衣服。",
+    "example_pinyin": "Tā chuān zhe xiān yàn de hóng sè yī fu.",
+    "example_korean": "그녀는 선명한 빨간색 옷을 입고 있다."
+  },
+  {
+    "word": "松鼠",
+    "meaning_ko": "다람쥐",
+    "pinyin": "sōng shǔ",
+    "example": "树上有一只可爱的松鼠。",
+    "example_pinyin": "Shù shàng yǒu yī zhī kě ài de sōng shǔ.",
+    "example_korean": "나무 위에 귀여운 다람쥐 한 마리가 있다."
+  },
+  {
+    "word": "摘下",
+    "meaning_ko": "따다, 떼어내다",
+    "pinyin": "zhāi xià",
+    "example": "我们从树上摘下了苹果。",
+    "example_pinyin": "Wǒ men cóng shù shàng zhāi xià le píng guǒ.",
+    "example_korean": "우리는 나무에서 사과를 땄다."
+  },
+  {
+    "word": "格外",
+    "meaning_ko": "유난히, 특별히",
+    "pinyin": "gé wài",
+    "example": "今天天气格外好。",
+    "example_pinyin": "Jīn tiān tiān qì gé wài hǎo.",
+    "example_korean": "오늘 날씨가 유난히 좋다."
+  },
+  {
+    "word": "留着",
+    "meaning_ko": "남겨두다, 보관하다",
+    "pinyin": "liú zhe",
+    "example": "我把这些照片留着做纪念。",
+    "example_pinyin": "Wǒ bǎ zhè xiē zhào piàn liú zhe zuò jì niàn.",
+    "example_korean": "나는 이 사진들을 기념으로 남겨둔다."
+  },
+  {
+    "word": "等待",
+    "meaning_ko": "기다리다",
+    "pinyin": "děng dài",
+    "example": "我在车站等待朋友。",
+    "example_pinyin": "Wǒ zài chē zhàn děng dài péng you.",
+    "example_korean": "나는 역에서 친구를 기다린다."
+  },
+  {
+    "word": "设计师",
+    "meaning_ko": "디자이너",
+    "pinyin": "shè jì shī",
+    "example": "她是一位优秀的室内设计师。",
+    "example_pinyin": "Tā shì yī wèi yōu xiù de shì nèi shè jì shī.",
+    "example_korean": "그녀는 뛰어난 인테리어 디자이너이다."
+  },
+  {
+    "word": "分析师",
+    "meaning_ko": "분석가",
+    "pinyin": "fēn xī shī",
+    "example": "他在银行担任金融分析师。",
+    "example_pinyin": "Tā zài yín háng dān rèn jīn róng fēn xī shī.",
+    "example_korean": "그는 은행에서 금융 분석가로 일한다."
+  },
+  {
+    "word": "程序员",
+    "meaning_ko": "프로그래머",
+    "pinyin": "chéng xù yuán",
+    "example": "我哥哥是一名程序员。",
+    "example_pinyin": "Wǒ gē ge shì yī míng chéng xù yuán.",
+    "example_korean": "내 형은 프로그래머이다."
+  },
+  {
+    "word": "咖啡师",
+    "meaning_ko": "바리스타",
+    "pinyin": "kā fēi shī",
+    "example": "这位咖啡师做的咖啡很好喝。",
+    "example_pinyin": "Zhè wèi kā fēi shī zuò de kā fēi hěn hǎo hē.",
+    "example_korean": "이 바리스타가 만든 커피는 아주 맛있다."
+  },
+    {
+    "word": "工厂",
+    "meaning_ko": "공장",
+    "pinyin": "gōng chǎng",
+    "example": "他在汽车工厂工作。",
+    "example_pinyin": "Tā zài qì chē gōng chǎng gōng zuò.",
+    "example_korean": "그는 자동차 공장에서 일한다."
+  },
+  {
+    "word": "工人",
+    "meaning_ko": "노동자, 일꾼",
+    "pinyin": "gōng rén",
+    "example": "工人们正在建造大楼。",
+    "example_pinyin": "Gōng rén men zhèng zài jiàn zào dà lóu.",
+    "example_korean": "노동자들이 건물을 짓고 있다."
+  },
+  {
+    "word": "老师",
+    "meaning_ko": "선생님",
+    "pinyin": "lǎo shī",
+    "example": "我的老师很温柔。",
+    "example_pinyin": "Wǒ de lǎo shī hěn wēn róu.",
+    "example_korean": "우리 선생님은 매우 온화하시다."
+  },
+  {
+    "word": "老板",
+    "meaning_ko": "사장, 보스",
+    "pinyin": "lǎo bǎn",
+    "example": "老板今天不在公司。",
+    "example_pinyin": "Lǎo bǎn jīn tiān bù zài gōng sī.",
+    "example_korean": "사장님이 오늘 회사에 안 계신다."
+  },
+  {
+    "word": "学校",
+    "meaning_ko": "학교",
+    "pinyin": "xué xiào",
+    "example": "孩子们每天去学校上课。",
+    "example_pinyin": "Hái zi men měi tiān qù xué xiào shàng kè.",
+    "example_korean": "아이들은 매일 학교에 가서 수업을 듣는다."
+  },
+  {
+    "word": "医院",
+    "meaning_ko": "병원",
+    "pinyin": "yī yuàn",
+    "example": "他生病了,去医院看病。",
+    "example_pinyin": "Tā shēng bìng le, qù yī yuàn kàn bìng.",
+    "example_korean": "그는 아파서 병원에 진료를 받으러 갔다."
+  },
+  {
+    "word": "医生",
+    "meaning_ko": "의사",
+    "pinyin": "yī shēng",
+    "example": "医生说我需要多休息。",
+    "example_pinyin": "Yī shēng shuō wǒ xū yào duō xiū xi.",
+    "example_korean": "의사 선생님이 나에게 많이 쉬어야 한다고 말했다."
+  },
+  {
+    "word": "传达室",
+    "meaning_ko": "수위실, 경비실",
+    "pinyin": "chuán dá shì",
+    "example": "包裹放在传达室了。",
+    "example_pinyin": "Bāo guǒ fàng zài chuán dá shì le.",
+    "example_korean": "택배가 경비실에 놓여 있다."
+  },
+  {
+    "word": "门卫",
+    "meaning_ko": "수위, 경비원",
+    "pinyin": "mén wèi",
+    "example": "门卫检查了我的证件。",
+    "example_pinyin": "Mén wèi jiǎn chá le wǒ de zhèng jiàn.",
+    "example_korean": "경비원이 내 신분증을 확인했다."
+  },
+  {
+    "word": "教授",
+    "meaning_ko": "교수",
+    "pinyin": "jiào shòu",
+    "example": "李教授在大学教历史。",
+    "example_pinyin": "Lǐ jiào shòu zài dà xué jiāo lì shǐ.",
+    "example_korean": "이 교수님은 대학교에서 역사를 가르치신다."
+  },
+  {
+    "word": "厨师",
+    "meaning_ko": "요리사",
+    "pinyin": "chú shī",
+    "example": "这位厨师做的菜很美味。",
+    "example_pinyin": "Zhè wèi chú shī zuò de cài hěn měi wèi.",
+    "example_korean": "이 요리사가 만든 요리는 매우 맛있다."
+  },
+  {
+    "word": "数据",
+    "meaning_ko": "데이터, 자료",
+    "pinyin": "shù jù",
+    "example": "我们需要分析这些数据。",
+    "example_pinyin": "Wǒ men xū yào fēn xī zhè xiē shù jù.",
+    "example_korean": "우리는 이 데이터들을 분석해야 한다."
+  },
+  {
+    "word": "美丽",
+    "meaning_ko": "아름답다",
+    "pinyin": "měi lì",
+    "example": "这里的风景非常美丽。",
+    "example_pinyin": "Zhè lǐ de fēng jǐng fēi cháng měi lì.",
+    "example_korean": "이곳의 풍경은 매우 아름답다."
+  },
+  {
+    "word": "飘扬",
+    "meaning_ko": "나부끼다, 펄럭이다",
+    "pinyin": "piāo yáng",
+    "example": "国旗在风中飘扬。",
+    "example_pinyin": "Guó qí zài fēng zhōng piāo yáng.",
+    "example_korean": "국기가 바람에 나부끼고 있다."
+  },
+  {
+    "word": "向",
+    "meaning_ko": "~을 향하여, ~에게",
+    "pinyin": "xiàng",
+    "example": "我们向老师问好。",
+    "example_pinyin": "Wǒ men xiàng lǎo shī wèn hǎo.",
+    "example_korean": "우리는 선생님께 인사를 드린다."
+  },
+  {
+    "word": "敬礼",
+    "meaning_ko": "경례(하다)",
+    "pinyin": "jìng lǐ",
+    "example": "士兵们向国旗敬礼。",
+    "example_pinyin": "Shì bīng men xiàng guó qí jìng lǐ.",
+    "example_korean": "군인들이 국기에 경례한다."
+  },
+  {
+    "word": "总是",
+    "meaning_ko": "항상, 언제나",
+    "pinyin": "zǒng shì",
+    "example": "他总是很努力。",
+    "example_pinyin": "Tā zǒng shì hěn nǔ lì.",
+    "example_korean": "그는 항상 매우 노력한다."
+  },
+    {
+    "word": "双手",
+    "meaning_ko": "두 손, 양손",
+    "pinyin": "shuāng shǒu",
+    "example": "他用双手抱着孩子。",
+    "example_pinyin": "Tā yòng shuāng shǒu bào zhe hái zi.",
+    "example_korean": "그는 두 손으로 아이를 안고 있다."
+  },
+  {
+    "word": "力气",
+    "meaning_ko": "힘, 기력",
+    "pinyin": "lì qi",
+    "example": "我没有力气搬这个箱子。",
+    "example_pinyin": "Wǒ méi yǒu lì qi bān zhè ge xiāng zi.",
+    "example_korean": "나는 이 상자를 옮길 힘이 없다."
+  },
+  {
+    "word": "力量",
+    "meaning_ko": "힘, 역량",
+    "pinyin": "lì liàng",
+    "example": "团结就是力量。",
+    "example_pinyin": "Tuán jié jiù shì lì liàng.",
+    "example_korean": "단결이 곧 힘이다."
+  },
+  {
+    "word": "男生",
+    "meaning_ko": "남학생",
+    "pinyin": "nán shēng",
+    "example": "我们班有二十个男生。",
+    "example_pinyin": "Wǒ men bān yǒu èr shí ge nán shēng.",
+    "example_korean": "우리 반에는 남학생이 20명 있다."
+  },
+  {
+    "word": "男士",
+    "meaning_ko": "남성, 신사",
+    "pinyin": "nán shì",
+    "example": "这是男士专用洗手间。",
+    "example_pinyin": "Zhè shì nán shì zhuān yòng xǐ shǒu jiān.",
+    "example_korean": "이것은 남성 전용 화장실이다."
+  },
+  {
+    "word": "土豆",
+    "meaning_ko": "감자",
+    "pinyin": "tǔ dòu",
+    "example": "我喜欢吃炒土豆丝。",
+    "example_pinyin": "Wǒ xǐ huan chī chǎo tǔ dòu sī.",
+    "example_korean": "나는 감자채 볶음을 좋아한다."
+  },
+  {
+    "word": "泥土",
+    "meaning_ko": "흙, 진흙",
+    "pinyin": "ní tǔ",
+    "example": "孩子们在泥土里玩耍。",
+    "example_pinyin": "Hái zi men zài ní tǔ lǐ wán shuǎ.",
+    "example_korean": "아이들이 흙에서 놀고 있다."
+  },
+  {
+    "word": "木头",
+    "meaning_ko": "나무, 목재",
+    "pinyin": "mù tou",
+    "example": "这张桌子是木头做的。",
+    "example_pinyin": "Zhè zhāng zhuō zi shì mù tou zuò de.",
+    "example_korean": "이 책상은 나무로 만들어졌다."
+  },
+  {
+    "word": "木材",
+    "meaning_ko": "목재",
+    "pinyin": "mù cái",
+    "example": "建房子需要很多木材。",
+    "example_pinyin": "Jiàn fáng zi xū yào hěn duō mù cái.",
+    "example_korean": "집을 짓는 데 많은 목재가 필요하다."
+  },
+  {
+    "word": "心脏",
+    "meaning_ko": "심장",
+    "pinyin": "xīn zàng",
+    "example": "运动有益于心脏健康。",
+    "example_pinyin": "Yùn dòng yǒu yì yú xīn zàng jiàn kāng.",
+    "example_korean": "운동은 심장 건강에 유익하다."
+  },
+  {
+    "word": "心思",
+    "meaning_ko": "마음, 생각",
+    "pinyin": "xīn si",
+    "example": "他把心思都放在工作上。",
+    "example_pinyin": "Tā bǎ xīn si dōu fàng zài gōng zuò shàng.",
+    "example_korean": "그는 마음을 모두 일에 쏟고 있다."
+  },
+  {
+    "word": "树林",
+    "meaning_ko": "숲",
+    "pinyin": "shù lín",
+    "example": "我们在树林里散步。",
+    "example_pinyin": "Wǒ men zài shù lín lǐ sàn bù.",
+    "example_korean": "우리는 숲에서 산책한다."
+  },
+  {
+    "word": "关心",
+    "meaning_ko": "관심을 갖다, 걱정하다",
+    "pinyin": "guān xīn",
+    "example": "父母总是关心孩子。",
+    "example_pinyin": "Fù mǔ zǒng shì guān xīn hái zi.",
+    "example_korean": "부모는 항상 아이를 걱정한다."
+  },
+  {
+    "word": "开心",
+    "meaning_ko": "기쁘다, 즐겁다",
+    "pinyin": "kāi xīn",
+    "example": "今天我很开心。",
+    "example_pinyin": "Jīn tiān wǒ hěn kāi xīn.",
+    "example_korean": "오늘 나는 매우 기쁘다."
+  },
+  {
+    "word": "泪目",
+    "meaning_ko": "눈물이 나다, 감동하다",
+    "pinyin": "lèi mù",
+    "example": "看到这个场景,我泪目了。",
+    "example_pinyin": "Kàn dào zhè ge chǎng jǐng, wǒ lèi mù le.",
+    "example_korean": "이 장면을 보고 나는 눈물이 났다."
+  },
+  {
+    "word": "好苗子",
+    "meaning_ko": "장래가 촉망되는 사람",
+    "pinyin": "hǎo miáo zi",
+    "example": "这个学生是个好苗子。",
+    "example_pinyin": "Zhè ge xué sheng shì ge hǎo miáo zi.",
+    "example_korean": "이 학생은 장래가 촉망되는 인재다."
+  },
+  {
+    "word": "橡皮",
+    "meaning_ko": "지우개",
+    "pinyin": "xiàng pí",
+    "example": "我的橡皮不见了。",
+    "example_pinyin": "Wǒ de xiàng pí bù jiàn le.",
+    "example_korean": "내 지우개가 없어졌다."
+  },
+  {
+    "word": "笔袋",
+    "meaning_ko": "필통",
+    "pinyin": "bǐ dài",
+    "example": "她买了一个新笔袋。",
+    "example_pinyin": "Tā mǎi le yī ge xīn bǐ dài.",
+    "example_korean": "그녀는 새 필통을 샀다."
+  },
+  {
+    "word": "铅笔",
+    "meaning_ko": "연필",
+    "pinyin": "qiān bǐ",
+    "example": "小学生常用铅笔写字。",
+    "example_pinyin": "Xiǎo xué shēng cháng yòng qiān bǐ xiě zì.",
+    "example_korean": "초등학생들은 흔히 연필로 글씨를 쓴다."
+  },
+  {
+    "word": "钢笔",
+    "meaning_ko": "만년필",
+    "pinyin": "gāng bǐ",
+    "example": "他用钢笔签名。",
+    "example_pinyin": "Tā yòng gāng bǐ qiān míng.",
+    "example_korean": "그는 만년필로 서명한다."
+  },
+  {
+    "word": "圆珠笔",
+    "meaning_ko": "볼펜",
+    "pinyin": "yuán zhū bǐ",
+    "example": "请借我一支圆珠笔。",
+    "example_pinyin": "Qǐng jiè wǒ yī zhī yuán zhū bǐ.",
+    "example_korean": "볼펜 한 자루를 빌려주세요."
+  },
+  {
+    "word": "书包",
+    "meaning_ko": "책가방",
+    "pinyin": "shū bāo",
+    "example": "孩子的书包很重。",
+    "example_pinyin": "Hái zi de shū bāo hěn zhòng.",
+    "example_korean": "아이의 책가방이 매우 무겁다."
+  },
+  {
+    "word": "宝贝",
+    "meaning_ko": "보물, 귀염둥이",
+    "pinyin": "bǎo bèi",
+    "example": "你是妈妈的宝贝。",
+    "example_pinyin": "Nǐ shì mā ma de bǎo bèi.",
+    "example_korean": "너는 엄마의 보물이야."
+  },
+  {
+    "word": "课本",
+    "meaning_ko": "교과서",
+    "pinyin": "kè běn",
+    "example": "别忘了带课本。",
+    "example_pinyin": "Bié wàng le dài kè běn.",
+    "example_korean": "교과서 가져오는 것을 잊지 마세요."
+  },
+  {
+    "word": "独木桥",
+    "meaning_ko": "외나무다리",
+    "pinyin": "dú mù qiáo",
+    "example": "过独木桥需要小心。",
+    "example_pinyin": "Guò dú mù qiáo xū yào xiǎo xīn.",
+    "example_korean": "외나무다리를 건널 때는 조심해야 한다."
+  },
+  {
+    "word": "从众",
+    "meaning_ko": "대중을 따르다, 군중심리",
+    "pinyin": "cóng zhòng",
+    "example": "不要盲目从众。",
+    "example_pinyin": "Bù yào máng mù cóng zhòng.",
+    "example_korean": "맹목적으로 대중을 따르지 마세요."
+  },
+  {
+    "word": "观众",
+    "meaning_ko": "관객",
+    "pinyin": "guān zhòng",
+    "example": "观众们热烈鼓掌。",
+    "example_pinyin": "Guān zhòng men rè liè gǔ zhǎng.",
+    "example_korean": "관객들이 열렬히 박수를 쳤다."
+  },
+  {
+    "word": "尖叫",
+    "meaning_ko": "비명을 지르다",
+    "pinyin": "jiān jiào",
+    "example": "她看到老鼠就尖叫起来。",
+    "example_pinyin": "Tā kàn dào lǎo shǔ jiù jiān jiào qǐ lai.",
+    "example_korean": "그녀는 쥐를 보자 비명을 질렀다."
   }
 ]
