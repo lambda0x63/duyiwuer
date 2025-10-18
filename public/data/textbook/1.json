@@ -1430,5 +1430,166 @@
     "example": "不要做偷鸡摸狗的事。",
     "example_pinyin": "Bù yào zuò tōu jī mō gǒu de shì.",
     "example_korean": "몰래 나쁜 짓을 하지 마라."
+  },
+    {
+    "word": "落叶归根",
+    "meaning_ko": "떨어진 잎이 뿌리로 돌아간다; 고향으로 돌아가다",
+    "pinyin": "luò yè guī gēn",
+    "example": "他在城市工作多年后，最终落叶归根回到了家乡。",
+    "example_pinyin": "Tā zài chéngshì gōngzuò duō nián hòu, zuìzhōng luò yè guī gēn huídào le jiāxiāng.",
+    "example_korean": "그는 도시에서 여러 해 일한 후 결국 고향으로 돌아갔다."
+  },
+  {
+    "word": "旅行",
+    "meaning_ko": "여행",
+    "pinyin": "lǚ xíng",
+    "example": "今年夏天我计划去欧洲旅行。",
+    "example_pinyin": "Jīnnián xiàtiān wǒ jìhuà qù Ōuzhōu lǚ xíng.",
+    "example_korean": "올해 여름에 나는 유럽으로 여행을 갈 계획이다."
+  },
+  {
+    "word": "松鼠",
+    "meaning_ko": "다람쥐",
+    "pinyin": "sōng shǔ",
+    "example": "公园里有很多松鼠在树上跳来跳去。",
+    "example_pinyin": "Gōngyuán lǐ yǒu hěnduō sōng shǔ zài shù shang tiào lái tiào qù.",
+    "example_korean": "공원에 많은 다람쥐들이 나무 위에서 뛰어다닌다."
+  },
+  {
+    "word": "修行",
+    "meaning_ko": "수행, 수련",
+    "pinyin": "xiū xíng",
+    "example": "和尚在庙里进行多年的修行。",
+    "example_pinyin": "Héshang zài miào lǐ jìnxíng duō nián de xiū xíng.",
+    "example_korean": "스님은 사찰에서 여러 해의 수행을 하고 있다."
+  },
+  {
+    "word": "烟雾缭绕",
+    "meaning_ko": "연기가 자욱하다, 연기가 휘감돌다",
+    "pinyin": "yān wù liáo rào",
+    "example": "山顶上烟雾缭绕，看不清远处的景色。",
+    "example_pinyin": "Shānding shang yān wù liáo rào, kàn bu qīng yuǎnchù de jǐngsè.",
+    "example_korean": "산 정상에 연기가 자욱해서 먼 경치가 보이지 않는다."
+  },
+  {
+    "word": "好莱坞",
+    "meaning_ko": "할리우드",
+    "pinyin": "hǎo lái wù",
+    "example": "许多演员梦想去好莱坞发展演艺事业。",
+    "example_pinyin": "Xǔduō yǎnyuán mèngxiǎng qù hǎo lái wù fāzhǎn yǎnyì shìyè.",
+    "example_korean": "많은 배우들이 할리우드에 가서 연기 경력을 발전시키기를 꿈꾼다."
+  },
+  {
+    "word": "尽力",
+    "meaning_ko": "최선을 다하다",
+    "pinyin": "jìn lì",
+    "example": "我会尽力完成这个项目。",
+    "example_pinyin": "Wǒ huì jìn lì wánchéng zhège xiàngmù.",
+    "example_korean": "나는 이 프로젝트를 완성하기 위해 최선을 다할 것이다."
+  },
+  {
+    "word": "便利店",
+    "meaning_ko": "편의점",
+    "pinyin": "biàn lì diàn",
+    "example": "我在便利店买了一瓶水和一个三明治。",
+    "example_pinyin": "Wǒ zài biàn lì diàn mǎi le yī píng shuǐ hé yī ge sānmíngzhì.",
+    "example_korean": "나는 편의점에서 물 한 병과 샌드위치 하나를 샀다."
+  },
+  {
+    "word": "超市",
+    "meaning_ko": "슈퍼마켓",
+    "pinyin": "chāo shì",
+    "example": "周末我去超市购物，买了很多日用品。",
+    "example_pinyin": "Zhōumò wǒ qù chāo shì gòuwù, mǎi le hěnduō rìyòngpǐn.",
+    "example_korean": "주말에 나는 슈퍼마켓에 가서 쇼핑을 했고 많은 일용품을 샀다."
+  },
+  {
+    "word": "烤肉",
+    "meaning_ko": "구운 고기, 바비큐",
+    "pinyin": "kǎo ròu",
+    "example": "朋友们一起在花园里吃烤肉。",
+    "example_pinyin": "Péngyoumen yīqǐ zài huāyuán lǐ chī kǎo ròu.",
+    "example_korean": "친구들이 함께 정원에서 구운 고기를 먹었다."
+  },
+  {
+    "word": "试卷",
+    "meaning_ko": "시험지, 문제지",
+    "pinyin": "shì juàn",
+    "example": "老师发放了期末考试的试卷。",
+    "example_pinyin": "Lǎoshī fāfàng le qīmò kǎoshì de shì juàn.",
+    "example_korean": "선생님이 기말고사 시험지를 나눠주었다."
+  },
+  {
+    "word": "君子",
+    "meaning_ko": "군자, 고결한 사람",
+    "pinyin": "jūn zǐ",
+    "example": "孔子说君子应该有高尚的品德。",
+    "example_pinyin": "Kǒngzǐ shuō jūn zǐ yīnggāi yǒu gāoshàng de pǐndé.",
+    "example_korean": "공자는 군자는 고결한 품덕을 가져야 한다고 말했다."
+  },
+  {
+    "word": "吸管",
+    "meaning_ko": "빨대",
+    "pinyin": "xī guǎn",
+    "example": "我用吸管喝果汁。",
+    "example_pinyin": "Wǒ yòng xī guǎn hē guǒzhī.",
+    "example_korean": "나는 빨대로 과일 주스를 마신다."
+  },
+  {
+    "word": "纸杯",
+    "meaning_ko": "종이컵",
+    "pinyin": "zhǐ bēi",
+    "example": "咖啡馆用纸杯盛装热咖啡。",
+    "example_pinyin": "Kāfēiguǎn yòng zhǐ bēi chéngzhuāng rè kāfēi.",
+    "example_korean": "카페에서는 종이컵에 뜨거운 커피를 담는다."
+  },
+  {
+    "word": "挖耳勺",
+    "meaning_ko": "귀파개, 귀이개",
+    "pinyin": "wā ěr sháo",
+    "example": "我用挖耳勺清理耳朵。",
+    "example_pinyin": "Wǒ yòng wā ěr sháo qīnglǐ ěrduǒ.",
+    "example_korean": "나는 귀파개로 귀를 청소한다."
+  },
+  {
+    "word": "光伏",
+    "meaning_ko": "태양광, 광전지",
+    "pinyin": "guāng fú",
+    "example": "越来越多的家庭安装光伏发电系统。",
+    "example_pinyin": "Yuè lái yuè duō de jiātíng ānzhuāng guāng fú fādiàn xìtǒng.",
+    "example_korean": "점점 더 많은 가정에서 태양광 발전 시스템을 설치하고 있다."
+  },
+  {
+    "word": "炼油",
+    "meaning_ko": "정유, 기름 정제",
+    "pinyin": "liàn yóu",
+    "example": "石油炼油厂生产各种燃料。",
+    "example_pinyin": "Shíyóu liàn yóu chǎng shēngchǎn gè zhǒng ránliào.",
+    "example_korean": "정유 공장은 여러 종류의 연료를 생산한다."
+  },
+  {
+    "word": "化学",
+    "meaning_ko": "화학",
+    "pinyin": "huà xué",
+    "example": "化学实验需要严格遵守安全规则。",
+    "example_pinyin": "Huà xué shíyàn xūyào yángé zunshǒu ānquán guīzé.",
+    "example_korean": "화학 실험은 엄격하게 안전 규칙을 따라야 한다."
+  },
+  {
+    "word": "手镯",
+    "meaning_ko": "팔찌",
+    "pinyin": "shǒu zhuó",
+    "example": "她手腕上戴着一个漂亮的手镯。",
+    "example_pinyin": "Tā shǒu wàn shang dàizhe yī ge piàoliang de shǒu zhuó.",
+    "example_korean": "그녀는 손목에 아름다운 팔찌를 차고 있다."
+  },
+  {
+    "word": "勾肩搭背",
+    "meaning_ko": "어깨동무",
+    "pinyin": "gōu jiān dā bèi",
+    "example": "两个好朋友勾肩搭背地走在街上。",
+    "example_pinyin": "Liǎng ge hǎo péngyou gōu jiān dā bèi de zǒu zài jiē shang.",
+    "example_korean": "두 친구가 어깨동무를 하며 거리를 걷고 있다."
   }
+
 ]
