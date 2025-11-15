@@ -394,6 +394,7 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
                         질문 입력하기
                       </label>
                       <textarea
+                        autoFocus
                         value={askQuestion}
                         onChange={(e) => setAskQuestion(e.target.value)}
                         placeholder="예: 이 단어는 언제 사용해요?"
