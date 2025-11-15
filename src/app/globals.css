@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+CJK+JP:wght@400;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
+
+@layer base {
+  :root {
+    --font-noto-serif-cjk-jp: 'Noto Serif CJK JP', serif;
+  }
+}
 
 @custom-variant dark (&:is(.dark *));
 
