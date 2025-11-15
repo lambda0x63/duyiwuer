@@ -37,18 +37,16 @@ export async function POST(req: NextRequest) {
       .map((w: WordData) => `- ${w.word} (${w.pinyin}): ${w.meaning}`)
       .join("\n");
 
-    const prompt = `다음 중국어 단어들을 이용해서 초등학생 수준의 응용 문제를 ${count}개 만들어주세요.
+    const systemPrompt = `당신은 초등학생 수준의 중국어 학습을 위한 문제 생성 전문가입니다. 반드시 다음 규칙을 따르세요:
 
-단어들:
-${wordsList}
-
-요구사항:
+**출제 규칙**:
 1. 각 문제는 해당 단어의 올바른 사용을 테스트해야 합니다
 2. 초등학생이 이해할 수 있는 수준의 일상 상황을 포함합니다
-3. 문제와 정답을 포함합니다
-4. 정답 설명을 포함합니다
+3. 실생활 응용 문제여야 합니다
+4. 정답과 상세한 설명을 반드시 포함합니다
 
-다음과 같은 JSON 형식으로 응답해주세요 (다른 텍스트는 없이 JSON만):
+**응답 형식**:
+반드시 다음 JSON 형식으로만 응답하세요 (다른 텍스트는 없이 JSON만):
 [
   {
     "word": "단어",
@@ -58,6 +56,11 @@ ${wordsList}
     "options": ["옵션1", "옵션2", "옵션3", "정답"]
   }
 ]`;
+
+    const prompt = `다음 중국어 단어들을 이용해서 초등학생 수준의 응용 문제를 ${count}개 만들어주세요.
+
+단어들:
+${wordsList}`;
 
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
@@ -70,6 +73,10 @@ ${wordsList}
       body: JSON.stringify({
         model: "deepseek/deepseek-v3.2-exp",
         messages: [
+          {
+            role: "system",
+            content: systemPrompt,
+          },
           {
             role: "user",
             content: prompt,
