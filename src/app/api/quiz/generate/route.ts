@@ -68,7 +68,7 @@ ${wordsList}
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "openrouter/auto",
+        model: "deepseek/deepseek-v3.2-exp",
         messages: [
           {
             role: "user",

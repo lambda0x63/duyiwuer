@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "openrouter/auto",
+        model: "deepseek/deepseek-v3.2-exp",
         messages: messages,
         system: systemPrompt || defaultSystemPrompt,
         temperature: 0.7,
