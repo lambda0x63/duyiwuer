@@ -8,10 +8,9 @@ import { Button } from "@/components/ui/button";
 
 interface HomeClientProps {
   totalWords: number;
-  totalSongSets: number;
 }
 
-export default function HomeClient({ totalWords, totalSongSets }: HomeClientProps) {
+export default function HomeClient({ totalWords }: HomeClientProps) {
   return (
     <motion.div
       className="min-h-screen flex flex-col items-center justify-center p-6 relative"
@@ -55,16 +54,16 @@ export default function HomeClient({ totalWords, totalSongSets }: HomeClientProp
           transition={{ delay: 0.4, duration: 0.4 }}
         >
           <Button size="lg" className="w-full" asChild>
-            <Link href="/study">교과서 학습</Link>
+            <Link href="/study/basic">기본 단어 학습</Link>
           </Button>
           <Button size="lg" variant="secondary" className="w-full" asChild>
-            <Link href="/songs">노래 학습</Link>
+            <Link href="/study/textbook">교과서 단어 학습</Link>
           </Button>
           <Button size="lg" variant="outline" className="w-full" asChild>
             <Link href="/quiz">퀴즈 풀기</Link>
           </Button>
           <p className="text-xs text-gray-500 text-center mt-2">
-            교과서 단어 {totalWords}개 · 노래 세트 {totalSongSets}곡
+            단어 {totalWords}개
           </p>
         </motion.div>
       </div>

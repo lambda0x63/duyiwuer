@@ -1,22 +1,16 @@
 ```json
 [  
   {
-    "word": "积木",
-    "meaning_ko": "블록 장난감",
-    "pinyin": "jī mù",
-    "example": "孩子们正在玩积木。",
-    "example_pinyin": "Háizimen zhèng zài wán jī mù.",
-    "example_korean": "아이들이 블록 장난감을 가지고 놀고 있다."
-  },
-  {
-    "word": "荷花",
-    "meaning_ko": "연꽃",
-    "pinyin": "hé huā",
-    "example": "湖里开满了荷花。",
-    "example_pinyin": "Hú lǐ kāi mǎn le hé huā.",
-    "example_korean": "호수에 연꽃이 만발했다."
+    "id": 1,
+    "word": "让",
+    "pinyin": "ràng",
+    "meaning": "시키다/하게하다",
+    "examples": [
+      "让我看看。", // 제일 쉬운활용
+      "妈妈让我买东西。", // 중간
+      "这件事让人很感动。" // 조금 복잡
+    ]
   }
-
    ( ... )
 ]
 ```

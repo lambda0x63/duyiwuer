@@ -1,1595 +1,1971 @@
 [
   {
+    "id": 1,
     "word": "积木",
-    "meaning_ko": "블록 장난감",
-    "pinyin": "jī mù",
-    "example": "孩子们正在玩积木。",
-    "example_pinyin": "Háizimen zhèng zài wán jī mù.",
-    "example_korean": "아이들이 블록 장난감을 가지고 놀고 있다."
+    "pinyin": "jīmù",
+    "meaning": "블록, 장난감 블록",
+    "examples": [
+      "我玩积木。",
+      "小朋友用积木搭房子。",
+      "通过玩积木可以培养孩子的创造力。"
+    ]
   },
   {
+    "id": 2,
     "word": "荷花",
-    "meaning_ko": "연꽃",
-    "pinyin": "hé huā",
-    "example": "湖里开满了荷花。",
-    "example_pinyin": "Hú lǐ kāi mǎn le hé huā.",
-    "example_korean": "호수에 연꽃이 만발했다."
+    "pinyin": "héhuā",
+    "meaning": "연꽃",
+    "examples": [
+      "池塘有荷花。",
+      "夏天的荷花很漂亮。",
+      "荷花出淤泥而不染的品格令人敬佩。"
+    ]
   },
   {
+    "id": 3,
     "word": "说话",
-    "meaning_ko": "말하다",
-    "pinyin": "shuō huà",
-    "example": "请小声说话。",
-    "example_pinyin": "Qǐng xiǎo shēng shuō huà.",
-    "example_korean": "작은 목소리로 말해주세요."
+    "pinyin": "shuōhuà",
+    "meaning": "말하다",
+    "examples": [
+      "宝宝会说话了。",
+      "上课时不要说话。",
+      "说话要注意场合和对象的不同。"
+    ]
   },
   {
+    "id": 4,
     "word": "小白兔",
-    "meaning_ko": "작은 하얀 토끼",
     "pinyin": "xiǎo bái tù",
-    "example": "小白兔在草地上跳来跳去。",
-    "example_pinyin": "Xiǎo bái tù zài cǎodì shàng tiào lái tiào qù.",
-    "example_korean": "작은 하얀 토끼가 풀밭에서 이리저리 뛰고 있다."
+    "meaning": "흰 토끼",
+    "examples": [
+      "小白兔真可爱。",
+      "小白兔喜欢吃胡萝卜。",
+      "童话故事里的小白兔总是很聪明。"
+    ]
   },
   {
+    "id": 5,
     "word": "扶梯",
-    "meaning_ko": "에스컬레이터",
-    "pinyin": "fú tī",
-    "example": "请抓紧扶梯的扶手。",
-    "example_pinyin": "Qǐng zhuā jǐn fú tī de fú shǒu.",
-    "example_korean": "에스컬레이터 손잡이를 꼭 잡으세요."
+    "pinyin": "fútī",
+    "meaning": "에스컬레이터",
+    "examples": [
+      "我坐扶梯。",
+      "商场里有很长的扶梯。",
+      "乘坐扶梯时要注意安全站稳扶好。"
+    ]
   },
   {
+    "id": 6,
     "word": "下棋",
-    "meaning_ko": "바둑을 두다",
-    "pinyin": "xià qí",
-    "example": "我爷爷每天都喜欢和朋友下棋。",
-    "example_pinyin": "Wǒ yéye měitiān dōu xǐhuān hé péngyǒu xià qí.",
-    "example_korean": "저희 할아버지는 매일 친구들과 바둑 두는 것을 좋아하십니다."
+    "pinyin": "xiàqí",
+    "meaning": "바둑/장기를 두다",
+    "examples": [
+      "爷爷爱下棋。",
+      "我和同学经常下棋。",
+      "下棋不仅是娱乐也能锻炼思维能力。"
+    ]
   },
   {
+    "id": 7,
     "word": "句子",
-    "meaning_ko": "문장",
-    "pinyin": "jù zi",
-    "example": "这个句子很长。",
-    "example_pinyin": "Zhè ge jù zi hěn cháng.",
-    "example_korean": "이 문장은 매우 길다."
+    "pinyin": "jùzi",
+    "meaning": "문장",
+    "examples": [
+      "这是句子。",
+      "老师让我们造句子。",
+      "写作文时要注意句子之间的逻辑关系。"
+    ]
   },
   {
+    "id": 8,
     "word": "过桥",
-    "meaning_ko": "다리를 건너다",
-    "pinyin": "guò qiáo",
-    "example": "他们一起过桥。",
-    "example_pinyin": "Tāmen yìqǐ guò qiáo.",
-    "example_korean": "그들은 함께 다리를 건넜다."
+    "pinyin": "guòqiáo",
+    "meaning": "다리를 건너다",
+    "examples": [
+      "小鸭过桥。",
+      "我们排队过桥。",
+      "过桥时要小心不要看下面的河水。"
+    ]
   },
   {
+    "id": 9,
     "word": "桌子",
-    "meaning_ko": "책상, 탁자",
-    "pinyin": "zhuō zi",
-    "example": "桌子上有一本书。",
-    "example_pinyin": "Zhuō zi shàng yǒu yì běn shū.",
-    "example_korean": "책상 위에 책 한 권이 있다."
+    "pinyin": "zhuōzi",
+    "meaning": "책상, 탁자",
+    "examples": [
+      "桌子很大。",
+      "教室里有很多桌子。",
+      "这张古董桌子是爷爷留下的传家宝。"
+    ]
   },
   {
+    "id": 10,
     "word": "读书",
-    "meaning_ko": "책을 읽다",
-    "pinyin": "dú shū",
-    "example": "我喜欢在晚上读书。",
-    "example_pinyin": "Wǒ xǐhuan zài wǎnshang dú shū.",
-    "example_korean": "나는 저녁에 책 읽는 것을 좋아한다."
+    "pinyin": "dúshū",
+    "meaning": "책을 읽다, 공부하다",
+    "examples": [
+      "我爱读书。",
+      "妹妹每天都读书。",
+      "读书使人明智也能开阔我们的视野。"
+    ]
   },
   {
+    "id": 11,
     "word": "虚弱",
-    "meaning_ko": "허약하다, 기운이 없다",
-    "pinyin": "xū ruò",
-    "example": "他生病后身体很虚弱。",
-    "example_pinyin": "Tā shēngbìng hòu shēntǐ hěn xūruò.",
-    "example_korean": "그는 병을 앓은 후 몸이 매우 허약하다."
+    "pinyin": "xūruò",
+    "meaning": "허약하다",
+    "examples": [
+      "病人很虚弱。",
+      "感冒后身体虚弱。",
+      "长期缺乏运动会导致体质虚弱。"
+    ]
   },
   {
+    "id": 12,
     "word": "蚂蚁",
-    "meaning_ko": "개미",
-    "pinyin": "mǎ yǐ",
-    "example": "蚂蚁在搬食物。",
-    "example_pinyin": "Mǎyǐ zài bān shíwù.",
-    "example_korean": "개미들이 먹이를 옮기고 있다."
+    "pinyin": "mǎyǐ",
+    "meaning": "개미",
+    "examples": [
+      "蚂蚁搬家。",
+      "蚂蚁喜欢吃甜食。",
+      "蚂蚁的团队合作精神值得我们学习。"
+    ]
   },
   {
+    "id": 13,
     "word": "数学",
-    "meaning_ko": "수학",
-    "pinyin": "shù xué",
-    "example": "我喜欢学数学。",
-    "example_pinyin": "Wǒ xǐhuan xué shùxué.",
-    "example_korean": "나는 수학 공부를 좋아한다."
+    "pinyin": "shùxué",
+    "meaning": "수학",
+    "examples": [
+      "数学很难。",
+      "我最喜欢数学课。",
+      "数学是培养逻辑思维能力的重要学科。"
+    ]
   },
   {
+    "id": 14,
     "word": "蜘蛛",
-    "meaning_ko": "거미",
-    "pinyin": "zhī zhū",
-    "example": "蜘蛛在结网。",
-    "example_pinyin": "Zhīzhū zài jié wǎng.",
-    "example_korean": "거미가 거미줄을 치고 있다."
+    "pinyin": "zhīzhū",
+    "meaning": "거미",
+    "examples": [
+      "蜘蛛织网。",
+      "墙角有一只蜘蛛。",
+      "蜘蛛网的结构体现了大自然的智慧。"
+    ]
   },
   {
+    "id": 15,
     "word": "水果",
-    "meaning_ko": "과일",
-    "pinyin": "shuǐ guǒ",
-    "example": "多吃水果对身体好。",
-    "example_pinyin": "Duō chī shuǐguǒ duì shēntǐ hǎo.",
-    "example_korean": "과일을 많이 먹으면 건강에 좋다."
+    "pinyin": "shuǐguǒ",
+    "meaning": "과일",
+    "examples": [
+      "我吃水果。",
+      "妈妈买了很多水果。",
+      "每天吃水果对身体健康有很大好处。"
+    ]
   },
   {
+    "id": 16,
     "word": "月色",
-    "meaning_ko": "달빛",
-    "pinyin": "yuè sè",
-    "example": "今晚的月色很美。",
-    "example_pinyin": "Jīn wǎn de yuè sè hěn měi.",
-    "example_korean": "오늘 밤의 달빛이 매우 아름답다."
+    "pinyin": "yuèsè",
+    "meaning": "달빛",
+    "examples": [
+      "月色真美。",
+      "今晚的月色很明亮。",
+      "皎洁的月色让夜晚变得格外宁静。"
+    ]
   },
   {
+    "id": 17,
     "word": "轮船",
-    "meaning_ko": "배, 선박",
-    "pinyin": "lún chuán",
-    "example": "轮船正在靠岸。",
-    "example_pinyin": "Lúnchuán zhèng zài kào àn.",
-    "example_korean": "배가 부두에 정박하고 있다."
+    "pinyin": "lúnchuán",
+    "meaning": "배, 선박",
+    "examples": [
+      "轮船好大。",
+      "我们坐轮船去旅行。",
+      "现代轮船的航行速度比以前快很多。"
+    ]
   },
   {
+    "id": 18,
     "word": "水彩笔",
-    "meaning_ko": "수채화 붓펜",
-    "pinyin": "shuǐ cǎi bǐ",
-    "example": "我用水彩笔画画。",
-    "example_pinyin": "Wǒ yòng shuǐcǎibǐ huà huà.",
-    "example_korean": "나는 수채화 펜으로 그림을 그린다."
+    "pinyin": "shuǐcǎibǐ",
+    "meaning": "수채화 펜",
+    "examples": [
+      "我有水彩笔。",
+      "用水彩笔画画很好玩。",
+      "水彩笔的颜色丰富适合儿童绘画。"
+    ]
   },
   {
+    "id": 19,
     "word": "饼干",
-    "meaning_ko": "과자, 비스킷",
-    "pinyin": "bǐng gān",
-    "example": "孩子们喜欢吃饼干。",
-    "example_pinyin": "Háizimen xǐhuan chī bǐnggān.",
-    "example_korean": "아이들은 과자를 먹는 것을 좋아한다."
+    "pinyin": "bǐnggān",
+    "meaning": "비스킷, 쿠키",
+    "examples": [
+      "饼干真香。",
+      "我带饼干去学校。",
+      "自己做的饼干比买的更健康更好吃。"
+    ]
   },
   {
+    "id": 20,
     "word": "雨伞",
-    "meaning_ko": "우산",
-    "pinyin": "yǔ sǎn",
-    "example": "下雨了，别忘了带雨伞。",
-    "example_pinyin": "Xià yǔ le, bié wàng le dài yǔsǎn.",
-    "example_korean": "비가 오니 우산 가져가는 것을 잊지 마세요."
+    "pinyin": "yǔsǎn",
+    "meaning": "우산",
+    "examples": [
+      "下雨打雨伞。",
+      "我忘记带雨伞了。",
+      "一把雨伞承载着妈妈对孩子的关爱。"
+    ]
   },
   {
+    "id": 21,
     "word": "望远镜",
-    "meaning_ko": "망원경",
-    "pinyin": "wàng yuǎn jìng",
-    "example": "他用望远镜看星星。",
-    "example_pinyin": "Tā yòng wàngyuǎnjìng kàn xīngxing.",
-    "example_korean": "그는 망원경으로 별을 본다."
+    "pinyin": "wàngyuǎnjìng",
+    "meaning": "망원경",
+    "examples": [
+      "我有望远镜。",
+      "用望远镜看星星。",
+      "望远镜的发明让人类能够探索宇宙。"
+    ]
   },
   {
+    "id": 22,
     "word": "帽子",
-    "meaning_ko": "모자",
-    "pinyin": "mào zi",
-    "example": "她戴了一顶红色的帽子。",
-    "example_pinyin": "Tā dài le yí dǐng hóngsè de màozi.",
-    "example_korean": "그녀는 빨간 모자를 하나 썼다."
+    "pinyin": "màozi",
+    "meaning": "모자",
+    "examples": [
+      "红色的帽子。",
+      "冬天要戴帽子保暖。",
+      "不同场合需要选择不同款式的帽子。"
+    ]
   },
   {
+    "id": 23,
     "word": "水壶",
-    "meaning_ko": "물병, 주전자",
-    "pinyin": "shuǐ hú",
-    "example": "水壶里有热水。",
-    "example_pinyin": "Shuǐhú lǐ yǒu rè shuǐ.",
-    "example_korean": "물병 안에 뜨거운 물이 있다."
+    "pinyin": "shuǐhú",
+    "meaning": "주전자, 물병",
+    "examples": [
+      "水壶装满了。",
+      "我每天带水壶上学。",
+      "保温水壶能让我们随时喝到热水。"
+    ]
   },
   {
+    "id": 24,
     "word": "苹果",
-    "meaning_ko": "사과",
-    "pinyin": "píng guǒ",
-    "example": "我每天吃一个苹果。",
-    "example_pinyin": "Wǒ měi tiān chī yí gè píngguǒ.",
-    "example_korean": "나는 매일 사과 하나를 먹는다."
+    "pinyin": "píngguǒ",
+    "meaning": "사과",
+    "examples": [
+      "苹果真甜。",
+      "我最爱吃红苹果。",
+      "每天一个苹果医生远离我这句话很有道理。"
+    ]
   },
   {
+    "id": 25,
     "word": "跳棋",
-    "meaning_ko": "체커(중국식 점프체커)",
-    "pinyin": "tiào qí",
-    "example": "我们一起玩跳棋。",
-    "example_pinyin": "Wǒmen yìqǐ wán tiàoqí.",
-    "example_korean": "우리 함께 체커 게임을 하자."
+    "pinyin": "tiàoqí",
+    "meaning": "체커, 중국 체커",
+    "examples": [
+      "我会玩跳棋。",
+      "和朋友一起玩跳棋。",
+      "跳棋游戏能够培养策略思维能力。"
+    ]
   },
   {
+    "id": 26,
     "word": "面包",
-    "meaning_ko": "빵",
-    "pinyin": "miàn bāo",
-    "example": "早餐我吃了面包和牛奶。",
-    "example_pinyin": "Zǎocān wǒ chī le miànbāo hé niúnǎi.",
-    "example_korean": "아침식사로 나는 빵과 우유를 먹었다."
+    "pinyin": "miànbāo",
+    "meaning": "빵",
+    "examples": [
+      "面包很软。",
+      "早餐吃面包和牛奶。",
+      "新鲜出炉的面包散发着诱人的香味。"
+    ]
   },
   {
+    "id": 27,
     "word": "开关",
-    "meaning_ko": "스위치",
-    "pinyin": "kāi guān",
-    "example": "请关掉电灯的开关。",
-    "example_pinyin": "Qǐng guān diào diàndēng de kāiguān.",
-    "example_korean": "전등 스위치를 꺼 주세요."
+    "pinyin": "kāiguān",
+    "meaning": "스위치",
+    "examples": [
+      "按开关。",
+      "电灯的开关在墙上。",
+      "使用电器前要先检查开关是否正常。"
+    ]
   },
   {
+    "id": 28,
     "word": "秋天",
-    "meaning_ko": "가을",
-    "pinyin": "qiū tiān",
-    "example": "秋天的风很凉爽。",
-    "example_pinyin": "Qiūtiān de fēng hěn liángshuǎng.",
-    "example_korean": "가을 바람이 아주 시원하다."
+    "pinyin": "qiūtiān",
+    "meaning": "가을",
+    "examples": [
+      "秋天来了。",
+      "秋天树叶变黄了。",
+      "秋天是收获的季节也是最美的季节。"
+    ]
   },
   {
+    "id": 29,
     "word": "树叶",
-    "meaning_ko": "나뭇잎",
-    "pinyin": "shù yè",
-    "example": "树叶从树上落下。",
-    "example_pinyin": "Shùyè cóng shù shàng luò xià.",
-    "example_korean": "나뭇잎이 나무에서 떨어졌다."
+    "pinyin": "shùyè",
+    "meaning": "나뭇잎",
+    "examples": [
+      "树叶飘落。",
+      "绿色的树叶真好看。",
+      "树叶的形状和颜色反映了季节的变化。"
+    ]
   },
   {
+    "id": 30,
     "word": "大人",
-    "meaning_ko": "어른",
-    "pinyin": "dà rén",
-    "example": "大人们在聊天。",
-    "example_pinyin": "Dàrén men zài liáotiān.",
-    "example_korean": "어른들이 이야기하고 있다."
+    "pinyin": "dàrén",
+    "meaning": "어른",
+    "examples": [
+      "大人在工作。",
+      "我想快点变成大人。",
+      "大人的世界充满了责任和挑战。"
+    ]
   },
   {
+    "id": 31,
     "word": "孩子",
-    "meaning_ko": "아이, 어린이",
-    "pinyin": "hái zi",
-    "example": "那个孩子在公园玩耍。",
-    "example_pinyin": "Nà gè háizi zài gōngyuán wánshuǎ.",
-    "example_korean": "그 아이는 공원에서 놀고 있다."
+    "pinyin": "háizi",
+    "meaning": "아이",
+    "examples": [
+      "孩子在玩。",
+      "老师很喜欢孩子们。",
+      "每个孩子都是父母心中的宝贝。"
+    ]
   },
   {
+    "id": 32,
     "word": "黄叶",
-    "meaning_ko": "누런 잎, 노란 잎사귀",
-    "pinyin": "huáng yè",
-    "example": "秋天的黄叶很美。",
-    "example_pinyin": "Qiūtiān de huáng yè hěn měi.",
-    "example_korean": "가을의 노란 잎사귀가 아름답다."
+    "pinyin": "huángyè",
+    "meaning": "노란 잎",
+    "examples": [
+      "黄叶飘飘。",
+      "秋天到处都是黄叶。",
+      "满地的黄叶构成了一幅美丽的秋景。"
+    ]
   },
   {
+    "id": 33,
     "word": "飞来",
-    "meaning_ko": "날아오다",
-    "pinyin": "fēi lái",
-    "example": "一只鸟飞来了。",
-    "example_pinyin": "Yì zhī niǎo fēi lái le.",
-    "example_korean": "새 한 마리가 날아왔다."
+    "pinyin": "fēilái",
+    "meaning": "날아오다",
+    "examples": [
+      "小鸟飞来了。",
+      "一只蝴蝶飞来飞去。",
+      "春天燕子从南方飞来筑巢繁衍。"
+    ]
   },
   {
+    "id": 34,
     "word": "江南",
-    "meaning_ko": "장난(중국 남부의 지명)",
-    "pinyin": "Jiāng nán",
-    "example": "江南的春天很美丽。",
-    "example_pinyin": "Jiāngnán de chūntiān hěn měilì.",
-    "example_korean": "장난 지역의 봄은 매우 아름답다."
+    "pinyin": "jiāngnán",
+    "meaning": "강남 지역",
+    "examples": [
+      "江南很美。",
+      "我想去江南旅游。",
+      "江南水乡的风景如诗如画令人陶醉。"
+    ]
   },
   {
+    "id": 35,
     "word": "东西",
-    "meaning_ko": "물건, 동서(방향)",
-    "pinyin": "dōng xī",
-    "example": "我买了一些东西。",
-    "example_pinyin": "Wǒ mǎi le yìxiē dōngxi.",
-    "example_korean": "나는 물건을 조금 샀다."
+    "pinyin": "dōngxī",
+    "meaning": "물건, 동서",
+    "examples": [
+      "买东西。",
+      "桌上有很多东西。",
+      "整理东西时发现了很多珍贵的回忆。"
+    ]
   },
   {
+    "id": 36,
     "word": "南北",
-    "meaning_ko": "남과 북",
-    "pinyin": "nán běi",
-    "example": "铁路贯穿南北。",
-    "example_pinyin": "Tiělù guànchuān nánběi.",
-    "example_korean": "철도가 남북을 관통한다."
+    "pinyin": "nánběi",
+    "meaning": "남북",
+    "examples": [
+      "分南北。",
+      "这条路通南北。",
+      "中国南北方的文化差异很有意思。"
+    ]
   },
   {
+    "id": 37,
     "word": "家",
-    "meaning_ko": "집, 가정",
     "pinyin": "jiā",
-    "example": "我想家了。",
-    "example_pinyin": "Wǒ xiǎng jiā le.",
-    "example_korean": "집이 그립다."
+    "meaning": "집, 가정",
+    "examples": [
+      "我回家了。",
+      "家里有爸爸妈妈。",
+      "无论走到哪里家永远是最温暖的港湾。"
+    ]
   },
   {
+    "id": 38,
     "word": "小鸡",
-    "meaning_ko": "병아리",
-    "pinyin": "xiǎo jī",
-    "example": "小鸡在地上找食物。",
-    "example_pinyin": "Xiǎo jī zài dì shàng zhǎo shíwù.",
-    "example_korean": "병아리가 땅에서 먹이를 찾고 있다."
+    "pinyin": "xiǎojī",
+    "meaning": "병아리",
+    "examples": [
+      "小鸡叽叽叫。",
+      "农场里有很多小鸡。",
+      "小鸡破壳而出的过程充满生命力。"
+    ]
   },
   {
+    "id": 39,
     "word": "竹子",
-    "meaning_ko": "대나무",
-    "pinyin": "zhú zi",
-    "example": "熊猫喜欢吃竹子。",
-    "example_pinyin": "Xióngmāo xǐhuan chī zhúzi.",
-    "example_korean": "판다는 대나무를 먹는 것을 좋아한다."
+    "pinyin": "zhúzi",
+    "meaning": "대나무",
+    "examples": [
+      "竹子很高。",
+      "熊猫喜欢吃竹子。",
+      "竹子的品格象征着坚韧不拔的精神。"
+    ]
   },
   {
+    "id": 40,
     "word": "牙齿",
-    "meaning_ko": "이, 치아",
-    "pinyin": "yá chǐ",
-    "example": "每天要刷牙齿。",
-    "example_pinyin": "Měi tiān yào shuā yá chǐ.",
-    "example_korean": "매일 이를 닦아야 한다."
+    "pinyin": "yáchǐ",
+    "meaning": "이빨, 치아",
+    "examples": [
+      "刷牙齿。",
+      "我的牙齿很白。",
+      "保护牙齿健康需要养成良好的习惯。"
+    ]
   },
   {
+    "id": 41,
     "word": "几步",
-    "meaning_ko": "몇 걸음",
     "pinyin": "jǐ bù",
-    "example": "他走了几步就停下来了。",
-    "example_pinyin": "Tā zǒu le jǐ bù jiù tíng xià lái le.",
-    "example_korean": "그는 몇 걸음 걷고는 멈췄다."
+    "meaning": "몇 걸음",
+    "examples": [
+      "走几步。",
+      "学校离家只有几步。",
+      "成功与失败之间有时只差几步。"
+    ]
   },
   {
+    "id": 42,
     "word": "参加",
-    "meaning_ko": "참가하다, 참석하다",
-    "pinyin": "cān jiā",
-    "example": "我参加了学校的比赛。",
-    "example_pinyin": "Wǒ cānjiā le xuéxiào de bǐsài.",
-    "example_korean": "나는 학교 대회에 참가했다."
+    "pinyin": "cānjiā",
+    "meaning": "참가하다",
+    "examples": [
+      "我要参加。",
+      "同学们都参加比赛。",
+      "积极参加活动能够丰富我们的生活经验。"
+    ]
   },
   {
+    "id": 43,
     "word": "骑马",
-    "meaning_ko": "말을 타다",
-    "pinyin": "qí mǎ",
-    "example": "他会骑马。",
-    "example_pinyin": "Tā huì qí mǎ.",
-    "example_korean": "그는 말을 탈 줄 안다."
+    "pinyin": "qímǎ",
+    "meaning": "말을 타다",
+    "examples": [
+      "我会骑马。",
+      "在草原上骑马真好。",
+      "骑马运动能够培养勇气和平衡能力。"
+    ]
   },
   {
+    "id": 44,
     "word": "火车",
-    "meaning_ko": "기차",
-    "pinyin": "huǒ chē",
-    "example": "火车准时到站。",
-    "example_pinyin": "Huǒchē zhǔnshí dào zhàn.",
-    "example_korean": "기차가 제시간에 도착했다."
+    "pinyin": "huǒchē",
+    "meaning": "기차",
+    "examples": [
+      "火车来了。",
+      "我们坐火车去北京。",
+      "高速火车的发展改变了人们的出行方式。"
+    ]
   },
   {
+    "id": 45,
     "word": "马车",
-    "meaning_ko": "마차",
-    "pinyin": "mǎ chē",
-    "example": "古时候人们常坐马车。",
-    "example_pinyin": "Gǔ shíhòu rénmen cháng zuò mǎchē.",
-    "example_korean": "옛날에는 사람들이 자주 마차를 탔다."
+    "pinyin": "mǎchē",
+    "meaning": "마차",
+    "examples": [
+      "坐马车。",
+      "古代人坐马车出行。",
+      "马车虽然慢但充满了浪漫的情调。"
+    ]
   },
   {
+    "id": 46,
     "word": "汽车",
-    "meaning_ko": "자동차",
-    "pinyin": "qì chē",
-    "example": "路上有很多汽车。",
-    "example_pinyin": "Lù shàng yǒu hěn duō qìchē.",
-    "example_korean": "도로 위에 자동차가 많이 있다."
+    "pinyin": "qìchē",
+    "meaning": "자동차",
+    "examples": [
+      "红色汽车。",
+      "爸爸开汽车上班。",
+      "新能源汽车是未来交通发展的趋势。"
+    ]
   },
   {
+    "id": 47,
     "word": "上车",
-    "meaning_ko": "차에 타다",
-    "pinyin": "shàng chē",
-    "example": "请先上车。",
-    "example_pinyin": "Qǐng xiān shàng chē.",
-    "example_korean": "먼저 차에 타세요."
+    "pinyin": "shàngchē",
+    "meaning": "차에 타다",
+    "examples": [
+      "快上车。",
+      "请排队上车。",
+      "上车后要系好安全带确保安全。"
+    ]
   },
   {
+    "id": 48,
     "word": "下车",
-    "meaning_ko": "차에서 내리다",
-    "pinyin": "xià chē",
-    "example": "下一站下车。",
-    "example_pinyin": "Xià yí zhàn xià chē.",
-    "example_korean": "다음 역에서 내립니다."
+    "pinyin": "xiàchē",
+    "meaning": "차에서 내리다",
+    "examples": [
+      "到站下车。",
+      "请从后门下车。",
+      "下车时要注意观察周围的交通状况。"
+    ]
   },
   {
+    "id": 49,
     "word": "坐车",
-    "meaning_ko": "차를 타다",
-    "pinyin": "zuò chē",
-    "example": "我们坐车去学校。",
-    "example_pinyin": "Wǒmen zuò chē qù xuéxiào.",
-    "example_korean": "우리는 차를 타고 학교에 간다."
+    "pinyin": "zuòchē",
+    "meaning": "차를 타다",
+    "examples": [
+      "我坐车去。",
+      "坐车去学校很方便。",
+      "长时间坐车容易感到疲劳要适当休息。"
+    ]
   },
   {
+    "id": 50,
     "word": "车站",
-    "meaning_ko": "정류장, 역",
-    "pinyin": "chē zhàn",
-    "example": "公交车站就在前面。",
-    "example_pinyin": "Gōngjiāo chēzhàn jiù zài qiánmiàn.",
-    "example_korean": "버스 정류장이 바로 앞에 있다."
+    "pinyin": "chēzhàn",
+    "meaning": "역, 정거장",
+    "examples": [
+      "车站到了。",
+      "车站有很多人等车。",
+      "车站是城市交通的重要枢纽。"
+    ]
   },
   {
+    "id": 51,
     "word": "车厢",
-    "meaning_ko": "차량 칸, 객차",
-    "pinyin": "chē xiāng",
-    "example": "车厢里很安静。",
-    "example_pinyin": "Chēxiāng lǐ hěn ānjìng.",
-    "example_korean": "객차 안이 매우 조용하다."
+    "pinyin": "chēxiāng",
+    "meaning": "차량, 객차",
+    "examples": [
+      "车厢很大。",
+      "火车有很多节车厢。",
+      "车厢里的设施越来越舒适和人性化。"
+    ]
   },
   {
+    "id": 52,
     "word": "门口",
-    "meaning_ko": "문 앞",
-    "pinyin": "mén kǒu",
-    "example": "他在门口等你。",
-    "example_pinyin": "Tā zài ménkǒu děng nǐ.",
-    "example_korean": "그가 문 앞에서 너를 기다리고 있다."
+    "pinyin": "ménkǒu",
+    "meaning": "문 앞, 입구",
+    "examples": [
+      "在门口等。",
+      "学校门口有保安。",
+      "每天放学门口都会聚集很多家长。"
+    ]
   },
   {
+    "id": 53,
     "word": "生日",
-    "meaning_ko": "생일",
-    "pinyin": "shēng rì",
-    "example": "祝你生日快乐！",
-    "example_pinyin": "Zhù nǐ shēngrì kuàilè!",
-    "example_korean": "생일 축하해!"
+    "pinyin": "shēngrì",
+    "meaning": "생일",
+    "examples": [
+      "今天生日。",
+      "我们一起过生日。",
+      "生日是每个人一年中最特别的日子。"
+    ]
   },
   {
+    "id": 54,
     "word": "题目",
-    "meaning_ko": "문제, 제목",
-    "pinyin": "tí mù",
-    "example": "这道题目的答案很简单。",
-    "example_pinyin": "Zhè dào tímù de dá'àn hěn jiǎndān.",
-    "example_korean": "이 문제의 답은 매우 간단하다."
+    "pinyin": "tímù",
+    "meaning": "문제, 제목",
+    "examples": [
+      "看题目。",
+      "这道题目很简单。",
+      "考试的题目涵盖了所有学过的内容。"
+    ]
   },
   {
+    "id": 55,
     "word": "田野",
-    "meaning_ko": "들판",
-    "pinyin": "tián yě",
-    "example": "田野里开满了花。",
-    "example_pinyin": "Tiányě lǐ kāi mǎn le huā.",
-    "example_korean": "들판에 꽃이 만발했다."
+    "pinyin": "tiányě",
+    "meaning": "들판",
+    "examples": [
+      "田野真大。",
+      "春天的田野很美丽。",
+      "广阔的田野让人心胸开阔心情舒畅。"
+    ]
   },
   {
+    "id": 56,
     "word": "写字",
-    "meaning_ko": "글씨를 쓰다",
-    "pinyin": "xiě zì",
-    "example": "请在这里写字。",
-    "example_pinyin": "Qǐng zài zhèlǐ xiě zì.",
-    "example_korean": "여기에 글씨를 써 주세요."
+    "pinyin": "xiězì",
+    "meaning": "글씨를 쓰다",
+    "examples": [
+      "我会写字。",
+      "每天练习写字。",
+      "写字不仅是技能更是一种文化修养。"
+    ]
   },
   {
+    "id": 57,
     "word": "打雷",
-    "meaning_ko": "천둥이 치다",
-    "pinyin": "dǎ léi",
-    "example": "外面在打雷。",
-    "example_pinyin": "Wàimiàn zài dǎ léi.",
-    "example_korean": "밖에서 천둥이 치고 있다."
+    "pinyin": "dǎléi",
+    "meaning": "천둥이 치다",
+    "examples": [
+      "天空打雷了。",
+      "下雨前经常打雷。",
+      "打雷时不要站在树下避免危险。"
+    ]
   },
   {
+    "id": 58,
     "word": "叠被子",
-    "meaning_ko": "이불을 개다",
-    "pinyin": "dié bèi zi",
-    "example": "早上要记得叠被子。",
-    "example_pinyin": "Zǎoshang yào jìde dié bèizi.",
-    "example_korean": "아침에 이불을 개는 것을 잊지 마세요."
+    "pinyin": "dié bèizi",
+    "meaning": "이불을 개다",
+    "examples": [
+      "我会叠被子。",
+      "每天早上要叠被子。",
+      "叠被子是培养良好生活习惯的开始。"
+    ]
   },
   {
+    "id": 59,
     "word": "吹气球",
-    "meaning_ko": "풍선을 불다",
-    "pinyin": "chuī qì qiú",
-    "example": "孩子们在吹气球。",
-    "example_pinyin": "Háizimen zài chuī qìqiú.",
-    "example_korean": "아이들이 풍선을 불고 있다."
+    "pinyin": "chuī qìqiú",
+    "meaning": "풍선을 불다",
+    "examples": [
+      "我吹气球。",
+      "生日会上吹气球。",
+      "吹气球需要掌握力度避免吹破。"
+    ]
   },
   {
+    "id": 60,
     "word": "堆雪人",
-    "meaning_ko": "눈사람을 만들다",
-    "pinyin": "duī xuě rén",
-    "example": "我们一起堆雪人。",
-    "example_pinyin": "Wǒmen yìqǐ duī xuěrén.",
-    "example_korean": "우리 함께 눈사람을 만들자."
+    "pinyin": "duī xuěrén",
+    "meaning": "눈사람을 만들다",
+    "examples": [
+      "冬天堆雪人。",
+      "小朋友们一起堆雪人。",
+      "堆雪人是冬天最有趣的户外活动之一。"
+    ]
   },
   {
+    "id": 61,
     "word": "丢手绢",
-    "meaning_ko": "손수건을 던지다(어린이 놀이 ‘손수건 돌리기’)",
-    "pinyin": "diū shǒu juàn",
-    "example": "孩子们在玩丢手绢。",
-    "example_pinyin": "Háizimen zài wán diū shǒujuàn.",
-    "example_korean": "아이들이 손수건 돌리기 놀이를 하고 있다."
+    "pinyin": "diū shǒujuàn",
+    "meaning": "손수건 던지기 놀이",
+    "examples": [
+      "玩丢手绢。",
+      "大家围成圈丢手绢。",
+      "丢手绢游戏培养孩子的反应能力。"
+    ]
   },
   {
+    "id": 62,
     "word": "上午",
-    "meaning_ko": "오전",
-    "pinyin": "shàng wǔ",
-    "example": "我上午有课。",
-    "example_pinyin": "Wǒ shàngwǔ yǒu kè.",
-    "example_korean": "나는 오전에 수업이 있다."
+    "pinyin": "shàngwǔ",
+    "meaning": "오전",
+    "examples": [
+      "上午好。",
+      "上午有语文课。",
+      "上午的学习效率通常比较高。"
+    ]
   },
   {
+    "id": 63,
     "word": "下午",
-    "meaning_ko": "오후",
-    "pinyin": "xià wǔ",
-    "example": "我们下午去图书馆。",
-    "example_pinyin": "Wǒmen xiàwǔ qù túshūguǎn.",
-    "example_korean": "우리는 오후에 도서관에 간다."
+    "pinyin": "xiàwǔ",
+    "meaning": "오후",
+    "examples": [
+      "下午玩。",
+      "下午我们去公园。",
+      "下午的阳光温暖而不刺眼很舒服。"
+    ]
   },
   {
+    "id": 64,
     "word": "晚上",
-    "meaning_ko": "저녁, 밤",
-    "pinyin": "wǎn shang",
-    "example": "晚上一起去散步吧。",
-    "example_pinyin": "Wǎnshang yìqǐ qù sànbù ba.",
-    "example_korean": "저녁에 함께 산책하자."
+    "pinyin": "wǎnshàng",
+    "meaning": "저녁, 밤",
+    "examples": [
+      "晚上睡觉。",
+      "晚上全家人一起吃饭。",
+      "晚上的时间应该合理安排学习和休息。"
+    ]
   },
   {
+    "id": 65,
     "word": "昨天",
-    "meaning_ko": "어제",
-    "pinyin": "zuó tiān",
-    "example": "昨天我看了一部电影。",
-    "example_pinyin": "Zuótiān wǒ kàn le yí bù diànyǐng.",
-    "example_korean": "어제 나는 영화를 한 편 봤다."
+    "pinyin": "zuótiān",
+    "meaning": "어제",
+    "examples": [
+      "昨天下雨。",
+      "昨天我去了动物园。",
+      "昨天的经历成为今天宝贵的经验。"
+    ]
   },
   {
+    "id": 66,
     "word": "今天",
-    "meaning_ko": "오늘",
-    "pinyin": "jīn tiān",
-    "example": "今天的天气很好。",
-    "example_pinyin": "Jīntiān de tiānqì hěn hǎo.",
-    "example_korean": "오늘 날씨가 아주 좋다."
+    "pinyin": "jīntiān",
+    "meaning": "오늘",
+    "examples": [
+      "今天真好。",
+      "今天是我的生日。",
+      "把握今天就是为明天打好基础。"
+    ]
   },
   {
+    "id": 67,
     "word": "男女",
-    "meaning_ko": "남녀",
-    "pinyin": "nán nǚ",
-    "example": "这里的男女比例差不多。",
-    "example_pinyin": "Zhèlǐ de nánnǚ bǐlì chàbuduō.",
-    "example_korean": "이곳의 남녀 비율이 비슷하다."
+    "pinyin": "nánnǚ",
+    "meaning": "남녀",
+    "examples": [
+      "男女平等。",
+      "班里有男女同学。",
+      "男女之间的差异需要互相理解和尊重。"
+    ]
   },
   {
+    "id": 68,
     "word": "先后",
-    "meaning_ko": "순서, 앞뒤",
-    "pinyin": "xiān hòu",
-    "example": "请按先后来排队。",
-    "example_pinyin": "Qǐng àn xiānhòu lái páiduì.",
-    "example_korean": "순서대로 줄을 서 주세요."
+    "pinyin": "xiānhòu",
+    "meaning": "선후, 차례",
+    "examples": [
+      "分先后。",
+      "做事要分先后顺序。",
+      "处理问题要分清先后主次轻重缓急。"
+    ]
   },
   {
+    "id": 69,
     "word": "内外",
-    "meaning_ko": "안과 밖",
-    "pinyin": "nèi wài",
-    "example": "房间的内外都很干净。",
-    "example_pinyin": "Fángjiān de nèiwài dōu hěn gānjìng.",
-    "example_korean": "방 안팎이 모두 깨끗하다."
+    "pinyin": "nèiwài",
+    "meaning": "안팎",
+    "examples": [
+      "分内外。",
+      "房子内外都很干净。",
+      "内外兼修才能成为真正优秀的人。"
+    ]
   },
   {
+    "id": 70,
     "word": "正反",
-    "meaning_ko": "앞뒤, 정반",
-    "pinyin": "zhèng fǎn",
-    "example": "请把衣服的正反分清楚。",
-    "example_pinyin": "Qǐng bǎ yīfu de zhèng fǎn fēn qīngchǔ.",
-    "example_korean": "옷의 앞뒤를 잘 구분해 주세요."
+    "pinyin": "zhèngfǎn",
+    "meaning": "정반, 앞뒤",
+    "examples": [
+      "看正反面。",
+      "纸有正反两面。",
+      "思考问题要从正反两方面考虑。"
+    ]
   },
   {
+    "id": 71,
     "word": "反正",
-    "meaning_ko": "어차피, 아무튼",
-    "pinyin": "fǎn zhèng",
-    "example": "反正今天没事，我们去逛街吧。",
-    "example_pinyin": "Fǎnzhèng jīntiān méi shì, wǒmen qù guàngjiē ba.",
-    "example_korean": "어차피 오늘 할 일이 없으니, 우리 쇼핑하러 가자."
+    "pinyin": "fǎnzhèng",
+    "meaning": "어쨌든, 어차피",
+    "examples": [
+      "反正要去。",
+      "反正作业要做完。",
+      "反正都要努力不如现在就开始。"
+    ]
   },
   {
+    "id": 72,
     "word": "春夏秋冬",
-    "meaning_ko": "봄, 여름, 가을, 겨울(사계절)",
     "pinyin": "chūn xià qiū dōng",
-    "example": "春夏秋冬四季变化多。",
-    "example_pinyin": "Chūn xià qiū dōng sìjì biànhuà duō.",
-    "example_korean": "봄, 여름, 가을, 겨울 사계절은 변화가 많다."
+    "meaning": "춘하추동, 사계절",
+    "examples": [
+      "春夏秋冬。",
+      "一年有春夏秋冬。",
+      "春夏秋冬四季变换展现大自然的神奇。"
+    ]
   },
   {
+    "id": 73,
     "word": "计划",
-    "meaning_ko": "계획",
-    "pinyin": "jì huà",
-    "example": "我们需要一个详细的计划。",
-    "example_pinyin": "Wǒmen xūyào yí gè xiángxì de jìhuà.",
-    "example_korean": "우리는 자세한 계획이 필요하다."
+    "pinyin": "jìhuà",
+    "meaning": "계획",
+    "examples": [
+      "有计划。",
+      "我们制定学习计划。",
+      "好的计划是成功的一半要认真执行。"
+    ]
   },
   {
+    "id": 74,
     "word": "清晨",
-    "meaning_ko": "이른 아침, 새벽",
-    "pinyin": "qīng chén",
-    "example": "清晨的空气很新鲜。",
-    "example_pinyin": "Qīngchén de kōngqì hěn xīnxiān.",
-    "example_korean": "이른 아침의 공기가 매우 신선하다."
+    "pinyin": "qīngchén",
+    "meaning": "새벽, 이른 아침",
+    "examples": [
+      "清晨起床。",
+      "清晨的空气很新鲜。",
+      "清晨是一天中最安静最美好的时光。"
+    ]
   },
   {
+    "id": 75,
     "word": "光阴",
-    "meaning_ko": "세월, 시간",
-    "pinyin": "guāng yīn",
-    "example": "光阴一去不复返。",
-    "example_pinyin": "Guāngyīn yí qù bù fù fǎn.",
-    "example_korean": "세월은 한번 가면 다시 돌아오지 않는다."
+    "pinyin": "guāngyīn",
+    "meaning": "세월, 시간",
+    "examples": [
+      "珍惜光阴。",
+      "光阴过得真快啊。",
+      "光阴似箭提醒我们要珍惜每分每秒。"
+    ]
   },
   {
+    "id": 76,
     "word": "朋友",
-    "meaning_ko": "친구",
-    "pinyin": "péng you",
-    "example": "他是我最好的朋友。",
-    "example_pinyin": "Tā shì wǒ zuì hǎo de péngyou.",
-    "example_korean": "그는 내 가장 친한 친구다."
+    "pinyin": "péngyǒu",
+    "meaning": "친구",
+    "examples": [
+      "好朋友。",
+      "我有很多朋友。",
+      "真正的朋友会在困难时给予帮助。"
+    ]
   },
   {
+    "id": 77,
     "word": "山清水秀",
-    "meaning_ko": "산과 물이 아름답다, 경치가 수려하다",
     "pinyin": "shān qīng shuǐ xiù",
-    "example": "这里山清水秀，非常适合旅游。",
-    "example_pinyin": "Zhèlǐ shān qīng shuǐ xiù, fēicháng shìhé lǚyóu.",
-    "example_korean": "이곳은 산과 물이 아름다워 여행하기 매우 적합하다."
+    "meaning": "산수가 아름답다",
+    "examples": [
+      "山清水秀。",
+      "这里山清水秀真美。",
+      "山清水秀的环境让人心旷神怡流连忘返。"
+    ]
   },
   {
+    "id": 78,
     "word": "桃红柳绿",
-    "meaning_ko": "복숭아꽃이 붉고 버들이 푸르다(봄의 경치가 아름답다)",
     "pinyin": "táo hóng liǔ lǜ",
-    "example": "春天来了，大地一片桃红柳绿。",
-    "example_pinyin": "Chūntiān lái le, dàdì yí piàn táo hóng liǔ lǜ.",
-    "example_korean": "봄이 오자 온 대지가 복숭아꽃 붉고 버들이 푸르다."
+    "meaning": "봄 경치가 아름답다",
+    "examples": [
+      "桃红柳绿。",
+      "春天桃红柳绿真好看。",
+      "桃红柳绿的春景象征着生机勃勃的希望。"
+    ]
   },
   {
+    "id": 79,
     "word": "对错",
-    "meaning_ko": "옳고 그름",
-    "pinyin": "duì cuò",
-    "example": "这件事情的对错很难判断。",
-    "example_pinyin": "Zhè jiàn shìqíng de duì cuò hěn nán pànduàn.",
-    "example_korean": "이 일의 옳고 그름을 판단하기 어렵다."
+    "pinyin": "duìcuò",
+    "meaning": "옳고 그름",
+    "examples": [
+      "分对错。",
+      "判断题目的对错。",
+      "明辨是非对错是做人的基本原则。"
+    ]
   },
   {
+    "id": 80,
     "word": "对应",
-    "meaning_ko": "대응하다, 상응하다",
-    "pinyin": "duì yìng",
-    "example": "请找到对应的答案。",
-    "example_pinyin": "Qǐng zhǎodào duìyìng de dá'àn.",
-    "example_korean": "대응되는 답을 찾으세요."
+    "pinyin": "duìyìng",
+    "meaning": "대응하다",
+    "examples": [
+      "一一对应。",
+      "找出对应的答案。",
+      "每个问题都有其对应的解决方法。"
+    ]
   },
   {
+    "id": 81,
     "word": "歌曲",
-    "meaning_ko": "노래, 곡",
-    "pinyin": "gē qǔ",
-    "example": "这首歌曲很好听。",
-    "example_pinyin": "Zhè shǒu gēqǔ hěn hǎotīng.",
-    "example_korean": "이 노래는 매우 듣기 좋다."
+    "pinyin": "gēqǔ",
+    "meaning": "노래",
+    "examples": [
+      "唱歌曲。",
+      "我喜欢这首歌曲。",
+      "优美的歌曲能够触动人们的心灵。"
+    ]
   },
   {
+    "id": 82,
     "word": "听歌",
-    "meaning_ko": "노래를 듣다",
-    "pinyin": "tīng gē",
-    "example": "我喜欢一边走路一边听歌。",
-    "example_pinyin": "Wǒ xǐhuan yìbiān zǒulù yìbiān tīng gē.",
-    "example_korean": "나는 걸으면서 노래를 듣는 것을 좋아한다."
+    "pinyin": "tīnggē",
+    "meaning": "노래를 듣다",
+    "examples": [
+      "我听歌。",
+      "睡前喜欢听歌。",
+      "听歌可以放松心情缓解学习压力。"
+    ]
   },
   {
+    "id": 83,
     "word": "雨水",
-    "meaning_ko": "빗물",
-    "pinyin": "yǔ shuǐ",
-    "example": "雨水把地面打湿了。",
-    "example_pinyin": "Yǔshuǐ bǎ dìmiàn dǎ shī le.",
-    "example_korean": "빗물이 땅을 적셨다."
+    "pinyin": "yǔshuǐ",
+    "meaning": "빗물",
+    "examples": [
+      "接雨水。",
+      "雨水滋润着大地。",
+      "雨水的循环是自然界重要的现象。"
+    ]
   },
   {
+    "id": 84,
     "word": "刮风",
-    "meaning_ko": "바람이 불다",
-    "pinyin": "guā fēng",
-    "example": "今天下午开始刮风。",
-    "example_pinyin": "Jīntiān xiàwǔ kāishǐ guā fēng.",
-    "example_korean": "오늘 오후부터 바람이 불기 시작했다."
+    "pinyin": "guāfēng",
+    "meaning": "바람이 불다",
+    "examples": [
+      "外面刮风。",
+      "今天刮风很大。",
+      "刮风时要关好门窗注意安全。"
+    ]
   },
   {
+    "id": 85,
     "word": "风声",
-    "meaning_ko": "바람 소리",
-    "pinyin": "fēng shēng",
-    "example": "我听到窗外的风声。",
-    "example_pinyin": "Wǒ tīng dào chuāng wài de fēng shēng.",
-    "example_korean": "창밖에서 바람 소리가 들린다."
+    "pinyin": "fēngshēng",
+    "meaning": "바람 소리",
+    "examples": [
+      "听风声。",
+      "夜晚的风声很大。",
+      "风声呼啸让人感受到大自然的力量。"
+    ]
   },
   {
+    "id": 86,
     "word": "虫子",
-    "meaning_ko": "벌레",
-    "pinyin": "chóng zi",
-    "example": "花园里有很多虫子。",
-    "example_pinyin": "Huāyuán lǐ yǒu hěn duō chóngzi.",
-    "example_korean": "정원에 벌레가 많다."
+    "pinyin": "chóngzi",
+    "meaning": "벌레",
+    "examples": [
+      "小虫子。",
+      "花园里有很多虫子。",
+      "虫子虽小却是生态系统的重要部分。"
+    ]
   },
   {
+    "id": 87,
     "word": "虫牙",
-    "meaning_ko": "충치",
-    "pinyin": "chóng yá",
-    "example": "孩子有了一颗虫牙。",
-    "example_pinyin": "Háizi yǒu le yì kē chóng yá.",
-    "example_korean": "아이에게 충치가 한 개 생겼다."
+    "pinyin": "chóngyá",
+    "meaning": "충치",
+    "examples": [
+      "有虫牙。",
+      "吃糖多会长虫牙。",
+      "预防虫牙要养成良好的口腔卫生习惯。"
+    ]
   },
   {
+    "id": 88,
     "word": "清楚",
-    "meaning_ko": "분명하다, 뚜렷하다",
-    "pinyin": "qīng chǔ",
-    "example": "你的意思我听得很清楚。",
-    "example_pinyin": "Nǐ de yìsi wǒ tīng de hěn qīngchǔ.",
-    "example_korean": "네 뜻을 나는 아주 분명히 들었다."
+    "pinyin": "qīngchǔ",
+    "meaning": "분명하다",
+    "examples": [
+      "看清楚。",
+      "说话要说清楚。",
+      "把事情解释清楚才能避免误会。"
+    ]
   },
   {
+    "id": 89,
     "word": "清纯",
-    "meaning_ko": "순수하고 깨끗하다",
-    "pinyin": "qīng chún",
-    "example": "她有一张清纯的笑脸。",
-    "example_pinyin": "Tā yǒu yì zhāng qīngchún de xiàoliǎn.",
-    "example_korean": "그녀는 순수한 미소를 가지고 있다."
+    "pinyin": "qīngchún",
+    "meaning": "순수하다",
+    "examples": [
+      "很清纯。",
+      "她的笑容很清纯。",
+      "清纯的气质让人感到舒服和亲切。"
+    ]
   },
   {
+    "id": 90,
     "word": "绿色",
-    "meaning_ko": "녹색, 초록색",
-    "pinyin": "lǜ sè",
-    "example": "春天的草地是绿色的。",
-    "example_pinyin": "Chūntiān de cǎodì shì lǜsè de.",
-    "example_korean": "봄의 초원은 초록색이다."
+    "pinyin": "lǜsè",
+    "meaning": "녹색",
+    "examples": [
+      "绿色的草。",
+      "我喜欢绿色。",
+      "绿色代表生命和希望让人充满活力。"
+    ]
   },
   {
+    "id": 91,
     "word": "碧绿",
-    "meaning_ko": "짙은 초록색, 비취색",
-    "pinyin": "bì lǜ",
-    "example": "湖水碧绿如玉。",
-    "example_pinyin": "Húshuǐ bìlǜ rú yù.",
-    "example_korean": "호수의 물이 옥처럼 짙은 초록색이다."
+    "pinyin": "bìlǜ",
+    "meaning": "푸르다",
+    "examples": [
+      "碧绿的叶。",
+      "湖水碧绿碧绿的。",
+      "碧绿的田野在阳光下显得格外美丽。"
+    ]
   },
   {
+    "id": 92,
     "word": "桃树",
-    "meaning_ko": "복숭아나무",
-    "pinyin": "táo shù",
-    "example": "院子里有一棵桃树。",
-    "example_pinyin": "Yuànzi lǐ yǒu yì kē táo shù.",
-    "example_korean": "마당에 복숭아나무 한 그루가 있다."
+    "pinyin": "táoshù",
+    "meaning": "복숭아나무",
+    "examples": [
+      "种桃树。",
+      "院子里有棵桃树。",
+      "春天桃树开花夏天结果秋天收获。"
+    ]
   },
   {
+    "id": 93,
     "word": "桃花",
-    "meaning_ko": "복숭아꽃",
-    "pinyin": "táo huā",
-    "example": "春天桃花盛开。",
-    "example_pinyin": "Chūntiān táo huā shèng kāi.",
-    "example_korean": "봄에 복숭아꽃이 만개한다."
+    "pinyin": "táohuā",
+    "meaning": "복숭아꽃",
+    "examples": [
+      "桃花开了。",
+      "粉红色的桃花真美。",
+      "桃花盛开的季节是最浪漫的时光。"
+    ]
   },
   {
+    "id": 94,
     "word": "走红",
-    "meaning_ko": "인기를 얻다, 유명해지다",
-    "pinyin": "zǒu hóng",
-    "example": "这位歌手最近走红了。",
-    "example_pinyin": "Zhè wèi gēshǒu zuìjìn zǒu hóng le.",
-    "example_korean": "이 가수는 최근에 인기를 얻었다."
+    "pinyin": "zǒuhóng",
+    "meaning": "인기를 얻다",
+    "examples": [
+      "他走红了。",
+      "这首歌突然走红。",
+      "网络时代很多人一夜之间就走红了。"
+    ]
   },
   {
+    "id": 95,
     "word": "红红火火",
-    "meaning_ko": "번창하다, 왕성하다, 매우 활기차다",
     "pinyin": "hóng hóng huǒ huǒ",
-    "example": "祝你们的生意红红火火。",
-    "example_pinyin": "Zhù nǐmen de shēngyì hóng hóng huǒ huǒ.",
-    "example_korean": "여러분의 사업이 번창하길 바랍니다."
+    "meaning": "번창하다",
+    "examples": [
+      "红红火火。",
+      "生意红红火火。",
+      "新年要过得红红火火充满喜庆和希望。"
+    ]
   },
   {
+    "id": 96,
     "word": "多么",
-    "meaning_ko": "얼마나, 정말, 매우",
-    "pinyin": "duō me",
-    "example": "多么美丽的花啊!",
-    "example_pinyin": "Duō me měi lì de huā a!",
-    "example_korean": "정말 아름다운 꽃이구나!"
+    "pinyin": "duōme",
+    "meaning": "얼마나",
+    "examples": [
+      "多么美啊。",
+      "天空多么蓝啊。",
+      "多么希望时光能够慢一点流逝。"
+    ]
   },
   {
+    "id": 97,
     "word": "升起",
-    "meaning_ko": "떠오르다, 올라가다",
-    "pinyin": "shēng qǐ",
-    "example": "太阳从东方升起。",
-    "example_pinyin": "Tài yáng cóng dōng fāng shēng qǐ.",
-    "example_korean": "태양이 동쪽에서 떠오른다."
+    "pinyin": "shēngqǐ",
+    "meaning": "떠오르다",
+    "examples": [
+      "太阳升起。",
+      "国旗慢慢升起。",
+      "看着太阳升起心中充满希望和力量。"
+    ]
   },
   {
+    "id": 98,
     "word": "敬礼",
-    "meaning_ko": "경례(하다)",
-    "pinyin": "jìng lǐ",
-    "example": "士兵们向国旗敬礼。",
-    "example_pinyin": "Shì bīng men xiàng guó qí jìng lǐ.",
-    "example_korean": "군인들이 국기에 경례한다."
+    "pinyin": "jìnglǐ",
+    "meaning": "경례하다",
+    "examples": [
+      "向老师敬礼。",
+      "少先队员敬礼。",
+      "敬礼是表达尊重和敬意的方式。"
+    ]
   },
   {
+    "id": 99,
     "word": "医院",
-    "meaning_ko": "병원",
-    "pinyin": "yī yuàn",
-    "example": "他生病了,去医院看病。",
-    "example_pinyin": "Tā shēng bìng le, qù yī yuàn kàn bìng.",
-    "example_korean": "그는 아파서 병원에 진료를 받으러 갔다."
+    "pinyin": "yīyuàn",
+    "meaning": "병원",
+    "examples": [
+      "去医院。",
+      "医院里有医生护士。",
+      "现代医院的设备越来越先进完善。"
+    ]
   },
   {
+    "id": 100,
     "word": "国旗",
-    "meaning_ko": "국기",
-    "pinyin": "guó qí",
-    "example": "每个国家都有自己的国旗。",
-    "example_pinyin": "Měi gè guó jiā dōu yǒu zì jǐ de guó qí.",
-    "example_korean": "모든 나라는 자신의 국기가 있다."
+    "pinyin": "guóqí",
+    "meaning": "국기",
+    "examples": [
+      "升国旗。",
+      "国旗在风中飘扬。",
+      "国旗是国家的象征代表着民族尊严。"
+    ]
   },
   {
+    "id": 101,
     "word": "鲜艳",
-    "meaning_ko": "선명하다, 화려하다",
-    "pinyin": "xiān yàn",
-    "example": "她穿着鲜艳的红色衣服。",
-    "example_pinyin": "Tā chuān zhe xiān yàn de hóng sè yī fu.",
-    "example_korean": "그녀는 선명한 빨간색 옷을 입고 있다."
+    "pinyin": "xiānyàn",
+    "meaning": "선명하다",
+    "examples": [
+      "花儿鲜艳。",
+      "她穿着鲜艳的衣服。",
+      "鲜艳的色彩让生活变得更加多姿多彩。"
+    ]
   },
   {
+    "id": 102,
     "word": "松鼠",
-    "meaning_ko": "다람쥐",
-    "pinyin": "sōng shǔ",
-    "example": "树上有一只可爱的松鼠。",
-    "example_pinyin": "Shù shàng yǒu yī zhī kě ài de sōng shǔ.",
-    "example_korean": "나무 위에 귀여운 다람쥐 한 마리가 있다."
+    "pinyin": "sōngshǔ",
+    "meaning": "다람쥐",
+    "examples": [
+      "小松鼠。",
+      "松鼠爱吃松果。",
+      "松鼠储存食物的习性值得我们学习。"
+    ]
   },
   {
+    "id": 103,
     "word": "摘下",
-    "meaning_ko": "따다, 떼어내다",
-    "pinyin": "zhāi xià",
-    "example": "我们从树上摘下了苹果。",
-    "example_pinyin": "Wǒ men cóng shù shàng zhāi xià le píng guǒ.",
-    "example_korean": "우리는 나무에서 사과를 땄다."
+    "pinyin": "zhāixià",
+    "meaning": "따다, 떼다",
+    "examples": [
+      "摘下果子。",
+      "从树上摘下苹果。",
+      "摘下眼镜才发现世界变得模糊了。"
+    ]
   },
   {
+    "id": 104,
     "word": "格外",
-    "meaning_ko": "유난히, 특별히",
-    "pinyin": "gé wài",
-    "example": "今天天气格外好。",
-    "example_pinyin": "Jīn tiān tiān qì gé wài hǎo.",
-    "example_korean": "오늘 날씨가 유난히 좋다."
+    "pinyin": "géwài",
+    "meaning": "특별히",
+    "examples": [
+      "格外好看。",
+      "今天天气格外晴朗。",
+      "节日的气氛格外浓厚让人感到温馨。"
+    ]
   },
   {
+    "id": 105,
     "word": "留着",
-    "meaning_ko": "남겨두다, 보관하다",
-    "pinyin": "liú zhe",
-    "example": "我把这些照片留着做纪念。",
-    "example_pinyin": "Wǒ bǎ zhè xiē zhào piàn liú zhe zuò jì niàn.",
-    "example_korean": "나는 이 사진들을 기념으로 남겨둔다."
+    "pinyin": "liúzhe",
+    "meaning": "남겨두다",
+    "examples": [
+      "留着吃。",
+      "这个玩具留着玩。",
+      "美好的回忆要永远留着珍藏心底。"
+    ]
   },
   {
+    "id": 106,
     "word": "等待",
-    "meaning_ko": "기다리다",
-    "pinyin": "děng dài",
-    "example": "我在车站等待朋友。",
-    "example_pinyin": "Wǒ zài chē zhàn děng dài péng you.",
-    "example_korean": "나는 역에서 친구를 기다린다."
+    "pinyin": "děngdài",
+    "meaning": "기다리다",
+    "examples": [
+      "在等待。",
+      "耐心等待好消息。",
+      "等待的过程虽然漫长但结果值得期待。"
+    ]
   },
   {
+    "id": 107,
     "word": "设计师",
-    "meaning_ko": "디자이너",
-    "pinyin": "shè jì shī",
-    "example": "她是一位优秀的室内设计师。",
-    "example_pinyin": "Tā shì yī wèi yōu xiù de shì nèi shè jì shī.",
-    "example_korean": "그녀는 뛰어난 인테리어 디자이너이다."
+    "pinyin": "shèjìshī",
+    "meaning": "디자이너",
+    "examples": [
+      "当设计师。",
+      "她是服装设计师。",
+      "优秀的设计师能够创造美好的生活。"
+    ]
   },
   {
+    "id": 108,
     "word": "分析师",
-    "meaning_ko": "분석가",
-    "pinyin": "fēn xī shī",
-    "example": "他在银行担任金融分析师。",
-    "example_pinyin": "Tā zài yín háng dān rèn jīn róng fēn xī shī.",
-    "example_korean": "그는 은행에서 금융 분석가로 일한다."
+    "pinyin": "fēnxīshī",
+    "meaning": "분석가",
+    "examples": [
+      "数据分析师。",
+      "他是金融分析师。",
+      "分析师的工作需要严谨的逻辑思维。"
+    ]
   },
   {
+    "id": 109,
     "word": "程序员",
-    "meaning_ko": "프로그래머",
-    "pinyin": "chéng xù yuán",
-    "example": "我哥哥是一名程序员。",
-    "example_pinyin": "Wǒ gē ge shì yī míng chéng xù yuán.",
-    "example_korean": "내 형은 프로그래머이다."
+    "pinyin": "chéngxùyuán",
+    "meaning": "프로그래머",
+    "examples": [
+      "当程序员。",
+      "程序员写代码。",
+      "程序员用代码改变着我们的生活方式。"
+    ]
   },
   {
+    "id": 110,
     "word": "咖啡师",
-    "meaning_ko": "바리스타",
-    "pinyin": "kā fēi shī",
-    "example": "这位咖啡师做的咖啡很好喝。",
-    "example_pinyin": "Zhè wèi kā fēi shī zuò de kā fēi hěn hǎo hē.",
-    "example_korean": "이 바리스타가 만든 커피는 아주 맛있다."
+    "pinyin": "kāfēishī",
+    "meaning": "바리스타",
+    "examples": [
+      "咖啡师真酷。",
+      "咖啡师做拉花。",
+      "专业的咖啡师能做出艺术品般的咖啡。"
+    ]
   },
   {
+    "id": 111,
     "word": "工厂",
-    "meaning_ko": "공장",
-    "pinyin": "gōng chǎng",
-    "example": "他在汽车工厂工作。",
-    "example_pinyin": "Tā zài qì chē gōng chǎng gōng zuò.",
-    "example_korean": "그는 자동차 공장에서 일한다."
+    "pinyin": "gōngchǎng",
+    "meaning": "공장",
+    "examples": [
+      "大工厂。",
+      "工厂生产玩具。",
+      "现代化工厂采用智能制造技术。"
+    ]
   },
   {
+    "id": 112,
     "word": "工人",
-    "meaning_ko": "노동자, 일꾼",
-    "pinyin": "gōng rén",
-    "example": "工人们正在建造大楼。",
-    "example_pinyin": "Gōng rén men zhèng zài jiàn zào dà lóu.",
-    "example_korean": "노동자들이 건물을 짓고 있다."
+    "pinyin": "gōngrén",
+    "meaning": "노동자",
+    "examples": [
+      "工人叔叔。",
+      "工人在工厂工作。",
+      "工人的辛勤劳动创造了社会财富。"
+    ]
   },
   {
+    "id": 113,
     "word": "老师",
-    "meaning_ko": "선생님",
-    "pinyin": "lǎo shī",
-    "example": "我的老师很温柔。",
-    "example_pinyin": "Wǒ de lǎo shī hěn wēn róu.",
-    "example_korean": "우리 선생님은 매우 온화하시다."
+    "pinyin": "lǎoshī",
+    "meaning": "선생님",
+    "examples": [
+      "老师好。",
+      "我们的老师很温柔。",
+      "老师是人类灵魂的工程师值得尊敬。"
+    ]
   },
   {
+    "id": 114,
     "word": "老板",
-    "meaning_ko": "사장, 보스",
-    "pinyin": "lǎo bǎn",
-    "example": "老板今天不在公司。",
-    "example_pinyin": "Lǎo bǎn jīn tiān bù zài gōng sī.",
-    "example_korean": "사장님이 오늘 회사에 안 계신다."
+    "pinyin": "lǎobǎn",
+    "meaning": "사장",
+    "examples": [
+      "找老板。",
+      "店里的老板很友好。",
+      "成功的老板都有独特的经营理念。"
+    ]
   },
   {
+    "id": 115,
     "word": "学校",
-    "meaning_ko": "학교",
-    "pinyin": "xué xiào",
-    "example": "孩子们每天去学校上课。",
-    "example_pinyin": "Hái zi men měi tiān qù xué xiào shàng kè.",
-    "example_korean": "아이들은 매일 학교에 가서 수업을 듣는다."
+    "pinyin": "xuéxiào",
+    "meaning": "학교",
+    "examples": [
+      "去学校。",
+      "我们的学校很大。",
+      "学校是培养人才的重要场所。"
+    ]
   },
   {
+    "id": 116,
     "word": "医生",
-    "meaning_ko": "의사",
-    "pinyin": "yī shēng",
-    "example": "医生说我需要多休息。",
-    "example_pinyin": "Yī shēng shuō wǒ xū yào duō xiū xi.",
-    "example_korean": "의사 선생님이 나에게 많이 쉬어야 한다고 말했다."
+    "pinyin": "yīshēng",
+    "meaning": "의사",
+    "examples": [
+      "看医生。",
+      "医生给我看病。",
+      "医生的职业精神令人敬佩和感动。"
+    ]
   },
   {
+    "id": 117,
     "word": "传达室",
-    "meaning_ko": "수위실, 경비실",
-    "pinyin": "chuán dá shì",
-    "example": "包裹放在传达室了。",
-    "example_pinyin": "Bāo guǒ fàng zài chuán dá shì le.",
-    "example_korean": "택배가 경비실에 놓여 있다."
+    "pinyin": "chuándáshì",
+    "meaning": "경비실",
+    "examples": [
+      "去传达室。",
+      "包裹放在传达室。",
+      "传达室是学校安全管理的第一道关口。"
+    ]
   },
   {
+    "id": 118,
     "word": "门卫",
-    "meaning_ko": "수위, 경비원",
-    "pinyin": "mén wèi",
-    "example": "门卫检查了我的证件。",
-    "example_pinyin": "Mén wèi jiǎn chá le wǒ de zhèng jiàn.",
-    "example_korean": "경비원이 내 신분증을 확인했다."
+    "pinyin": "ménwèi",
+    "meaning": "경비원",
+    "examples": [
+      "门卫叔叔。",
+      "门卫负责看门。",
+      "门卫的认真负责保障了大家的安全。"
+    ]
   },
   {
+    "id": 119,
     "word": "教授",
-    "meaning_ko": "교수",
-    "pinyin": "jiào shòu",
-    "example": "李教授在大学教历史。",
-    "example_pinyin": "Lǐ jiào shòu zài dà xué jiāo lì shǐ.",
-    "example_korean": "이 교수님은 대학교에서 역사를 가르치신다."
+    "pinyin": "jiàoshòu",
+    "meaning": "교수",
+    "examples": [
+      "大学教授。",
+      "教授在讲课。",
+      "教授的学识渊博让学生受益匪浅。"
+    ]
   },
   {
+    "id": 120,
     "word": "厨师",
-    "meaning_ko": "요리사",
-    "pinyin": "chú shī",
-    "example": "这位厨师做的菜很美味。",
-    "example_pinyin": "Zhè wèi chú shī zuò de cài hěn měi wèi.",
-    "example_korean": "이 요리사가 만든 요리는 매우 맛있다."
+    "pinyin": "chúshī",
+    "meaning": "요리사",
+    "examples": [
+      "当厨师。",
+      "厨师做菜很香。",
+      "优秀的厨师能把普通食材变成美味。"
+    ]
   },
   {
+    "id": 121,
     "word": "数据",
-    "meaning_ko": "데이터, 자료",
-    "pinyin": "shù jù",
-    "example": "我们需要分析这些数据。",
-    "example_pinyin": "Wǒ men xū yào fēn xī zhè xiē shù jù.",
-    "example_korean": "우리는 이 데이터들을 분석해야 한다."
+    "pinyin": "shùjù",
+    "meaning": "데이터",
+    "examples": [
+      "看数据。",
+      "收集很多数据。",
+      "大数据时代数据成为重要的资源。"
+    ]
   },
   {
+    "id": 122,
     "word": "美丽",
-    "meaning_ko": "아름답다",
-    "pinyin": "měi lì",
-    "example": "这里的风景非常美丽。",
-    "example_pinyin": "Zhè lǐ de fēng jǐng fēi cháng měi lì.",
-    "example_korean": "이곳의 풍경은 매우 아름답다."
+    "pinyin": "měilì",
+    "meaning": "아름답다",
+    "examples": [
+      "真美丽。",
+      "花园非常美丽。",
+      "内在的美丽比外表的美丽更重要。"
+    ]
   },
   {
+    "id": 123,
     "word": "飘扬",
-    "meaning_ko": "나부끼다, 펄럭이다",
-    "pinyin": "piāo yáng",
-    "example": "国旗在风中飘扬。",
-    "example_pinyin": "Guó qí zài fēng zhōng piāo yáng.",
-    "example_korean": "국기가 바람에 나부끼고 있다."
+    "pinyin": "piāoyáng",
+    "meaning": "나부끼다",
+    "examples": [
+      "红旗飘扬。",
+      "彩带在空中飘扬。",
+      "五星红旗迎风飘扬激励着我们前进。"
+    ]
   },
   {
+    "id": 124,
     "word": "向",
-    "meaning_ko": "~을 향하여, ~에게",
     "pinyin": "xiàng",
-    "example": "我们向老师问好。",
-    "example_pinyin": "Wǒ men xiàng lǎo shī wèn hǎo.",
-    "example_korean": "우리는 선생님께 인사를 드린다."
+    "meaning": "~을 향해",
+    "examples": [
+      "向前走。",
+      "向老师问好。",
+      "向着目标努力前进永不放弃。"
+    ]
   },
   {
+    "id": 125,
     "word": "总是",
-    "meaning_ko": "항상, 언제나",
-    "pinyin": "zǒng shì",
-    "example": "他总是很努力。",
-    "example_pinyin": "Tā zǒng shì hěn nǔ lì.",
-    "example_korean": "그는 항상 매우 노력한다."
+    "pinyin": "zǒngshì",
+    "meaning": "늘, 항상",
+    "examples": [
+      "总是笑。",
+      "妈妈总是很忙。",
+      "成功的人总是比别人更加努力。"
+    ]
   },
   {
+    "id": 126,
     "word": "双手",
-    "meaning_ko": "두 손, 양손",
-    "pinyin": "shuāng shǒu",
-    "example": "他用双手抱着孩子。",
-    "example_pinyin": "Tā yòng shuāng shǒu bào zhe hái zi.",
-    "example_korean": "그는 두 손으로 아이를 안고 있다."
+    "pinyin": "shuāngshǒu",
+    "meaning": "두 손",
+    "examples": [
+      "拍双手。",
+      "用双手接东西。",
+      "勤劳的双手能够创造美好的生活。"
+    ]
   },
   {
+    "id": 127,
     "word": "力气",
-    "meaning_ko": "힘, 기력",
-    "pinyin": "lì qi",
-    "example": "我没有力气搬这个箱子。",
-    "example_pinyin": "Wǒ méi yǒu lì qi bān zhè ge xiāng zi.",
-    "example_korean": "나는 이 상자를 옮길 힘이 없다."
+    "pinyin": "lìqì",
+    "meaning": "힘",
+    "examples": [
+      "有力气。",
+      "爸爸力气很大。",
+      "用尽全身力气也要完成这个任务。"
+    ]
   },
   {
+    "id": 128,
     "word": "力量",
-    "meaning_ko": "힘, 역량",
-    "pinyin": "lì liàng",
-    "example": "团结就是力量。",
-    "example_pinyin": "Tuán jié jiù shì lì liàng.",
-    "example_korean": "단결이 곧 힘이다."
+    "pinyin": "lìliàng",
+    "meaning": "힘, 역량",
+    "examples": [
+      "有力量。",
+      "团结就是力量。",
+      "知识的力量能够改变一个人的命运。"
+    ]
   },
   {
+    "id": 129,
     "word": "男生",
-    "meaning_ko": "남학생",
-    "pinyin": "nán shēng",
-    "example": "我们班有二十个男生。",
-    "example_pinyin": "Wǒ men bān yǒu èr shí ge nán shēng.",
-    "example_korean": "우리 반에는 남학생이 20명 있다."
+    "pinyin": "nánshēng",
+    "meaning": "남학생",
+    "examples": [
+      "男生跑步。",
+      "班里男生很多。",
+      "男生应该勇敢坚强有责任感。"
+    ]
   },
   {
+    "id": 130,
     "word": "男士",
-    "meaning_ko": "남성, 신사",
-    "pinyin": "nán shì",
-    "example": "这是男士专用洗手间。",
-    "example_pinyin": "Zhè shì nán shì zhuān yòng xǐ shǒu jiān.",
-    "example_korean": "이것은 남성 전용 화장실이다."
+    "pinyin": "nánshì",
+    "meaning": "남성, 신사",
+    "examples": [
+      "男士优先。",
+      "这位男士很绅士。",
+      "真正的男士懂得尊重和保护女性。"
+    ]
   },
   {
+    "id": 131,
     "word": "土豆",
-    "meaning_ko": "감자",
-    "pinyin": "tǔ dòu",
-    "example": "我喜欢吃炒土豆丝。",
-    "example_pinyin": "Wǒ xǐ huan chī chǎo tǔ dòu sī.",
-    "example_korean": "나는 감자채 볶음을 좋아한다."
+    "pinyin": "tǔdòu",
+    "meaning": "감자",
+    "examples": [
+      "吃土豆。",
+      "土豆可以炒着吃。",
+      "土豆的营养价值高做法也很多样。"
+    ]
   },
   {
+    "id": 132,
     "word": "泥土",
-    "meaning_ko": "흙, 진흙",
-    "pinyin": "ní tǔ",
-    "example": "孩子们在泥土里玩耍。",
-    "example_pinyin": "Hái zi men zài ní tǔ lǐ wán shuǎ.",
-    "example_korean": "아이들이 흙에서 놀고 있다."
+    "pinyin": "nítǔ",
+    "meaning": "흙",
+    "examples": [
+      "玩泥土。",
+      "花盆里装满泥土。",
+      "泥土的芳香让人感受到大地的温暖。"
+    ]
   },
   {
+    "id": 133,
     "word": "木头",
-    "meaning_ko": "나무, 목재",
-    "pinyin": "mù tou",
-    "example": "这张桌子是木头做的。",
-    "example_pinyin": "Zhè zhāng zhuō zi shì mù tou zuò de.",
-    "example_korean": "이 책상은 나무로 만들어졌다."
+    "pinyin": "mùtou",
+    "meaning": "나무",
+    "examples": [
+      "木头房子。",
+      "用木头做玩具。",
+      "木头的纹理展现着自然的美感。"
+    ]
   },
   {
+    "id": 134,
     "word": "木材",
-    "meaning_ko": "목재",
-    "pinyin": "mù cái",
-    "example": "建房子需要很多木材。",
-    "example_pinyin": "Jiàn fáng zi xū yào hěn duō mù cái.",
-    "example_korean": "집을 짓는 데 많은 목재가 필요하다."
+    "pinyin": "mùcái",
+    "meaning": "목재",
+    "examples": [
+      "好木材。",
+      "建房子需要木材。",
+      "优质木材是制作家具的重要原料。"
+    ]
   },
   {
+    "id": 135,
     "word": "心脏",
-    "meaning_ko": "심장",
-    "pinyin": "xīn zàng",
-    "example": "运动有益于心脏健康。",
-    "example_pinyin": "Yùn dòng yǒu yì yú xīn zàng jiàn kāng.",
-    "example_korean": "운동은 심장 건강에 유익하다."
+    "pinyin": "xīnzàng",
+    "meaning": "심장",
+    "examples": [
+      "心脏跳动。",
+      "保护好心脏健康。",
+      "心脏是人体最重要的器官之一。"
+    ]
   },
   {
+    "id": 136,
     "word": "心思",
-    "meaning_ko": "마음, 생각",
-    "pinyin": "xīn si",
-    "example": "他把心思都放在工作上。",
-    "example_pinyin": "Tā bǎ xīn si dōu fàng zài gōng zuò shàng.",
-    "example_korean": "그는 마음을 모두 일에 쏟고 있다."
+    "pinyin": "xīnsī",
+    "meaning": "마음, 생각",
+    "examples": [
+      "费心思。",
+      "妈妈很有心思。",
+      "把心思放在学习上才能取得进步。"
+    ]
   },
   {
+    "id": 137,
     "word": "树林",
-    "meaning_ko": "숲",
-    "pinyin": "shù lín",
-    "example": "我们在树林里散步。",
-    "example_pinyin": "Wǒ men zài shù lín lǐ sàn bù.",
-    "example_korean": "우리는 숲에서 산책한다."
+    "pinyin": "shùlín",
+    "meaning": "숲",
+    "examples": [
+      "小树林。",
+      "树林里有小鸟。",
+      "茂密的树林是动物们的家园。"
+    ]
   },
   {
+    "id": 138,
     "word": "关心",
-    "meaning_ko": "관심을 갖다, 걱정하다",
-    "pinyin": "guān xīn",
-    "example": "父母总是关心孩子。",
-    "example_pinyin": "Fù mǔ zǒng shì guān xīn hái zi.",
-    "example_korean": "부모는 항상 아이를 걱정한다."
+    "pinyin": "guānxīn",
+    "meaning": "관심을 갖다",
+    "examples": [
+      "很关心。",
+      "老师关心同学们。",
+      "互相关心是建立友谊的重要基础。"
+    ]
   },
   {
+    "id": 139,
     "word": "开心",
-    "meaning_ko": "기쁘다, 즐겁다",
-    "pinyin": "kāi xīn",
-    "example": "今天我很开心。",
-    "example_pinyin": "Jīn tiān wǒ hěn kāi xīn.",
-    "example_korean": "오늘 나는 매우 기쁘다."
+    "pinyin": "kāixīn",
+    "meaning": "기쁘다",
+    "examples": [
+      "真开心。",
+      "今天大家都开心。",
+      "保持开心的心态对健康有很大益处。"
+    ]
   },
   {
+    "id": 140,
     "word": "泪目",
-    "meaning_ko": "눈물이 나다, 감동하다",
-    "pinyin": "lèi mù",
-    "example": "看到这个场景,我泪目了。",
-    "example_pinyin": "Kàn dào zhè ge chǎng jǐng, wǒ lèi mù le.",
-    "example_korean": "이 장면을 보고 나는 눈물이 났다."
+    "pinyin": "lèimù",
+    "meaning": "눈물이 나다",
+    "examples": [
+      "感动泪目。",
+      "这个故事让人泪目。",
+      "感人的场面让在场的人都泪目了。"
+    ]
   },
   {
+    "id": 141,
     "word": "好苗子",
-    "meaning_ko": "장래가 촉망되는 사람",
-    "pinyin": "hǎo miáo zi",
-    "example": "这个学生是个好苗子。",
-    "example_pinyin": "Zhè ge xué sheng shì ge hǎo miáo zi.",
-    "example_korean": "이 학생은 장래가 촉망되는 인재다."
+    "pinyin": "hǎo miáozi",
+    "meaning": "유망주",
+    "examples": [
+      "是好苗子。",
+      "老师发现了好苗子。",
+      "培养好苗子需要耐心和正确的方法。"
+    ]
   },
   {
+    "id": 142,
     "word": "橡皮",
-    "meaning_ko": "지우개",
-    "pinyin": "xiàng pí",
-    "example": "我的橡皮不见了。",
-    "example_pinyin": "Wǒ de xiàng pí bù jiàn le.",
-    "example_korean": "내 지우개가 없어졌다."
+    "pinyin": "xiàngpí",
+    "meaning": "지우개",
+    "examples": [
+      "用橡皮。",
+      "橡皮擦掉错字。",
+      "橡皮虽小却是学习的必需品。"
+    ]
   },
   {
+    "id": 143,
     "word": "笔袋",
-    "meaning_ko": "필통",
-    "pinyin": "bǐ dài",
-    "example": "她买了一个新笔袋。",
-    "example_pinyin": "Tā mǎi le yī ge xīn bǐ dài.",
-    "example_korean": "그녀는 새 필통을 샀다."
+    "pinyin": "bǐdài",
+    "meaning": "필통",
+    "examples": [
+      "新笔袋。",
+      "笔袋里装满文具。",
+      "整洁的笔袋体现良好的学习习惯。"
+    ]
   },
   {
+    "id": 144,
     "word": "铅笔",
-    "meaning_ko": "연필",
-    "pinyin": "qiān bǐ",
-    "example": "小学生常用铅笔写字。",
-    "example_pinyin": "Xiǎo xué shēng cháng yòng qiān bǐ xiě zì.",
-    "example_korean": "초등학생들은 흔히 연필로 글씨를 쓴다."
+    "pinyin": "qiānbǐ",
+    "meaning": "연필",
+    "examples": [
+      "削铅笔。",
+      "用铅笔写作业。",
+      "铅笔是小学生最常用的书写工具。"
+    ]
   },
   {
+    "id": 145,
     "word": "钢笔",
-    "meaning_ko": "만년필",
-    "pinyin": "gāng bǐ",
-    "example": "他用钢笔签名。",
-    "example_pinyin": "Tā yòng gāng bǐ qiān míng.",
-    "example_korean": "그는 만년필로 서명한다."
+    "pinyin": "gāngbǐ",
+    "meaning": "만년필",
+    "examples": [
+      "新钢笔。",
+      "爸爸送我钢笔。",
+      "用钢笔写字能练出漂亮的字体。"
+    ]
   },
   {
+    "id": 146,
     "word": "圆珠笔",
-    "meaning_ko": "볼펜",
-    "pinyin": "yuán zhū bǐ",
-    "example": "请借我一支圆珠笔。",
-    "example_pinyin": "Qǐng jiè wǒ yī zhī yuán zhū bǐ.",
-    "example_korean": "볼펜 한 자루를 빌려주세요."
+    "pinyin": "yuánzhūbǐ",
+    "meaning": "볼펜",
+    "examples": [
+      "蓝圆珠笔。",
+      "圆珠笔写字很流畅。",
+      "圆珠笔的发明极大方便了人们的书写。"
+    ]
   },
   {
+    "id": 147,
     "word": "书包",
-    "meaning_ko": "책가방",
-    "pinyin": "shū bāo",
-    "example": "孩子的书包很重。",
-    "example_pinyin": "Hái zi de shū bāo hěn zhòng.",
-    "example_korean": "아이의 책가방이 매우 무겁다."
+    "pinyin": "shūbāo",
+    "meaning": "책가방",
+    "examples": [
+      "背书包。",
+      "书包里有很多书。",
+      "整理书包是培养条理性的好方法。"
+    ]
   },
   {
+    "id": 148,
     "word": "宝贝",
-    "meaning_ko": "보물, 귀염둥이",
-    "pinyin": "bǎo bèi",
-    "example": "你是妈妈的宝贝。",
-    "example_pinyin": "Nǐ shì mā ma de bǎo bèi.",
-    "example_korean": "너는 엄마의 보물이야."
+    "pinyin": "bǎobèi",
+    "meaning": "보물, 아가",
+    "examples": [
+      "我的宝贝。",
+      "妈妈叫我宝贝。",
+      "每个孩子都是父母心中最珍贵的宝贝。"
+    ]
   },
   {
+    "id": 149,
     "word": "课本",
-    "meaning_ko": "교과서",
-    "pinyin": "kè běn",
-    "example": "别忘了带课本。",
-    "example_pinyin": "Bié wàng le dài kè běn.",
-    "example_korean": "교과서 가져오는 것을 잊지 마세요."
+    "pinyin": "kèběn",
+    "meaning": "교과서",
+    "examples": [
+      "新课本。",
+      "打开课本读书。",
+      "课本是获取知识的重要工具。"
+    ]
   },
   {
+    "id": 150,
     "word": "独木桥",
-    "meaning_ko": "외나무다리",
-    "pinyin": "dú mù qiáo",
-    "example": "过独木桥需要小心。",
-    "example_pinyin": "Guò dú mù qiáo xū yào xiǎo xīn.",
-    "example_korean": "외나무다리를 건널 때는 조심해야 한다."
+    "pinyin": "dúmùqiáo",
+    "meaning": "외나무다리",
+    "examples": [
+      "过独木桥。",
+      "小心走独木桥。",
+      "人生有时像走独木桥需要勇气和平衡。"
+    ]
   },
   {
+    "id": 151,
     "word": "从众",
-    "meaning_ko": "대중을 따르다, 군중심리",
-    "pinyin": "cóng zhòng",
-    "example": "不要盲目从众。",
-    "example_pinyin": "Bù yào máng mù cóng zhòng.",
-    "example_korean": "맹목적으로 대중을 따르지 마세요."
+    "pinyin": "cóngzhòng",
+    "meaning": "무리를 따르다",
+    "examples": [
+      "不要从众。",
+      "盲目从众不好。",
+      "独立思考比从众更能体现个人价值。"
+    ]
   },
   {
+    "id": 152,
     "word": "观众",
-    "meaning_ko": "관객",
-    "pinyin": "guān zhòng",
-    "example": "观众们热烈鼓掌。",
-    "example_pinyin": "Guān zhòng men rè liè gǔ zhǎng.",
-    "example_korean": "관객들이 열렬히 박수를 쳤다."
+    "pinyin": "guānzhòng",
+    "meaning": "관객",
+    "examples": [
+      "很多观众。",
+      "观众鼓掌喝彩。",
+      "精彩的表演赢得了观众的热烈掌声。"
+    ]
   },
   {
+    "id": 153,
     "word": "尖叫",
-    "meaning_ko": "비명을 지르다",
-    "pinyin": "jiān jiào",
-    "example": "她看到老鼠就尖叫起来。",
-    "example_pinyin": "Tā kàn dào lǎo shǔ jiù jiān jiào qǐ lai.",
-    "example_korean": "그녀는 쥐를 보자 비명을 질렀다."
+    "pinyin": "jiānjiào",
+    "meaning": "비명을 지르다",
+    "examples": [
+      "别尖叫。",
+      "兴奋得尖叫起来。",
+      "过山车上传来阵阵尖叫声。"
+    ]
   },
   {
+    "id": 154,
     "word": "小鱼",
-    "meaning_ko": "작은 물고기",
-    "pinyin": "xiǎo yú",
-    "example": "池塘里有很多小鱼。",
-    "example_pinyin": "Chí táng lǐ yǒu hěn duō xiǎo yú.",
-    "example_korean": "연못에 작은 물고기가 많다."
+    "pinyin": "xiǎoyú",
+    "meaning": "작은 물고기",
+    "examples": [
+      "养小鱼。",
+      "池塘里有小鱼。",
+      "小鱼在水中自由自在地游动着。"
+    ]
   },
   {
+    "id": 155,
     "word": "秋风",
-    "meaning_ko": "가을바람",
-    "pinyin": "qiū fēng",
-    "example": "秋风吹落了树叶。",
-    "example_pinyin": "Qiū fēng chuī luò le shù yè.",
-    "example_korean": "가을바람이 나뭇잎을 떨어뜨렸다."
+    "pinyin": "qiūfēng",
+    "meaning": "가을바람",
+    "examples": [
+      "秋风凉。",
+      "秋风吹落叶子。",
+      "萧瑟的秋风带来了收获的喜悦。"
+    ]
   },
   {
+    "id": 156,
     "word": "一会儿",
-    "meaning_ko": "잠시, 잠깐",
-    "pinyin": "yī huìr",
-    "example": "我一会儿就回来。",
-    "example_pinyin": "Wǒ yī huìr jiù huí lai.",
-    "example_korean": "나는 잠시 후에 돌아올게요."
+    "pinyin": "yīhuìr",
+    "meaning": "잠시",
+    "examples": [
+      "等一会儿。",
+      "休息一会儿再玩。",
+      "学习累了可以休息一会儿再继续。"
+    ]
   },
   {
+    "id": 157,
     "word": "群星",
-    "meaning_ko": "별무리, 많은 별들",
-    "pinyin": "qún xīng",
-    "example": "夜空中群星闪烁。",
-    "example_pinyin": "Yè kōng zhōng qún xīng shǎn shuò.",
-    "example_korean": "밤하늘에 별무리가 반짝인다."
+    "pinyin": "qúnxīng",
+    "meaning": "별무리",
+    "examples": [
+      "群星闪烁。",
+      "夜空中群星灿烂。",
+      "璀璨的群星让夜空变得神秘而美丽。"
+    ]
   },
   {
+    "id": 158,
     "word": "房间",
-    "meaning_ko": "방",
-    "pinyin": "fáng jiān",
-    "example": "这个房间很干净。",
-    "example_pinyin": "Zhè ge fáng jiān hěn gān jìng.",
-    "example_korean": "이 방은 매우 깨끗하다."
+    "pinyin": "fángjiān",
+    "meaning": "방",
+    "examples": [
+      "打扫房间。",
+      "我的房间很整洁。",
+      "温馨的房间是心灵休息的港湾。"
+    ]
   },
   {
+    "id": 159,
     "word": "树根",
-    "meaning_ko": "나무뿌리, 근본",
-    "pinyin": "shù gēn",
-    "example": "树根深深地扎在土里。",
-    "example_pinyin": "Shù gēn shēn shēn de zhā zài tǔ lǐ.",
-    "example_korean": "나무뿌리가 땅속 깊이 박혀 있다."
+    "pinyin": "shùgēn",
+    "meaning": "나무뿌리",
+    "examples": [
+      "粗树根。",
+      "树根扎进土里。",
+      "深深的树根象征着坚实的基础。"
+    ]
   },
   {
+    "id": 160,
     "word": "旅店",
-    "meaning_ko": "모텔, 여관",
-    "pinyin": "lǚ diàn",
-    "example": "我们在旅店住了一晚。",
-    "example_pinyin": "Wǒ men zài lǚ diàn zhù le yī wǎn.",
-    "example_korean": "우리는 모텔에서 하룻밤 묵었다."
+    "pinyin": "lǚdiàn",
+    "meaning": "여관",
+    "examples": [
+      "住旅店。",
+      "找一家干净的旅店。",
+      "温馨的旅店让旅途变得更加愉快。"
+    ]
   },
   {
+    "id": 161,
     "word": "哦了",
-    "meaning_ko": "알았어, 오케이",
     "pinyin": "ò le",
-    "example": "哦了,我知道了。",
-    "example_pinyin": "Ò le, wǒ zhī dào le.",
-    "example_korean": "알았어, 이해했어."
+    "meaning": "알았어",
+    "examples": [
+      "哦了哦了。",
+      "我知道了哦了。",
+      "事情解决了大家都说哦了。"
+    ]
   },
   {
+    "id": 162,
     "word": "韵律",
-    "meaning_ko": "운율, 리듬",
-    "pinyin": "yùn lǜ",
-    "example": "这首诗的韵律很美。",
-    "example_pinyin": "Zhè shǒu shī de yùn lǜ hěn měi.",
-    "example_korean": "이 시의 운율이 매우 아름답다."
+    "pinyin": "yùnlǜ",
+    "meaning": "운율",
+    "examples": [
+      "有韵律。",
+      "诗歌讲究韵律。",
+      "优美的韵律让诗歌更加动听感人。"
+    ]
   },
   {
+    "id": 163,
     "word": "荒谬",
-    "meaning_ko": "황당하다, 터무니없다",
-    "pinyin": "huāng miù",
-    "example": "这个想法太荒谬了。",
-    "example_pinyin": "Zhè ge xiǎng fǎ tài huāng miù le.",
-    "example_korean": "이 생각은 너무 황당하다."
+    "pinyin": "huāngmiù",
+    "meaning": "황당하다",
+    "examples": [
+      "太荒谬。",
+      "这个想法很荒谬。",
+      "荒谬的言论经不起事实的检验。"
+    ]
   },
   {
+    "id": 164,
     "word": "别闹",
-    "meaning_ko": "장난치지 마, 하지 마",
     "pinyin": "bié nào",
-    "example": "别闹了,我在工作呢。",
-    "example_pinyin": "Bié nào le, wǒ zài gōng zuò ne.",
-    "example_korean": "장난치지 마, 나 일하고 있어."
+    "meaning": "장난치지 마",
+    "examples": [
+      "别闹了。",
+      "上课时间别闹。",
+      "认真的时候别闹要专心做事。"
+    ]
   },
   {
+    "id": 165,
     "word": "拿铁",
-    "meaning_ko": "라떼 (커피)",
     "pinyin": "ná tiě",
-    "example": "我要一杯拿铁咖啡。",
-    "example_pinyin": "Wǒ yào yī bēi ná tiě kā fēi.",
-    "example_korean": "나는 라떼 한 잔 주세요."
+    "meaning": "라떼",
+    "examples": [
+      "喝拿铁。",
+      "我点一杯拿铁。",
+      "香醇的拿铁是下午茶的最佳选择。"
+    ]
   },
   {
+    "id": 166,
     "word": "猴年马月",
-    "meaning_ko": "어느 세월에",
     "pinyin": "hóu nián mǎ yuè",
-    "example": "这么多工作,要做到猴年马月啊!",
-    "example_pinyin": "Zhè me duō gōng zuò, yào zuò dào hóu nián mǎ yuè a!",
-    "example_korean": "이렇게 일이 많은데, 어느 세월에 다 하냐!"
+    "meaning": "언제가 될지 모름",
+    "examples": [
+      "猴年马月。",
+      "等到猴年马月啊。",
+      "别等到猴年马月才开始行动。"
+    ]
   },
   {
+    "id": 167,
     "word": "手表",
-    "meaning_ko": "손목시계",
-    "pinyin": "shǒu biǎo",
-    "example": "他戴着一块金色的手表。",
-    "example_pinyin": "Tā dài zhe yī kuài jīn sè de shǒu biǎo.",
-    "example_korean": "그는 금색 손목시계를 차고 있다."
+    "pinyin": "shǒubiǎo",
+    "meaning": "손목시계",
+    "examples": [
+      "新手表。",
+      "爸爸戴着手表。",
+      "精致的手表不仅看时间还是装饰品。"
+    ]
   },
   {
+    "id": 168,
     "word": "摩天大厦",
-    "meaning_ko": "마천루, 초고층 빌딩",
     "pinyin": "mó tiān dà shà",
-    "example": "上海有很多摩天大厦。",
-    "example_pinyin": "Shàng hǎi yǒu hěn duō mó tiān dà shà.",
-    "example_korean": "상하이에는 마천루가 많다."
+    "meaning": "마천루",
+    "examples": [
+      "摩天大厦。",
+      "城市里有摩天大厦。",
+      "摩天大厦是现代城市发展的标志。"
+    ]
   },
   {
+    "id": 169,
     "word": "衬衫",
-    "meaning_ko": "셔츠, 와이셔츠",
-    "pinyin": "chèn shān",
-    "example": "他穿着白色的衬衫。",
-    "example_pinyin": "Tā chuān zhe bái sè de chèn shān.",
-    "example_korean": "그는 흰색 셔츠를 입고 있다."
+    "pinyin": "chènshān",
+    "meaning": "셔츠",
+    "examples": [
+      "白衬衫。",
+      "爸爸穿衬衫上班。",
+      "整洁的衬衫展现专业的职业形象。"
+    ]
   },
   {
+    "id": 170,
     "word": "裙子",
-    "meaning_ko": "치마",
-    "pinyin": "qún zi",
-    "example": "她今天穿了一条漂亮的裙子。",
-    "example_pinyin": "Tā jīn tiān chuān le yī tiáo piào liang de qún zi.",
-    "example_korean": "그녀는 오늘 예쁜 치마를 입었다."
+    "pinyin": "qúnzi",
+    "meaning": "치마",
+    "examples": [
+      "花裙子。",
+      "妹妹穿漂亮裙子。",
+      "飘逸的裙子让女孩显得更加优雅。"
+    ]
   },
   {
+    "id": 171,
     "word": "习了马哈儿",
-    "meaning_ko": "덤벙대다",
     "pinyin": "xí le mǎ hā er",
-    "example": "他做事总是习了马哈儿的。",
-    "example_pinyin": "Tā zuò shì zǒng shì xí le mǎ hā er de.",
-    "example_korean": "그는 일을 할 때 항상 덤벙댄다."
+    "meaning": "대충대충",
+    "examples": [
+      "习了马哈儿。",
+      "做事别习了马哈儿。",
+      "学习不能习了马哈儿要认真仔细。"
+    ]
   },
   {
+    "id": 172,
     "word": "词语",
-    "meaning_ko": "단어, 어휘",
-    "pinyin": "cí yǔ",
-    "example": "请解释这个词语的意思。",
-    "example_pinyin": "Qǐng jiě shì zhè ge cí yǔ de yì si.",
-    "example_korean": "이 단어의 뜻을 설명해 주세요."
+    "pinyin": "cíyǔ",
+    "meaning": "단어",
+    "examples": [
+      "学词语。",
+      "背诵新的词语。",
+      "丰富的词语能让表达更加准确生动。"
+    ]
   },
   {
+    "id": 173,
     "word": "萝卜",
-    "meaning_ko": "무",
-    "pinyin": "luó bo",
-    "example": "我喜欢吃萝卜炖肉。",
-    "example_pinyin": "Wǒ xǐ huan chī luó bo dùn ròu.",
-    "example_korean": "나는 무 조림을 좋아한다."
+    "pinyin": "luóbo",
+    "meaning": "무",
+    "examples": [
+      "白萝卜。",
+      "兔子喜欢吃萝卜。",
+      "萝卜的营养价值高是健康的蔬菜。"
+    ]
   },
   {
+    "id": 174,
     "word": "尺子",
-    "meaning_ko": "자",
-    "pinyin": "chǐ zi",
-    "example": "用尺子量一下长度。",
-    "example_pinyin": "Yòng chǐ zi liáng yī xià cháng dù.",
-    "example_korean": "자로 길이를 재 보세요."
+    "pinyin": "chǐzi",
+    "meaning": "자",
+    "examples": [
+      "用尺子。",
+      "尺子可以量长度。",
+      "准确的尺子是绘图的必备工具。"
+    ]
   },
   {
+    "id": 175,
     "word": "宝贝儿",
-    "meaning_ko": "보물, 귀염둥이",
-    "pinyin": "bǎo bèir",
-    "example": "宝贝儿,快过来。",
-    "example_pinyin": "Bǎo bèir, kuài guò lai.",
-    "example_korean": "보물아, 빨리 이리 와."
+    "pinyin": "bǎobèir",
+    "meaning": "보물(애칭)",
+    "examples": [
+      "小宝贝儿。",
+      "妈妈的宝贝儿。",
+      "每个宝贝儿都有自己独特的天赋。"
+    ]
   },
   {
+    "id": 176,
     "word": "起床",
-    "meaning_ko": "일어나다, 기상하다",
-    "pinyin": "qǐ chuáng",
-    "example": "我每天七点起床。",
-    "example_pinyin": "Wǒ měi tiān qī diǎn qǐ chuáng.",
-    "example_korean": "나는 매일 7시에 일어난다."
+    "pinyin": "qǐchuáng",
+    "meaning": "일어나다",
+    "examples": [
+      "早起床。",
+      "七点钟起床上学。",
+      "养成早起床的习惯对健康有益。"
+    ]
   },
   {
+    "id": 177,
     "word": "陪伴",
-    "meaning_ko": "동행하다, 함께하다",
-    "pinyin": "péi bàn",
-    "example": "谢谢你一直陪伴我。",
-    "example_pinyin": "Xiè xie nǐ yī zhí péi bàn wǒ.",
-    "example_korean": "줄곧 함께해 줘서 고마워."
+    "pinyin": "péibàn",
+    "meaning": "함께하다",
+    "examples": [
+      "妈妈陪伴。",
+      "朋友互相陪伴。",
+      "真心的陪伴是最长情的告白。"
+    ]
   },
   {
+    "id": 178,
     "word": "摆放",
-    "meaning_ko": "진열하다, 배치하다",
-    "pinyin": "bǎi fàng",
-    "example": "请把书整齐地摆放好。",
-    "example_pinyin": "Qǐng bǎ shū zhěng qí de bǎi fàng hǎo.",
-    "example_korean": "책을 가지런히 배치해 주세요."
+    "pinyin": "bǎifàng",
+    "meaning": "놓다, 배치하다",
+    "examples": [
+      "摆放整齐。",
+      "把书本摆放好。",
+      "合理摆放物品能让空间更加整洁。"
+    ]
   },
   {
+    "id": 179,
     "word": "偷鸡摸狗",
-    "meaning_ko": "몰래 나쁜 짓을 하다, 바람피우다",
     "pinyin": "tōu jī mō gǒu",
-    "example": "不要做偷鸡摸狗的事。",
-    "example_pinyin": "Bù yào zuò tōu jī mō gǒu de shì.",
-    "example_korean": "몰래 나쁜 짓을 하지 마라."
-  },
-    {
-    "word": "落叶归根",
-    "meaning_ko": "떨어진 잎이 뿌리로 돌아간다; 고향으로 돌아가다",
-    "pinyin": "luò yè guī gēn",
-    "example": "他在城市工作多年后，最终落叶归根回到了家乡。",
-    "example_pinyin": "Tā zài chéngshì gōngzuò duō nián hòu, zuìzhōng luò yè guī gēn huídào le jiāxiāng.",
-    "example_korean": "그는 도시에서 여러 해 일한 후 결국 고향으로 돌아갔다."
-  },
-  {
-    "word": "旅行",
-    "meaning_ko": "여행",
-    "pinyin": "lǚ xíng",
-    "example": "今年夏天我计划去欧洲旅行。",
-    "example_pinyin": "Jīnnián xiàtiān wǒ jìhuà qù Ōuzhōu lǚ xíng.",
-    "example_korean": "올해 여름에 나는 유럽으로 여행을 갈 계획이다."
-  },
-  {
-    "word": "松鼠",
-    "meaning_ko": "다람쥐",
-    "pinyin": "sōng shǔ",
-    "example": "公园里有很多松鼠在树上跳来跳去。",
-    "example_pinyin": "Gōngyuán lǐ yǒu hěnduō sōng shǔ zài shù shang tiào lái tiào qù.",
-    "example_korean": "공원에 많은 다람쥐들이 나무 위에서 뛰어다닌다."
-  },
-  {
-    "word": "修行",
-    "meaning_ko": "수행, 수련",
-    "pinyin": "xiū xíng",
-    "example": "和尚在庙里进行多年的修行。",
-    "example_pinyin": "Héshang zài miào lǐ jìnxíng duō nián de xiū xíng.",
-    "example_korean": "스님은 사찰에서 여러 해의 수행을 하고 있다."
-  },
-  {
-    "word": "烟雾缭绕",
-    "meaning_ko": "연기가 자욱하다, 연기가 휘감돌다",
-    "pinyin": "yān wù liáo rào",
-    "example": "山顶上烟雾缭绕，看不清远处的景色。",
-    "example_pinyin": "Shānding shang yān wù liáo rào, kàn bu qīng yuǎnchù de jǐngsè.",
-    "example_korean": "산 정상에 연기가 자욱해서 먼 경치가 보이지 않는다."
-  },
-  {
-    "word": "好莱坞",
-    "meaning_ko": "할리우드",
-    "pinyin": "hǎo lái wù",
-    "example": "许多演员梦想去好莱坞发展演艺事业。",
-    "example_pinyin": "Xǔduō yǎnyuán mèngxiǎng qù hǎo lái wù fāzhǎn yǎnyì shìyè.",
-    "example_korean": "많은 배우들이 할리우드에 가서 연기 경력을 발전시키기를 꿈꾼다."
-  },
-  {
-    "word": "尽力",
-    "meaning_ko": "최선을 다하다",
-    "pinyin": "jìn lì",
-    "example": "我会尽力完成这个项目。",
-    "example_pinyin": "Wǒ huì jìn lì wánchéng zhège xiàngmù.",
-    "example_korean": "나는 이 프로젝트를 완성하기 위해 최선을 다할 것이다."
-  },
-  {
-    "word": "便利店",
-    "meaning_ko": "편의점",
-    "pinyin": "biàn lì diàn",
-    "example": "我在便利店买了一瓶水和一个三明治。",
-    "example_pinyin": "Wǒ zài biàn lì diàn mǎi le yī píng shuǐ hé yī ge sānmíngzhì.",
-    "example_korean": "나는 편의점에서 물 한 병과 샌드위치 하나를 샀다."
-  },
-  {
-    "word": "超市",
-    "meaning_ko": "슈퍼마켓",
-    "pinyin": "chāo shì",
-    "example": "周末我去超市购物，买了很多日用品。",
-    "example_pinyin": "Zhōumò wǒ qù chāo shì gòuwù, mǎi le hěnduō rìyòngpǐn.",
-    "example_korean": "주말에 나는 슈퍼마켓에 가서 쇼핑을 했고 많은 일용품을 샀다."
-  },
-  {
-    "word": "烤肉",
-    "meaning_ko": "구운 고기, 바비큐",
-    "pinyin": "kǎo ròu",
-    "example": "朋友们一起在花园里吃烤肉。",
-    "example_pinyin": "Péngyoumen yīqǐ zài huāyuán lǐ chī kǎo ròu.",
-    "example_korean": "친구들이 함께 정원에서 구운 고기를 먹었다."
-  },
-  {
-    "word": "试卷",
-    "meaning_ko": "시험지, 문제지",
-    "pinyin": "shì juàn",
-    "example": "老师发放了期末考试的试卷。",
-    "example_pinyin": "Lǎoshī fāfàng le qīmò kǎoshì de shì juàn.",
-    "example_korean": "선생님이 기말고사 시험지를 나눠주었다."
-  },
-  {
-    "word": "君子",
-    "meaning_ko": "군자, 고결한 사람",
-    "pinyin": "jūn zǐ",
-    "example": "孔子说君子应该有高尚的品德。",
-    "example_pinyin": "Kǒngzǐ shuō jūn zǐ yīnggāi yǒu gāoshàng de pǐndé.",
-    "example_korean": "공자는 군자는 고결한 품덕을 가져야 한다고 말했다."
-  },
-  {
-    "word": "吸管",
-    "meaning_ko": "빨대",
-    "pinyin": "xī guǎn",
-    "example": "我用吸管喝果汁。",
-    "example_pinyin": "Wǒ yòng xī guǎn hē guǒzhī.",
-    "example_korean": "나는 빨대로 과일 주스를 마신다."
-  },
-  {
-    "word": "纸杯",
-    "meaning_ko": "종이컵",
-    "pinyin": "zhǐ bēi",
-    "example": "咖啡馆用纸杯盛装热咖啡。",
-    "example_pinyin": "Kāfēiguǎn yòng zhǐ bēi chéngzhuāng rè kāfēi.",
-    "example_korean": "카페에서는 종이컵에 뜨거운 커피를 담는다."
-  },
-  {
-    "word": "挖耳勺",
-    "meaning_ko": "귀파개, 귀이개",
-    "pinyin": "wā ěr sháo",
-    "example": "我用挖耳勺清理耳朵。",
-    "example_pinyin": "Wǒ yòng wā ěr sháo qīnglǐ ěrduǒ.",
-    "example_korean": "나는 귀파개로 귀를 청소한다."
-  },
-  {
-    "word": "光伏",
-    "meaning_ko": "태양광, 광전지",
-    "pinyin": "guāng fú",
-    "example": "越来越多的家庭安装光伏发电系统。",
-    "example_pinyin": "Yuè lái yuè duō de jiātíng ānzhuāng guāng fú fādiàn xìtǒng.",
-    "example_korean": "점점 더 많은 가정에서 태양광 발전 시스템을 설치하고 있다."
-  },
-  {
-    "word": "炼油",
-    "meaning_ko": "정유, 기름 정제",
-    "pinyin": "liàn yóu",
-    "example": "石油炼油厂生产各种燃料。",
-    "example_pinyin": "Shíyóu liàn yóu chǎng shēngchǎn gè zhǒng ránliào.",
-    "example_korean": "정유 공장은 여러 종류의 연료를 생산한다."
-  },
-  {
-    "word": "化学",
-    "meaning_ko": "화학",
-    "pinyin": "huà xué",
-    "example": "化学实验需要严格遵守安全规则。",
-    "example_pinyin": "Huà xué shíyàn xūyào yángé zunshǒu ānquán guīzé.",
-    "example_korean": "화학 실험은 엄격하게 안전 규칙을 따라야 한다."
-  },
-  {
-    "word": "手镯",
-    "meaning_ko": "팔찌",
-    "pinyin": "shǒu zhuó",
-    "example": "她手腕上戴着一个漂亮的手镯。",
-    "example_pinyin": "Tā shǒu wàn shang dàizhe yī ge piàoliang de shǒu zhuó.",
-    "example_korean": "그녀는 손목에 아름다운 팔찌를 차고 있다."
-  },
-  {
-    "word": "勾肩搭背",
-    "meaning_ko": "어깨동무",
-    "pinyin": "gōu jiān dā bèi",
-    "example": "两个好朋友勾肩搭背地走在街上。",
-    "example_pinyin": "Liǎng ge hǎo péngyou gōu jiān dā bèi de zǒu zài jiē shang.",
-    "example_korean": "두 친구가 어깨동무를 하며 거리를 걷고 있다."
+    "meaning": "좀도둑질하다",
+    "examples": [
+      "偷鸡摸狗。",
+      "不能做偷鸡摸狗的事。",
+      "偷鸡摸狗的行为终究会受到惩罚。"
+    ]
   }
-
 ]

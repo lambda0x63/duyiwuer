@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useMemo, useRef, useCallback, type MouseEvent } from "react";
 import { Card } from "@/components/ui/card";
-import { Volume2 } from "lucide-react";
+import { Volume2, MessageSquare, X, Loader } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import type { WordData } from "@/types/word";
 
 interface FlashCardProps {
@@ -17,6 +18,10 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
   const [swipeDirection, setSwipeDirection] = useState<string | null>(null);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isPlayingTts, setIsPlayingTts] = useState(false);
+  const [showAskModal, setShowAskModal] = useState(false);
+  const [askQuestion, setAskQuestion] = useState("");
+  const [aiResponse, setAiResponse] = useState("");
+  const [isLoadingResponse, setIsLoadingResponse] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioQueueRef = useRef<string[]>([]);
 
@@ -117,16 +122,6 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
     characterParts.length > 0 &&
     characterParts.length === pinyinParts.length &&
     characterParts.length <= 8;
-  const exampleText = word.example;
-  const exampleCharacters = useMemo(() => Array.from(exampleText), [exampleText]);
-  const examplePinyinParts = useMemo(
-    () => word.example_pinyin.split(/\s+/).filter(Boolean),
-    [word.example_pinyin]
-  );
-  const canAlignExample =
-    exampleCharacters.length > 0 &&
-    exampleCharacters.length === examplePinyinParts.length &&
-    exampleCharacters.length <= 30;
 
   const stopTts = useCallback(() => {
     audioQueueRef.current = [];
@@ -177,14 +172,44 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
     const queue: string[] = [];
     const trimmedWord = word.word.trim();
     if (trimmedWord) queue.push(getTtsUrl(trimmedWord));
-    const trimmedExample = word.example.trim();
-    if (trimmedExample) queue.push(getTtsUrl(trimmedExample));
+    const firstExample = word.examples && word.examples.length > 0 ? word.examples[0].trim() : "";
+    if (firstExample) queue.push(getTtsUrl(firstExample));
 
     if (queue.length === 0) return;
 
     audioQueueRef.current = queue;
     setIsPlayingTts(true);
     playNextAudio();
+  };
+
+  const askAI = async () => {
+    if (!askQuestion.trim()) return;
+
+    setIsLoadingResponse(true);
+    setAiResponse("");
+
+    try {
+      const response = await fetch("/api/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          word,
+          userQuestion: askQuestion,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("AI 응답 생성 실패");
+      }
+
+      const data = await response.json();
+      setAiResponse(data.answer);
+    } catch (error) {
+      console.error("Ask AI Error:", error);
+      setAiResponse("죄송합니다. 현재 AI 기능을 사용할 수 없습니다. OpenRouter API 키를 확인해주세요.");
+    } finally {
+      setIsLoadingResponse(false);
+    }
   };
 
   useEffect(() => {
@@ -271,9 +296,10 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
                       </div>
                     )}
                     <p className="text-xl text-gray-700 text-center font-medium">
-                      {word.meaning_ko}
+                      {word.meaning}
                     </p>
                   </div>
+                </div>
 
                 <div className="flex-1 overflow-y-auto">
                   <div className="rounded-2xl bg-gray-100/90 p-5 space-y-4">
@@ -281,41 +307,17 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
                       <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-gray-500">
                         예문
                       </h3>
-                      {canAlignExample ? (
-                        <div className="flex flex-wrap gap-3">
-                          {exampleCharacters.map((char, index) => (
-                            <div
-                              key={`${char}-${index}`}
-                              className="flex flex-col items-center gap-1"
-                            >
-                              <span className="text-xl sm:text-2xl font-semibold text-gray-900">
-                                {char}
-                              </span>
-                              <span className="text-sm sm:text-base text-blue-600">
-                                {examplePinyinParts[index]}
-                              </span>
-                            </div>
-                          ))}
-                        </div>
-                      ) : (
-                        <>
-                          <p className="text-xl sm:text-2xl leading-relaxed text-gray-900 whitespace-pre-wrap">
-                            {word.example}
-                          </p>
-                          <p className="text-lg sm:text-xl leading-relaxed text-blue-700 whitespace-pre-wrap">
-                            {word.example_pinyin}
-                          </p>
-                        </>
-                      )}
-                      </div>
-                      <div className="h-px bg-gray-300/70" />
-                      <div className="space-y-3">
-                        <h3 className="text-xs font-semibold uppercase tracking-[0.25em] text-gray-500">
-                          해석
-                        </h3>
-                        <p className="text-lg sm:text-xl leading-relaxed text-gray-800 whitespace-pre-wrap">
-                          {word.example_korean}
-                        </p>
+                      <div className="space-y-4">
+                        {word.examples && word.examples.map((example, index) => (
+                          <div key={index} className="space-y-2">
+                            <p className="text-lg sm:text-xl leading-relaxed text-gray-900 whitespace-pre-wrap">
+                              {example}
+                            </p>
+                            {index < word.examples.length - 1 && (
+                              <div className="h-px bg-gray-300/70" />
+                            )}
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -325,7 +327,7 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
           </div>
         </div>
       </div>
-      <div className="mt-5 mb-10 flex justify-center">
+      <div className="mt-5 mb-10 flex justify-center gap-4">
         <button
           type="button"
           className={`inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-6 py-3 text-gray-700 shadow-md hover:text-gray-900 hover:border-gray-500 transition-all ${isPlayingTts ? "ring-2 ring-blue-400" : ""}`}
@@ -334,7 +336,101 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
         >
           <Volume2 className="h-6 w-6" />
         </button>
+        <button
+          type="button"
+          className="inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-6 py-3 text-gray-700 shadow-md hover:text-gray-900 hover:border-gray-500 transition-all"
+          onClick={() => setShowAskModal(true)}
+          aria-label="질문하기"
+        >
+          <MessageSquare className="h-6 w-6" />
+        </button>
       </div>
+
+      {/* Ask Modal */}
+      {showAskModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
+          <div className="w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-lg font-semibold">AI 선생님에게 질문하기</h2>
+              <button
+                onClick={() => {
+                  setShowAskModal(false);
+                  setAskQuestion("");
+                  setAiResponse("");
+                }}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+
+            <div className="space-y-4">
+              <div className="rounded-lg bg-gray-50 p-3">
+                <p className="text-sm text-gray-600">
+                  <span className="font-semibold">{word.word}</span> ({word.pinyin})
+                </p>
+                <p className="text-sm text-gray-700">{word.meaning}</p>
+              </div>
+
+              {!aiResponse ? (
+                <>
+                  <textarea
+                    value={askQuestion}
+                    onChange={(e) => setAskQuestion(e.target.value)}
+                    placeholder="이 단어에 대해 물어보고 싶은 것을 입력하세요..."
+                    className="w-full rounded-lg border border-gray-200 p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    rows={3}
+                  />
+                  <Button
+                    onClick={askAI}
+                    disabled={isLoadingResponse || !askQuestion.trim()}
+                    className="w-full"
+                  >
+                    {isLoadingResponse ? (
+                      <>
+                        <Loader className="h-4 w-4 animate-spin mr-2" />
+                        생성 중...
+                      </>
+                    ) : (
+                      "질문하기"
+                    )}
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <div className="rounded-lg bg-blue-50 p-4">
+                    <p className="text-sm text-gray-800 whitespace-pre-wrap leading-relaxed">
+                      {aiResponse}
+                    </p>
+                  </div>
+                  <div className="flex gap-2">
+                    <Button
+                      onClick={() => {
+                        setAiResponse("");
+                        setAskQuestion("");
+                      }}
+                      variant="outline"
+                      className="flex-1"
+                    >
+                      다른 질문하기
+                    </Button>
+                    <Button
+                      onClick={() => {
+                        setShowAskModal(false);
+                        setAskQuestion("");
+                        setAiResponse("");
+                      }}
+                      className="flex-1"
+                    >
+                      닫기
+                    </Button>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

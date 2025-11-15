@@ -1,8 +1,11 @@
-import { getTextbookWords } from "@/lib/textbookData";
+import { getBasicWords, getTextbookWords } from "@/lib/basicData";
 import QuizClient from "./QuizClient";
 
 export default async function QuizPage() {
-  const words = await getTextbookWords();
+  const [basicWords, textbookWords] = await Promise.all([
+    getBasicWords(),
+    getTextbookWords(),
+  ]);
 
-  return <QuizClient words={words} />;
+  return <QuizClient basicWords={basicWords} textbookWords={textbookWords} />;
 }

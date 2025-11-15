@@ -1,17 +1,15 @@
-import { getTextbookWords } from "@/lib/textbookData";
-import { getSongSets } from "@/lib/songData";
+import { getBasicWords, getTextbookWords } from "@/lib/basicData";
 import HomeClient from "./_components/HomeClient";
 
 export default async function Home() {
-  const [textbookWords, songSets] = await Promise.all([
+  const [basicWords, textbookWords] = await Promise.all([
+    getBasicWords(),
     getTextbookWords(),
-    getSongSets(),
   ]);
 
   return (
     <HomeClient
-      totalWords={textbookWords.length}
-      totalSongSets={songSets.length}
+      totalWords={basicWords.length + textbookWords.length}
     />
   );
 }

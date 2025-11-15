@@ -3,12 +3,13 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { ChevronLeft, Volume2, PenTool } from "lucide-react";
+import { ChevronLeft, Volume2, PenTool, Lightbulb } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import type { WordData } from "@/types/word";
 
-type QuizMode = "pinyin" | "production";
+type QuizMode = "pinyin" | "production" | "ai";
+type WordbookType = "basic" | "textbook" | null;
 
 type QuizQuestion = {
   mode: QuizMode;
@@ -27,17 +28,21 @@ type QuizSession = {
 };
 
 interface QuizClientProps {
-  words: WordData[];
+  basicWords: WordData[];
+  textbookWords: WordData[];
 }
 
-export default function QuizClient({ words }: QuizClientProps) {
+export default function QuizClient({ basicWords, textbookWords }: QuizClientProps) {
   const router = useRouter();
+  const [wordbookType, setWordbookType] = useState<WordbookType>(null);
   const [quizMode, setQuizMode] = useState<QuizMode | null>(null);
   const [session, setSession] = useState<QuizSession | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string>("");
   const [userInput, setUserInput] = useState<string>("");
   const [showResult, setShowResult] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  const words = wordbookType === "basic" ? basicWords : textbookWords;
 
   const quizModes = [
     {
@@ -54,6 +59,13 @@ export default function QuizClient({ words }: QuizClientProps) {
       icon: PenTool,
       color: "bg-orange-500",
     },
+    {
+      id: "ai" as QuizMode,
+      name: "AI 응용문제",
+      description: "AI가 출제하는 실생활 응용문제 풀기",
+      icon: Lightbulb,
+      color: "bg-purple-500",
+    },
   ];
 
   const shuffleWords = (count: number) => {
@@ -65,24 +77,73 @@ export default function QuizClient({ words }: QuizClientProps) {
     const questions: QuizQuestion[] = [];
     const selectedWords = shuffleWords(count);
 
-    for (const word of selectedWords) {
-      if (mode === "pinyin") {
-        const pinyinWithNumbers = convertToNumberTones(word.pinyin);
-        questions.push({
-          mode,
-          word,
-          question: word.word,
-          correctAnswer: pinyinWithNumbers,
-          explanation: `${word.pinyin} (${word.meaning_ko})\n예문: ${word.example}`,
+    if (mode === "ai") {
+      // AI 모드: API를 통해 문제 생성
+      try {
+        const response = await fetch("/api/quiz/generate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ words: selectedWords, count }),
         });
-      } else {
-        questions.push({
-          mode,
-          word,
-          question: word.meaning_ko,
-          correctAnswer: word.word,
-          explanation: `${word.word} (${word.pinyin})\n예문: ${word.example}`,
-        });
+
+        if (!response.ok) {
+          throw new Error("AI 문제 생성 실패");
+        }
+
+        const data = await response.json();
+        const aiQuestions = data.questions || [];
+
+        // AI에서 받은 문제를 QuizQuestion 형태로 변환
+        for (const aiQuestion of aiQuestions) {
+          const matchedWord = selectedWords.find((w: WordData) => w.word === aiQuestion.word);
+          if (matchedWord) {
+            questions.push({
+              mode: "ai",
+              word: matchedWord,
+              question: aiQuestion.question,
+              correctAnswer: aiQuestion.correctAnswer,
+              options: aiQuestion.options,
+              explanation: aiQuestion.explanation,
+            });
+          }
+        }
+      } catch (error) {
+        console.error("AI 문제 생성 오류:", error);
+        // 오류 발생 시 기본 문제로 대체
+        for (const word of selectedWords) {
+          const exampleText = word.examples && word.examples.length > 0 ? word.examples[0] : "";
+          questions.push({
+            mode: "ai",
+            word,
+            question: `"${word.word}"를 사용해서 문장을 만들어보세요.`,
+            correctAnswer: word.word,
+            explanation: `예: ${exampleText}`,
+          });
+        }
+      }
+    } else {
+      // 기존 모드 (pinyin, production)
+      for (const word of selectedWords) {
+        if (mode === "pinyin") {
+          const pinyinWithNumbers = convertToNumberTones(word.pinyin);
+          const exampleText = word.examples && word.examples.length > 0 ? word.examples[0] : "";
+          questions.push({
+            mode,
+            word,
+            question: word.word,
+            correctAnswer: pinyinWithNumbers,
+            explanation: `${word.pinyin} (${word.meaning})\n예문: ${exampleText}`,
+          });
+        } else {
+          const exampleText = word.examples && word.examples.length > 0 ? word.examples[0] : "";
+          questions.push({
+            mode,
+            word,
+            question: word.meaning,
+            correctAnswer: word.word,
+            explanation: `${word.word} (${word.pinyin})\n예문: ${exampleText}`,
+          });
+        }
       }
     }
 
@@ -171,6 +232,13 @@ export default function QuizClient({ words }: QuizClientProps) {
       return;
     }
 
+    if (currentQuestion.mode === "ai") {
+      // AI 응용 문제: 자유 형식이므로 사용자 입력을 저장하고 정답과 설명을 제공
+      // 자동으로 정답 처리 (실제 채점은 UI에서 정답 설명과 함께 표시)
+      updateSession(userAnswer, true);
+      return;
+    }
+
     const isCorrect = userAnswer === currentQuestion.correctAnswer;
     updateSession(userAnswer, isCorrect);
   };
@@ -210,6 +278,15 @@ export default function QuizClient({ words }: QuizClientProps) {
     }
   };
 
+  const resetToWordbookSelect = () => {
+    setWordbookType(null);
+    setQuizMode(null);
+    setSession(null);
+    setSelectedAnswer("");
+    setUserInput("");
+    setShowResult(false);
+  };
+
   const restartQuiz = () => {
     setSession(null);
     setQuizMode(null);
@@ -241,7 +318,51 @@ export default function QuizClient({ words }: QuizClientProps) {
       </header>
 
       <main className="flex-1 px-6 pb-8">
-        {!quizMode && (
+        {!wordbookType && (
+          <motion.div
+            className="grid gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <Card className="p-6 space-y-4">
+              <div className="flex items-center gap-4">
+                <div className="rounded-full bg-blue-500 text-white p-3">
+                  <div className="h-6 w-6">📚</div>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold">기본 단어</h2>
+                  <p className="text-sm text-gray-500">{basicWords.length}개 단어</p>
+                </div>
+              </div>
+              <Button
+                onClick={() => setWordbookType("basic")}
+                className="w-full"
+              >
+                기본 단어로 시작
+              </Button>
+            </Card>
+            <Card className="p-6 space-y-4">
+              <div className="flex items-center gap-4">
+                <div className="rounded-full bg-purple-500 text-white p-3">
+                  <div className="h-6 w-6">📖</div>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold">교과서 단어</h2>
+                  <p className="text-sm text-gray-500">{textbookWords.length}개 단어</p>
+                </div>
+              </div>
+              <Button
+                onClick={() => setWordbookType("textbook")}
+                variant="secondary"
+                className="w-full"
+              >
+                교과서 단어로 시작
+              </Button>
+            </Card>
+          </motion.div>
+        )}
+
+        {wordbookType && !quizMode && (
           <motion.div
             className="grid gap-4"
             initial={{ opacity: 0, y: 20 }}
@@ -267,6 +388,13 @@ export default function QuizClient({ words }: QuizClientProps) {
                 </Button>
               </Card>
             ))}
+            <Button
+              variant="outline"
+              onClick={resetToWordbookSelect}
+              className="w-full"
+            >
+              단어장 선택으로 돌아가기
+            </Button>
           </motion.div>
         )}
 
@@ -302,6 +430,20 @@ export default function QuizClient({ words }: QuizClientProps) {
                       onChange={(e) => setUserInput(e.target.value)}
                       className="w-full rounded-lg border border-gray-200 px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
                       placeholder="정답을 입력하세요"
+                    />
+                  </div>
+                ) : quizMode === "ai" ? (
+                  <div className="space-y-3">
+                    <label className="text-sm text-gray-600" htmlFor="ai-input">
+                      자유로운 형식으로 답변하세요
+                    </label>
+                    <textarea
+                      id="ai-input"
+                      value={userInput}
+                      onChange={(e) => setUserInput(e.target.value)}
+                      className="w-full rounded-lg border border-gray-200 px-4 py-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
+                      placeholder="당신의 답변을 입력하세요"
+                      rows={4}
                     />
                   </div>
                 ) : (
