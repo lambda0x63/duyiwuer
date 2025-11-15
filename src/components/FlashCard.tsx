@@ -172,8 +172,6 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
     const queue: string[] = [];
     const trimmedWord = word.word.trim();
     if (trimmedWord) queue.push(getTtsUrl(trimmedWord));
-    const firstExample = word.examples && word.examples.length > 0 ? word.examples[0].trim() : "";
-    if (firstExample) queue.push(getTtsUrl(firstExample));
 
     if (queue.length === 0) return;
 
