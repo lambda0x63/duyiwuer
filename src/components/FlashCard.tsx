@@ -360,7 +360,7 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
           />
 
           {/* Bottom Sheet */}
-          <div className="fixed bottom-0 left-0 right-0 z-50 max-h-[85vh] animate-in slide-in-from-bottom-5 duration-300">
+          <div className="fixed bottom-0 left-0 right-0 z-50 max-h-[85vh] animate-in slide-in-from-bottom-10 duration-500 ease-out">
             <div className="w-full rounded-t-3xl bg-white shadow-2xl">
               {/* Drag Handle */}
               <div className="flex justify-center pt-3 pb-1">
@@ -369,22 +369,6 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
 
               {/* Content */}
               <div className="overflow-y-auto px-6 pb-8 pt-4 max-h-[calc(85vh-60px)]">
-                {/* Header */}
-                <div className="mb-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div>
-                      <h2 className="text-xl font-bold text-gray-900">AI 선생님</h2>
-                      <p className="text-sm text-gray-500 mt-1">이 단어에 대해 질문해보세요</p>
-                    </div>
-                  </div>
-
-                  {/* Word Info */}
-                  <div className="rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 p-4 border border-blue-100">
-                    <p className="text-3xl font-bold text-gray-900">{word.word}</p>
-                    <p className="text-sm text-blue-600 font-medium mt-2">{word.pinyin}</p>
-                    <p className="text-sm text-gray-700 mt-2">{word.meaning}</p>
-                  </div>
-                </div>
 
                 {/* Q&A Section */}
                 {!aiResponse ? (
