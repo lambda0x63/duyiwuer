@@ -39,6 +39,10 @@ export async function POST(req: NextRequest) {
 
     const messages = [
       {
+        role: "system" as const,
+        content: systemPrompt || defaultSystemPrompt,
+      },
+      {
         role: "user" as const,
         content: `[학습 단어: ${word.word}(${word.pinyin}) - ${word.meaning}]\n\n질문: ${userQuestion}`,
       },
@@ -55,7 +59,6 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         model: "deepseek/deepseek-v3.2-exp",
         messages: messages,
-        system: systemPrompt || defaultSystemPrompt,
         temperature: 0.7,
         max_tokens: 500,
       }),
