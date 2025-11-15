@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo, useRef, useCallback, type MouseEvent } from "react";
 import { Card } from "@/components/ui/card";
-import { Volume2, MessageSquare, X, Loader } from "lucide-react";
+import { Volume2, MessageSquare, Loader } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { WordData } from "@/types/word";
 
@@ -346,90 +346,116 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
         </button>
       </div>
 
-      {/* Ask Modal */}
+      {/* Bottom Sheet Ask Panel */}
       {showAskModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
-          <div className="w-full max-w-md rounded-lg bg-white p-6 shadow-lg">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-semibold">AI 선생님에게 질문하기</h2>
-              <button
-                onClick={() => {
-                  setShowAskModal(false);
-                  setAskQuestion("");
-                  setAiResponse("");
-                }}
-                className="text-gray-500 hover:text-gray-700"
-              >
-                <X className="h-6 w-6" />
-              </button>
-            </div>
+        <>
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 z-40 bg-black bg-opacity-30 transition-opacity duration-300"
+            onClick={() => {
+              setShowAskModal(false);
+              setAskQuestion("");
+              setAiResponse("");
+            }}
+          />
 
-            <div className="space-y-4">
-              <div className="rounded-lg bg-gray-50 p-3">
-                <p className="text-sm text-gray-600">
-                  <span className="font-semibold">{word.word}</span> ({word.pinyin})
-                </p>
-                <p className="text-sm text-gray-700">{word.meaning}</p>
+          {/* Bottom Sheet */}
+          <div className="fixed bottom-0 left-0 right-0 z-50 max-h-[85vh] animate-in slide-in-from-bottom-5 duration-300">
+            <div className="w-full rounded-t-3xl bg-white shadow-2xl">
+              {/* Drag Handle */}
+              <div className="flex justify-center pt-3 pb-1">
+                <div className="h-1 w-12 rounded-full bg-gray-300" />
               </div>
 
-              {!aiResponse ? (
-                <>
-                  <textarea
-                    value={askQuestion}
-                    onChange={(e) => setAskQuestion(e.target.value)}
-                    placeholder="이 단어에 대해 물어보고 싶은 것을 입력하세요..."
-                    className="w-full rounded-lg border border-gray-200 p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    rows={3}
-                  />
-                  <Button
-                    onClick={askAI}
-                    disabled={isLoadingResponse || !askQuestion.trim()}
-                    className="w-full"
-                  >
-                    {isLoadingResponse ? (
-                      <>
-                        <Loader className="h-4 w-4 animate-spin mr-2" />
-                        생성 중...
-                      </>
-                    ) : (
-                      "질문하기"
-                    )}
-                  </Button>
-                </>
-              ) : (
-                <>
-                  <div className="rounded-lg bg-blue-50 p-4">
-                    <p className="text-sm text-gray-800 whitespace-pre-wrap leading-relaxed">
-                      {aiResponse}
-                    </p>
+              {/* Content */}
+              <div className="overflow-y-auto px-6 pb-8 pt-4 max-h-[calc(85vh-60px)]">
+                {/* Header */}
+                <div className="mb-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <h2 className="text-xl font-bold text-gray-900">AI 선생님</h2>
+                      <p className="text-sm text-gray-500 mt-1">이 단어에 대해 질문해보세요</p>
+                    </div>
                   </div>
-                  <div className="flex gap-2">
+
+                  {/* Word Info */}
+                  <div className="rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 p-4 border border-blue-100">
+                    <p className="text-3xl font-bold text-gray-900">{word.word}</p>
+                    <p className="text-sm text-blue-600 font-medium mt-2">{word.pinyin}</p>
+                    <p className="text-sm text-gray-700 mt-2">{word.meaning}</p>
+                  </div>
+                </div>
+
+                {/* Q&A Section */}
+                {!aiResponse ? (
+                  <div className="space-y-4">
+                    <div>
+                      <label className="text-sm font-semibold text-gray-700 block mb-3">
+                        질문 입력하기
+                      </label>
+                      <textarea
+                        value={askQuestion}
+                        onChange={(e) => setAskQuestion(e.target.value)}
+                        placeholder="예: 이 단어는 언제 사용해요?"
+                        className="w-full rounded-xl border border-gray-200 p-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                        rows={3}
+                      />
+                    </div>
+
                     <Button
-                      onClick={() => {
-                        setAiResponse("");
-                        setAskQuestion("");
-                      }}
-                      variant="outline"
-                      className="flex-1"
+                      onClick={askAI}
+                      disabled={isLoadingResponse || !askQuestion.trim()}
+                      className="w-full h-12 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-semibold text-base"
                     >
-                      다른 질문하기
-                    </Button>
-                    <Button
-                      onClick={() => {
-                        setShowAskModal(false);
-                        setAskQuestion("");
-                        setAiResponse("");
-                      }}
-                      className="flex-1"
-                    >
-                      닫기
+                      {isLoadingResponse ? (
+                        <>
+                          <Loader className="h-5 w-5 animate-spin mr-2" />
+                          생성 중...
+                        </>
+                      ) : (
+                        "질문하기"
+                      )}
                     </Button>
                   </div>
-                </>
-              )}
+                ) : (
+                  <div className="space-y-4">
+                    <div className="space-y-2">
+                      <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">AI의 답변</p>
+                      <div className="rounded-2xl bg-gradient-to-br from-green-50 to-emerald-50 p-5 border border-green-100">
+                        <p className="text-gray-800 leading-relaxed whitespace-pre-wrap text-sm">
+                          {aiResponse}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-3">
+                      <Button
+                        onClick={() => {
+                          setAiResponse("");
+                          setAskQuestion("");
+                        }}
+                        variant="outline"
+                        className="h-11 rounded-xl font-semibold border-gray-300"
+                      >
+                        다시 물어보기
+                      </Button>
+                      <Button
+                        onClick={() => {
+                          setShowAskModal(false);
+                          setAskQuestion("");
+                          setAiResponse("");
+                        }}
+                        className="h-11 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-semibold"
+                      >
+                        닫기
+                      </Button>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   );

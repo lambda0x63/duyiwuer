@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import type { WordData } from "@/types/word";
 
 export async function POST(req: NextRequest) {
   try {
