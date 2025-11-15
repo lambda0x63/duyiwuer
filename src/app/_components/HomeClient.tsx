@@ -13,7 +13,7 @@ interface HomeClientProps {
 export default function HomeClient({ totalWords }: HomeClientProps) {
   return (
     <motion.div
-      className="min-h-screen flex flex-col items-center justify-center p-6 relative"
+      className="h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}

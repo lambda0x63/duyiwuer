@@ -68,7 +68,7 @@ export default function StudySession({
   if (shuffledWords.length === 0) {
     return (
       <motion.div
-        className="min-h-screen flex items-center justify-center p-4"
+        className="h-screen flex items-center justify-center p-4 overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
@@ -90,7 +90,7 @@ export default function StudySession({
   if (sessionComplete) {
     return (
       <motion.div
-        className="min-h-screen flex items-center justify-center p-4"
+        className="h-screen flex items-center justify-center p-4 overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
@@ -122,7 +122,7 @@ export default function StudySession({
 
   return (
     <motion.div
-      className="min-h-screen flex flex-col"
+      className="h-screen flex flex-col overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
@@ -157,7 +157,7 @@ export default function StudySession({
         )}
       </motion.header>
 
-      <main className="flex-1 flex flex-col items-center pt-8 pb-12">
+      <main className="flex-1 flex flex-col items-center pt-8 pb-12 overflow-y-auto">
         <FlashCard word={shuffledWords[currentIndex]} onNext={handleNext} />
       </main>
     </motion.div>
