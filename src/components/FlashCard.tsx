@@ -349,9 +349,9 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
       {/* Bottom Sheet Ask Panel */}
       {showAskModal && (
         <>
-          {/* Backdrop */}
+          {/* Backdrop - invisible but clickable to dismiss */}
           <div
-            className="fixed inset-0 z-40 bg-black bg-opacity-30 transition-opacity duration-300"
+            className="fixed inset-0 z-40"
             onClick={() => {
               setShowAskModal(false);
               setAskQuestion("");
