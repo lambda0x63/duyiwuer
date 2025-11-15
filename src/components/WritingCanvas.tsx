@@ -15,6 +15,8 @@ const TOTAL_REPS = 5; // 교육학적으로 최적의 반복 횟수
 export default function WritingCanvas({ character, onNext }: WritingCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pointsRef = useRef<Array<[number, number, number]>>([]);
+  const strokesRef = useRef<Array<Array<[number, number, number]>>>([]);
+  const dprRef = useRef(1);
   const [isDrawing, setIsDrawing] = useState(false);
   const [currentRep, setCurrentRep] = useState(1);
 
@@ -25,21 +27,42 @@ export default function WritingCanvas({ character, onNext }: WritingCanvasProps)
     return 0; // 5회: 0% (가이드 없음)
   }, [currentRep]);
 
-  // 글자수에 따른 폰트 크기 계산
+  // 글자수에 따른 폰트 크기 계산 (쓰기 가이드용)
   const getFontSize = useCallback((charCount: number) => {
-    if (charCount === 1) return 280;
-    if (charCount === 2) return 200;
-    if (charCount === 3) return 150;
-    return 120; // 4글자 이상
+    if (charCount === 1) return 260;
+    if (charCount === 2) return 170;
+    if (charCount === 3) return 130;
+    return 100; // 4글자 이상
   }, []);
 
-  // 스트로크 포인트를 SVG 경로로 변환
-  const pointsToPath = (points: Array<[number, number, number]>) => {
+  // 글자수에 따른 붓펜 두께 계산 (폰트 크기에 비례)
+  const getBrushSize = useCallback((charCount: number) => {
+    if (charCount === 1) return 13;   // 1글자: 기본 두께
+    if (charCount === 2) return 9;    // 2글자: 약간 가늘게
+    if (charCount === 3) return 7;    // 3글자: 더 가늘게
+    return 5.5;                        // 4글자 이상: 가장 가늘게
+  }, []);
+
+  // 스트로크 포인트를 SVG 경로로 변환 (붓펜 서예 스타일)
+  const pointsToPath = useCallback((points: Array<[number, number, number]>) => {
+    const brushSize = getBrushSize(character.length);
+    const taperSize = brushSize * 3; // 테이퍼는 붓 크기의 3배
+
     const stroke = getStroke(points, {
-      size: 8,
-      thinning: 0.6,
-      smoothing: 0.5,
-      streamline: 0.5,
+      size: brushSize,    // 글자수에 따른 동적 붓펜 두께
+      thinning: 0.82,     // 강약 대비 (속도에 따른 필압 시뮬레이션)
+      smoothing: 0.75,    // 부드럽고 유려한 곡선
+      streamline: 0.65,   // 자연스러운 잉크 흐름
+      easing: (t) => Math.sin((t * Math.PI) / 2),  // 부드러운 가속
+      start: {
+        taper: taperSize, // 획 시작 테이퍼 (붓 크기에 비례)
+        cap: true
+      },
+      end: {
+        taper: taperSize, // 획 끝 테이퍼 (붓 크기에 비례)
+        cap: true
+      },
+      simulatePressure: true,  // 속도 기반 압력 시뮬레이션 (빠르게 = 얇게)
     });
 
     if (stroke.length === 0) return "";
@@ -49,19 +72,59 @@ export default function WritingCanvas({ character, onNext }: WritingCanvasProps)
       path += ` L ${stroke[i][0]} ${stroke[i][1]}`;
     }
     return path;
-  };
+  }, [character.length, getBrushSize]);
 
   const drawAnswerGuide = useCallback((ctx: CanvasRenderingContext2D, rect: DOMRect) => {
     const opacity = getOpacity();
     if (opacity === 0) return; // 5회차에는 아무것도 그리지 않음
 
     const fontSize = getFontSize(character.length);
-    ctx.font = `bold ${fontSize}px 'Noto Serif CJK JP', serif, STHeiti, SimSun`;
+
+    // FlashCard와 동일한 폰트 사용
+    const fontFamily = getComputedStyle(document.documentElement)
+      .getPropertyValue('--font-noto-serif-cjk-jp')
+      .trim() || "'Noto Serif CJK JP', 'Noto Serif JP', serif";
+
+    ctx.font = `bold ${fontSize}px ${fontFamily}`;
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillStyle = `rgba(200, 200, 200, ${opacity})`;
     ctx.fillText(character, rect.width / 2, rect.height / 2);
   }, [character, getOpacity, getFontSize]);
+
+  const redrawCanvas = useCallback(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const rect = canvas.getBoundingClientRect();
+
+    // 배경 흰색 (canvas 크기 기준으로)
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, rect.width, rect.height);
+
+    // 정답 한자 가이드 그리기
+    drawAnswerGuide(ctx, rect);
+
+    // 이전 획들 다시 그리기
+    strokesRef.current.forEach((stroke) => {
+      const path = pointsToPath(stroke);
+      if (path) {
+        const svgPath = new Path2D(path);
+        ctx.fillStyle = "#000000";
+        ctx.fill(svgPath);
+      }
+    });
+  }, [drawAnswerGuide, pointsToPath]);
+
+  // 새로운 단어가 로드될 때 상태 초기화
+  useEffect(() => {
+    setCurrentRep(1);
+    strokesRef.current = [];
+    pointsRef.current = [];
+  }, [character]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -72,32 +135,20 @@ export default function WritingCanvas({ character, onNext }: WritingCanvasProps)
 
     // 캔버스 크기 설정
     const dpr = window.devicePixelRatio || 1;
+    dprRef.current = dpr;
     const rect = canvas.getBoundingClientRect();
     canvas.width = rect.width * dpr;
     canvas.height = rect.height * dpr;
     ctx.scale(dpr, dpr);
 
-    // 배경 흰색
-    ctx.fillStyle = "white";
-    ctx.fillRect(0, 0, rect.width, rect.height);
-
-    // 정답 한자 가이드 그리기 (투명도는 회차에 따라 변함)
-    drawAnswerGuide(ctx, rect);
-  }, [character, currentRep, drawAnswerGuide]);
+    // 초기 드로잉
+    redrawCanvas();
+  }, [character, currentRep, redrawCanvas]);
 
   const clearCanvas = () => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    const rect = canvas.getBoundingClientRect();
-    ctx.fillStyle = "white";
-    ctx.fillRect(0, 0, rect.width, rect.height);
-
-    // 정답 한자 가이드 다시 그리기
-    drawAnswerGuide(ctx, rect);
+    strokesRef.current = [];
+    pointsRef.current = [];
+    redrawCanvas();
   };
 
   const handleNext = () => {
@@ -105,7 +156,7 @@ export default function WritingCanvas({ character, onNext }: WritingCanvasProps)
       setCurrentRep(currentRep + 1);
       clearCanvas();
     } else {
-      // 5회 완료 후 다음 단어로 진행
+      // 5회 완료 - 다음 단어로 이동 (자동으로 학습 탭으로 돌아감)
       onNext();
     }
   };
@@ -151,27 +202,21 @@ export default function WritingCanvas({ character, onNext }: WritingCanvasProps)
     const coords = getCanvasCoordinates(e);
     if (coords) {
       pointsRef.current.push([coords.x, coords.y, Date.now()]);
+      redrawCanvas();
 
-      const path = pointsToPath(pointsRef.current);
+      // 현재 획 표시
       const canvas = canvasRef.current;
       if (!canvas) return;
 
-      // Canvas 다시 그리기 (가이드 + 이전 선)
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
 
-      const rect = canvas.getBoundingClientRect();
-      ctx.fillStyle = "white";
-      ctx.fillRect(0, 0, rect.width, rect.height);
-      drawAnswerGuide(ctx, rect);
-
-      // 새 선 그리기
-      const svgPath = new Path2D(path);
-      ctx.strokeStyle = "#000";
-      ctx.lineWidth = 2;
-      ctx.lineCap = "round";
-      ctx.lineJoin = "round";
-      ctx.stroke(svgPath);
+      const path = pointsToPath(pointsRef.current);
+      if (path) {
+        const svgPath = new Path2D(path);
+        ctx.fillStyle = "#000000";
+        ctx.fill(svgPath);
+      }
     }
   };
 
@@ -191,29 +236,30 @@ export default function WritingCanvas({ character, onNext }: WritingCanvasProps)
     const coords = getCanvasCoordinates(e);
     if (coords) {
       pointsRef.current.push([coords.x, coords.y, Date.now()]);
+      redrawCanvas();
 
-      const path = pointsToPath(pointsRef.current);
+      // 현재 획 표시
       const canvas = canvasRef.current;
       if (!canvas) return;
 
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
 
-      const rect = canvas.getBoundingClientRect();
-      ctx.fillStyle = "white";
-      ctx.fillRect(0, 0, rect.width, rect.height);
-      drawAnswerGuide(ctx, rect);
-
-      const svgPath = new Path2D(path);
-      ctx.strokeStyle = "#000";
-      ctx.lineWidth = 2;
-      ctx.lineCap = "round";
-      ctx.lineJoin = "round";
-      ctx.stroke(svgPath);
+      const path = pointsToPath(pointsRef.current);
+      if (path) {
+        const svgPath = new Path2D(path);
+        ctx.fillStyle = "#000000";
+        ctx.fill(svgPath);
+      }
     }
   };
 
   const handleEnd = () => {
+    if (isDrawing && pointsRef.current.length > 0) {
+      // 현재 획을 strokesRef에 저장
+      strokesRef.current.push([...pointsRef.current]);
+      pointsRef.current = [];
+    }
     setIsDrawing(false);
   };
 

@@ -128,36 +128,35 @@ export default function StudySession({
       transition={{ duration: 0.3 }}
     >
       <motion.header
-        className="p-4 border-b"
+        className="px-3 py-2 border-b"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1, duration: 0.3 }}
       >
-        <div className="flex justify-between items-center mb-2">
-          <Button variant="ghost" size="icon" onClick={() => router.push(backPath)}>
-            <ChevronLeft className="h-5 w-5" />
+        <div className="flex items-center gap-2 mb-1">
+          <Button variant="ghost" size="sm" onClick={() => router.push(backPath)} className="h-8 w-8 p-0">
+            <ChevronLeft className="h-4 w-4" />
           </Button>
-          <span className="text-sm text-gray-600">
-            {currentIndex + 1} / {shuffledWords.length}
+          <div className="flex-1 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+            <div
+              className="bg-black h-1.5 rounded-full transition-all"
+              style={{
+                width: `${((currentIndex + 1) / shuffledWords.length) * 100}%`,
+              }}
+            />
+          </div>
+          <span className="text-xs font-semibold text-gray-600 whitespace-nowrap">
+            {currentIndex + 1}/{shuffledWords.length}
           </span>
-          <div className="w-10" />
-        </div>
-        <div className="mt-2 bg-gray-200 rounded-full h-2">
-          <div
-            className="bg-black h-2 rounded-full transition-all"
-            style={{
-              width: `${((currentIndex + 1) / shuffledWords.length) * 100}%`,
-            }}
-          />
         </div>
         {title && (
-          <div className="mt-3 text-center">
-            <h1 className="text-base font-semibold text-gray-800">{title}</h1>
+          <div className="text-center">
+            <h1 className="text-xs font-semibold text-gray-700">{title}</h1>
           </div>
         )}
       </motion.header>
 
-      <main className="flex-1 flex flex-col items-center pt-8 pb-12 overflow-y-auto">
+      <main className="flex-1 flex flex-col items-center px-4 pt-4 overflow-hidden">
         <FlashCard word={shuffledWords[currentIndex]} onNext={handleNext} />
       </main>
     </motion.div>

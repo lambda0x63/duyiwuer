@@ -24,8 +24,24 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
   const [askQuestion, setAskQuestion] = useState("");
   const [aiResponse, setAiResponse] = useState("");
   const [isLoadingResponse, setIsLoadingResponse] = useState(false);
+  const [isNewCard, setIsNewCard] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioQueueRef = useRef<string[]>([]);
+
+  // 학습 완료된 카드 목록 관리
+  const getSeenCards = useCallback((): Set<number> => {
+    if (typeof window === "undefined") return new Set();
+    const stored = localStorage.getItem("seenCardIds");
+    return stored ? new Set(JSON.parse(stored)) : new Set();
+  }, []);
+
+  const markCardAsSeen = useCallback((wordId: number) => {
+    if (typeof window === "undefined") return;
+    const seenCards = getSeenCards();
+    seenCards.add(wordId);
+    localStorage.setItem("seenCardIds", JSON.stringify([...seenCards]));
+    setIsNewCard(false);
+  }, [getSeenCards]);
 
   const minSwipeDistance = 50;
 
@@ -33,6 +49,10 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
     if (isAnimating) return;
     if (!isFlipped) {
       setIsFlipped(true);
+      // 카드를 처음 뒤집을 때 학습 완료로 표시
+      if (isNewCard && word.id) {
+        markCardAsSeen(word.id);
+      }
     }
   };
 
@@ -106,6 +126,10 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
     if (!isFlipped && (event.key === " " || event.key === "Enter")) {
       event.preventDefault();
       setIsFlipped(true);
+      // 카드를 처음 뒤집을 때 학습 완료로 표시
+      if (isNewCard && word.id) {
+        markCardAsSeen(word.id);
+      }
       return;
     }
 
@@ -216,14 +240,20 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
   useEffect(() => {
     resetCard();
     stopTts();
-  }, [word, stopTts]);
+
+    // 현재 카드가 이전에 학습한 카드인지 확인
+    if (word.id) {
+      const seenCards = getSeenCards();
+      setIsNewCard(!seenCards.has(word.id));
+    }
+  }, [word, stopTts, getSeenCards]);
 
   useEffect(() => () => stopTts(), [stopTts]);
 
   return (
-    <div className="relative w-full flex flex-col items-center px-4">
+    <div className="relative w-full flex flex-col items-center">
       {/* Mode Tabs */}
-      <div className="flex gap-3 mb-6 bg-gray-100 p-1 rounded-2xl">
+      <div className="flex gap-3 mb-4 bg-gray-100 p-1 rounded-2xl">
         <button
           onClick={() => setMode("learn")}
           className={`px-6 py-2 rounded-xl font-semibold transition-all ${
@@ -283,14 +313,29 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
             `}
           >
             {/* Front side - 심플하고 깔끔하게 */}
-            <Card className="h-[480px] flex items-center justify-center [backface-visibility:hidden] p-8">
-              <div className="text-center">
-                <h1 className={`font-bold text-gray-900 mb-8 [font-family:var(--font-noto-serif-cjk-jp)] ${
-                  displayText.length > 4 ? "text-5xl" :
-                  displayText.length > 3 ? "text-6xl" :
-                  displayText.length > 2 ? "text-7xl" : "text-8xl"
-                }`}>{displayText}</h1>
-                <p className="text-base text-gray-500">탭해서 뒤집고 위로 스와이프하세요</p>
+            <Card className="h-[480px] flex flex-col [backface-visibility:hidden] p-8">
+              {/* 학습 상태 배지 */}
+              <div className="flex justify-center mb-4">
+                <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                  isNewCard
+                    ? "bg-blue-100 text-blue-700"
+                    : "bg-green-100 text-green-700"
+                }`}>
+                  {isNewCard ? "새 카드" : "복습"}
+                </span>
+              </div>
+
+              <div className="flex-1 flex items-center justify-center">
+                <div className="text-center">
+                  <h1 className={`font-bold text-gray-900 mb-8 [font-family:var(--font-noto-serif-cjk-jp)] ${
+                    displayText.length > 4 ? "text-6xl" :
+                    displayText.length > 3 ? "text-7xl" :
+                    displayText.length > 2 ? "text-8xl" : "text-9xl"
+                  }`}>{displayText}</h1>
+                  <p className="text-base text-gray-500">
+                    {isNewCard ? "탭해서 뒤집고 위로 스와이프하세요" : "뜻과 발음을 떠올려보세요"}
+                  </p>
+                </div>
               </div>
             </Card>
 
@@ -306,10 +351,10 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
                             key={`${char}-${index}`}
                             className="flex flex-col items-center gap-1"
                           >
-                            <span className="text-5xl sm:text-6xl font-bold text-gray-900 tracking-tight [font-family:var(--font-noto-serif-cjk-jp)]">
+                            <span className="text-6xl sm:text-7xl font-bold text-gray-900 tracking-tight [font-family:var(--font-noto-serif-cjk-jp)]">
                               {char}
                             </span>
-                            <span className="text-base sm:text-lg text-blue-600 font-semibold">
+                            <span className="text-lg sm:text-xl text-blue-600 font-semibold">
                               {pinyinParts[index]}
                             </span>
                           </div>
@@ -317,15 +362,15 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
                       </div>
                     ) : (
                       <div className="text-center space-y-2">
-                        <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 tracking-tight [font-family:var(--font-noto-serif-cjk-jp)]">
+                        <h1 className="text-6xl sm:text-7xl font-bold text-gray-900 tracking-tight [font-family:var(--font-noto-serif-cjk-jp)]">
                           {displayText}
                         </h1>
-                        <p className="text-3xl sm:text-4xl text-blue-600 font-semibold">
+                        <p className="text-4xl sm:text-5xl text-blue-600 font-semibold">
                           {word.pinyin}
                         </p>
                       </div>
                     )}
-                    <p className="text-xl text-gray-700 text-center font-medium">
+                    <p className="text-2xl text-gray-700 text-center font-medium">
                       {word.meaning}
                     </p>
                   </div>
@@ -340,7 +385,7 @@ export default function FlashCard({ word, onNext }: FlashCardProps) {
                       <div className="space-y-4">
                         {word.examples && word.examples.map((example, index) => (
                           <div key={index} className="space-y-2">
-                            <p className="text-lg sm:text-xl leading-relaxed text-gray-900 whitespace-pre-wrap">
+                            <p className="text-xl sm:text-2xl leading-relaxed text-gray-900 whitespace-pre-wrap">
                               {example}
                             </p>
                             {index < word.examples.length - 1 && (
