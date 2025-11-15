@@ -59,9 +59,6 @@ export default function HomeClient({ totalWords }: HomeClientProps) {
           <Button size="lg" variant="secondary" className="w-full" asChild>
             <Link href="/study/textbook">교과서 단어 학습</Link>
           </Button>
-          <Button size="lg" variant="outline" className="w-full" asChild>
-            <Link href="/quiz">퀴즈 풀기</Link>
-          </Button>
           <p className="text-xs text-gray-500 text-center mt-2">
             단어 {totalWords}개
           </p>
