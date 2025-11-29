@@ -1,11 +1,8 @@
-import { getBasicWords, getTextbookWords } from "@/lib/basicData";
+import { getAllWords } from "@/lib/basicData";
 import SettingsClient from "./SettingsClient";
 
 export default async function SettingsPage() {
-  const [basicWords, textbookWords] = await Promise.all([
-    getBasicWords(),
-    getTextbookWords(),
-  ]);
+  const allWords = await getAllWords();
 
-  return <SettingsClient totalWords={basicWords.length + textbookWords.length} />;
+  return <SettingsClient totalWords={allWords.length} />;
 }
